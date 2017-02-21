@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar (click)="backToMain()">
+      <!--<ion-icon name="arrow-back" (click)="backToMain()" medium></ion-icon>-->
+      <!--<ion-title style="float:left;vertical-align: middle;color:blue;" > <span class="backBtn" (click)="backToMain()"> < BACK </span></ion-title>-->
+      <ion-title>RESTAURANTS</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="page-home1">
+  <ion-item *ngFor="let item of restraList.items" class="bgItem" (click)="slideNav(item)">
+      <ion-avatar item-left>
+        <span *ngIf = "item.status == 'open' " style="width:60%;white-space: initial;vertical-align: middle;">
+      <img src="../../assets/imgs/open.png" /> 
+      </span>
+      <span *ngIf = "item.status == 'closed' " style="width:60%;white-space: initial;vertical-align: middle;">
+      <img src="../../assets/imgs/close.jpg" /> 
+      </span>
+      </ion-avatar>
+      <h2 style="width:60%;white-space: initial;">{{item.name}}</h2>
+      <p class="defaultTxtColor">{{item.miles}}</p>
+      <ion-note item-right><ion-icon name="arrow-dropright" item-right color="primary"></ion-icon></ion-note>
+    </ion-item>
+
+    
+
+</ion-content>
+
+<ion-footer>
+    <button ion-button full item-left class="defaultBtn" color="defaultBtn"> <ion-icon name='search' style="color: black;"></ion-icon>&nbsp; SEARCH</button>
+</ion-footer>
+
+

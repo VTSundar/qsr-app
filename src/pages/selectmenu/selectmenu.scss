@@ -1,0 +1,178 @@
+.card-background-page {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#627d4d+36,1f3b08+94 */
+background: white !important; /* Old browsers */
+background: -moz-linear-gradient(top,  #627d4d 36%, #1f3b08 94%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #627d4d 36%,#1f3b08 94%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #627d4d 36%,#1f3b08 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08',GradientType=0 ); /* IE6-9 */
+overflow-y: hidden !important;
+
+
+}
+
+ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-titleMenu {
+    position: absolute;
+    top: 27%;
+    font-size: 1.2em;
+    width: 100%;
+    font-weight: bold;
+    color: #4c565a;
+    white-space: initial;
+  }
+
+  .card-subtitleMenu {
+    font-size: 0.8em;
+    position: absolute;
+    top: 48%;
+    width: 100%;
+    color: #4c565a;
+    font-weight: bold;
+    white-space: initial;
+  }
+
+  .card-subtitleMenuButton {
+    font-size: 0.8em;
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    color: #4c565a;
+    font-weight: bold;
+    white-space: initial;
+  }
+
+  .imgHeight{
+    width: 100% !important;
+    height: 251px !important;
+    opacity: 0.4;
+  }
+
+  .addCart{
+    background: transparent;
+    border: 1px solid cadetblue;
+    color: #4c565a;
+  }
+
+  .addCart:hover{
+    background: transparent !important;
+    border: 1px solid cadetblue;
+    color: #4c565a;
+  }
+
+  .imgShow{
+        border: 1px solid #959c9c;
+    border-radius: 10px;
+    height: 212px;
+    max-width: 85%;
+    // box-shadow: 3px 0px 5px #888888;
+    cursor: pointer;
+  }
+
+  .imgSlide{
+        width: 258px !important;
+        float:none; 
+        display: inline-block; 
+        position: relative;
+        // overflow-x: auto !important;
+  }
+
+  .overflowImg{
+    overflow-x: auto !important;
+  }
+
+  .backBtn{
+    font-size: medium;
+    color: cornflowerblue;
+    font-weight: 400;
+  }
+
+  ion-label {
+    display: block !important;
+    overflow: auto !important;
+    -webkit-flex: 1 !important;
+    -ms-flex: 1 !important;
+    flex: 1 !important;
+    margin: 0 !important;
+    font-size: inherit !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+}
+
+.textAlignImg{
+  position: absolute;
+  bottom: 4px;
+  font-size: 17px;
+  border: 1px solid #CCC;
+  width: 85%;
+  text-align: center;
+  background: #e87a05;
+  border-radius: 3px;
+  left: 0%;
+  color: white;
+  white-space: initial;
+  font-weight: 400;
+  opacity: 0.8;
+  height: 19%;
+}
+
+.cartBtn{
+  color:white;
+  float: right;
+  font-size: 30px;
+}
+
+// .notif {
+//        width: 100px;
+//     height: 0px;
+//     border-right: 62px solid transparent;
+//     border-top: 30px solid orange;
+//     border-left: 60px solid orange;
+//     border-bottom: 30px solid orange;
+//     -webkit-transform: rotate(180deg);
+//     transform: rotate(180deg);
+//     /* right: 12%; */
+//     float: right;
+//     margin-top: -18%;
+// }
+
+#flag {
+    width: 80px;
+    height: 60px;
+    padding-top: 15px;
+    position: fixed;
+    background: red;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    bottom: 555px;
+    left: 1270px;
+}
+#flag:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #eee;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+
+.segment-md .segment-button{
+  color : white;
+}
+
+.segment-md .segment-button:focus{
+  background : #387ef5;
+}
+
+.segment-md .segment-button:hover{
+  background : #387ef5;
+}

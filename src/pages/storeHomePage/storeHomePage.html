@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Store Home page</ion-title>
+    <ion-buttons end>
+        <button (click)="firstPage()">
+        first page
+        </button>
+        <button (click)="secondPage()">
+        second page
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <!--<button ion-button (click)="backToHome()">Back to home</button>-->
+    <ion-nav [root]="rootPage"></ion-nav>
+</ion-content>

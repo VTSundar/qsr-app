@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar (click)="backToRestraunt()">
+      <!--<ion-icon name="arrow-back" (click)="backToMain()" medium></ion-icon>-->
+      <!--<ion-title style="float:left;vertical-align: middle;color:blue;"> <span class="backBtn" (click)="backToRestraunt()"> < BACK </span></ion-title>-->
+      <ion-title>MAP</ion-title>
+    </ion-navbar>  
+</ion-header>
+
+<ion-content padding class="bgRes">
+  <sebm-google-map 
+      [latitude]="lat"
+      [longitude]="lng"
+      [zoom]="zoom"
+      [disableDefaultUI]="false"
+      [zoomControl]="false"
+      (mapClick)="mapClicked($event)">
+    
+      <sebm-google-map-marker 
+          *ngFor="let m of mapList.markers; let i = index"
+          (markerClick)="clickedMarker(m.label, i)"
+          [latitude]="m.lat"
+          [longitude]="m.lng"
+          [label]="m.label"
+          [markerDraggable]="m.draggable"
+          (dragEnd)="markerDragEnd(m, $event)">
+          
+        <sebm-google-map-info-window>
+          <strong>InfoWindow content</strong>
+        </sebm-google-map-info-window>
+        
+      </sebm-google-map-marker>
+      
+      <sebm-google-map-circle [latitude]="lat + 0.3" [longitude]="lng" 
+          [radius]="5000"
+          [fillColor]="'red'"
+          [circleDraggable]="true"
+          [editable]="true">
+      </sebm-google-map-circle>
+
+    </sebm-google-map> <hr class="mapBorder">
+    <span class="locMiles">{{firstParam.miles}}</span> <p class="locDet">{{firstParam.name}} </p> 
+    <p class="locDet">{{firstParam.timings}}</p> 
+    <p class="locDet">{{firstParam.mobileNo}}</p>
+    <p *ngIf = "platFormType !== 'Windows' "> <a ion-button href="tel:+(949) 588-0716" class="callPhone" color="callPhone" ><ion-icon ios="ios-call-outline"></ion-icon>&nbsp;CALL</a> </p>
+</ion-content>
+
+<ion-footer>
+    <button class="defaultBtn" color="defaultBtn" ion-button full item-left (click)="selectFav()">SAVE AS FAVOURITE</button>
+</ion-footer>

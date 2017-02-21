@@ -1,0 +1,72 @@
+.page-home1 {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#627d4d+36,1f3b08+94 */
+background: #312f2f !important; /* Old browsers */
+background: -moz-linear-gradient(top,  #627d4d 36%, #1f3b08 94%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #627d4d 36%,#1f3b08 94%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #627d4d 36%,#1f3b08 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08',GradientType=0 ); /* IE6-9 */
+overflow-y: hidden !important;
+
+
+}
+
+.card-title {
+    position: fixed;
+    top: 12%;
+    font-size: 1.5em;
+    width: 96%;
+    font-weight: bold;
+    color: #a5a5a5;
+    text-align: center;
+  }
+
+  .subcard-title{
+    font-size: 0.8em;
+    width: 40%;
+    font-weight: normal;
+    color: white;
+    // text-align: center;
+  }
+  
+  .buttonFooter{
+    // position: absolute;
+    // top : 80%;
+     left:44%;
+  }
+
+  .bgItem{
+    color: white;
+    background-color: #312f2f;
+  }
+  
+  .bgItem:focus {
+    color: white;
+    background-color: black;
+}
+
+.bgItem:hover {
+    color: white;
+    background-color: black;
+}
+
+  .defaultTxtColor{
+    vertical-align: middle;
+    color: yellow !important;
+    font-weight: bold;
+    width: 40%;
+    text-align: end;
+  }
+
+  .defHeader{
+    text-align: center;
+    vertical-align: middle;
+    color:yellow;
+  }
+
+  .item-md ion-icon[item-left], .item-md ion-icon[item-right]{
+    margin-left: 6px;
+  }
+
+  
+
+

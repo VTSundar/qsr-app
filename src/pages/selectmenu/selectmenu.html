@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-navbar (click)="backToLocation()">
+      <ion-title>FOOTHILL RANCH,CA
+      </ion-title>
+      
+    </ion-navbar>
+</ion-header>
+
+
+  <ion-content class="card-background-page">
+    <ion-slides [autoplay]="4000" pager style="height:245px;width: 100%;">
+      <ion-slide>
+    <img class="imgHeight" src="../../assets/imgs/jamba6.jpg" />
+    <div class="card-titleMenu">FREE HASHBROWN STICKS (5PC)</div>
+    <div class="card-subtitleMenu">WITH PURCHASE OF TWO CHORIZO BREAKFAST TACOS</div>
+    <div class="card-subtitleMenuButton"><button ion-button (click)="createAccount()" class="addCart">ADD CART</button></div>
+  </ion-slide>
+   <ion-slide>
+    <img class="imgHeight" src="../../assets/imgs/jamba2.jpg" />
+    <div class="card-titleMenu">FREE HASHBROWN STICKS (10PC)</div>
+    <div class="card-subtitleMenu">WITH PURCHASE OF TWO CHORIZO BREAKFAST TACOS</div>
+    <div class="card-subtitleMenuButton"><button ion-button (click)="createAccount()" class="addCart">ADD CART</button></div>
+  </ion-slide>
+  
+    </ion-slides>
+
+    <div id="flag"><ion-badge item-right style="float: right;border-radius: 10px;">5</ion-badge><button ion-button item-left style="height: 60%;width: 40%;border-radius: 12px;float: right;border-color: blue;background: darkslateblue;"><ion-icon ios="ios-cart-outline" md="md-cart" class="cartBtn"></ion-icon></button></div>
+
+    <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="last">
+        LAST
+      </ion-segment-button>
+      <ion-segment-button value="recent">
+        RECENT
+      </ion-segment-button>
+      <ion-segment-button value="e-gift">
+        E-GIFT
+      </ion-segment-button>
+      <ion-segment-button value="rewards">
+        REWARDS
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar> <br>
+
+ <ion-list>
+    <ion-item class="overflowImg">
+        <p class="imgSlide" (click)="listFav()">
+          <img class="imgShow" src="../../assets/imgs/jamba3.jpg"/>
+<span class="textAlignImg">FLATBREAD TACOS</span>  
+        </p>
+        <p class="imgSlide">
+          <img class="imgShow" src="../../assets/imgs/jamba4.jpg" />
+          <span class="textAlignImg">AMERICAN GRILL</span>  
+          <!--<span style="position: absolute;top: 195px;left: 340px;">AMERICAN GRILL</span>-->
+        </p>
+        <p class="imgSlide">
+          <img class="imgShow" src="../../assets/imgs/jamba5.jpg" />
+          <span class="textAlignImg">COMBOS & AMERICAN GRILL</span>  
+          <!--<span style="position: absolute;top: 195px;left: 561px;">COMBOS & AMERICAN GRILL</span>-->
+        </p>
+        <p class="imgSlide">
+          <img class="imgShow" src="../../assets/imgs/jamba6.jpg" />
+          <span class="textAlignImg">COMBOS & FLATBREAD TACOS</span>  
+          <!--<span style="position: absolute;top: 195px;left: 820px;">COMBOS & FLATBREAD TACOS</span>-->
+        </p>
+        <p class="imgSlide">
+          <img class="imgShow" src="../../assets/imgs/jamba2.jpg" />
+          <span class="textAlignImg">COMBOS & TACOS</span>  
+          <!--<span style="position: absolute;top: 195px;left: 1124px;">COMBOS & TACOS</span>-->
+        </p>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+
