@@ -1,12 +1,12 @@
 <ion-header>
-  <ion-navbar (click)="backToMain()">
+  <ion-navbar>
       <!--<ion-icon name="arrow-back" (click)="backToMain()" medium></ion-icon>-->
       <!--<ion-title style="float:left;vertical-align: middle;color:blue;" > <span class="backBtn" (click)="backToMain()"> < BACK </span></ion-title>-->
       <ion-title>RESTAURANTS</ion-title>
     </ion-navbar>
 </ion-header>
 
-<ion-content padding class="page-home1">
+<ion-content padding class="page-home1 slide-in">
   <ion-item *ngFor="let item of restraList.items" class="bgItem" (click)="slideNav(item)">
       <ion-avatar item-left>
         <span *ngIf = "item.status == 'open' " style="width:60%;white-space: initial;vertical-align: middle;">

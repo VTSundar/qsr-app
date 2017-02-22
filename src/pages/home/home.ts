@@ -49,7 +49,7 @@ export class HomePage {
       duration: 3000,
       // dismissOnPageChange: true
     }).present();
-        this.navCtrl.setRoot(RestraFind);
+        this.navCtrl.push(RestraFind);
     }
 
 }
