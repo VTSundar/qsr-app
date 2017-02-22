@@ -1,0 +1,77 @@
+.start-screen-content{
+    background: url("../../assets/imgs/startscreen.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.start-screen-grid{
+    height: 100%;
+}
+.start-screen-row1{
+    height: 80%;
+    // border: 1px solid;
+}
+.start-screen-row2{
+    height: 20%;
+    // border: 1px solid;
+}
+.start-btn-container{
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+.start-btn-grid{
+    padding: 0;
+}
+.start-btn-col1{
+    text-align: center;
+    border-right: 1px solid #fff;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.start-btn-col2{
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.start-signup{
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+.signup-color{
+    color: #ff1700;
+}
+.start-slider-style{
+    width: 300px;
+    height: 200px;
+    // border: 1px solid #fff;
+    margin: 0 auto;
+    color: #fff;
+}
+.slider-content-part1{
+    height: 60%;
+    font-size: 32px;
+}
+.slider-content-part2{
+    height: 40%;
+}
+.ion-slider-container{
+    height:70%;
+    white-space: initial;
+    margin-top: 5%;
+}
+.ion-slider-container .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: #ff1700;
+}
+.ion-slider-container .swiper-pagination-bullet {
+    width: 10px;
+    height: 4px;
+    border-radius: 0;
+    background: #fff;
+    opacity: 1;
+}
