@@ -6,7 +6,7 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content padding class="page-home1 slide-in">
+<ion-content padding class="page-home1">
   <ion-item *ngFor="let item of restraList.items" class="bgItem" (click)="slideNav(item)">
       <ion-avatar item-left>
         <span *ngIf = "item.status == 'open' " style="width:60%;white-space: initial;vertical-align: middle;">

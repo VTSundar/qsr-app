@@ -1,18 +1,29 @@
 import { Component } from '@angular/core';
 
-import { NavController , LoadingController } from 'ionic-angular';
+import { NavController , LoadingController, Platform } from 'ionic-angular';
 // import { LoadingController } from 'ionic-angular';
  import { RestraFind } from '../restrafind/restrafind';
  import { ListFavPage } from '../listfav/listfav';
  import { Providers} from '../../providers/provider'
 
 @Component({
-  selector: 'select-menu',
-  templateUrl: 'selectmenu.html'
+  selector: 'card-menu',
+  templateUrl: 'cardmenu.html'
 })
-export class SelectMenuPage {
+export class CardMenuPage {
+  public platFormType : any;
 // private nav:NavController = null;
-  constructor(public navCtrl: NavController , public loadingCtrl: LoadingController, public menuList : Providers) {}
+  constructor(public navCtrl: NavController , public loadingCtrl: LoadingController, public cardMenuList : Providers,public platform: Platform) {
+     if (this.platform.is('android')) {
+     this.platFormType = 'Mobile';
+   }
+   else if(this.platform.is('ios')){
+     this.platFormType = 'Ios';
+   }
+   else{
+        this.platFormType = 'Windows';
+   }
+  }
 
   createAccount(){
     this.loadingCtrl.create({

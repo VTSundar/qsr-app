@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-      <ion-title>TACOS</ion-title>
+      <ion-title>{{headerName.name}}</ion-title>
       <ion-buttons end>
       <button ion-button icon-only>
        <ion-icon ios="ios-settings" md="md-settings"></ion-icon>
@@ -12,35 +12,10 @@
 <ion-content padding>
   <ion-list>
     <ion-item class="overflowImg">
-        <p class="imgSlide" (click)="listFav()">
-          <img class="imgShow" src="../../assets/imgs/jamba3.jpg"/>
-          <span class="textAlignImg1"><p class="badgeAlign">$15</p></span>  
-<span class="textAlignImg">FLATBREAD TACOS</span>  
-        </p>
-        <p class="imgSlide">
-          <img class="imgShow" src="../../assets/imgs/jamba4.jpg" />
-          <span class="textAlignImg1"><p class="badgeAlign">$25</p></span>
-          <span class="textAlignImg">AMERICAN GRILL</span>  
-        </p>
-        <p class="imgSlide">
-          <img class="imgShow" src="../../assets/imgs/jamba5.jpg" />
-          <span class="textAlignImg1"><p class="badgeAlign">$35</p></span>
-          <span class="textAlignImg">COMBOS & AMERICAN GRILL</span>  
-        </p>
-        <p class="imgSlide">
-          <img class="imgShow" src="../../assets/imgs/jamba6.jpg" />
-          <span class="textAlignImg1"><p class="badgeAlign">$45</p></span>
-          <span class="textAlignImg">COMBOS & FLATBREAD TACOS</span>  
-        </p>
-        <p class="imgSlide">
-          <img class="imgShow" src="../../assets/imgs/jamba2.jpg" />
-          <span class="textAlignImg1"><p class="badgeAlign">$55</p></span>
-          <span class="textAlignImg">COMBOS & TACOS</span>  
-        </p>
-        <p class="imgSlide">
-          <img class="imgShow" src="../../assets/imgs/jamba2.jpg" />
-          <span class="textAlignImg1"><p class="badgeAlign">$25</p></span>
-          <span class="textAlignImg">COMBOS & TACOS</span>  
+        <p class="imgSlide" (click)="cardMenu()" *ngFor="let item of listFav.listFavItem">
+          <img class="imgShow" [src]=item.image/>
+          <span class="textAlignImg1"><p class="badgeAlign">{{item.price}}</p></span>  
+<span class="textAlignImg">{{item.name}}</span>  
         </p>
     </ion-item>
   </ion-list>

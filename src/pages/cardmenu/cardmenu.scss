@@ -1,0 +1,56 @@
+.card-background-page {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#627d4d+36,1f3b08+94 */
+background: black !important; /* Old browsers */
+background: -moz-linear-gradient(top,  #627d4d 36%, #1f3b08 94%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #627d4d 36%,#1f3b08 94%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #627d4d 36%,#1f3b08 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08',GradientType=0 ); /* IE6-9 */
+overflow-y: hidden !important;
+}
+
+.card-background-page {
+
+  ion-card {
+    position: relative !important;
+    text-align: center !important;
+  }
+
+  .card-title {
+    position: absolute !important;
+    top: 36% !important;
+    font-size: 2.0em !important;
+    width: 100% !important;
+    font-weight: bold !important;
+    color: #fff !important;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em !important;
+    position: absolute !important;
+    top: 52% !important;
+    width: 100% !important;
+    color: #fff !important;
+    font-weight: bold;
+  }
+
+}
+
+ion-card img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    border-collapse: collapse;
+}
+
+// .fab-md{
+//   background : #a9a9a9;
+// }
+
+.card-md {
+    margin: 10px 10px 0px 0px;
+    width: calc(100% - 0px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
