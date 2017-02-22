@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 // import {Injectable} from "angular2/core";
 
 import { NavController , LoadingController } from 'ionic-angular';
-import { LoginPage } from '../login/login';
+// import { LoginPage } from '../login/login';
 import { LocationMapPage } from '../location/location';
 import { Providers} from '../../providers/provider'
 import { HomePage } from '../home/home'
