@@ -25,7 +25,7 @@ export class RestraFind {
       duration: 3000,
       // dismissOnPageChange: true
     }).present();
-    this.navCtrl.setRoot(LocationMapPage,{
+    this.navCtrl.push(LocationMapPage,{
       'mapData' : data
     });
   }

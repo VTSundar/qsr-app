@@ -85,7 +85,7 @@ export class ListFavPage {
       duration: 3000,
       //  dismissOnPageChange: true
     }).present();
-    this.navCtrl.setRoot(SelectMenuPage);
+    this.navCtrl.push(SelectMenuPage);
   }
 
   public backToRestraunt(){

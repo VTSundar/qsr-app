@@ -37,7 +37,7 @@ export class SelectMenuPage {
       duration: 3000,
       // dismissOnPageChange: true
     }).present();
-    this.navCtrl.setRoot(ListFavPage);
+    this.navCtrl.push(ListFavPage);
     }
   
 
