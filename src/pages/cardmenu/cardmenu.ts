@@ -21,7 +21,7 @@ export class CardMenuPage {
      this.platFormType = 'Ios';
    }
    else{
-        this.platFormType = 'Windows';
+        this.platFormType = 'Mobile';
    }
   }
 
