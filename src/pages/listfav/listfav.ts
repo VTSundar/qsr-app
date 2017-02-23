@@ -1,9 +1,11 @@
 import { Component} from '@angular/core';
 
-import { NavController, LoadingController, Platform , AlertController,Nav } from 'ionic-angular';
+import { NavController,NavParams, LoadingController, Platform , AlertController,Nav } from 'ionic-angular';
 import { SelectMenuPage } from '../selectmenu/selectmenu';
 import { RestraFind } from '../restrafind/restrafind';
 import {StatusBar, Push, Splashscreen} from "ionic-native";
+import { Providers} from '../../providers/provider';
+import { CardMenuPage } from '../cardmenu/cardmenu'
 
 
 @Component({
@@ -17,7 +19,10 @@ import {StatusBar, Push, Splashscreen} from "ionic-native";
 })
 export class ListFavPage {
  nav: Nav;
-  constructor(public navCtrl: NavController , public loadingCtrl: LoadingController,public platform: Platform,public alertCtrl: AlertController) {  
+ public headerName :any;
+  constructor(public navCtrl: NavController ,public params:NavParams, public listFav : Providers, public loadingCtrl: LoadingController,public platform: Platform,public alertCtrl: AlertController) { 
+    this.headerName = params.get("headerName") ;
+    console.log(JSON.stringify(this.headerName));
      platform.ready().then(() => {
       StatusBar.styleDefault();
       Splashscreen.hide();
@@ -79,13 +84,13 @@ export class ListFavPage {
     });
   }
 
-  public selectFav(){
+  public cardMenu(){
     this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 3000,
       //  dismissOnPageChange: true
     }).present();
-    this.navCtrl.push(SelectMenuPage);
+    this.navCtrl.push(CardMenuPage);
   }
 
   public backToRestraunt(){

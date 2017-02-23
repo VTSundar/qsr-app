@@ -120,4 +120,81 @@ export class Providers{
 	  }
   ]
 
+  //Select Menu List
+  menuListItem = [
+    {
+      'name' : "FLATBREAD TACOS",
+      'image' : "../../assets/imgs/jamba3.jpg"
+    },
+    {
+      'name' : "AMERICAN GRILL",
+      'image' : "../../assets/imgs/jamba4.jpg"
+    },
+    {
+      'name' : "COMBOS & AMERICAN GRILL",
+      'image' : "../../assets/imgs/jamba5.jpg"
+    },
+    {
+      'name' : "COMBOS & FLATBREAD TACOS",
+      'image' : "../../assets/imgs/jamba6.jpg"
+    },
+    {
+      'name' : "COMBOS & TACOS",
+      'image' : "../../assets/imgs/jamba2.jpg"
+    }
+  ]
+
+  //List Fav Item
+  listFavItem = [
+    {
+      'name' : "FLATBREAD TACOS",
+      'image' : "../../assets/imgs/jamba3.jpg",
+      'price' : "$15"
+    },
+    {
+      'name' : "AMERICAN GRILL",
+      'image' : "../../assets/imgs/jamba4.jpg",
+      'price' : "$18"
+    },
+    {
+      'name' : "COMBOS & AMERICAN GRILL",
+      'image' : "../../assets/imgs/jamba5.jpg",
+      'price' : "$10"
+    },
+    {
+      'name' : "COMBOS & FLATBREAD TACOS",
+      'image' : "../../assets/imgs/jamba6.jpg",
+      'price' : "$20"
+    },
+    {
+      'name' : "COMBOS & TACOS",
+      'image' : "../../assets/imgs/jamba2.jpg",
+      'price' : "$8"
+    }
+  ]
+
+  //Card Menu List 
+  cardMenuList = [
+    {
+      'name' : "PIZZA",
+      'subname' : "FEAST | VEG DELIGHT | NON VEG | PASTA",
+      'image' : "../../assets/imgs/pizza.jpg"
+    },
+    {
+      'name' : "TACOS",
+      'subname' : "DOUBLE DECKER | LOCOS",
+      'image' : "../../assets/imgs/tacos.jpg"
+    },
+    {
+      'name' : "COMBOS",
+      'subname' : "MEXICAN | POWER MENU BOWL",
+      'image' : "../../assets/imgs/combos.jpg"
+    },
+    {
+      'name' : "BURRITOS",
+      'subname' : "BEAN | SMOTHERED | BEFFY",
+      'image' : "../../assets/imgs/burritos.jpg"
+    },
+  ]
+
 }

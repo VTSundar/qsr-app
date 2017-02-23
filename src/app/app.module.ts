@@ -16,6 +16,7 @@ import { LocationMapPage } from '../pages/location/location';
 import { ListFavPage } from '../pages/listfav/listfav';
 import { AgmCoreModule } from 'angular2-google-maps/core';
 import { SelectMenuPage } from '../pages/selectmenu/selectmenu';
+import { CardMenuPage } from '../pages/cardmenu/cardmenu';
 import { StartscreenPage } from '../pages/startscreen/startscreen';
 
 @NgModule({
@@ -34,6 +35,7 @@ import { StartscreenPage } from '../pages/startscreen/startscreen';
     SelectMenuPage,
     LocationMapPage,
     ListFavPage,
+    CardMenuPage,
     StartscreenPage
   ],
   imports: [
@@ -58,6 +60,7 @@ import { StartscreenPage } from '../pages/startscreen/startscreen';
     SelectMenuPage,
     LocationMapPage,
     ListFavPage,
+    CardMenuPage,
     StartscreenPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},Providers]

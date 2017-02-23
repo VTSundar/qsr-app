@@ -1,0 +1,28 @@
+<ion-header *ngIf = "platFormType == 'Windows'">
+  <ion-navbar>
+      <ion-title>FLAVOURS</ion-title>
+    </ion-navbar>  
+</ion-header>
+
+<ion-content *ngIf = "platFormType == 'Windows'" style="top: 4%;">
+  <ion-list>
+    <ion-item class="overflowImg">
+        <p class="imgSlide" (click)="listFav(item)" *ngFor="let item of cardMenuList.cardMenuList">
+          <img class="imgShow" [src]=item.image/>
+<span class="textAlignImg">{{item.name}}</span>  
+        </p>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+
+<ion-content class="card-background-page" *ngIf = "platFormType !== 'Windows'">
+  <ion-fab top right edge style="top:5%;opacity:0.7;">
+    <button ion-fab mini><ion-icon ios="ios-menu" md="md-menu"></ion-icon></button>
+  </ion-fab>
+<ion-card *ngFor="let item of cardMenuList.cardMenuList">
+    <img [src]=item.image/>
+    <div class="card-title">{{item.name}}</div>
+    <div class="card-subtitle">{{item.subname}}</div>
+  </ion-card>
+  </ion-content>
