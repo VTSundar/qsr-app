@@ -3,14 +3,16 @@ import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 // import { TabsPage } from '../pages/tabs/tabs';
-// import { StartscreenPage } from '../pages/startscreen/startscreen';
+import { StartscreenPage } from '../pages/startscreen/startscreen';
 import { CardMenuPage } from '../pages/cardmenu/cardmenu';
+import { LoginPage } from '../pages/login/login';
+import { RegistrationPage } from '../pages/registration/registration';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = CardMenuPage;
+  rootPage = LoginPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {

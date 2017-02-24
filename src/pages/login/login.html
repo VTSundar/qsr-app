@@ -1,5 +1,37 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Login</ion-title>
-  </ion-navbar>
+<ion-header class="loginheader">
+  <ion-fab class="leftFab" edge="" left="" top="" (click)="startupPage()">
+    <button ion-fab="" mini="" class="fab fab-md leftBtn"><ion-icon class="fab-close-icon icon icon-md ion-md-close" name="close" role="img" aria-label="close" ng-reflect-name="close"></ion-icon><span class="button-inner"><ion-icon ios="ios-arrow-back" md="md-arrow-back" role="img" class="icon icon-md ion-md-arrow-back" aria-label="arrow back" ng-reflect-ios="ios-arrow-back" ng-reflect-md="md-arrow-back"></ion-icon></span><div class="button-effect" style="transform: translate3d(-12px, -9px, 0px) scale(1); height: 69px; width: 69px; opacity: 0; transition: transform 267ms, opacity 187ms 80ms;"></div></button>
+  </ion-fab>
+    <ion-title class="loginTitle">SIGN IN</ion-title>
 </ion-header>
+<ion-content class="loginContent">
+  <div class="loginImgDiv">
+    <img src="../../assets/imgs/jambajuicelogo.gif">
+  </div>
+  <div  class="loginInputDiv">
+<ion-list>
+  <ion-item class="inputItem">
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item class="inputItem">
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+</ion-list>
+<button ion-button full class="btnContinue">CONTINUE</button>
+<ion-row class="start-screen-row2">
+            <ion-col width-100>
+                <div class="start-btn-container-login">
+                    <ion-grid class="start-btn-grid">
+                        <ion-row>
+                            <ion-col width-50 class="start-btn-col-login"  (click)="regPage()">Create an Account</ion-col>
+                            <ion-col width-50 class="start-btn-col-login">Forget Password</ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-col>
+        </ion-row>
+</div>
+<div class="loginfooter">Terms Of Use</div>
+</ion-content>

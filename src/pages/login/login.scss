@@ -1,0 +1,94 @@
+.loginheader{
+    background: transparent;
+}
+.loginContent{
+    background: url("../../assets/imgs/startscreen.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+}
+.leftBtn{
+    background-color: orange;
+}
+.leftFab{
+    padding: 10px;
+    top: -4px !important;
+    left: -10px !important;
+}
+.toolbar-title-md {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px !important;
+    color: white;
+    padding-top: 10px;
+    line-height: 50px;
+}
+.loginImgDiv{
+    padding-top: 50px;
+    text-align: center;
+}
+.item-md {
+    position: relative;
+    padding-right: 0;
+    padding-left: 16px;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-transform: none;
+    color: white;
+    background-color: transparent;
+    box-shadow: none;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.loginInputDiv{
+    padding-right: 7%;
+    padding-left: 7%;
+    padding-top:5px;
+}
+.btnContinue{
+    background-color: orange;
+    border-radius: 2px;
+    margin-top: 35px;
+}
+.button-md:hover:not(.disable-hover) {
+    background-color: orange;
+}
+.item-inner{
+     padding-top:12px;
+}
+.inputItem{
+    padding-left:0 !important;
+}
+.column{
+    color:white;
+
+}
+.start-screen-row-login{
+    height: 20%;
+    // border: 1px solid;
+}
+.start-btn-container-login{
+    width: 300px;
+    margin: 0 auto;
+    border: none !important;
+}
+.start-btn-col-login{
+    text-align: center;
+    border-right: 1px solid orange !important;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.start-btn-col-login{
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.loginfooter{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px !important;
+    color: #9E9E9E;
+    padding-top: 150px;
+    line-height: 50px;
+}
