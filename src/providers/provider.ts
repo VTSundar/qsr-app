@@ -217,4 +217,36 @@ export class Providers{
     },
   ]
 
+  //Main menu list
+  mainMenu = [
+    {
+      id: 1,
+      name: "breakfast"
+    },
+    {
+      id: 2,
+      name: "combos"
+    },
+    {
+      id: 3,
+      name: "tacos"
+    },
+    {
+      id: 4,
+      name: "burritos"
+    },
+    {
+      id: 5,
+      name: "kid's meals"
+    },
+    {
+      id: 6,
+      name: "desserts & snakes"
+    },
+    {
+      id: 7,
+      name: "american grill"
+    }
+  ]
+
 }

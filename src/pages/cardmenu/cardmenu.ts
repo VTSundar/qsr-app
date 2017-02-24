@@ -12,17 +12,19 @@ import { NavController , LoadingController, Platform } from 'ionic-angular';
 })
 export class CardMenuPage {
   public platFormType : any;
+  public overlay : any;
 // private nav:NavController = null;
-  constructor(public navCtrl: NavController , public loadingCtrl: LoadingController, public cardMenuList : Providers,public platform: Platform) {
+  constructor(public navCtrl: NavController , public loadingCtrl: LoadingController, public api : Providers,public platform: Platform) {
+    this.overlay = true;
      if (this.platform.is('android')) {
-     this.platFormType = 'Mobile';
-   }
-   else if(this.platform.is('ios')){
-     this.platFormType = 'Ios';
-   }
-   else{
         this.platFormType = 'Mobile';
-   }
+      }
+      else if(this.platform.is('ios')){
+        this.platFormType = 'Ios';
+      }
+      else{
+            this.platFormType = 'Mobile';
+      }
   }
 
   createAccount(){

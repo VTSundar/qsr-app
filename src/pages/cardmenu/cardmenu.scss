@@ -107,3 +107,23 @@ ion-card img {
     text-align: right;
     height: 100%;
 }
+.no-scroll .scroll-content{
+    overflow: hidden;
+}
+.menu-container{
+  width: 300px;
+  // border: 1px solid #fff;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.menu-lists-ul{
+  margin: 0;
+  padding: 0;
+  li{
+    list-style: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 13px 0;
+  }
+}
