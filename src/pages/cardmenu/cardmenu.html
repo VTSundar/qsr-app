@@ -17,11 +17,11 @@
 
 
 <ion-content class="card-background-page" *ngIf = "platFormType !== 'Windows'" [class.no-scroll]="overlay">
-  <!--<ion-fab edge top right class="fab-icon">
+  <ion-fab edge top right class="fab-icon" (click)="showMenu()" *ngIf="!overlay">
     <button ion-fab mini>
       <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
     </button>
-  </ion-fab>-->
+  </ion-fab>
   <ion-card *ngFor="let item of api.cardMenuList">
     <img [src]=item.image/>
     <div class="card-title">{{item.name}}</div>
@@ -37,13 +37,13 @@
                   <button ion-button outline class="overlay-btn">Change Store</button>
                 </ion-col>
                 <ion-col width-50 class="overlay-col2">
-                  <div class="overlay-close-container"><ion-icon name="close-circle" end class="overlay-close"></ion-icon></div>
+                  <div class="overlay-close-container"><ion-icon name="close-circle" end class="overlay-close" (click)="closeMenu()"></ion-icon></div>
                 </ion-col>
             </ion-row>
         </ion-grid>
       </ion-toolbar> 
     </ion-header>
-    <ion-content class="overlay-content" style="overflow-y: auto;">
+    <ion-content class="overlay-content">
       <!--<div class="button-bar">
         <a class="button">First</a>
         <a class="button">Second</a>
@@ -57,12 +57,30 @@
       </ion-list>-->
       <div class="menu-container">
         <div class="search-bar">
-
+          <ion-row class="search-row">
+            <ion-col width-90 class="search-bar-col1">
+              <ion-input type="text" value="" placeholder="MENU'S'"></ion-input>
+            </ion-col>
+            <ion-col width-10 class="search-bar-col2">
+              <div class="overlay-search-icon"><ion-icon name="search"></ion-icon></div>
+            </ion-col>
+          </ion-row>
         </div>
         <div class="menu-lists">
           <ul class="menu-lists-ul">
-            <li>WHAT'S NEW</li>
-            <li *ngFor="let menu of api.mainMenu">{{menu.name}}</li>
+            <li>
+              <ion-row>
+                <ion-col width-100>
+                  WHAT'S NEW
+                </ion-col>
+              </ion-row>
+              </li>
+            <li *ngFor="let menu of api.mainMenu">
+              <ion-row>
+                <ion-col width-90>{{menu.name.toUpperCase()}}</ion-col>
+                <ion-col width-10><div class="menu-arrow"></div></ion-col>
+              </ion-row>
+            </li>
           </ul>
         </div>
       </div>

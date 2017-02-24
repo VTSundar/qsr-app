@@ -15,7 +15,7 @@ export class CardMenuPage {
   public overlay : any;
 // private nav:NavController = null;
   constructor(public navCtrl: NavController , public loadingCtrl: LoadingController, public api : Providers,public platform: Platform) {
-    this.overlay = true;
+    this.overlay = false;
      if (this.platform.is('android')) {
         this.platFormType = 'Mobile';
       }
@@ -50,11 +50,16 @@ export class CardMenuPage {
       content: 'Please wait...',
       duration: 3000,
       // dismissOnPageChange: true
-    }).present();
-    this.navCtrl.push(ListFavPage,{
-      'headerName' : data
-    });
+      }).present();
+      this.navCtrl.push(ListFavPage,{
+        'headerName' : data
+      });
     }
-  
+    showMenu(){
+      this.overlay = true;
+    }
+    closeMenu(){
+      this.overlay = false;
+    }
 
 }
