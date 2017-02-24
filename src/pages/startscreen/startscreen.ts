@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
-import { NavController } from 'ionic-angular';
+import { NavController,LoadingController } from 'ionic-angular';
+import { RestraFind } from '../restrafind/restrafind'
 
 @Component({
   selector: 'page-start-screen',
@@ -8,8 +9,17 @@ import { NavController } from 'ionic-angular';
 })
 export class StartscreenPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,public loadingCtrl: LoadingController) {
 
   }
+
+  createAccount(){
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      // dismissOnPageChange: true
+    }).present();
+        this.navCtrl.push(RestraFind);
+    }
 
 }

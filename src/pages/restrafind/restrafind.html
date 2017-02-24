@@ -1,32 +1,38 @@
-<ion-header>
+<!--<ion-header>
   <ion-navbar>
-      <!--<ion-icon name="arrow-back" (click)="backToMain()" medium></ion-icon>-->
-      <!--<ion-title style="float:left;vertical-align: middle;color:blue;" > <span class="backBtn" (click)="backToMain()"> < BACK </span></ion-title>-->
       <ion-title>RESTAURANTS</ion-title>
     </ion-navbar>
-</ion-header>
+</ion-header>-->
 
 <ion-content padding class="page-home1">
+  <ion-header class="headerStore">NEAR BY STORES
+    <ion-fab top left edge class="leftFab">
+    <button ion-fab mini><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
+  </ion-fab>
+    <ion-fab top right edge>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+  </ion-fab></ion-header><br><br>
+  <ion-searchbar placeholder="Store, City or Zipcode" showCancelButton="true"></ion-searchbar>
+  <p class="recCount"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Totally 5 Stores Found <br><br>
   <ion-item *ngFor="let item of restraList.items" class="bgItem" (click)="slideNav(item)">
       <ion-avatar item-left>
         <span *ngIf = "item.status == 'open' " style="width:60%;white-space: initial;vertical-align: middle;">
-      <img src="../../assets/imgs/open.png" /> 
+      <img src="../../assets/imgs/iphone.png" /> 
       </span>
       <span *ngIf = "item.status == 'closed' " style="width:60%;white-space: initial;vertical-align: middle;">
-      <img src="../../assets/imgs/close.jpg" /> 
+      <img src="../../assets/imgs/iphone.png" /> 
       </span>
       </ion-avatar>
-      <h2 style="width:60%;white-space: initial;">{{item.name}}</h2>
-      <p class="defaultTxtColor">{{item.miles}}</p>
-      <ion-note item-right><ion-icon name="arrow-dropright" item-right color="primary"></ion-icon></ion-note>
+      <h2 style="width:100%;white-space: initial;">{{item.name}}</h2>
+      <span class="defaultTxtColor" item-right>{{item.long}}<p style="font-size: 1.3rem;">{{item.miles}}</p></span>
+      <ion-note item-right><img src="../../assets/imgs/right-arrow (1).png" /> </ion-note>
+      
     </ion-item>
-
-    
-
+  </p>
 </ion-content>
 
-<ion-footer>
+<!--<ion-footer>
     <button ion-button full item-left class="defaultBtn" color="defaultBtn"> <ion-icon name='search' style="color: black;"></ion-icon>&nbsp; SEARCH</button>
-</ion-footer>
+</ion-footer>-->
 
 
