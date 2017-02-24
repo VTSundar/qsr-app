@@ -17,12 +17,49 @@
 
 
 <ion-content class="card-background-page" *ngIf = "platFormType !== 'Windows'">
-  <ion-fab top right edge style="top:5%;opacity:0.7;">
-    <button ion-fab mini><ion-icon ios="ios-menu" md="md-menu"></ion-icon></button>
-  </ion-fab>
-<ion-card *ngFor="let item of cardMenuList.cardMenuList">
+  <!--<ion-fab edge top right class="fab-icon">
+    <button ion-fab mini>
+      <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
+    </button>
+  </ion-fab>-->
+  <ion-card *ngFor="let item of cardMenuList.cardMenuList">
     <img [src]=item.image/>
     <div class="card-title">{{item.name}}</div>
     <div class="card-subtitle">{{item.subname}}</div>
   </ion-card>
-  </ion-content>
+  <div class="menu-overlay">
+    <ion-header>
+      <ion-toolbar class="toolbar-height">
+        <ion-grid class="overlay-grid">
+            <ion-row>
+                <ion-col width-50 class="overlay-col1">
+                  <div class="overlay-heading">Foothill Ranch, CA</div>
+                  <button ion-button outline class="overlay-btn">Change Store</button>
+                </ion-col>
+                <ion-col width-50 class="overlay-col2">
+                  <div class="overlay-close-container"><ion-icon name="close-circle" end class="overlay-close"></ion-icon></div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+      </ion-toolbar> 
+    </ion-header>
+    <ion-content class="overlay-content">
+
+    </ion-content>
+    <ion-footer>
+      <ion-toolbar>
+        <ion-grid class="overlay-grid">
+            <ion-row>
+                <ion-col width-50 class="overlay-col1">
+                  <button ion-button outline class="overlay-btn">LOGIN</button>
+                  <button ion-button outline class="overlay-btn">SIGNUP</button>
+                </ion-col>
+                <ion-col width-50 class="overlay-col2">
+                  <div class="overlay-terms-cond"><span>Tearms and Condition</span><br/><span>Privacy Policy</span></div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+      </ion-toolbar>
+    </ion-footer>
+  </div>
+</ion-content>
