@@ -9,93 +9,113 @@ export class Providers{
     // Restaurant List
     items = [
     {
-      'name' : '26702 PORTOLA PARKWAY FOOTHILL RANCH, CA',
+      'name' : '26702 PORTOLA PARKWAY',
       'header' : 'FOOTHILL RANCH, CA',
       'long' : '1.2',
       'miles' : 'Miles',
       'status' : 'open',
-      'timings' : 'MON - SAT : 24 HOURS',
+      'timingsWeekDays' : '9.30am - 11.00pm',
+      'timingSat' : '9.30am - 11.30pm',
+      'timingSun' : '9.30am - 12.00pm',
       'mobileNo' : '(949) 588-0716'
     },
     {
-      'name' : '12996 ALPHARETTA HWY 9 MILTON, GA 30253',
+      'name' : '12996 ALPHARETTA HWY 9 MILTON',
       'header' : 'HWY 9 MILTON, GA',
       'long' : '1.5',
       'miles' : 'Miles',
       'status' : 'closed',
-      'timings' : 'MON - SAT : 20 HOURS',
+      'timingsWeekDays' : '9.30am - 11.00pm',
+      'timingSat' : '9.30am - 11.30pm',
+      'timingSun' : '9.30am - 12.30pm',
       'mobileNo' : '(929) 568-0654'
     },
     {
-      'name' : '12452 ALPHARETTA HWY 7 MILTON, GA 30253',
-      'header' : 'ALPHARETTA HWY, GA',
+      'name' : '12452 ALPHARETTA HWY 7 MILTON',
+      'header' : 'ALPHARETTA HWY, GA 30253',
       'long' : '1.8',
       'miles' : 'Miles',
       'status' : 'closed',
-      'timings' : 'MON - SAT : 16 HOURS',
+      'timingsWeekDays' : '9.30am - 11.00pm',
+      'timingSat' : '8.30am - 11.30pm',
+      'timingSun' : '8.00am - 12.00pm',
       'mobileNo' : '(965) 234-6544'
     },
     {
-      'name' : '145 HARBISON BLVD COLUMBIA, SC 29212',
+      'name' : '145 HARBISON BLVD COLUMBIA',
       'header' : 'HARBISON BLVD, SC',
       'long' : '2.1',
       'miles' : 'Miles',
       'status' : 'open',
-      'timings' : 'MON - SAT : 24 HOURS',
+      'timingsWeekDays' : '9.30am - 11.00pm',
+      'timingSat' : '9.30am - 10.30pm',
+      'timingSun' : '9.30am - 11.30pm',
       'mobileNo' : '(890) 543-4236'
     },
     {
-      'name' : '862 S. WHITE SANDS BLVD.ALAMOGORDO, NM 88310',
+      'name' : '862 S. WHITE SANDS BLVD.ALAMOGORDO',
       'header' : 'WHITE SANDS BLVD.ALAMOGORDO, NM',
       'long' : '2.4',
       'miles' : 'Miles',
       'status' : 'closed',
-      'timings' : 'MON - SAT : 24 HOURS',
+      'timingsWeekDays' : '9.30am - 11.00pm',
+      'timingSat' : '9.00am - 11.30pm',
+      'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(954) 764-8768'
     },
     {
-      'name' : '145 HARBISON BLVD COLUMBIA, SC 29212',
+      'name' : '145 HARBISON BLVD COLUMBIA',
       'header' : 'BLVD COLUMBIA, SC',
       'long' : '2.6',
       'miles' : 'Miles',
       'status' : 'open',
-      'timings' : 'MON - SUN : 24 HOURS',
+      'timingsWeekDays' : '9.30am - 11.00pm',
+      'timingSat' : '9.30am - 12.00pm',
+      'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(954) 534-6463'
     },
     {
-      'name' : '26702 PORTOLA PARKWAY FOOTHILL RANCH, CA',
+      'name' : '26702 PORTOLA PARKWAY FOOTHILL',
       'header' : 'PORTOLA RANCH, CA',
       'long' : '2.8',
       'miles' : 'Miles',
       'status' : 'open',
-      'timings' : 'MON - SUN : 24 HOURS',
+      'timingsWeekDays' : '9.30am - 11.00pm',
+      'timingSat' : '8.30am - 12.00pm',
+      'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(965) 432-6546'
     },
     {
-      'name' : '26702 PORTOLA PARKWAY FOOTHILL RANCH, CA',
+      'name' : '26702 PORTOLA FOOTHILL RANCH',
       'header' : 'FOOTHILL PARKWAY, CA',
       'long' : '3.1',
       'miles' : 'Miles',
       'status' : 'open',
-      'timings' : 'MON - SAT : 24 HOURS',
+      'timingsWeekDays' : '9.30am - 11.00pm',
+      'timingSat' : '9.30am - 11.30pm',
+      'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(965) 876-8768'
     },
     {
-      'name' : '26702 PORTOLA PARKWAY FOOTHILL RANCH, CA',
+      'name' : '26702 PORTOLA PARKWAY RANCH',
       'header' : 'PARKWAY FOOTHILL, CA',
       'long' : '3.3',
       'miles' : 'Miles',
       'status' : 'closed',
-      'timings' : 'MON - FRI : 24 HOURS',
+      'timingsWeekDays' : '9.30am - 11.00pm',
+      'timingSat' : '8.30am - 11.30pm',
+      'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(949) 545-4564'
     },
     {
-      'name' : '26702 PORTOLA PARKWAY FOOTHILL RANCH, CA',
+      'name' : '26702 PARKWAY FOOTHILL RANCH',
       'header' : 'PORTOLA PARKWAY, CA',
       'long' : '3.6',
       'miles' : 'Miles',
       'status' : 'closed',
-      'timings' : 'MON - SUN : 24 HOURS',
+      'timingsWeekDays' : '9.30am - 11.00pm',
+      'timingSat' : '9.00am - 11.30pm',
+      'timingSun' : '9.00am - 12.00pm',
       'mobileNo' : '(867) 876-5435'
     }
   ];
@@ -105,37 +125,37 @@ export class Providers{
 	  {
 		  lat: 33.678811,
 		  lng: -117.663948,
-		  label: 'A',
+		  label: '1',
 		  draggable: true
 	  },
 	  {
 		  lat: 34.096068,
 		  lng: -84.277098,
-		  label: 'B',
+		  label: '2',
 		  draggable: false
 	  },
 	  {
 		  lat: 34.080518,
 		  lng: -81.149110,
-		  label: 'C',
+		  label: '3',
 		  draggable: true
 	  },
     {
 		  lat: 33.8302961,
 		  lng: -116.54529209999998,
-		  label: 'D',
+		  label: '4',
 		  draggable: true
 	  },
     {
 		  lat: 33.4483771,
 		  lng: -112.07403729999999,
-		  label: 'E',
+		  label: '5',
 		  draggable: true
 	  },
     {
 		  lat: 31.7618778,
 		  lng: -106.4850217,
-		  label: 'F',
+		  label: '6',
 		  draggable: true
 	  }
   ]

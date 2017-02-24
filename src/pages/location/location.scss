@@ -3,10 +3,21 @@
 }
 
 .locDet{
-    color: white;
+    color: #4a4a4a;
+    font-size: 13px;
+    width: 60%;
+    white-space: initial;
+    margin-left: 2%;
+}
+
+.locAdd{
+    color: #4a4a4a;
     font-size: larger;
     width: 60%;
     white-space: initial;
+    margin-left: 2%;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .locMiles{
@@ -27,3 +38,14 @@
   .callPhone{
       border : 1px solid white;
   }
+
+  .imgFeatures{
+      max-width: 60%;
+  }
+
+  .sebm-google-map-container-inner[_ngcontent-qdx-40] {
+    width: 102%;
+    height: inherit;
+    margin-left: -1%;
+    margin-top: -1%;
+}

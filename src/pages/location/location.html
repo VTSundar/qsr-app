@@ -5,13 +5,21 @@
 </ion-header>-->
 
 <ion-content padding class="bgRes">
-    <ion-header class="headerStore">{{firstParam.header}}
+    <ion-header class="headerStore" *ngIf = "platFormType == 'Windows' ">{{firstParam.header}}
     <ion-fab top left edge class="leftFab">
-    <button ion-fab mini><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
+    <button ion-fab mini (click)="backToRestraunt()"><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
   </ion-fab>
     <ion-fab top right edge>
     <button ion-fab mini><ion-icon name="add"></ion-icon></button>
-  </ion-fab></ion-header><br><br>
+  </ion-fab></ion-header>
+  <ion-header class="headerStoreMob" *ngIf = "platFormType !== 'Windows' ">{{firstParam.header}}
+    <ion-fab top left edge class="leftFab">
+    <button ion-fab mini (click)="backToRestraunt()"><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
+  </ion-fab>
+    <ion-fab top right edge>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+  </ion-fab></ion-header>
+  <br><br><br><br>
   <sebm-google-map 
       [latitude]="lat"
       [longitude]="lng"
@@ -36,19 +44,32 @@
       </sebm-google-map-marker>
       
       <sebm-google-map-circle [latitude]="lat + 0.3" [longitude]="lng" 
-          [radius]="5000"
+          [radius]="10000"
           [fillColor]="'red'"
           [circleDraggable]="true"
           [editable]="true">
       </sebm-google-map-circle>
 
-    </sebm-google-map> <hr class="mapBorder">
-    <span class="locMiles">{{firstParam.miles}}</span> <p class="locDet">{{firstParam.name}} </p> 
-    <p class="locDet">{{firstParam.timings}}</p> 
+    </sebm-google-map>
+    <p style="color: white;font-size: 15px;margin-left: 1.5rem;">Features <span style="float: right;">Distance</span></p>
+    <p><img class="imgFeatures" src="../../assets/imgs/features.png" /> <span style="float: right;color: #ff871c;font-weight: bold;font-size: 20px;">{{firstParam.long}} <span style="color:white;font-size: 15px;"> MI </span></span> </p>
+    
+    <div style="background:white;width: 135rem;margin-left: -1%;">
+      <p  class="locAdd" style="padding-top: 1rem;">Address</p>
+      <p class="locDet">{{firstParam.name}} </p> 
+      <p class="locDet">{{firstParam.header}} </p> 
     <p class="locDet">{{firstParam.mobileNo}}</p>
-    <p *ngIf = "platFormType !== 'Windows' "> <a ion-button href="tel:+(949) 588-0716" class="callPhone" color="callPhone" ><ion-icon ios="ios-call-outline"></ion-icon>&nbsp;CALL</a> </p>
+    <!--<p *ngIf = "platFormType !== 'Windows' "> 
+      <a ion-button href="tel:+(949) 588-0716" class="callPhone" color="callPhone" ><ion-icon ios="ios-call-outline"></ion-icon>&nbsp;CALL</a> 
+      </p> -->
+      <p  class="locAdd">Timings</p>
+      <p class="locDet">M-F : {{firstParam.timingsWeekDays}} </p> 
+      <p class="locDet">Sat : {{firstParam.timingSat}} </p> 
+      <p class="locDet">Sun : {{firstParam.timingSun}} </p> 
+      <br><br>
+      </div>
 </ion-content>
-
+<!--
 <ion-footer>
     <button class="defaultBtn" color="defaultBtn" ion-button full item-left (click)="selectFav()">SAVE AS FAVOURITE</button>
-</ion-footer>
+</ion-footer>-->
