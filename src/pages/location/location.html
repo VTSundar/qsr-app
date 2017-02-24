@@ -1,12 +1,17 @@
-<ion-header>
+<!--<ion-header>
   <ion-navbar>
-      <!--<ion-icon name="arrow-back" (click)="backToMain()" medium></ion-icon>-->
-      <!--<ion-title style="float:left;vertical-align: middle;color:blue;"> <span class="backBtn" (click)="backToRestraunt()"> < BACK </span></ion-title>-->
       <ion-title>MAP</ion-title>
     </ion-navbar>  
-</ion-header>
+</ion-header>-->
 
 <ion-content padding class="bgRes">
+    <ion-header class="headerStore">{{firstParam.header}}
+    <ion-fab top left edge class="leftFab">
+    <button ion-fab mini><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
+  </ion-fab>
+    <ion-fab top right edge>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+  </ion-fab></ion-header><br><br>
   <sebm-google-map 
       [latitude]="lat"
       [longitude]="lng"
