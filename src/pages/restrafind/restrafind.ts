@@ -4,8 +4,9 @@ import { Component } from '@angular/core';
 import { NavController , LoadingController } from 'ionic-angular';
 // import { LoginPage } from '../login/login';
 import { LocationMapPage } from '../location/location';
-import { Providers} from '../../providers/provider'
-import { HomePage } from '../home/home'
+import { Providers} from '../../providers/provider';
+import { HomePage } from '../home/home';
+import { StartscreenPage } from '../startscreen/startscreen';
 
 @Component({
   selector: 'page-rest',
@@ -29,14 +30,14 @@ export class RestraFind {
       'mapData' : data
     });
   }
-  public backToMain(){
+  public backToStartPage(){
      this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 3000,
       //  dismissOnPageChange: true
     }).present();
     
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push(StartscreenPage);
   }
 
 }

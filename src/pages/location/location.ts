@@ -22,8 +22,8 @@ export class LocationMapPage {
   locName : string = this.locName;
   // console.log(JSON.stringify(locName));
   zoom: number = 5;
-  lat: number = 33.678811;
-  lng: number = -117.663948;
+  lat: number = 33.4483771;
+  lng: number = -112.07403729999999;
 
   clickedMarker(label: string, index: number) {
     console.log(`clicked the marker: ${label || index}`)
