@@ -3,7 +3,8 @@ import { Component} from '@angular/core';
 import { NavController,NavParams , LoadingController , Platform } from 'ionic-angular';
 import { SelectMenuPage } from '../selectmenu/selectmenu';
 import { RestraFind } from '../restrafind/restrafind';
-import { Providers} from '../../providers/provider'
+import { Providers} from '../../providers/provider';
+import { CardMenuPage } from '../cardmenu/cardmenu';
 
 
 @Component({
@@ -63,6 +64,15 @@ export class LocationMapPage {
       //  dismissOnPageChange: true
     }).present();
     this.navCtrl.push(RestraFind);
+  }
+
+  clickToMenuItems(){
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      //  dismissOnPageChange: true
+    }).present();
+    this.navCtrl.push(CardMenuPage);
   }
 
 }

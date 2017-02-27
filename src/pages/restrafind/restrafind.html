@@ -1,17 +1,13 @@
-<!--<ion-header>
-  <ion-navbar>
-      <ion-title>RESTAURANTS</ion-title>
-    </ion-navbar>
-</ion-header>-->
-
-<ion-content padding class="page-home1">
-  <ion-header class="headerStore">NEAR BY STORES
+<ion-header class="headerStore">NEAR BY STORES
     <ion-fab top left edge class="leftFab">
     <button ion-fab mini (click)="backToStartPage()"><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
   </ion-fab>
     <ion-fab top right edge>
     <button ion-fab mini><ion-icon name="add"></ion-icon></button>
-  </ion-fab></ion-header><br><br><br><br>
+  </ion-fab></ion-header>
+
+<ion-content padding class="page-home1">
+  <ion-scroll scrollY="true">
   <ion-searchbar placeholder="Store, City or Zipcode" showCancelButton="true"></ion-searchbar>
   <p class="recCount"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Totally <strong> 10 </strong> Stores Found <br><br>
   <ion-item *ngFor="let item of restraList.items" class="bgItem" (click)="slideNav(item)">
@@ -29,6 +25,7 @@
       
     </ion-item>
   </p>
+</ion-scroll>
 </ion-content>
 
 <!--<ion-footer>
