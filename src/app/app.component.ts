@@ -12,7 +12,7 @@ import { RegistrationPage } from '../pages/registration/registration';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = LoginPage;
+  rootPage = StartscreenPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
