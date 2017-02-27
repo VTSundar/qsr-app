@@ -5,6 +5,7 @@
 </ion-header>
 
 <ion-content *ngIf = "platFormType == 'Windows'" style="top: 4%;">
+  <ion-scroll scrollY="true">
   <ion-list>
     <ion-item class="overflowImg">
         <p class="imgSlide" (click)="listFav(item)" *ngFor="let item of api.cardMenuList">
@@ -13,10 +14,12 @@
         </p>
     </ion-item>
   </ion-list>
+  </ion-scroll>
 </ion-content>
 
 
 <ion-content class="card-background-page" *ngIf = "platFormType !== 'Windows'" [class.no-scroll]="overlay">
+  <ion-scroll scrollY="true">
   <ion-fab edge top right class="fab-icon" (click)="showMenu()" *ngIf="!overlay">
     <button ion-fab mini>
       <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
@@ -101,4 +104,5 @@
       </ion-toolbar>
     </ion-footer>
   </div>
+  </ion-scroll>
 </ion-content>

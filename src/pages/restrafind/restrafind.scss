@@ -147,7 +147,7 @@ ion-searchbar {
 
 .headerStore {
     text-align: center;
-    font-size: 120%;
+    font-size: 110%;
     color: #ffffff;
     line-height: 74px;
     height: 70px;
@@ -193,12 +193,33 @@ ion-fab[top][edge] {
     text-align: center;
 }
 
-.recCount{
+.recCount {
     color: #9b9b9b;
     background: white;
     border-radius: 5px;
     padding-top: 2rem;
     font-size: 13px;
+    // overflow-y: auto;
+    // height: 395px;
+}
+
+.recCount1{
+    color: #9b9b9b;
+    background: white;
+    border-radius: 5px;
+    padding-top: 2rem;
+    font-size: 13px;
+    // overflow-y: auto;
+    // height: 465px;
+}
+
+ion-scroll {
+    position: initial;
+    display: block;
+}
+
+.scroll-content {
+    overflow-y: hidden;
 }
 
 .item-md h2 {
@@ -210,8 +231,28 @@ ion-fab[top][edge] {
 .item-md.item-block .item-inner {
     padding-right: 8px;
     border-bottom: 1px solid #dedede;
-    margin-left: -5rem;
-    margin-right: 2rem;
+    margin-left: -5rem !important;
+    margin-right: 2rem !important;
+}
+
+.item-ios {
+    position: relative;
+    padding-left: 16px;
+    border-radius: 0;
+    font-size: 1.7rem;
+    color: #747474;
+    background-color: #fff;
+    padding-right: 0px;
+    border-bottom: 1px solid #dedede;
+    margin-left: 0rem !important;
+    transition: background-color 200ms linear;
+}
+
+.item-ios h2 {
+    margin: 0 0 2px;
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-left: 0rem !important;
 }
   
 
