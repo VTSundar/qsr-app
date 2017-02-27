@@ -12,17 +12,19 @@ import { NavController , LoadingController, Platform } from 'ionic-angular';
 })
 export class CardMenuPage {
   public platFormType : any;
+  public overlay : any;
 // private nav:NavController = null;
-  constructor(public navCtrl: NavController , public loadingCtrl: LoadingController, public cardMenuList : Providers,public platform: Platform) {
+  constructor(public navCtrl: NavController , public loadingCtrl: LoadingController, public api : Providers,public platform: Platform) {
+    this.overlay = false;
      if (this.platform.is('android')) {
-     this.platFormType = 'Mobile';
-   }
-   else if(this.platform.is('ios')){
-     this.platFormType = 'Ios';
-   }
-   else{
         this.platFormType = 'Mobile';
-   }
+      }
+      else if(this.platform.is('ios')){
+        this.platFormType = 'Ios';
+      }
+      else{
+            this.platFormType = 'Mobile';
+      }
   }
 
   createAccount(){
@@ -48,11 +50,16 @@ export class CardMenuPage {
       content: 'Please wait...',
       duration: 3000,
       // dismissOnPageChange: true
-    }).present();
-    this.navCtrl.push(ListFavPage,{
-      'headerName' : data
-    });
+      }).present();
+      this.navCtrl.push(ListFavPage,{
+        'headerName' : data
+      });
     }
-  
+    showMenu(){
+      this.overlay = true;
+    }
+    closeMenu(){
+      this.overlay = false;
+    }
 
 }
