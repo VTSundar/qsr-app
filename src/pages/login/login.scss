@@ -6,9 +6,10 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     overflow-y: scroll;
+    overflow: auto;
 }
 .leftBtn{
-    background-color: orange;
+    background-color: #d1711b;
 }
 .leftFab-login{
     padding: 10px;
@@ -24,7 +25,7 @@
     line-height: 50px;
 }
 .loginImgDiv{
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
 }
 .item-md {
@@ -40,17 +41,17 @@
     transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .loginInputDiv{
-    padding-right: 7%;
-    padding-left: 7%;
+    padding-right: 15%;
+    padding-left: 15%;
     padding-top:5px;
 }
 .btnContinue{
-    background-color: orange;
+    background-color: #ff9433;
     border-radius: 2px;
     margin-top: 35px;
 }
 .button-md:hover:not(.disable-hover) {
-    background-color: orange;
+    background-color: #ff9433;
 }
 .item-inner{
     padding-top:12px !important;
@@ -71,22 +72,28 @@
     // border: 1px solid;
 }
 .start-btn-container-login{
-    width: 300px;
+    /* width: 300px; */
     margin: 0 auto;
     border: none !important;
 }
 .start-btn-col-login1{
     text-align: center;
-    border-right: 1px solid orange !important;
-    padding: 10px;
+    border-right: 1px solid #ff9433 !important;
+    padding: 10px 0px 10px 10px;
     color: #fff;
     cursor: pointer;
+    font-size: 12px;
+    max-width: 100% !important;
+    height: auto !important;
 }
 .start-btn-col-login2{
     text-align: center;
-    padding: 10px;
+    padding: 10px 10px 10px 0px;
     color: #fff;
     cursor: pointer;
+    font-size: 12px;
+    max-width: 100% !important;
+    height: auto !important;
 }
 .loginfooter{
     text-align: center;
@@ -98,4 +105,26 @@
 }
 .login-row{
     line-height: 1px;
+    padding-top: 10px;
+}
+@media (min-width:270px) and (max-width:370px){
+    .start-btn-col-login2{
+    text-align: center;
+    padding: 10px 10px 10px 0px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 8px;
+    max-width: 100% !important;
+    height: auto !important;
+}
+.start-btn-col-login1{
+    text-align: center;
+    border-right: 1px solid #ff9433 !important;
+    padding: 10px 0px 10px 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 8px;
+    max-width: 100% !important;
+    height: auto !important;
+}
 }
