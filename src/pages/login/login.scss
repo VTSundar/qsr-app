@@ -44,6 +44,8 @@
     padding-right: 15%;
     padding-left: 15%;
     padding-top:5px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 .btnContinue{
     background-color: #ff9433;
@@ -127,4 +129,38 @@
     max-width: 100% !important;
     height: auto !important;
 }
+}
+@media (min-width:270px) and (max-width:880px){
+    .start-btn-col-login2{
+    text-align: center;
+    padding: 10px 10px 10px 0px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+    max-width: 100% !important;
+    height: auto !important;
+}
+.start-btn-col-login1{
+    text-align: center;
+    border-right: 1px solid #ff9433 !important;
+    padding: 10px 0px 10px 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+    max-width: 100% !important;
+    height: auto !important;
+}
+.loginInputDiv{
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top:5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+}
+.item-label-stacked .text-input-md, .item-label-floating .text-input-md {
+    /* margin-top: 8px; */
+    margin-bottom: 8px;
+    margin-left: 0;
+    width: calc(100% - 8px);
 }

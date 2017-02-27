@@ -18,7 +18,7 @@ export class StartscreenPage {
 
   }
 
-  createAccount(){
+  public createAccount(){
     this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 3000,
@@ -26,7 +26,7 @@ export class StartscreenPage {
     }).present();
         this.navCtrl.push(RestraFind);
     }
-    gotoLogin(){
+    public gotoLogin(){
       this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 3000,
@@ -34,7 +34,7 @@ export class StartscreenPage {
     }).present();
         this.navCtrl.push(LoginPage);
     }
-    gotoSignup(){
+    public gotoSignupPg(){
        this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 3000,
