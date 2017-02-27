@@ -1,4 +1,4 @@
-.start-screen-content{
+.loginContent{
     background: url("../../assets/imgs/startscreen.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -74,4 +74,8 @@
     border-radius: 0;
     background: #fff;
     opacity: 1;
+}
+.content-md {
+    color: #000;
+    background-color: black !important;
 }
