@@ -12,7 +12,7 @@
     <ion-fab top right edge>
     <button ion-fab mini><ion-icon name="add"></ion-icon></button>
   </ion-fab></ion-header><br><br><br><br>
-  <ion-searchbar placeholder="Store, City or Zipcode" showCancelButton="true"></ion-searchbar>
+  <ion-searchbar (ionInput)="getItems($event)" placeholder="Store, City or Zipcode" showCancelButton="true"></ion-searchbar>
   <p class="recCount"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Totally <strong> 10 </strong> Stores Found <br><br>
   <ion-item *ngFor="let item of restraList.items" class="bgItem" (click)="slideNav(item)">
       <ion-avatar item-left>

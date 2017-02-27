@@ -110,3 +110,21 @@
     margin-left: 0;
     width: calc(100% - 8px);
 }
+.item-ios {
+    position: relative;
+    padding-left: 16px;
+    border-radius: 0;
+    font-size: 1.6rem;
+    color: white;
+    background-color: transparent !important;
+    transition: background-color 200ms linear;
+    border-top: none !important;
+}
+.toolbar-title-ios {
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    padding-top: 24px;
+    pointer-events: auto;
+}

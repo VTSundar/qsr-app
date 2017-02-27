@@ -5,9 +5,10 @@ import {Http} from '@angular/http';
 @Injectable()
 export class Providers{
     constructor(public http : Http){}
-
+    items: any;
     // Restaurant List
-    items = [
+    restraListItems(){
+    this.items = [
     {
       'name' : '26702 PORTOLA PARKWAY',
       'header' : 'FOOTHILL RANCH, CA',
@@ -118,7 +119,8 @@ export class Providers{
       'timingSun' : '9.00am - 12.00pm',
       'mobileNo' : '(867) 876-5435'
     }
-  ];
+    ];
+  }
 
   //Map Latitude and Longitude 
   markers = [
