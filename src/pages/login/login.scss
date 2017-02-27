@@ -107,3 +107,24 @@
     line-height: 1px;
     padding-top: 10px;
 }
+@media (min-width:270px) and (max-width:370px){
+    .start-btn-col-login2{
+    text-align: center;
+    padding: 10px 10px 10px 0px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 8px;
+    max-width: 100% !important;
+    height: auto !important;
+}
+.start-btn-col-login1{
+    text-align: center;
+    border-right: 1px solid #ff9433 !important;
+    padding: 10px 0px 10px 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 8px;
+    max-width: 100% !important;
+    height: auto !important;
+}
+}
