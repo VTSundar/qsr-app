@@ -6,26 +6,16 @@
                     <ion-grid class="item-detail-header-grid">
                         <ion-row class="item-detail-header-row">
                             <ion-col width-50>
-                                <ion-icon name="arrow-back" class="item-detail-header-icon"></ion-icon>
+                                <ion-icon name="arrow-back" (click)="backToCardMenu()" class="item-detail-header-icon"></ion-icon>
                             </ion-col>
                             <ion-col width-50 class="item-detail-header-col1">
-                                <ion-icon name="cart" class="item-detail-header-icon"></ion-icon>
+                                <ion-icon name="cart" class="item-detail-header-icon cartIcon"></ion-icon>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
                 </div>
                 <div class="item-detail-heading">
-                    <ion-grid class="item-detail-heading-grid">
-                        <ion-row class="item-detail-heading-row">
-                            <ion-col width-50 class="item-detail-heading-col1">
-                                <span>DOUBLE DECKER TACOS</span>
-                            </ion-col>
-                            <ion-col width-50 class="item-detail-heading-col2">
-                                <span>$4.74</span>
-                                <!--<span class="cal">320 CAL</span>-->
-                            </ion-col>
-                        </ion-row>
-                    </ion-grid>
+                    <p style="color: white;font-size: 17px;margin-left: 0.5rem;font-weight: bold;white-space: initial;">DOUBLE DECKER TACOS <span style="float: right;">{{rate}} <br> <span style="color: #ff871c;font-size: 15px;"> {{cal}} </span> </span></p>
                 </div>
             </ion-col>
         </ion-row>
@@ -43,16 +33,16 @@
                         <ion-col>
                             <ion-grid class="item-size-det-grid">
                                 <ion-row class="item-size-det-grid-row1">
-                                    <ion-col width-40>
-                                        <div>Small</div>
+                                    <ion-col width-40 (click)="qtyBind('Small');">
+                                        <div class="qtysize">Small</div>
                                         <div>$4.74</div>
                                     </ion-col>
-                                    <ion-col width-40 class="item-size-det-col2">
-                                        <div>Medium</div>
+                                    <ion-col width-40 class="item-size-det-col2" (click)="qtyBind('Medium');">
+                                        <div class="qtysize">Medium</div>
                                         <div>$5.74</div>
                                     </ion-col>
-                                    <ion-col width-40>
-                                        <div>Large</div>
+                                    <ion-col width-40 (click)="qtyBind('Large');">
+                                        <div class="qtysize">Large</div>
                                         <div>$6.84</div>
                                     </ion-col>
                                 </ion-row>
@@ -74,7 +64,7 @@
                                 </ion-row>
                                 <ion-row>
                                     <ion-col class="add-to-cart-btn">
-                                        <button ion-button>ADD TO CART</button>
+                                        <button ion-button style="width: 25rem;background:#ff871c;">ADD TO CART</button>
                                     </ion-col>
                                 </ion-row>
                             </ion-grid>
