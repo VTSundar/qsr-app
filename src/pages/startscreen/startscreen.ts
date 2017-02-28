@@ -21,25 +21,15 @@ export class StartscreenPage {
   public createAccount(){
     this.loadingCtrl.create({
       content: 'Please wait...',
-      duration: 3000,
+      duration: 1000,
       // dismissOnPageChange: true
     }).present();
         this.navCtrl.push(RestraFind);
     }
     public gotoLogin(){
-      this.loadingCtrl.create({
-      content: 'Please wait...',
-      duration: 3000,
-      // dismissOnPageChange: true
-    }).present();
         this.navCtrl.push(LoginPage);
     }
     public gotoSignupPg(){
-       this.loadingCtrl.create({
-      content: 'Please wait...',
-      duration: 3000,
-      // dismissOnPageChange: true
-    }).present();
         this.navCtrl.push(RegistrationPage);
     }
 }

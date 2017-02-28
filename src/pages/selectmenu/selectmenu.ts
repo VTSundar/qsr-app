@@ -17,7 +17,7 @@ export class SelectMenuPage {
   createAccount(){
     this.loadingCtrl.create({
       content: 'Please wait...',
-      duration: 3000,
+      duration: 1000,
       // dismissOnPageChange: true
     }).present();
       //  this.navCtrl.setRoot(RestraFind);
@@ -26,7 +26,7 @@ export class SelectMenuPage {
     public backToLocation(){
        this.loadingCtrl.create({
       content: 'Please wait...',
-      duration: 3000,
+      duration: 1000,
       // dismissOnPageChange: true
     }).present();
       this.navCtrl.push(RestraFind);
@@ -35,7 +35,7 @@ export class SelectMenuPage {
     listFav(data){
       this.loadingCtrl.create({
       content: 'Please wait...',
-      duration: 3000,
+      duration: 1000,
       // dismissOnPageChange: true
     }).present();
     this.navCtrl.push(ListFavPage,{

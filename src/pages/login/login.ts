@@ -15,19 +15,9 @@ export class LoginPage {
 
   }
   public regPage(){
-    this.loadingCtrl.create({
-      content: 'Please wait...',
-      duration: 3000,
-      // dismissOnPageChange: true
-    }).present();
     this.navCtrl.push(RegistrationPage);
   }
   public startupPage(){
-     this.loadingCtrl.create({
-      content: 'Please wait...',
-      duration: 3000,
-      // dismissOnPageChange: true
-    }).present();
     this.navCtrl.push(StartscreenPage);
   }
 }

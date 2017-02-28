@@ -51,7 +51,7 @@ export class LocationMapPage {
   public selectFav(){
     this.loadingCtrl.create({
       content: 'Please wait...',
-      duration: 3000,
+      duration: 1000,
       //  dismissOnPageChange: true
     }).present();
     this.navCtrl.push(SelectMenuPage);
@@ -60,7 +60,7 @@ export class LocationMapPage {
   public backToRestraunt(){
     this.loadingCtrl.create({
       content: 'Please wait...',
-      duration: 3000,
+      duration: 1000,
       //  dismissOnPageChange: true
     }).present();
     this.navCtrl.push(RestraFind);
@@ -69,7 +69,7 @@ export class LocationMapPage {
   clickToMenuItems(){
     this.loadingCtrl.create({
       content: 'Please wait...',
-      duration: 3000,
+      duration: 1000,
       //  dismissOnPageChange: true
     }).present();
     this.navCtrl.push(CardMenuPage);

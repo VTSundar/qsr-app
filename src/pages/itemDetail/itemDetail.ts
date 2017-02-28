@@ -22,7 +22,7 @@ export class ItemDetailPage {
   backToCardMenu(){
     this.loadingCtrl.create({
       content: 'Please wait...',
-      duration: 3000,
+      duration: 1000,
       // dismissOnPageChange: true
     }).present();
     this.navCtrl.push(CardMenuPage);

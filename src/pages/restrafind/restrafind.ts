@@ -47,7 +47,7 @@ export class RestraFind {
   public slideNav(data){
      this.loadingCtrl.create({
       content: 'Please wait...',
-      duration: 3000,
+      duration: 1000,
       // dismissOnPageChange: true
     }).present();
     this.navCtrl.push(LocationMapPage,{
@@ -57,7 +57,7 @@ export class RestraFind {
   public backToStartPage(){
      this.loadingCtrl.create({
       content: 'Please wait...',
-      duration: 3000,
+      duration: 1000,
       //  dismissOnPageChange: true
     }).present();
     

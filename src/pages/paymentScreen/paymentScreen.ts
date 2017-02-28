@@ -2,18 +2,11 @@ import { Component } from '@angular/core';
 
 import { NavController, LoadingController } from 'ionic-angular';
 
-import { LoginPage } from '../login/login';
-
 @Component({
-  selector: 'page-registration',
-  templateUrl: 'registration.html'
+  selector: 'payment-screen',
+  templateUrl: 'paymentScreen.html'
 })
-export class RegistrationPage {
-
+export class PaymentPage {
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController) {
-
-  }
-    public signinPage(){
-    this.navCtrl.push(LoginPage);
   }
 }
