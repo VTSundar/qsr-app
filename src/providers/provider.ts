@@ -220,22 +220,22 @@ export class Providers{
     {
       'name' : "PIZZA",
       'subname' : "FEAST | VEG DELIGHT | NON VEG | PASTA",
-      'image' : "../../assets/imgs/pizza.jpg"
+      'image' : "../../assets/imgs/menu_1_thumb.jpg"
     },
     {
       'name' : "TACOS",
       'subname' : "DOUBLE DECKER | LOCOS",
-      'image' : "../../assets/imgs/tacos.jpg"
+      'image' : "../../assets/imgs/menu_2_thumb.jpg"
     },
     {
       'name' : "COMBOS",
       'subname' : "MEXICAN | POWER MENU BOWL",
-      'image' : "../../assets/imgs/combos.jpg"
+      'image' : "../../assets/imgs/menu_3_thumb.jpg"
     },
     {
       'name' : "BURRITOS",
       'subname' : "BEAN | SMOTHERED | BEFFY",
-      'image' : "../../assets/imgs/burritos.jpg"
+      'image' : "../../assets/imgs/menu_4_thumb.jpg"
     },
   ]
 
