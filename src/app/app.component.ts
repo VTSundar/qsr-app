@@ -7,12 +7,14 @@ import { StartscreenPage } from '../pages/startscreen/startscreen';
 import { CardMenuPage } from '../pages/cardmenu/cardmenu';
 import { LoginPage } from '../pages/login/login';
 import { RegistrationPage } from '../pages/registration/registration';
+import { ItemDetailPage } from '../pages/itemDetail/itemDetail';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = StartscreenPage;
+  // rootPage = StartscreenPage;
+  rootPage = ItemDetailPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
