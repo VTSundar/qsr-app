@@ -31,7 +31,7 @@
 .item-md {
     position: relative;
     padding-right: 0;
-    padding-left: 16px;
+    padding-left: 51px;
     font-size: 1.6rem;
     font-weight: normal;
     text-transform: none;
@@ -44,6 +44,8 @@
     padding-right: 15%;
     padding-left: 15%;
     padding-top:5px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 .btnContinue{
     background-color: #ff9433;
@@ -55,7 +57,7 @@
 }
 .item-inner{
     padding-top:12px !important;
-    padding-right: 8px; 
+    padding-right: 0px !important; 
     border-bottom: 1px solid #dedede; 
     margin-left: 0px !important; 
     margin-right: 0px !important; 
@@ -127,4 +129,66 @@
     max-width: 100% !important;
     height: auto !important;
 }
+}
+@media (min-width:270px) and (max-width:880px){
+    .start-btn-col-login2{
+    text-align: center;
+    padding: 10px 10px 10px 0px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+    max-width: 100% !important;
+    height: auto !important;
+}
+.start-btn-col-login1{
+    text-align: center;
+    border-right: 1px solid #ff9433 !important;
+    padding: 10px 0px 10px 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+    max-width: 100% !important;
+    height: auto !important;
+}
+.loginInputDiv{
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top:5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+}
+.item-label-stacked .text-input-md, .item-label-floating .text-input-md {
+    /* margin-top: 8px; */
+    margin-bottom: 8px;
+    margin-left: 0;
+    width: calc(100% - 8px);
+}
+.item-ios {
+    position: relative;
+    padding-left: 16px;
+    border-radius: 0;
+    font-size: 1.6rem !important;
+    color: #999;
+    background-color: transparent !important;
+    transition: background-color 200ms linear;
+    border-top: none !important;
+}
+.toolbar-title-ios {
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    padding-top: 24px;
+    pointer-events: auto;
+}
+.item-ios {
+    position: relative;
+    padding-left: 0 !important;
+    border-radius: 0;
+    font-size: 1.6rem !important;
+    color: #999;
+    background-color: transparent !important;
+    transition: background-color 200ms linear;
+    border-top: none !important;
 }

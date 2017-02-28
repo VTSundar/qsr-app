@@ -4,8 +4,8 @@
   </ion-fab>
     <ion-fab top right edge>
     <button ion-fab mini><ion-icon name="add"></ion-icon></button>
-  </ion-fab></ion-header>
-
+  </ion-fab></ion-header><br><br><br><br>
+  <ion-searchbar (ionInput)="getItems($event)" placeholder="Store, City or Zipcode" showCancelButton="true"></ion-searchbar>
 <ion-content padding class="page-home1">
   <ion-scroll scrollY="true">
   <ion-searchbar placeholder="Store, City or Zipcode" showCancelButton="true"></ion-searchbar>
