@@ -14,7 +14,7 @@ import { ItemDetailPage } from '../pages/itemDetail/itemDetail';
 })
 export class MyApp {
   // rootPage = StartscreenPage;
-  rootPage = ItemDetailPage;
+  rootPage = StartscreenPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
