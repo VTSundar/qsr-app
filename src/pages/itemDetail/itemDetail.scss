@@ -1,3 +1,118 @@
-.item-detail-content{
+// .item-detail-content{
     
+// }
+.item-detail-row1{
+    height: 250px;
+    // border: 1px solid;
+    background: url("../../assets/imgs/burritos.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.item-detail-row2{
+    height: 300px;
+    // border: 1px solid;
+}
+.show-scroll .scroll-content{
+    overflow: auto;
+}
+.item-detail-content ion-grid{
+    padding: 0;
+}
+.item-detail-header{
+    height: 70px;
+    // border: 1px solid;
+    padding: 0 20px;
+    // position: absolute;
+    // width: 100%;
+}
+.item-detail-row1 ion-col{
+    padding: 0;
+}
+.item-detail-header-grid, .item-detail-heading-grid{
+    height: 100%;
+}
+.item-detail-header-row, .item-detail-heading-row{
+    height: 100%;
+}
+.item-detail-header-icon{
+    background: #ff1700;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 35px;
+    font-size: 20px;
+    color: #fff;
+}
+.item-detail-header-row ion-col, .item-detail-heading-row ion-col{
+    line-height: 70px;
+}
+.item-detail-header-col1{
+    text-align: right;
+}
+.item-detail-heading{
+    height: 70px;
+    padding: 0 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.item-detail-col1{
+    position: relative;
+}
+.item-detail-heading-col1 span, .item-detail-heading-col2 span{
+    color: #fff;
+    font-size: 24px;
+}
+.item-detail-heading-col2{
+    text-align: right;
+}
+.item-detail-row2-col1{
+    padding: 10px 20px;
+}
+.items-description{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.item-size-det-grid{
+    margin-top: 10px;
+}
+.item-size-det-grid ion-col{
+    text-align: center;
+}
+.item-size-det-col2{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.item-detail-quantity ion-icon{
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 20px;
+    color: #000;
+    border: 1px solid #ccc;
+}
+.item-detail-quantity div{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+.add-to-cart-btn{
+    text-align: center;
+}
+.item-size-det-grid-row1{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+.item-quantity{
+    font-size: 18px;
+    color: #ccc;
+    margin-top: 15px;
+}
+.item-size-det-grid-row1 ion-col{
+    font-size: 18px;
+    font-weight: bold;
 }

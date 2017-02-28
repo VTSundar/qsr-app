@@ -1,3 +1,87 @@
-<ion-content class="item-detail-content" style="background: #fff !important;">
-    <h1>item details</h1>
+<ion-content class="item-detail-content" style="background: #fff !important;" [class.show-scroll]="true">
+    <ion-grid>
+        <ion-row class="item-detail-row1">
+            <ion-col width-100 class="item-detail-col1">
+                <div class="item-detail-header">
+                    <ion-grid class="item-detail-header-grid">
+                        <ion-row class="item-detail-header-row">
+                            <ion-col width-50>
+                                <ion-icon name="arrow-back" class="item-detail-header-icon"></ion-icon>
+                            </ion-col>
+                            <ion-col width-50 class="item-detail-header-col1">
+                                <ion-icon name="cart" class="item-detail-header-icon"></ion-icon>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+                <div class="item-detail-heading">
+                    <ion-grid class="item-detail-heading-grid">
+                        <ion-row class="item-detail-heading-row">
+                            <ion-col width-50 class="item-detail-heading-col1">
+                                <span>DOUBLE DECKER TACOS</span>
+                            </ion-col>
+                            <ion-col width-50 class="item-detail-heading-col2">
+                                <span>$4.74</span>
+                                <!--<span class="cal">320 CAL</span>-->
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row class="item-detail-row2">
+            <ion-col width-100 class="item-detail-row2-col1">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <div class="items-description">
+                                A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique taco siblings sharing a bedroom, and they each choose their bunk based on personality.
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-grid class="item-size-det-grid">
+                                <ion-row class="item-size-det-grid-row1">
+                                    <ion-col width-40>
+                                        <div>Small</div>
+                                        <div>$4.74</div>
+                                    </ion-col>
+                                    <ion-col width-40 class="item-size-det-col2">
+                                        <div>Medium</div>
+                                        <div>$5.74</div>
+                                    </ion-col>
+                                    <ion-col width-40>
+                                        <div>Large</div>
+                                        <div>$6.84</div>
+                                    </ion-col>
+                                </ion-row>
+                                <ion-row>
+                                    <ion-col>
+                                        <div class="item-quantity">Quantity</div>
+                                    </ion-col>
+                                </ion-row>
+                                <ion-row>
+                                    <ion-col>
+                                        <div class="item-detail-quantity">
+                                            <div><ion-icon name="add"></ion-icon></div>
+                                            <div>2</div>
+                                            <div><ion-icon name="remove"></ion-icon></div>
+                                            <div>=</div>
+                                            <div>$9.48</div>
+                                        </div>
+                                    </ion-col>
+                                </ion-row>
+                                <ion-row>
+                                    <ion-col class="add-to-cart-btn">
+                                        <button ion-button>ADD TO CART</button>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-grid>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>
