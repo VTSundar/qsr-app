@@ -63,7 +63,7 @@
     margin-right: 0px !important; 
 }
 .inputItem{
-    padding-left:0 !important;
+    padding-left:51px !important;
 }
 .column{
     color:white;
@@ -127,4 +127,14 @@
     color: white;
     padding-top: 24px;
     pointer-events: auto;
+}
+.item-ios {
+    position: relative;
+    padding-left: 0 !important;
+    border-radius: 0;
+    font-size: 1.6rem !important;
+    color: #999;
+    background-color: transparent !important;
+    transition: background-color 200ms linear;
+    border-top: none !important;
 }
