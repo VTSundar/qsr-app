@@ -5,24 +5,25 @@
     <ion-title class="regTitle">SIGN UP</ion-title>
 </ion-header>
 <ion-content class="regContent">
+  <ion-scroll scrollY="true">
   <div class="regImgDiv">
     <img style="height:100px;" src="../../assets/imgs/jambalogo.png">
   </div>
   <div  class="regInputDiv">
 <ion-list>
-  <ion-item class="inputItem">
+  <ion-item class="inputItem-reg">
     <ion-label floating>Username</ion-label>
     <ion-input type="text"></ion-input>
   </ion-item>
-  <ion-item class="inputItem">
+  <ion-item class="inputItem-reg">
     <ion-label floating>Email Address</ion-label>
     <ion-input type="text"></ion-input>
   </ion-item>
-  <ion-item class="inputItem">
+  <ion-item class="inputItem-reg">
     <ion-label floating>Contact Number</ion-label>
     <ion-input type="text"></ion-input>
   </ion-item>
-  <ion-item class="inputItem">
+  <ion-item class="inputItem-reg">
     <ion-label floating>Password</ion-label>
     <ion-input type="password"></ion-input>
   </ion-item>
@@ -41,4 +42,5 @@
         </ion-row>
 </div>
 <div class="regfooter">Terms Of Use</div>
+</ion-scroll>
 </ion-content>
