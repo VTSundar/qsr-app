@@ -63,6 +63,11 @@ export class CardMenuPage {
       this.overlay = false;
     }
     showDetails(){
+      this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      // dismissOnPageChange: true
+    }).present();
       this.navCtrl.push(ItemDetailPage);
     }
 }
