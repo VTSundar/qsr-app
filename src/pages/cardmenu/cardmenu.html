@@ -1,10 +1,11 @@
-<ion-header *ngIf = "platFormType == 'Windows'">
+<!--<ion-header *ngIf = "platFormType == 'Windows'">
   <ion-navbar>
       <ion-title>FLAVOURS</ion-title>
     </ion-navbar>  
 </ion-header>
 
 <ion-content *ngIf = "platFormType == 'Windows'" style="top: 4%;">
+  <ion-scroll scrollY="true">
   <ion-list>
     <ion-item class="overflowImg">
         <p class="imgSlide" (click)="listFav(item)" *ngFor="let item of api.cardMenuList">
@@ -13,16 +14,18 @@
         </p>
     </ion-item>
   </ion-list>
-</ion-content>
+  </ion-scroll>
+</ion-content>-->
 
-
-<ion-content class="card-background-page" *ngIf = "platFormType !== 'Windows'" [class.no-scroll]="overlay">
+<ion-content class="card-background-page" [class.no-scroll]="overlay">
+<!--<ion-content class="card-background-page" *ngIf = "platFormType !== 'Windows'" [class.no-scroll]="overlay">-->
+  <ion-scroll scrollY="true">
   <ion-fab edge top right class="fab-icon" (click)="showMenu()" *ngIf="!overlay">
     <button ion-fab mini>
       <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
     </button>
   </ion-fab>
-  <ion-card *ngFor="let item of api.cardMenuList">
+  <ion-card *ngFor="let item of api.cardMenuList" (click)="showDetails()">
     <img [src]=item.image/>
     <div class="card-title">{{item.name}}</div>
     <div class="card-subtitle">{{item.subname}}</div>
@@ -43,7 +46,7 @@
         </ion-grid>
       </ion-toolbar> 
     </ion-header>
-    <ion-content class="overlay-content">
+    <ion-content class="overlay-content" style="background: transparent !important;">
       <!--<div class="button-bar">
         <a class="button">First</a>
         <a class="button">Second</a>
@@ -101,4 +104,5 @@
       </ion-toolbar>
     </ion-footer>
   </div>
+  </ion-scroll>
 </ion-content>
