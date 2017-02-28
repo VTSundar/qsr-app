@@ -5,6 +5,7 @@ import { NavController , LoadingController, Platform } from 'ionic-angular';
  import { RestraFind } from '../restrafind/restrafind';
  import { ListFavPage } from '../listfav/listfav';
  import { Providers} from '../../providers/provider'
+ import { ItemDetailPage} from '../itemDetail/itemDetail'
 
 @Component({
   selector: 'card-menu',
@@ -23,7 +24,7 @@ export class CardMenuPage {
         this.platFormType = 'Ios';
       }
       else{
-            this.platFormType = 'Mobile';
+            this.platFormType = 'Windows';
       }
   }
 
@@ -61,5 +62,7 @@ export class CardMenuPage {
     closeMenu(){
       this.overlay = false;
     }
-
+    showDetails(){
+      this.navCtrl.push(ItemDetailPage);
+    }
 }
