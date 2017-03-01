@@ -3,8 +3,18 @@
     color: #fff;
     line-height: 70px;
 }
-.checkout-page .toolbar-background{
+.checkout-page{
     background: #323232 !important;
+    ion-grid{
+        height: 100%;
+        padding: 0;
+    }
+    ion-row{
+        padding: 0 20px;
+    }
+    ion-col{
+        padding: 0;
+    }
 }
 .checkout-header-col2{
     text-align: center;

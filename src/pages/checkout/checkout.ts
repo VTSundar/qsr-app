@@ -8,7 +8,7 @@ import { Providers} from '../../providers/provider';
 })
 export class CheckoutPage{
     public daySwitchVal : boolean = false;
-    brightness : number = 20;
+    brightness : number = 2;
     constructor(public navCtrl: NavController, public api: Providers){
 
     }

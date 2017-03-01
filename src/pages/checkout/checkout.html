@@ -1,20 +1,28 @@
 <ion-header class="checkout-page">
-    <ion-toolbar>
+    <!--<ion-toolbar>-->
         <ion-grid>
             <ion-row>
-                <ion-col width-40>
+                <ion-col width-10>
                     <ion-icon name="close-circle" class="checkout-close"></ion-icon>
                 </ion-col>
-                <ion-col width-40 class="checkout-header-col2">
+                <ion-col width-80 class="checkout-header-col2">
                     CHECK OUT
                 </ion-col>
-                <ion-col width-40>
+                <ion-col width-10>
 
                 </ion-col>
             </ion-row>
         </ion-grid>
-    </ion-toolbar>
+    <!--</ion-toolbar>-->
 </ion-header>
+<!--<ion-header class="headerStore">CHECKOUT
+    <ion-fab top left edge class="leftFab">
+    <button ion-fab mini (click)="backToStartPage()"><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
+  </ion-fab>
+    <ion-fab top right edge>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-header>-->
 <ion-content>
     <ion-grid>
         <ion-row>
@@ -61,7 +69,7 @@
         <ion-row>
             <ion-col class="checkout-item-time-range">
                 <ion-item>
-                    <ion-range [(ngModel)]="brightness" min="0" max="22">
+                    <ion-range step="1" min="1" max="20" [(ngModel)]="brightness">
                         <ion-icon range-left small name="sunny"></ion-icon>
                         <ion-icon range-right name="sunny"></ion-icon>
                     </ion-range>
