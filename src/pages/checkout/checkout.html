@@ -1,0 +1,72 @@
+<ion-header class="checkout-page">
+    <ion-toolbar>
+        <ion-grid>
+            <ion-row>
+                <ion-col width-40>
+                    <ion-icon name="close-circle" class="checkout-close"></ion-icon>
+                </ion-col>
+                <ion-col width-40 class="checkout-header-col2">
+                    CHECK OUT
+                </ion-col>
+                <ion-col width-40>
+
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col class="checkout-store-question">
+                Where we deliver?
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="checkout-store-selected">
+                <div>
+                    <span class="store-name">Foothill Ranch, CA</span>
+                </div>
+                <div>
+                    <button ion-button>Change</button>
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="checkout-item-want">
+                When you want it?
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="checkout-item-want-ddl">
+                <div class="checkout-day-container">
+                    <div class="checkout-day-ddl">
+                        TODAY
+                        <ion-icon name="arrow-down" class="day-ddl-icon" (click)="daySwitch()"></ion-icon>
+                    </div>
+                    <div class="day-list" [hidden]="!daySwitchVal">
+                        <ul>
+                            <li>TODAY</li>
+                            <li>TOMORROW</li>
+                        </ul>
+                    </div>
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="checkout-item-time">
+                at what time you want it?{{brightness}}
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="checkout-item-time-range">
+                <ion-item>
+                    <ion-range [(ngModel)]="brightness" min="0" max="22">
+                        <ion-icon range-left small name="sunny"></ion-icon>
+                        <ion-icon range-right name="sunny"></ion-icon>
+                    </ion-range>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

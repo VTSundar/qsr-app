@@ -4,8 +4,8 @@ import { NavController , LoadingController, Platform } from 'ionic-angular';
 // import { LoadingController } from 'ionic-angular';
  import { RestraFind } from '../restrafind/restrafind';
  import { ListFavPage } from '../listfav/listfav';
- import { Providers} from '../../providers/provider'
- import { ItemDetailPage} from '../itemDetail/itemDetail'
+ import { Providers} from '../../providers/provider';
+ import { ItemDetailPage} from '../itemDetail/itemDetail';
 
 @Component({
   selector: 'card-menu',
