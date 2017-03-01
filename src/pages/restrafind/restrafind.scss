@@ -47,7 +47,7 @@ overflow-y: hidden !important;
 
 .bgItem:hover {
     color: white;
-    background-color: black;
+    background-color: black !important;
 }
 
  .defaultTxtColor {
@@ -218,7 +218,7 @@ ion-scroll {
     display: block;
 }
 
-.scroll-content {
+.page-home1 .scroll-content {
     overflow-y: hidden;
 }
 
@@ -254,6 +254,39 @@ ion-scroll {
     font-weight: normal;
     margin-left: 0rem !important;
 }
-  
+
+.label-md {
+    margin: 0px 8px 13px 0 !important;
+}
+
+.label-ios {
+    margin: -3px 8px 11px 0 !important;
+}
+
+.item-md [item-left], .item-md [item-right] {
+    margin: -3px 8px 9px 0;
+}
+
+.item-ios [item-right] {
+    margin: -3px 8px 8px 8px;
+}
+
+.item-md p {
+    overflow: inherit;
+    margin: 0 -5px 2px;
+    font-size: 1.4rem;
+    line-height: normal;
+    text-overflow: inherit;
+    color: #666;
+}
+
+.item-ios p {
+    overflow: inherit;
+    margin: 0 -5px 2px;
+    font-size: 1.4rem;
+    line-height: normal;
+    text-overflow: inherit;
+    color: #8e9093;
+}
 
 

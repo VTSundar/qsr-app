@@ -70,7 +70,7 @@ ion-card img {
   top: 0;
   left: 0;
 }
-.toolbar-background-md{
+.overlayHeader .toolbar-background-md{
   background: #ff1700 !important;
   opacity: 0.7;
 }
@@ -196,7 +196,7 @@ input::-webkit-input-placeholder {
     cursor: pointer;
 }
 
-.toolbar-background-ios {
+.overlayHeader .toolbar-background-ios {
     background: #ff1700 !important;
     opacity: 0.7;
 }

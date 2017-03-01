@@ -11,7 +11,8 @@ import { CardMenuPage } from '../cardmenu/cardmenu';
   selector: 'location-map',
   styles: [`
     .sebm-google-map-container {
-       height: 300px;
+       height: 230px;
+       width: 50rem;
      }
   `],
   templateUrl: 'location.html'
@@ -26,9 +27,17 @@ export class LocationMapPage {
   lat: number = 33.4483771;
   lng: number = -112.07403729999999;
 
-  clickedMarker(label: string, index: number) {
+  clickedMarker(label: string, index: number,data) {
     console.log(`clicked the marker: ${label || index}`)
+    console.log("call map",data);
+    this.firstParam.name = data.name;
+    this.firstParam.header = data.header;
+    this.firstParam.mobileNo = data.mobileNo;
+    this.firstParam.timingsWeekDays = data.timingsWeekDays;
+    this.firstParam.timingSat = data.timingSat;
+    this.firstParam.timingSun = data.timingSun;
   }
+
 
   constructor(public navCtrl: NavController , public params:NavParams , public loadingCtrl: LoadingController,public platform: Platform, public mapList : Providers) {
       this.firstParam = params.get("mapData");
@@ -66,13 +75,15 @@ export class LocationMapPage {
     this.navCtrl.push(RestraFind);
   }
 
-  clickToMenuItems(){
+  clickToMenuItems(data){
     this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 3000,
       //  dismissOnPageChange: true
     }).present();
-    this.navCtrl.push(CardMenuPage);
+    this.navCtrl.push(CardMenuPage,{
+      'restName' : data
+    });
   }
 
 }
