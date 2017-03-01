@@ -64,10 +64,10 @@ export class CardMenuPage {
     }
     showDetails(){
       this.loadingCtrl.create({
-      content: 'Please wait...',
-      duration: 3000,
-      // dismissOnPageChange: true
-    }).present();
+        content: 'Please wait...',
+        duration: 1000,
+        // dismissOnPageChange: true
+      }).present();
       this.navCtrl.push(ItemDetailPage);
     }
 }
