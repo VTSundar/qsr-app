@@ -15,7 +15,7 @@
                     </ion-grid>
                 </div>
                 <div class="item-detail-heading">
-                    <p style="color: white;font-size: 17px;margin-left: 0.5rem;font-weight: bold;white-space: initial;">DOUBLE DECKER TACOS <span style="float: right;">${{rate}} <br> <span style="color: #ff871c;font-size: 15px;"> {{cal}} </span> </span></p>
+                    <p style="color: white;font-size: 17px;margin-left: 0.5rem;font-weight: bold;white-space: initial;">{{itemName}} <span style="float: right;">${{rate}} <br> <span style="color: #ff871c;font-size: 15px;"> {{cal}} </span> </span></p>
                 </div>
             </ion-col>
         </ion-row>
@@ -54,10 +54,13 @@
                                 <ion-row>
                                     <ion-col>
                                         <div class="item-detail-quantity">
-                                            <div (click)="addQty('add')"><ion-icon name="add"></ion-icon></div>
-                                            <div>{{defQty}}</div>
                                             <div (click)="addQty('remove')">
-                                               <ion-icon name="remove"></ion-icon>
+                                              <p *ngIf = "defQty < 1 " disabled> <ion-icon name="remove" isActive="false"></ion-icon> </p>
+                                              <p *ngIf = "defQty > 0 "> <ion-icon name="remove"></ion-icon> </p>
+                                                </div>
+                                            <div>{{defQty}}</div>
+                                            <div (click)="addQty('add')">
+                                                <ion-icon name="add"></ion-icon>
                                                 </div>
                                             <div style="width:7%;">=</div>
                                             <div style="width:30%;">{{totRate | currency:'USD':true:'1.2-2'}}</div>

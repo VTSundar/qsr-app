@@ -25,18 +25,18 @@
       <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
     </button>
   </ion-fab>
-  <ion-card *ngFor="let item of api.cardMenuList" (click)="showDetails()">
+  <ion-card *ngFor="let item of api.cardMenuList" (click)="showDetails(item.name)">
     <img [src]=item.image/>
     <div class="card-title">{{item.name}}</div>
     <div class="card-subtitle">{{item.subname}}</div>
   </ion-card>
   <div class="menu-overlay" *ngIf="overlay">
     <ion-header>
-      <ion-toolbar class="toolbar-height">
+      <ion-toolbar class="toolbar-height overlayHeader">
         <ion-grid class="overlay-grid">
             <ion-row>
                 <ion-col width-50 class="overlay-col1">
-                  <div class="overlay-heading">Foothill Ranch, CA</div>
+                  <div class="overlay-heading">{{restName}}</div>
                   <button ion-button outline class="overlay-btn">Change Store</button>
                 </ion-col>
                 <ion-col width-50 class="overlay-col2">

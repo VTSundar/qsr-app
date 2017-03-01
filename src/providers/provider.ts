@@ -1,11 +1,18 @@
 import {Injectable} from '@angular/core';
 import {Http} from '@angular/http';
+// import { NavController, NavParams } from 'ionic-angular';
 
 
 @Injectable()
 export class Providers{
-    constructor(public http : Http){}
+  itemDetails:any;
+    constructor(public http : Http){
+      // this.itemDetails = params.get("itemDetails");
+    }
     items: any;
+    
+    itemDet = []; //Cart Details array
+
     // Restaurant List
     restraListItems(){
     this.items = [
@@ -128,37 +135,91 @@ export class Providers{
 		  lat: 33.678811,
 		  lng: -117.663948,
 		  label: '1',
-		  draggable: true
+		  draggable: true,
+      name : '26702 PORTOLA PARKWAY',
+      header : 'FOOTHILL RANCH, CA',
+      long : '1.2',
+      miles : 'Miles',
+      status : 'open',
+      timingsWeekDays : '9.30am - 11.00pm',
+      timingSat : '9.30am - 11.30pm',
+      timingSun : '9.30am - 12.00pm',
+      mobileNo : '(949) 588-0716'
 	  },
 	  {
 		  lat: 34.096068,
 		  lng: -84.277098,
 		  label: '2',
-		  draggable: false
+		  draggable: false,
+      name : '12996 ALPHARETTA HWY 9 MILTON',
+      header : 'HWY 9 MILTON, GA',
+      long : '1.5',
+      miles : 'Miles',
+      status : 'closed',
+      timingsWeekDays : '9.30am - 11.00pm',
+      timingSat : '9.30am - 11.30pm',
+      timingSun : '9.30am - 12.30pm',
+      mobileNo : '(929) 568-0654'
 	  },
 	  {
 		  lat: 34.080518,
 		  lng: -81.149110,
 		  label: '3',
-		  draggable: true
+		  draggable: true,
+      name : '12452 ALPHARETTA HWY 7 MILTON',
+      header : 'ALPHARETTA HWY, GA 30253',
+      long : '1.8',
+      miles : 'Miles',
+      status : 'closed',
+      timingsWeekDays : '9.30am - 11.00pm',
+      timingSat : '8.30am - 11.30pm',
+      timingSun : '8.00am - 12.00pm',
+      mobileNo : '(965) 234-6544'
 	  },
     {
 		  lat: 33.8302961,
 		  lng: -116.54529209999998,
 		  label: '4',
-		  draggable: true
+		  draggable: true,
+      name : '145 HARBISON BLVD COLUMBIA',
+      header : 'HARBISON BLVD, SC',
+      long : '2.1',
+      miles : 'Miles',
+      status : 'open',
+      timingsWeekDays : '9.30am - 11.00pm',
+      timingSat : '9.30am - 10.30pm',
+      timingSun : '9.30am - 11.30pm',
+      mobileNo : '(890) 543-4236'
 	  },
     {
 		  lat: 33.4483771,
 		  lng: -112.07403729999999,
 		  label: '5',
-		  draggable: true
+		  draggable: true,
+      name : '26702 PORTOLA PARKWAY FOOTHILL',
+      header : 'PORTOLA RANCH, CA',
+      long : '2.8',
+      miles : 'Miles',
+      status : 'open',
+      timingsWeekDays : '9.30am - 11.00pm',
+      timingSat : '8.30am - 12.00pm',
+      timingSun : '8.30am - 12.00pm',
+      mobileNo : '(965) 432-6546'
 	  },
     {
 		  lat: 31.7618778,
 		  lng: -106.4850217,
 		  label: '6',
-		  draggable: true
+		  draggable: true,
+      name : '145 HARBISON BLVD COLUMBIA',
+      header : 'BLVD COLUMBIA, SC',
+      long : '2.6',
+      miles : 'Miles',
+      status : 'open',
+      timingsWeekDays : '9.30am - 11.00pm',
+      timingSat : '9.30am - 12.00pm',
+      timingSun : '8.30am - 12.00pm',
+      mobileNo : '(954) 534-6463'
 	  }
   ]
 
