@@ -47,7 +47,23 @@
 
     </sebm-google-map>
     <p style="color: white;font-size: 15px;margin-left: 1.5rem;">Features <span style="float: right;">Distance</span></p>
-    <p><img class="imgFeatures" src="../../assets/imgs/features.png" /> <span style="float: right;padding-top: 10px;color: #ff871c;font-weight: bold;font-size: 20px;">{{firstParam.long}} <span style="color:white;font-size: 15px;"> MI </span></span> </p>
+    <p>
+      <img class="imgFeatures" src="../../assets/imgs/features.png" />
+    <!--<span *ngFor="let item of mapList.markers">
+      <span *ngIf = "item.features == 'three'">
+        <img class="imgFeatures" src="../../assets/imgs/open_features.png" />
+        <img class="imgFeatures" src="../../assets/imgs/breakfast.png" />
+        <img class="imgFeatures" src="../../assets/imgs/drivethru.png" />
+      </span>
+      <span *ngIf = "item.features == 'two'">
+        <img class="imgFeatures" src="../../assets/imgs/open_features.png" />
+      </span>
+      <span *ngIf = "item.features == 'one'">
+        <img class="imgFeatures" src="../../assets/imgs/drivethru.png" />
+      </span>
+    </span>-->
+     <span style="float: right;padding-top: 10px;color: #ff871c;font-weight: bold;font-size: 20px;">{{firstParam.long}} <span style="color:white;font-size: 15px;"> MI </span></span>
+      </p>
     
     <div *ngIf = "platFormType == 'Windows' " style="background:white;width: 135rem;margin-left: -1%;">
       <p  class="locAdd" style="padding-top: 1rem;">Address</p>

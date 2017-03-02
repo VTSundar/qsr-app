@@ -26,13 +26,7 @@ export class Providers{
       'timingSat' : '9.30am - 11.30pm',
       'timingSun' : '9.30am - 12.00pm',
       'mobileNo' : '(949) 588-0716',
-      features : [
-        {
-          feature1 : '../assets/imgs/open_features.png',
-          feature2 : '../assets/imgs/breakfast.png',
-          feature3 : '../assets/imgs/drivethru.png'
-        }
-      ]
+      features : 'three'
     },
     {
       'name' : '12996 ALPHARETTA HWY 9 MILTON',
@@ -44,12 +38,7 @@ export class Providers{
       'timingSat' : '9.30am - 11.30pm',
       'timingSun' : '9.30am - 12.30pm',
       'mobileNo' : '(929) 568-0654',
-      features : [
-        {
-          feature1 : '../assets/imgs/open_features.png',
-          feature3 : '../assets/imgs/drivethru.png'
-        }
-      ]
+      features : 'two'
     },
     {
       'name' : '12452 ALPHARETTA HWY 7 MILTON',
@@ -61,12 +50,7 @@ export class Providers{
       'timingSat' : '8.30am - 11.30pm',
       'timingSun' : '8.00am - 12.00pm',
       'mobileNo' : '(965) 234-6544',
-      features : [
-        {
-          feature1 : '../assets/imgs/open_features.png',
-          feature2 : '../assets/imgs/breakfast.png'
-        }
-      ]
+      features : 'one'
     },
     {
       'name' : '145 HARBISON BLVD COLUMBIA',
@@ -78,12 +62,7 @@ export class Providers{
       'timingSat' : '9.30am - 10.30pm',
       'timingSun' : '9.30am - 11.30pm',
       'mobileNo' : '(890) 543-4236',
-      features : [
-        {
-          feature2 : '../assets/imgs/breakfast.png',
-          feature3 : '../assets/imgs/drivethru.png'
-        }
-      ]
+      features : 'three'
     },
     {
       'name' : '862 S. WHITE SANDS BLVD.ALAMOGORDO',
@@ -95,13 +74,7 @@ export class Providers{
       'timingSat' : '9.00am - 11.30pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(954) 764-8768',
-      features : [
-        {
-          feature1 : '../assets/imgs/open_features.png',
-          feature2 : '../assets/imgs/breakfast.png',
-          feature3 : '../assets/imgs/drivethru.png'
-        }
-      ]
+      features : 'two'
     },
     {
       'name' : '145 HARBISON BLVD COLUMBIA',
@@ -113,11 +86,7 @@ export class Providers{
       'timingSat' : '9.30am - 12.00pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(954) 534-6463',
-      features : [
-        {
-          feature3 : '../assets/imgs/drivethru.png'
-        }
-      ]
+      features : 'one'
     },
     {
       'name' : '26702 PORTOLA PARKWAY FOOTHILL',
@@ -129,11 +98,7 @@ export class Providers{
       'timingSat' : '8.30am - 12.00pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(965) 432-6546',
-      features : [
-        {
-          feature1 : '../assets/imgs/open_features.png'
-        }
-      ]
+      features : 'three'
     },
     {
       'name' : '26702 PORTOLA FOOTHILL RANCH',
@@ -145,13 +110,7 @@ export class Providers{
       'timingSat' : '9.30am - 11.30pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(965) 876-8768',
-      features : [
-        {
-          feature1 : '../assets/imgs/open_features.png',
-          feature2 : '../assets/imgs/breakfast.png',
-          feature3 : '../assets/imgs/drivethru.png'
-        }
-      ]
+      features : 'two'
     },
     {
       'name' : '26702 PORTOLA PARKWAY RANCH',
@@ -163,11 +122,7 @@ export class Providers{
       'timingSat' : '8.30am - 11.30pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(949) 545-4564',
-      features : [
-        {
-          feature2 : '../assets/imgs/breakfast.png'
-        }
-      ]
+      features : 'one'
     },
     {
       'name' : '26702 PARKWAY FOOTHILL RANCH',
@@ -179,11 +134,7 @@ export class Providers{
       'timingSat' : '9.00am - 11.30pm',
       'timingSun' : '9.00am - 12.00pm',
       'mobileNo' : '(867) 876-5435',
-      features : [
-        {
-          feature1 : '../assets/imgs/open_features.png'
-        }
-      ]
+      features : 'three'
     }
     ];
   }
@@ -204,13 +155,7 @@ export class Providers{
       timingSat : '9.30am - 11.30pm',
       timingSun : '9.30am - 12.00pm',
       mobileNo : '(949) 588-0716',
-      features : [
-        {
-          feature1 : '../assets/imgs/open_features.png',
-          feature2 : '../assets/imgs/breakfast.png',
-          feature3 : '../assets/imgs/drivethru.png'
-        }
-      ]
+      features : 'three'
 	  },
 	  {
 		  lat: 34.096068,
@@ -226,12 +171,7 @@ export class Providers{
       timingSat : '9.30am - 11.30pm',
       timingSun : '9.30am - 12.30pm',
       mobileNo : '(929) 568-0654',
-      features : [
-        {
-          feature2 : '../assets/imgs/breakfast.png',
-          feature3 : '../assets/imgs/drivethru.png'
-        }
-      ]
+      features : 'two'
 	  },
 	  {
 		  lat: 34.080518,
@@ -247,12 +187,7 @@ export class Providers{
       timingSat : '8.30am - 11.30pm',
       timingSun : '8.00am - 12.00pm',
       mobileNo : '(965) 234-6544',
-      features : [
-        {
-          feature1 : '../assets/imgs/open_features.png',
-          feature3 : '../assets/imgs/drivethru.png'
-        }
-      ]
+      features : 'one'
 	  },
     {
 		  lat: 33.8302961,
@@ -268,11 +203,7 @@ export class Providers{
       timingSat : '9.30am - 10.30pm',
       timingSun : '9.30am - 11.30pm',
       mobileNo : '(890) 543-4236',
-      features : [
-        {
-          feature2 : '../assets/imgs/breakfast.png'
-        }
-      ]
+      features : 'two'
 	  },
     {
 		  lat: 33.4483771,
@@ -288,11 +219,7 @@ export class Providers{
       timingSat : '8.30am - 12.00pm',
       timingSun : '8.30am - 12.00pm',
       mobileNo : '(965) 432-6546',
-      features : [
-        {
-          feature3 : '../assets/imgs/drivethru.png'
-        }
-      ]
+      features : 'one'
 	  },
     {
 		  lat: 31.7618778,
@@ -308,12 +235,7 @@ export class Providers{
       timingSat : '9.30am - 12.00pm',
       timingSun : '8.30am - 12.00pm',
       mobileNo : '(954) 534-6463',
-      features : [
-        {
-          feature1 : '../assets/imgs/open_features.png',
-          feature3 : '../assets/imgs/drivethru.png'
-        }
-      ]
+      features : 'three'
 	  }
   ]
 
