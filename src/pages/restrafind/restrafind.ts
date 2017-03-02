@@ -19,7 +19,7 @@ export class RestraFind {
   constructor(public navCtrl: NavController , public loadingCtrl: LoadingController , public restraList : Providers,public platform: Platform) {
       // this.tabBarElement = document.querySelector('.tabbar.show-tabbar');
       // this.tabBarElement.style.display = 'none';
-       this.restraList.restraListItems();
+      //  this.restraList.restraListItems();
       if (this.platform.is('android')) {
      this.platFormType = 'Mobile';
    }
@@ -32,7 +32,7 @@ export class RestraFind {
   }
   public getItems(ev) {
     // Reset items back to all of the items
-    this.restraList.restraListItems();
+    // this.restraList.restraListItems();
 
     // set val to the value of the ev target
     var val = ev.target.value;

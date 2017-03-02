@@ -9,13 +9,13 @@ export class Providers{
     constructor(public http : Http){
       // this.itemDetails = params.get("itemDetails");
     }
-    items: any;
+    // items: any;
     
     itemDet = []; //Cart Details array
 
     // Restaurant List
-    restraListItems(){
-    this.items = [
+    // restraListItems(){
+    items = [
     {
       'name' : '26702 PORTOLA PARKWAY',
       'header' : 'FOOTHILL RANCH, CA',
@@ -186,7 +186,7 @@ export class Providers{
       ]
     }
     ];
-  }
+  // }
 
   //Map Latitude and Longitude 
   markers = [
