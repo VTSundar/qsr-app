@@ -19,24 +19,23 @@
 
 <ion-content class="card-background-page" [class.no-scroll]="overlay">
 <!--<ion-content class="card-background-page" *ngIf = "platFormType !== 'Windows'" [class.no-scroll]="overlay">-->
-  <ion-scroll scrollY="true">
   <ion-fab edge top right class="fab-icon" (click)="showMenu()" *ngIf="!overlay">
     <button ion-fab mini>
       <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
     </button>
   </ion-fab>
-  <ion-card *ngFor="let item of api.cardMenuList" (click)="showDetails()">
+  <ion-card *ngFor="let item of api.cardMenuList" (click)="showDetails(item.name)">
     <img [src]=item.image/>
     <div class="card-title">{{item.name}}</div>
     <div class="card-subtitle">{{item.subname}}</div>
   </ion-card>
   <div class="menu-overlay" *ngIf="overlay">
     <ion-header>
-      <ion-toolbar class="toolbar-height">
+      <ion-toolbar class="toolbar-height overlayHeader">
         <ion-grid class="overlay-grid">
             <ion-row>
                 <ion-col width-50 class="overlay-col1">
-                  <div class="overlay-heading">Foothill Ranch, CA</div>
+                  <div class="overlay-heading">{{restName}}</div>
                   <button ion-button outline class="overlay-btn">Change Store</button>
                 </ion-col>
                 <ion-col width-50 class="overlay-col2">
@@ -79,10 +78,13 @@
               </ion-row>
               </li>
             <li *ngFor="let menu of api.mainMenu">
-              <ion-row>
+              <ion-row (click)="showSubMenu(menu)">
                 <ion-col width-90>{{menu.name.toUpperCase()}}</ion-col>
-                <ion-col width-10><div class="menu-arrow"></div></ion-col>
+                <ion-col width-10><div *ngIf="menu.subMenu" class="menu-arrow" [class.menu-arrow-up]="menu.expand==true"></div></ion-col>
               </ion-row>
+              <ul *ngIf="menu.subMenu" [hidden]="!menu.expand">
+                  <li *ngFor="let sub of menu.subMenu">{{sub.name}}</li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -104,5 +106,4 @@
       </ion-toolbar>
     </ion-footer>
   </div>
-  </ion-scroll>
 </ion-content>

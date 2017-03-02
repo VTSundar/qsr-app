@@ -20,6 +20,7 @@ import { CardMenuPage } from '../pages/cardmenu/cardmenu';
 import { StartscreenPage } from '../pages/startscreen/startscreen';
 import { ItemDetailPage } from '../pages/itemDetail/itemDetail';
 import { PaymentPage } from '../pages/paymentScreen/paymentScreen';
+import { CheckoutPage } from '../pages/checkout/checkout';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { PaymentPage } from '../pages/paymentScreen/paymentScreen';
     CardMenuPage,
     StartscreenPage,
     ItemDetailPage,
-    PaymentPage
+    PaymentPage,
+    CheckoutPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -67,7 +69,8 @@ import { PaymentPage } from '../pages/paymentScreen/paymentScreen';
     CardMenuPage,
     StartscreenPage,
     ItemDetailPage,
-    PaymentPage
+    PaymentPage,
+    CheckoutPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},Providers]
 })

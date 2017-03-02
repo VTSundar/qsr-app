@@ -94,9 +94,9 @@
     color: #000;
     border: 1px solid #ccc;
 }
-.item-detail-quantity div{
+.item-detail-quantity div {
     display: inline-block;
-    width: 40px;
+    width: 46px;
     height: 40px;
     line-height: 40px;
 }
@@ -147,4 +147,23 @@
 .qtysize:hover{
     color : #ff871c;
     text-transform: uppercase;
+}
+
+.qtysize:focus{
+    color : #ff871c;
+    text-transform: uppercase;
+}
+
+.toast-ios .toast-message {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    color: white;
+    background: green;
+}
+
+.toast-md .toast-message {
+    padding: 19px 16px 17px;
+    font-size: 1.5rem;
+    color: white;
+    background: green;
 }
