@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { NavController, LoadingController, Platform, ToastController, NavParams } from 'ionic-angular';
 import { CardMenuPage } from '../cardmenu/cardmenu';
 import { Providers} from '../../providers/provider'
+import { CheckoutPage } from '../checkout/checkout';
 
 @Component({
   selector: 'page-item-detail',
@@ -28,6 +29,7 @@ export class ItemDetailPage {
       this.defQty = 1;
       this.totRate = this.rate * this.defQty;
       this.restName = params.get("storeName");
+      console.log("dasd",this.restName);
       this.itemName = params.get("matName");
       
   }
@@ -99,6 +101,7 @@ export class ItemDetailPage {
   }
 
   addToCart(){
+    console.log(this.restName);
     let toast = this.toastCtrl.create({
       message: 'Successfully added to Cart',
       duration: 3000,
@@ -120,6 +123,17 @@ export class ItemDetailPage {
     this.api.itemDet.push(this.itemCartDetails);
     this.sampleTest = this.api.itemDet;
       console.log("dasd",JSON.stringify(this.sampleTest));
+  }
+
+  goToCheckOut(){
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      // dismissOnPageChange: true
+    }).present();
+    this.navCtrl.push(CheckoutPage,{
+      'checkOutPayment' : this.sampleTest
+    });
   }
 
 }

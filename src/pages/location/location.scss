@@ -44,11 +44,17 @@
   }
 
   .sebm-google-map-container-inner[_ngcontent-qdx-40] {
-    width: 102%;
+        width: 113%;
     height: inherit;
-    margin-left: -1%;
+    margin-left: -6%;
     margin-top: -1%;
 }
+
+sebm-google-map-container-inner{
+    width: 113%;
+    margin-left: -6%;
+}
+
 
 .setPickup .button-ios {
     background-color: #ff9433;

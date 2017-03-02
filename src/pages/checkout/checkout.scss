@@ -102,3 +102,143 @@
     color: #323232;
     border-bottom: 1px solid #ccc;
 }
+
+// .checkOut .text-input-ios{
+//     border-bottom: 1px solid #ccc;     
+// }
+
+.checkOut .sampleCheck .text-input-md {
+    margin: 13px 8px 13px 8px;
+    padding: 0;
+    width: calc(100% - 8px - 8px);
+    border-bottom: 1px solid #CCC;
+}
+
+.checkOut .input-md{
+    // width: 15rem;
+    border-bottom: 1px solid #CCC;
+    // left: 4rem;
+}
+
+.checkOut .input-ios {
+    // width: 15rem;
+    border-bottom: 1px solid #CCC;
+    left: 0rem !important;
+}
+
+.checkOut .btnColor{
+    background-color: #ff9433;
+}
+
+.checkOut .text-input-ios {
+    margin: 11px 8px 11px 0;
+    padding: 0;
+    width: calc(100% - 8px);
+    color: #656565;
+    font-weight: bold;
+    text-align: right;
+}
+
+.checkOut .text-input-md {
+    margin: 11px 8px 11px 0;
+    padding: 0;
+    width: calc(100% - 8px);
+    color: #656565;
+    font-weight: bold;
+    text-align: right;
+}
+
+.checkOut .btnColorRemove{
+    background-color: #ff9433;
+    height: 2rem;
+    margin-left: -16%;
+}
+
+.segment-md .segment-button:first-of-type {
+    margin-right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.segment-md .segment-button {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    height: 3.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff9433;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    color: #ff9433;
+    background-color: transparent;
+}
+
+.segment-ios .segment-button {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    height: 3.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff9433;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    color: #ff9433;
+    background-color: transparent;
+}
+
+.segment-button {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.segment-md .segment-button {
+    color: #ff9433 !important;
+}
+
+.segment-ios .segment-button {
+    color: #ff9433 !important;
+}
+
+.segment-md .segment-button:hover {
+    color: white !important;
+    background-color: #ff9433 !important;
+}
+
+.segment-ios .segment-button:hover {
+    color: white !important;
+    background-color: #ff9433 !important;
+}
+
+.segment-md .segment-button:focus {
+    color: white !important;
+    background-color: #ff9433 !important;
+}
+
+.segment-ios .segment-button:focus {
+    color: white !important;
+    background-color: #ff9433 !important;
+}
+
+.segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+    border-color: #ff9433;
+    opacity: 1;
+    background: #ff9433;
+    color: white !important;
+}
+
+.segment-ios .segment-button.activated, .segment-ios .segment-button.segment-activated {
+    border-color: #ff9433;
+    opacity: 1;
+    background: #ff9433;
+    color: white !important;
+}

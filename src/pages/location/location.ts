@@ -12,7 +12,6 @@ import { CardMenuPage } from '../cardmenu/cardmenu';
   styles: [`
     .sebm-google-map-container {
        height: 230px;
-       width: 50rem;
      }
   `],
   templateUrl: 'location.html'
