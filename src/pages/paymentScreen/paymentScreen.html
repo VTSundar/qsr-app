@@ -1,0 +1,76 @@
+<ion-header class="headerStore">MAKE PAYMENT
+  <ion-fab top left edge class="leftFab">
+    <button ion-fab mini class="paymentBack" (click)="backToStartPage()"><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
+  </ion-fab>
+</ion-header>
+<ion-content class="cards-bg contentPay">
+  <ion-scroll scrollY="true">
+    <div class="paymentParentDiv">
+      <p class="paymentCardHeader"> Fill Your Card Details </p>
+      <ion-card class="cardPay">
+        <ion-list>
+          <div class="listItemDiv-payment">
+            <ion-item class="itemInnerPadding">
+              <ion-label floating>Name</ion-label>
+              <ion-input class="borderList" type="text"></ion-input>
+            </ion-item>
+            <ion-row>
+              <ion-col width-100 class="expDateCol">
+                <div>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col width-100 class="colCardNumber">
+                        <ion-item class="itemInnerPadding">
+                          <ion-label floating>Card Number</ion-label>
+                          <ion-input class="cardNumberInput" type="text"></ion-input>
+                           
+                        </ion-item>
+                        <img class="imgCard" src="../../assets/imgs/visa_card.png" />
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row style="margin-top: 5px;">
+              <ion-col style="width: 100%;" class="expDateCol">
+                <div>
+                  <ion-grid>
+                    <ion-row style="width: 100%;">
+                      <ion-col style="width: 70%;">
+                        <ion-item class="itemInnerPadding">
+                          <ion-label floating>Exp.Date</ion-label>
+                          <ion-datetime displayFormat="MM/YY" pickerFormat="MM YY"></ion-datetime>
+                        </ion-item>
+                      </ion-col>
+                      <ion-col style="width: 30%;">
+                        <ion-item class="cvvItem itemInnerPadding">
+                          <ion-label floating>CVV/CVC</ion-label>
+                          <ion-input type="password" class="cvvPassword"></ion-input>
+                        </ion-item>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-item class="itemInnerPadding saveCard">
+              <ion-label>
+                Save this Card
+              </ion-label>
+              <ion-toggle color="secondary" checked="false"></ion-toggle>
+            </ion-item>
+          </div>
+        </ion-list>
+      </ion-card>
+      <div class="paymentFooter">
+        <p class="totalPay">Total Payment</p>
+        <p class="totalAmount">$40.9</p>
+        <div class="footerBtnPay">
+          <button ion-button full color="payNow">Pay Now</button>
+          <div class="hoverButton"><button ion-button full outline color="payNow" class="cancelOrder">Cancel Order</button></div>
+        </div>
+      </div>
+    </div>
+  </ion-scroll>
+</ion-content>
