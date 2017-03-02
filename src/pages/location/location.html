@@ -46,7 +46,7 @@
 
     </sebm-google-map>
     <p style="color: white;font-size: 15px;margin-left: 1.5rem;">Features <span style="float: right;">Distance</span></p>
-    <p><img class="imgFeatures" src="../../assets/imgs/features.png" /> <span style="float: right;color: #ff871c;font-weight: bold;font-size: 20px;">{{firstParam.long}} <span style="color:white;font-size: 15px;"> MI </span></span> </p>
+    <p><img class="imgFeatures" src="../../assets/imgs/features.png" /> <span style="float: right;padding-top: 10px;color: #ff871c;font-weight: bold;font-size: 20px;">{{firstParam.long}} <span style="color:white;font-size: 15px;"> MI </span></span> </p>
     
     <div *ngIf = "platFormType == 'Windows' " style="background:white;width: 135rem;margin-left: -1%;">
       <p  class="locAdd" style="padding-top: 1rem;">Address</p>
@@ -61,7 +61,7 @@
       <p class="locDet">Sat : {{firstParam.timingSat}} </p> 
       <p class="locDet">Sun : {{firstParam.timingSun}} </p> 
       <p style="text-align: center;">
-        <button ion-button style="text-align: center;" (click)="clickToMenuItems()" class="defaultBtn" color="defaultBtn">SET PICKUP RESTAURANT</button> <br>
+        <button ion-button full style="text-align: center;width: 146rem !important;margin-left: 2rem !important;" (click)="clickToMenuItems()" class="defaultBtn" color="defaultBtn">SET PICKUP RESTAURANT</button> <br>
       </p>
       </div>
 

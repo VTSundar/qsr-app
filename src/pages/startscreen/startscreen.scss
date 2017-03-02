@@ -17,15 +17,18 @@
 .start-btn-container{
     width: 300px;
     margin: 0 auto;
-    border: 1px solid #fff;
-    border-radius: 8px;
+    border: 2px solid #555555;
+    // border-radius: 8px;
 }
 .start-btn-grid{
     padding: 0;
 }
+.start-btn-row{
+        background: rgba(255,255,255,0.1);
+}
 .start-btn-col1{
     text-align: center;
-    border-right: 1px solid #fff;
+    border-right: 2px solid #555555;
     padding: 10px;
     color: #fff;
     cursor: pointer;

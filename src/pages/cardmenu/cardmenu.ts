@@ -33,7 +33,7 @@ export class CardMenuPage {
   createAccount(){
     this.loadingCtrl.create({
       content: 'Please wait...',
-      duration: 3000,
+      duration: 1000,
       // dismissOnPageChange: true
     }).present();
       //  this.navCtrl.setRoot(RestraFind);
@@ -42,7 +42,7 @@ export class CardMenuPage {
     public backToLocation(){
        this.loadingCtrl.create({
       content: 'Please wait...',
-      duration: 3000,
+      duration: 1000,
       // dismissOnPageChange: true
     }).present();
       this.navCtrl.push(RestraFind);
@@ -51,7 +51,7 @@ export class CardMenuPage {
     listFav(data){
       this.loadingCtrl.create({
       content: 'Please wait...',
-      duration: 3000,
+      duration: 1000,
       // dismissOnPageChange: true
       }).present();
       this.navCtrl.push(ListFavPage,{
@@ -68,12 +68,21 @@ export class CardMenuPage {
       console.log(this.restName);
       this.loadingCtrl.create({
       content: 'Please wait...',
-      duration: 3000,
+      duration: 1000,
       // dismissOnPageChange: true
     }).present();
       this.navCtrl.push(ItemDetailPage,{
         "storeName" : this.restName,
         "matName" : data
       });
+    }
+    showSubMenu(menu){
+      if(menu.subMenu){
+        if(menu.expand){
+          menu.expand = false;
+        }else{
+          menu.expand = true;
+        }
+      }
     }
 }

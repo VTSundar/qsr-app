@@ -14,11 +14,6 @@ export class RegistrationPage {
 
   }
     public signinPage(){
-    this.loadingCtrl.create({
-      content: 'Please wait...',
-      duration: 3000,
-      // dismissOnPageChange: true
-    }).present();
     this.navCtrl.push(LoginPage);
   }
 }
