@@ -23,7 +23,7 @@
     <button ion-fab mini><ion-icon name="add"></ion-icon></button>
   </ion-fab>
 </ion-header>-->
-<ion-content>
+<ion-content class="checkOut">
     <ion-grid>
         <ion-row>
             <ion-col class="checkout-store-question">
@@ -33,10 +33,10 @@
         <ion-row>
             <ion-col class="checkout-store-selected">
                 <div>
-                    <span class="store-name">Foothill Ranch, CA</span>
+                    <span class="store-name">{{checkOut.store_name}}</span>
                 </div>
                 <div>
-                    <button ion-button>Change</button>
+                    <button ion-button class="btnColor">Change</button>
                 </div>
             </ion-col>
         </ion-row>
@@ -75,6 +75,117 @@
                     </ion-range>
                 </ion-item>
             </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="checkout-item-time">
+                you have a discount code?
+            </ion-col>
+        </ion-row>
+
+        <ion-row style="margin-left: -1rem;">
+    <ion-col offset-15 style="margin-left: 7%;"><div style="max-width: 54%;float: right;"><ion-input type="text"></ion-input></div></ion-col>
+    <ion-col offset-5>
+      <div>
+        <button ion-button class="btnColor">VERIFY</button>
+      </div>
+    </ion-col>
+  </ion-row>
+
+<ion-row>
+            <ion-col class="checkout-item-time">
+                Total Items
+            </ion-col>
+        </ion-row>
+        <ion-row center>
+            <ion-col offset-25 style="margin-left:31%;"><div style="white-space: initial;width: 50%;margin-left: -2rem;">STREET TACOS</div></ion-col>
+            <ion-col offset-25 style="margin-left: -14%;">
+      <div style="margin-left: -1rem;">
+        2 X $50 <br> <button ion-button class="btnColorRemove" style="margin-left:-4%;">REMOVE</button>
+      </div>
+    </ion-col>
+        </ion-row>
+
+        <ion-row center>
+            <ion-col offset-25 style="margin-left:31%;"><div style="white-space: initial;width: 50%;margin-left: -2rem;">STREET TACOS</div></ion-col>
+            <ion-col offset-25 style="margin-left: -14%;">
+      <div style="margin-left: -1rem;">
+        2 X $50 <br> <button ion-button class="btnColorRemove" style="margin-left:-4%;">REMOVE</button>
+      </div>
+    </ion-col>
+        </ion-row>
+      
+        <ion-row>
+            <ion-col class="checkout-item-time">
+                What's it going to be?
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="checkout-item-time">
+                            <ion-segment [(ngModel)]="travelMode" style="width: 85%;margin-left: 8%;">
+                    <ion-segment-button value="DELIVERY">
+                    DELIVERY
+                    </ion-segment-button>
+                    <ion-segment-button value="DRIVE THRU">
+                    DRIVE THRU
+                    </ion-segment-button>
+                    <ion-segment-button value="PICK UP" style="max-width: 30%;">
+                    PICK UP
+                    </ion-segment-button>
+                </ion-segment>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="checkout-item-time">
+                Order Summary
+            </ion-col>
+        </ion-row>
+<br>
+  <ion-row center style="margin-left: -5%;">
+    <ion-col offset-25><div>Sub Total</div></ion-col>
+    <ion-col offset-25>
+      <div>
+        $50
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row center style="margin-left: -5%;">
+    <ion-col offset-25><div>Sales Tax</div></ion-col>
+    <ion-col offset-25>
+      <div>
+        $0.9
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row center style="margin-left: -5%;">
+    <ion-col offset-25><div>Tip</div></ion-col>
+    <ion-col offset-25>
+      <div>
+        $00
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row center style="margin-left: -5%;">
+    <ion-col offset-25><div>Promo Code Discount</div></ion-col>
+    <ion-col offset-25>
+      <div>
+        -$10
+      </div>
+    </ion-col>
+  </ion-row>
+
+
+        <ion-row>
+            <ion-col class="checkout-item-time">
+                Total <span style="color:#ff9433;font-weight: bold;">$41</span>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+                <ion-col class="add-to-cart-btn">
+                      <button ion-button style="width: 25rem;background:#ff871c;">MAKE PAYMENT</button>
+                </ion-col>
         </ion-row>
     </ion-grid>
 </ion-content>
