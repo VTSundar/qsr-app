@@ -19,17 +19,17 @@
     -webkit-overflow-scrolling: touch;
     will-change: scroll-position;
     contain: size style layout;
-    background-color: #f8f8f8 !important;
+    // background-color: #f8f8f8 !important;
 }
-.fixed-content {
-    background-color: #f8f8f8 !important;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-}
+// .fixed-content {
+//     background-color: #f8f8f8 !important;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     display: block;
+// }
 .paymentBack{
     color: black !important;
     background: #d6d6d6  !important;
