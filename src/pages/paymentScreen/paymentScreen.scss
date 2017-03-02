@@ -5,38 +5,41 @@
     background: #323232;
     color: white;
 }
-.scroll-content {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    display: block;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    will-change: scroll-position;
-    contain: size style layout;
-    background-color: #f8f8f8 !important;
-}
-.fixed-content {
-    background-color: #f8f8f8 !important;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-}
+// .scroll-content {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     z-index: 1;
+//     display: block;
+//     overflow-x: hidden;
+//     overflow-y: scroll;
+//     -webkit-overflow-scrolling: touch;
+//     will-change: scroll-position;
+//     contain: size style layout;
+//     background-color: #f8f8f8 !important;
+// }
+// .fixed-content {
+//     background-color: #f8f8f8 !important;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     display: block;
+// }
 .paymentBack{
     color: black !important;
     background: #d6d6d6  !important;
 }
 .paymentCardHeader{
     color:#78797a;
-    background: #f8f8f8;
+    // background: #f8f8f8;
     text-align: center;
+}
+.contentPay{
+    background: #f8f8f8;
 }
 .listItemDiv-payment{
     margin-left: 15px;
