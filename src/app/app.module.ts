@@ -19,6 +19,7 @@ import { SelectMenuPage } from '../pages/selectmenu/selectmenu';
 import { CardMenuPage } from '../pages/cardmenu/cardmenu';
 import { StartscreenPage } from '../pages/startscreen/startscreen';
 import { ItemDetailPage } from '../pages/itemDetail/itemDetail';
+import { PaymentPage } from '../pages/paymentScreen/paymentScreen';
 import { CheckoutPage } from '../pages/checkout/checkout';
 
 @NgModule({
@@ -40,6 +41,7 @@ import { CheckoutPage } from '../pages/checkout/checkout';
     CardMenuPage,
     StartscreenPage,
     ItemDetailPage,
+    PaymentPage,
     CheckoutPage
   ],
   imports: [
@@ -67,6 +69,7 @@ import { CheckoutPage } from '../pages/checkout/checkout';
     CardMenuPage,
     StartscreenPage,
     ItemDetailPage,
+    PaymentPage,
     CheckoutPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},Providers]
