@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,Platform,NavParams } from 'ionic-angular';
 import { Providers} from '../../providers/provider';
 
 @Component({
@@ -9,8 +9,16 @@ import { Providers} from '../../providers/provider';
 export class CheckoutPage{
     public daySwitchVal : boolean = false;
     brightness : number = 2;
-    constructor(public navCtrl: NavController, public api: Providers){
-
+    travelMode: string = "DELIVERY";
+    public platFormType : any;
+    checkOut : any;
+    store_name : any;
+    constructor(public navCtrl: NavController, public api: Providers, public platform: Platform,public params:NavParams){
+            this.checkOut = params.get("checkOutPayment");
+            var checkOutPay = this.checkOut;
+            this.store_name = checkOutPay.name;
+            console.log("tewtwe",JSON.stringify(this.checkOut));
+            console.log("tewtwe",JSON.stringify(this.store_name));
     }
     daySwitch(){
         if(this.daySwitchVal){
