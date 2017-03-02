@@ -25,7 +25,14 @@ export class Providers{
       'timingsWeekDays' : '9.30am - 11.00pm',
       'timingSat' : '9.30am - 11.30pm',
       'timingSun' : '9.30am - 12.00pm',
-      'mobileNo' : '(949) 588-0716'
+      'mobileNo' : '(949) 588-0716',
+      features : [
+        {
+          feature1 : '../assets/imgs/open_features.png',
+          feature2 : '../assets/imgs/breakfast.png',
+          feature3 : '../assets/imgs/drivethru.png'
+        }
+      ]
     },
     {
       'name' : '12996 ALPHARETTA HWY 9 MILTON',
@@ -36,7 +43,13 @@ export class Providers{
       'timingsWeekDays' : '9.30am - 11.00pm',
       'timingSat' : '9.30am - 11.30pm',
       'timingSun' : '9.30am - 12.30pm',
-      'mobileNo' : '(929) 568-0654'
+      'mobileNo' : '(929) 568-0654',
+      features : [
+        {
+          feature1 : '../assets/imgs/open_features.png',
+          feature3 : '../assets/imgs/drivethru.png'
+        }
+      ]
     },
     {
       'name' : '12452 ALPHARETTA HWY 7 MILTON',
@@ -47,7 +60,13 @@ export class Providers{
       'timingsWeekDays' : '9.30am - 11.00pm',
       'timingSat' : '8.30am - 11.30pm',
       'timingSun' : '8.00am - 12.00pm',
-      'mobileNo' : '(965) 234-6544'
+      'mobileNo' : '(965) 234-6544',
+      features : [
+        {
+          feature1 : '../assets/imgs/open_features.png',
+          feature2 : '../assets/imgs/breakfast.png'
+        }
+      ]
     },
     {
       'name' : '145 HARBISON BLVD COLUMBIA',
@@ -58,7 +77,13 @@ export class Providers{
       'timingsWeekDays' : '9.30am - 11.00pm',
       'timingSat' : '9.30am - 10.30pm',
       'timingSun' : '9.30am - 11.30pm',
-      'mobileNo' : '(890) 543-4236'
+      'mobileNo' : '(890) 543-4236',
+      features : [
+        {
+          feature2 : '../assets/imgs/breakfast.png',
+          feature3 : '../assets/imgs/drivethru.png'
+        }
+      ]
     },
     {
       'name' : '862 S. WHITE SANDS BLVD.ALAMOGORDO',
@@ -69,7 +94,14 @@ export class Providers{
       'timingsWeekDays' : '9.30am - 11.00pm',
       'timingSat' : '9.00am - 11.30pm',
       'timingSun' : '8.30am - 12.00pm',
-      'mobileNo' : '(954) 764-8768'
+      'mobileNo' : '(954) 764-8768',
+      features : [
+        {
+          feature1 : '../assets/imgs/open_features.png',
+          feature2 : '../assets/imgs/breakfast.png',
+          feature3 : '../assets/imgs/drivethru.png'
+        }
+      ]
     },
     {
       'name' : '145 HARBISON BLVD COLUMBIA',
@@ -80,7 +112,12 @@ export class Providers{
       'timingsWeekDays' : '9.30am - 11.00pm',
       'timingSat' : '9.30am - 12.00pm',
       'timingSun' : '8.30am - 12.00pm',
-      'mobileNo' : '(954) 534-6463'
+      'mobileNo' : '(954) 534-6463',
+      features : [
+        {
+          feature3 : '../assets/imgs/drivethru.png'
+        }
+      ]
     },
     {
       'name' : '26702 PORTOLA PARKWAY FOOTHILL',
@@ -91,7 +128,12 @@ export class Providers{
       'timingsWeekDays' : '9.30am - 11.00pm',
       'timingSat' : '8.30am - 12.00pm',
       'timingSun' : '8.30am - 12.00pm',
-      'mobileNo' : '(965) 432-6546'
+      'mobileNo' : '(965) 432-6546',
+      features : [
+        {
+          feature1 : '../assets/imgs/open_features.png'
+        }
+      ]
     },
     {
       'name' : '26702 PORTOLA FOOTHILL RANCH',
@@ -102,7 +144,14 @@ export class Providers{
       'timingsWeekDays' : '9.30am - 11.00pm',
       'timingSat' : '9.30am - 11.30pm',
       'timingSun' : '8.30am - 12.00pm',
-      'mobileNo' : '(965) 876-8768'
+      'mobileNo' : '(965) 876-8768',
+      features : [
+        {
+          feature1 : '../assets/imgs/open_features.png',
+          feature2 : '../assets/imgs/breakfast.png',
+          feature3 : '../assets/imgs/drivethru.png'
+        }
+      ]
     },
     {
       'name' : '26702 PORTOLA PARKWAY RANCH',
@@ -113,7 +162,12 @@ export class Providers{
       'timingsWeekDays' : '9.30am - 11.00pm',
       'timingSat' : '8.30am - 11.30pm',
       'timingSun' : '8.30am - 12.00pm',
-      'mobileNo' : '(949) 545-4564'
+      'mobileNo' : '(949) 545-4564',
+      features : [
+        {
+          feature2 : '../assets/imgs/breakfast.png'
+        }
+      ]
     },
     {
       'name' : '26702 PARKWAY FOOTHILL RANCH',
@@ -124,7 +178,12 @@ export class Providers{
       'timingsWeekDays' : '9.30am - 11.00pm',
       'timingSat' : '9.00am - 11.30pm',
       'timingSun' : '9.00am - 12.00pm',
-      'mobileNo' : '(867) 876-5435'
+      'mobileNo' : '(867) 876-5435',
+      features : [
+        {
+          feature1 : '../assets/imgs/open_features.png'
+        }
+      ]
     }
     ];
   }
@@ -144,7 +203,14 @@ export class Providers{
       timingsWeekDays : '9.30am - 11.00pm',
       timingSat : '9.30am - 11.30pm',
       timingSun : '9.30am - 12.00pm',
-      mobileNo : '(949) 588-0716'
+      mobileNo : '(949) 588-0716',
+      features : [
+        {
+          feature1 : '../assets/imgs/open_features.png',
+          feature2 : '../assets/imgs/breakfast.png',
+          feature3 : '../assets/imgs/drivethru.png'
+        }
+      ]
 	  },
 	  {
 		  lat: 34.096068,
@@ -159,7 +225,13 @@ export class Providers{
       timingsWeekDays : '9.30am - 11.00pm',
       timingSat : '9.30am - 11.30pm',
       timingSun : '9.30am - 12.30pm',
-      mobileNo : '(929) 568-0654'
+      mobileNo : '(929) 568-0654',
+      features : [
+        {
+          feature2 : '../assets/imgs/breakfast.png',
+          feature3 : '../assets/imgs/drivethru.png'
+        }
+      ]
 	  },
 	  {
 		  lat: 34.080518,
@@ -174,7 +246,13 @@ export class Providers{
       timingsWeekDays : '9.30am - 11.00pm',
       timingSat : '8.30am - 11.30pm',
       timingSun : '8.00am - 12.00pm',
-      mobileNo : '(965) 234-6544'
+      mobileNo : '(965) 234-6544',
+      features : [
+        {
+          feature1 : '../assets/imgs/open_features.png',
+          feature3 : '../assets/imgs/drivethru.png'
+        }
+      ]
 	  },
     {
 		  lat: 33.8302961,
@@ -189,7 +267,12 @@ export class Providers{
       timingsWeekDays : '9.30am - 11.00pm',
       timingSat : '9.30am - 10.30pm',
       timingSun : '9.30am - 11.30pm',
-      mobileNo : '(890) 543-4236'
+      mobileNo : '(890) 543-4236',
+      features : [
+        {
+          feature2 : '../assets/imgs/breakfast.png'
+        }
+      ]
 	  },
     {
 		  lat: 33.4483771,
@@ -204,7 +287,12 @@ export class Providers{
       timingsWeekDays : '9.30am - 11.00pm',
       timingSat : '8.30am - 12.00pm',
       timingSun : '8.30am - 12.00pm',
-      mobileNo : '(965) 432-6546'
+      mobileNo : '(965) 432-6546',
+      features : [
+        {
+          feature3 : '../assets/imgs/drivethru.png'
+        }
+      ]
 	  },
     {
 		  lat: 31.7618778,
@@ -219,7 +307,13 @@ export class Providers{
       timingsWeekDays : '9.30am - 11.00pm',
       timingSat : '9.30am - 12.00pm',
       timingSun : '8.30am - 12.00pm',
-      mobileNo : '(954) 534-6463'
+      mobileNo : '(954) 534-6463',
+      features : [
+        {
+          feature1 : '../assets/imgs/open_features.png',
+          feature3 : '../assets/imgs/drivethru.png'
+        }
+      ]
 	  }
   ]
 

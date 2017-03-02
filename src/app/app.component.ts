@@ -9,6 +9,7 @@ import { StartscreenPage } from '../pages/startscreen/startscreen';
 // import { RegistrationPage } from '../pages/registration/registration';
 // import { ItemDetailPage } from '../pages/itemDetail/itemDetail';
 // import { CheckoutPage } from '../pages/checkout/checkout';
+// import { PaymentPage } from '../pages/paymentScreen/paymentScreen';
 
 @Component({
   templateUrl: 'app.html'
