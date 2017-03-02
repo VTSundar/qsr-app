@@ -1,6 +1,5 @@
 .cardPay{
-    width: 350px;
-    margin: 10px 0px 0px 15px;
+    width: 100%;
 }
 .titlePay{
     background: #323232;
@@ -93,8 +92,7 @@
     border-bottom: 2px solid white;
 }
 .paymentFooter{
-    width: 350px;
-    margin: 10px 0px 0px 15px;
+    width: 100;
 }
 .totalPay{
     text-align: center;
@@ -116,6 +114,7 @@
 .cancelOrder{
     border-color:#ff9433;
     color: #ff9433;
+    margin-top: 15px;
 }
 .paymentFooter .button-outline-md {
     border-width: 1px;
@@ -328,19 +327,17 @@
 .cvvItem ion-label{
     margin-left: 10px !important;
 }
-// @media (min-width:270px) and (max-width:880px){
-// .paymentFooter{
-// margin: 20px 15px 13px 18px;
-// }
-// .paymentParentDiv{
-//     width: 100% !important;
-//     margin-left: 0px !important;
-// }
-// }
-// .paymentParentDiv{
-//     width: 50%;
-//     margin-left: 26%;
-// }
+.paymentParentDiv{
+    width: 100%;
+    padding: 0 5%;
+}
+.paymentParentDiv-2{
+    width: 100%;
+    padding: 0 30%;
+}
 .itemInnerPadding ion-datetime{
     border-bottom: none !important;
+}
+.paymentParentDiv ion-card{
+    margin: 0;
 }

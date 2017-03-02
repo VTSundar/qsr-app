@@ -4,8 +4,7 @@
   </ion-fab>
 </ion-header>
 <ion-content class="cards-bg contentPay">
-  <ion-scroll scrollY="true">
-    <div class="paymentParentDiv">
+    <div [ngClass]="Platform === Windows ? 'paymentParentDiv-2' : 'paymentParentDiv'">
       <p class="paymentCardHeader"> Fill Your Card Details </p>
       <ion-card class="cardPay">
         <ion-list>
@@ -72,5 +71,4 @@
         </div>
       </div>
     </div>
-  </ion-scroll>
 </ion-content>
