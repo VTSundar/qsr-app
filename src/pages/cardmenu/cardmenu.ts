@@ -75,4 +75,13 @@ export class CardMenuPage {
         "matName" : data
       });
     }
+    showSubMenu(menu){
+      if(menu.subMenu){
+        if(menu.expand){
+          menu.expand = false;
+        }else{
+          menu.expand = true;
+        }
+      }
+    }
 }

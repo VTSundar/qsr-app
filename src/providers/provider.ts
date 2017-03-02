@@ -304,7 +304,21 @@ export class Providers{
   mainMenu = [
     {
       id: 1,
-      name: "breakfast"
+      name: "breakfast",
+      subMenu: [
+        {
+          id: 1,
+          name: "Nachos Bellgrande Combo"
+        },
+        {
+          id: 2,
+          name: "Crunchwrap Supream Combo"
+        },
+        {
+          id: 3,
+          name: "Chessy Gordita Crunch Combo"
+        }
+      ]
     },
     {
       id: 2,
@@ -312,11 +326,39 @@ export class Providers{
     },
     {
       id: 3,
-      name: "tacos"
+      name: "tacos",
+      subMenu: [
+        {
+          id: 1,
+          name: "Nachos Bellgrande Combo"
+        },
+        {
+          id: 2,
+          name: "Crunchwrap Supream Combo"
+        },
+        {
+          id: 3,
+          name: "Chessy Gordita Crunch Combo"
+        }
+      ]
     },
     {
       id: 4,
-      name: "burritos"
+      name: "burritos",
+      subMenu: [
+        {
+          id: 1,
+          name: "Nachos Bellgrande Combo"
+        },
+        {
+          id: 2,
+          name: "Crunchwrap Supream Combo"
+        },
+        {
+          id: 3,
+          name: "Chessy Gordita Crunch Combo"
+        }
+      ]
     },
     {
       id: 5,

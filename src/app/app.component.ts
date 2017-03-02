@@ -4,18 +4,17 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 // import { TabsPage } from '../pages/tabs/tabs';
 // import { StartscreenPage } from '../pages/startscreen/startscreen';
-// import { CardMenuPage } from '../pages/cardmenu/cardmenu';
+import { CardMenuPage } from '../pages/cardmenu/cardmenu';
 // import { LoginPage } from '../pages/login/login';
 // import { RegistrationPage } from '../pages/registration/registration';
 // import { ItemDetailPage } from '../pages/itemDetail/itemDetail';
-import { CheckoutPage } from '../pages/checkout/checkout';
+// import { CheckoutPage } from '../pages/checkout/checkout';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  // rootPage = StartscreenPage;
-  rootPage = CheckoutPage;
+  rootPage = CardMenuPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
