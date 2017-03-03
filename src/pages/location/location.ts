@@ -22,6 +22,7 @@ export class LocationMapPage {
   public platFormType : any;
   public parFeatures : any;
   locName : string = this.locName;
+  public resName : any;
   // console.log(JSON.stringify(locName));
   zoom: number = 5;
   lat: number = 33.4483771;
@@ -46,6 +47,7 @@ export class LocationMapPage {
       console.log("Features",JSON.stringify(this.parFeatures));
       console.log("Loca",JSON.stringify(this.firstParam));
       console.log("Loca1",JSON.stringify(paramAdd.name));
+      this.resName = paramAdd.name;
       this.locName = paramAdd.Name;
       if (this.platform.is('android')) {
      this.platFormType = 'Mobile';
@@ -84,7 +86,7 @@ export class LocationMapPage {
       //  dismissOnPageChange: true
     }).present();
     this.navCtrl.push(CardMenuPage,{
-      'restName' : data
+      'restName' : this.resName
     });
   }
 
