@@ -19,6 +19,7 @@ export class CardMenuPage {
   constructor(public navCtrl: NavController ,public params:NavParams , public loadingCtrl: LoadingController, public api : Providers,public platform: Platform) {
     this.overlay = false;
     this.restName = params.get("restName");
+    console.log(this.restName);
      if (this.platform.is('android')) {
         this.platFormType = 'Mobile';
       }

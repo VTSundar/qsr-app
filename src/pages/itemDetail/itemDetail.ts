@@ -29,7 +29,6 @@ export class ItemDetailPage {
       this.defQty = 1;
       this.totRate = this.rate * this.defQty;
       this.restName = params.get("storeName");
-      console.log("dasd",this.restName);
       this.itemName = params.get("matName");
       
   }
@@ -101,7 +100,6 @@ export class ItemDetailPage {
   }
 
   addToCart(){
-    console.log(this.restName);
     let toast = this.toastCtrl.create({
       message: 'Successfully added to Cart',
       duration: 3000,
@@ -115,14 +113,11 @@ export class ItemDetailPage {
         "name" : this.itemName,
         "size" : this.qtySize,
         "quantity" : this.defQty,
-        "price" : this.rate,
-        "store_name" : this.restName,
-        "store_id" : ""
+        "price" : this.rate
       }
     
     this.api.itemDet.push(this.itemCartDetails);
     this.sampleTest = this.api.itemDet;
-      console.log("dasd",JSON.stringify(this.sampleTest));
   }
 
   goToCheckOut(){
@@ -132,7 +127,8 @@ export class ItemDetailPage {
       // dismissOnPageChange: true
     }).present();
     this.navCtrl.push(CheckoutPage,{
-      'checkOutPayment' : this.sampleTest
+      'checkOutPayment' : this.sampleTest,
+      'storeName' : this.restName
     });
   }
 
