@@ -20,6 +20,7 @@ export class LocationMapPage {
   
   public firstParam:any;
   public platFormType : any;
+  public parFeatures : any;
   locName : string = this.locName;
   // console.log(JSON.stringify(locName));
   zoom: number = 5;
@@ -41,8 +42,8 @@ export class LocationMapPage {
   constructor(public navCtrl: NavController , public params:NavParams , public loadingCtrl: LoadingController,public platform: Platform, public mapList : Providers) {
       this.firstParam = params.get("mapData");
       var paramAdd = this.firstParam;
-      var parFeatures = paramAdd.features;
-      console.log("Features",JSON.stringify(parFeatures));
+      this.parFeatures = paramAdd.features;
+      console.log("Features",JSON.stringify(this.parFeatures));
       console.log("Loca",JSON.stringify(this.firstParam));
       console.log("Loca1",JSON.stringify(paramAdd.name));
       this.locName = paramAdd.Name;

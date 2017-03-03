@@ -19,14 +19,30 @@ export class Providers{
     {
       'name' : '26702 PORTOLA PARKWAY',
       'header' : 'FOOTHILL RANCH, CA',
-      'long' : '1.2',
+      'long' : '1.25',
       'miles' : 'Miles',
       'status' : 'open',
       'timingsWeekDays' : '9.30am - 11.00pm',
       'timingSat' : '9.30am - 11.30pm',
       'timingSun' : '9.30am - 12.00pm',
       'mobileNo' : '(949) 588-0716',
-      features : 'three'
+      features : [
+        {
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        },
+        {
+          'id': 2,
+          'name': "Drive thru",
+          'img': "../../assets/imgs/drivethru.png"
+        },
+        {
+          'id': 3,
+          'name': "Open",
+          'img': "../../assets/imgs/open_features.png"
+        }
+      ]
     },
     {
       'name' : '12996 ALPHARETTA HWY 9 MILTON',
@@ -38,7 +54,18 @@ export class Providers{
       'timingSat' : '9.30am - 11.30pm',
       'timingSun' : '9.30am - 12.30pm',
       'mobileNo' : '(929) 568-0654',
-      features : 'two'
+      features : [
+        {
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        },
+        {
+          'id': 2,
+          'name': "Drive thru",
+          'img': "../../assets/imgs/drivethru.png"
+        }
+      ]
     },
     {
       'name' : '12452 ALPHARETTA HWY 7 MILTON',
@@ -50,7 +77,13 @@ export class Providers{
       'timingSat' : '8.30am - 11.30pm',
       'timingSun' : '8.00am - 12.00pm',
       'mobileNo' : '(965) 234-6544',
-      features : 'one'
+      features : [
+        {
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        }
+      ]
     },
     {
       'name' : '145 HARBISON BLVD COLUMBIA',
@@ -62,7 +95,13 @@ export class Providers{
       'timingSat' : '9.30am - 10.30pm',
       'timingSun' : '9.30am - 11.30pm',
       'mobileNo' : '(890) 543-4236',
-      features : 'three'
+      features : [
+        {
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        }
+      ]
     },
     {
       'name' : '862 S. WHITE SANDS BLVD.ALAMOGORDO',
@@ -74,7 +113,18 @@ export class Providers{
       'timingSat' : '9.00am - 11.30pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(954) 764-8768',
-      features : 'two'
+      features : [
+        {
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        },
+        {
+          'id': 2,
+          'name': "Drive thru",
+          'img': "../../assets/imgs/drivethru.png"
+        }
+      ]
     },
     {
       'name' : '145 HARBISON BLVD COLUMBIA',
@@ -86,7 +136,23 @@ export class Providers{
       'timingSat' : '9.30am - 12.00pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(954) 534-6463',
-      features : 'one'
+       features : [
+        {
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        },
+        {
+          'id': 2,
+          'name': "Drive thru",
+          'img': "../../assets/imgs/drivethru.png"
+        },
+        {
+          'id': 3,
+          'name': "Open",
+          'img': "../../assets/imgs/open_features.png"
+        }
+      ]
     },
     {
       'name' : '26702 PORTOLA PARKWAY FOOTHILL',
@@ -98,7 +164,18 @@ export class Providers{
       'timingSat' : '8.30am - 12.00pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(965) 432-6546',
-      features : 'three'
+       features : [
+        {
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        },
+        {
+          'id': 2,
+          'name': "Drive thru",
+          'img': "../../assets/imgs/drivethru.png"
+        }
+      ]
     },
     {
       'name' : '26702 PORTOLA FOOTHILL RANCH',
@@ -110,7 +187,23 @@ export class Providers{
       'timingSat' : '9.30am - 11.30pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(965) 876-8768',
-      features : 'two'
+       features : [
+        {
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        },
+        {
+          'id': 2,
+          'name': "Drive thru",
+          'img': "../../assets/imgs/drivethru.png"
+        },
+        {
+          'id': 3,
+          'name': "Open",
+          'img': "../../assets/imgs/open_features.png"
+        }
+      ]
     },
     {
       'name' : '26702 PORTOLA PARKWAY RANCH',
@@ -122,7 +215,13 @@ export class Providers{
       'timingSat' : '8.30am - 11.30pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(949) 545-4564',
-      features : 'one'
+       features : [
+        {
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        }
+      ]
     },
     {
       'name' : '26702 PARKWAY FOOTHILL RANCH',
@@ -134,7 +233,18 @@ export class Providers{
       'timingSat' : '9.00am - 11.30pm',
       'timingSun' : '9.00am - 12.00pm',
       'mobileNo' : '(867) 876-5435',
-      features : 'three'
+       features : [
+        {
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        },
+        {
+          'id': 3,
+          'name': "Open",
+          'img': "../../assets/imgs/open_features.png"
+        }
+      ]
     }
     ];
   // }
@@ -155,7 +265,23 @@ export class Providers{
       timingSat : '9.30am - 11.30pm',
       timingSun : '9.30am - 12.00pm',
       mobileNo : '(949) 588-0716',
-      features : 'three'
+      features : [
+        {
+          id: 1,
+          name: "Breakfast",
+          img: "../../assets/imgs/breakfast.png"
+        },
+        {
+          id: 2,
+          name: "Drive thru",
+          img: "../../assets/imgs/drivethru.png"
+        },
+        {
+          id: 3,
+          name: "Open",
+          img: "../../assets/imgs/open_features.png"
+        }
+      ]
 	  },
 	  {
 		  lat: 34.096068,
@@ -171,7 +297,18 @@ export class Providers{
       timingSat : '9.30am - 11.30pm',
       timingSun : '9.30am - 12.30pm',
       mobileNo : '(929) 568-0654',
-      features : 'two'
+      features : [
+        {
+          id: 1,
+          name: "Breakfast",
+          img: "../../assets/imgs/breakfast.png"
+        },
+        {
+          id: 2,
+          name: "Drive thru",
+          img: "../../assets/imgs/drivethru.png"
+        }
+      ]
 	  },
 	  {
 		  lat: 34.080518,
@@ -187,7 +324,18 @@ export class Providers{
       timingSat : '8.30am - 11.30pm',
       timingSun : '8.00am - 12.00pm',
       mobileNo : '(965) 234-6544',
-      features : 'one'
+      features : [
+        {
+          id: 1,
+          name: "Breakfast",
+          img: "../../assets/imgs/breakfast.png"
+        },
+        {
+          id: 3,
+          name: "Open",
+          img: "../../assets/imgs/open_features.png"
+        }
+      ]
 	  },
     {
 		  lat: 33.8302961,
@@ -203,7 +351,13 @@ export class Providers{
       timingSat : '9.30am - 10.30pm',
       timingSun : '9.30am - 11.30pm',
       mobileNo : '(890) 543-4236',
-      features : 'two'
+      features : [
+        {
+          id: 3,
+          name: "Open",
+          img: "../../assets/imgs/open_features.png"
+        }
+      ]
 	  },
     {
 		  lat: 33.4483771,
@@ -219,7 +373,18 @@ export class Providers{
       timingSat : '8.30am - 12.00pm',
       timingSun : '8.30am - 12.00pm',
       mobileNo : '(965) 432-6546',
-      features : 'one'
+      features : [
+        {
+          id: 1,
+          name: "Breakfast",
+          img: "../../assets/imgs/breakfast.png"
+        },
+        {
+          id: 3,
+          name: "Open",
+          img: "../../assets/imgs/open_features.png"
+        }
+      ]
 	  },
     {
 		  lat: 31.7618778,
@@ -235,7 +400,13 @@ export class Providers{
       timingSat : '9.30am - 12.00pm',
       timingSun : '8.30am - 12.00pm',
       mobileNo : '(954) 534-6463',
-      features : 'three'
+      features : [
+        {
+          id: 1,
+          name: "Breakfast",
+          img: "../../assets/imgs/breakfast.png"
+        }
+      ]
 	  }
   ]
 
