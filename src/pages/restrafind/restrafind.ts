@@ -5,7 +5,7 @@ import { NavController , LoadingController, Platform } from 'ionic-angular';
 // import { LoginPage } from '../login/login';
 import { LocationMapPage } from '../location/location';
 import { Providers} from '../../providers/provider';
-import { HomePage } from '../home/home';
+// import { HomePage } from '../home/home';
 import { StartscreenPage } from '../startscreen/startscreen';
 
 @Component({
@@ -30,19 +30,13 @@ export class RestraFind {
         this.platFormType = 'Windows';
    }
   }
-  public getItems(ev) {
+  getItems(ev: any) {
+    console.log("called");
     // Reset items back to all of the items
     // this.restraList.restraListItems();
 
     // set val to the value of the ev target
-    var val = ev.target.value;
-
-    // if the value is an empty string don't filter the items
-    if (val && val.trim() != '') {
-      this.items = this.items.filter((item) => {
-        return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
-      })
-    }
+    // var val = ev.target.value;
   }
   public slideNav(data){
      this.loadingCtrl.create({
