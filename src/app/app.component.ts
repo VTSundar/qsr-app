@@ -3,7 +3,7 @@ import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 // import { TabsPage } from '../pages/tabs/tabs';
-import { StartscreenPage } from '../pages/startscreen/startscreen';
+// import { StartscreenPage } from '../pages/startscreen/startscreen';
 // import { CardMenuPage } from '../pages/cardmenu/cardmenu';
 // import { StartscreenPage } from '../pages/startscreen/startscreen';
 // import { CardMenuPage } from '../pages/cardmenu/cardmenu';
@@ -11,12 +11,14 @@ import { StartscreenPage } from '../pages/startscreen/startscreen';
 // import { RegistrationPage } from '../pages/registration/registration';
 // import { ItemDetailPage } from '../pages/itemDetail/itemDetail';
 // import { CheckoutPage } from '../pages/checkout/checkout';
+// import { PaymentPage } from '../pages/paymentScreen/paymentScreen';
+import { RestraFind } from '../pages/restrafind/restrafind';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = StartscreenPage;
+  rootPage = RestraFind;
   // rootPage = CardMenuPage;
   // rootPage = StartscreenPage;
   // rootPage = CheckoutPage;
