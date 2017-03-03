@@ -19,7 +19,7 @@ export class Providers{
     {
       'name' : '26702 PORTOLA PARKWAY',
       'header' : 'FOOTHILL RANCH, CA',
-      'long' : '1.2',
+      'long' : '1.25',
       'miles' : 'Miles',
       'status' : 'open',
       'timingsWeekDays' : '9.30am - 11.00pm',
@@ -28,9 +28,19 @@ export class Providers{
       'mobileNo' : '(949) 588-0716',
       features : [
         {
-          feature1 : '../assets/imgs/open_features.png',
-          feature2 : '../assets/imgs/breakfast.png',
-          feature3 : '../assets/imgs/drivethru.png'
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        },
+        {
+          'id': 2,
+          'name': "Drive thru",
+          'img': "../../assets/imgs/drivethru.png"
+        },
+        {
+          'id': 3,
+          'name': "Open",
+          'img': "../../assets/imgs/open_features.png"
         }
       ]
     },
@@ -46,8 +56,14 @@ export class Providers{
       'mobileNo' : '(929) 568-0654',
       features : [
         {
-          feature1 : '../assets/imgs/open_features.png',
-          feature3 : '../assets/imgs/drivethru.png'
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        },
+        {
+          'id': 2,
+          'name': "Drive thru",
+          'img': "../../assets/imgs/drivethru.png"
         }
       ]
     },
@@ -63,8 +79,9 @@ export class Providers{
       'mobileNo' : '(965) 234-6544',
       features : [
         {
-          feature1 : '../assets/imgs/open_features.png',
-          feature2 : '../assets/imgs/breakfast.png'
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
         }
       ]
     },
@@ -80,8 +97,9 @@ export class Providers{
       'mobileNo' : '(890) 543-4236',
       features : [
         {
-          feature2 : '../assets/imgs/breakfast.png',
-          feature3 : '../assets/imgs/drivethru.png'
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
         }
       ]
     },
@@ -97,9 +115,14 @@ export class Providers{
       'mobileNo' : '(954) 764-8768',
       features : [
         {
-          feature1 : '../assets/imgs/open_features.png',
-          feature2 : '../assets/imgs/breakfast.png',
-          feature3 : '../assets/imgs/drivethru.png'
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        },
+        {
+          'id': 2,
+          'name': "Drive thru",
+          'img': "../../assets/imgs/drivethru.png"
         }
       ]
     },
@@ -113,9 +136,21 @@ export class Providers{
       'timingSat' : '9.30am - 12.00pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(954) 534-6463',
-      features : [
+       features : [
         {
-          feature3 : '../assets/imgs/drivethru.png'
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        },
+        {
+          'id': 2,
+          'name': "Drive thru",
+          'img': "../../assets/imgs/drivethru.png"
+        },
+        {
+          'id': 3,
+          'name': "Open",
+          'img': "../../assets/imgs/open_features.png"
         }
       ]
     },
@@ -129,9 +164,16 @@ export class Providers{
       'timingSat' : '8.30am - 12.00pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(965) 432-6546',
-      features : [
+       features : [
         {
-          feature1 : '../assets/imgs/open_features.png'
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        },
+        {
+          'id': 2,
+          'name': "Drive thru",
+          'img': "../../assets/imgs/drivethru.png"
         }
       ]
     },
@@ -145,11 +187,21 @@ export class Providers{
       'timingSat' : '9.30am - 11.30pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(965) 876-8768',
-      features : [
+       features : [
         {
-          feature1 : '../assets/imgs/open_features.png',
-          feature2 : '../assets/imgs/breakfast.png',
-          feature3 : '../assets/imgs/drivethru.png'
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        },
+        {
+          'id': 2,
+          'name': "Drive thru",
+          'img': "../../assets/imgs/drivethru.png"
+        },
+        {
+          'id': 3,
+          'name': "Open",
+          'img': "../../assets/imgs/open_features.png"
         }
       ]
     },
@@ -163,9 +215,11 @@ export class Providers{
       'timingSat' : '8.30am - 11.30pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(949) 545-4564',
-      features : [
+       features : [
         {
-          feature2 : '../assets/imgs/breakfast.png'
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
         }
       ]
     },
@@ -179,9 +233,16 @@ export class Providers{
       'timingSat' : '9.00am - 11.30pm',
       'timingSun' : '9.00am - 12.00pm',
       'mobileNo' : '(867) 876-5435',
-      features : [
+       features : [
         {
-          feature1 : '../assets/imgs/open_features.png'
+          'id': 1,
+          'name': "Breakfast",
+          'img': "../../assets/imgs/breakfast.png"
+        },
+        {
+          'id': 3,
+          'name': "Open",
+          'img': "../../assets/imgs/open_features.png"
         }
       ]
     }
@@ -206,9 +267,19 @@ export class Providers{
       mobileNo : '(949) 588-0716',
       features : [
         {
-          feature1 : '../assets/imgs/open_features.png',
-          feature2 : '../assets/imgs/breakfast.png',
-          feature3 : '../assets/imgs/drivethru.png'
+          id: 1,
+          name: "Breakfast",
+          img: "../../assets/imgs/breakfast.png"
+        },
+        {
+          id: 2,
+          name: "Drive thru",
+          img: "../../assets/imgs/drivethru.png"
+        },
+        {
+          id: 3,
+          name: "Open",
+          img: "../../assets/imgs/open_features.png"
         }
       ]
 	  },
@@ -228,8 +299,14 @@ export class Providers{
       mobileNo : '(929) 568-0654',
       features : [
         {
-          feature2 : '../assets/imgs/breakfast.png',
-          feature3 : '../assets/imgs/drivethru.png'
+          id: 1,
+          name: "Breakfast",
+          img: "../../assets/imgs/breakfast.png"
+        },
+        {
+          id: 2,
+          name: "Drive thru",
+          img: "../../assets/imgs/drivethru.png"
         }
       ]
 	  },
@@ -249,8 +326,14 @@ export class Providers{
       mobileNo : '(965) 234-6544',
       features : [
         {
-          feature1 : '../assets/imgs/open_features.png',
-          feature3 : '../assets/imgs/drivethru.png'
+          id: 1,
+          name: "Breakfast",
+          img: "../../assets/imgs/breakfast.png"
+        },
+        {
+          id: 3,
+          name: "Open",
+          img: "../../assets/imgs/open_features.png"
         }
       ]
 	  },
@@ -270,7 +353,9 @@ export class Providers{
       mobileNo : '(890) 543-4236',
       features : [
         {
-          feature2 : '../assets/imgs/breakfast.png'
+          id: 3,
+          name: "Open",
+          img: "../../assets/imgs/open_features.png"
         }
       ]
 	  },
@@ -290,7 +375,14 @@ export class Providers{
       mobileNo : '(965) 432-6546',
       features : [
         {
-          feature3 : '../assets/imgs/drivethru.png'
+          id: 1,
+          name: "Breakfast",
+          img: "../../assets/imgs/breakfast.png"
+        },
+        {
+          id: 3,
+          name: "Open",
+          img: "../../assets/imgs/open_features.png"
         }
       ]
 	  },
@@ -310,8 +402,9 @@ export class Providers{
       mobileNo : '(954) 534-6463',
       features : [
         {
-          feature1 : '../assets/imgs/open_features.png',
-          feature3 : '../assets/imgs/drivethru.png'
+          id: 1,
+          name: "Breakfast",
+          img: "../../assets/imgs/breakfast.png"
         }
       ]
 	  }
