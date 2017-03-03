@@ -33,7 +33,7 @@
         <ion-row>
             <ion-col class="checkout-store-selected">
                 <div>
-                    <span class="store-name">{{checkOut.store_name}}</span>
+                    <span class="store-name">{{restName}}</span>
                 </div>
                 <div>
                     <button ion-button class="btnColor">Change</button>
@@ -96,23 +96,15 @@
                 Total Items
             </ion-col>
         </ion-row>
-        <ion-row center>
-            <ion-col offset-25 style="margin-left:31%;"><div style="white-space: initial;width: 50%;margin-left: -2rem;">STREET TACOS</div></ion-col>
+        <ion-row center *ngFor="let item of checkOut">
+            <ion-col offset-25 style="margin-left:31%;"><div style="white-space: initial;width: 50%;margin-left: -2rem;">{{item.name}} &nbsp;({{item.size}})</div></ion-col>
             <ion-col offset-25 style="margin-left: -14%;">
       <div style="margin-left: -1rem;">
-        2 X $50 <br> <button ion-button class="btnColorRemove" style="margin-left:-4%;">REMOVE</button>
+        {{item.quantity}} X ${{item.price}} <br> <button ion-button class="btnColorRemove" style="margin-left:-4%;">REMOVE</button>
       </div>
     </ion-col>
         </ion-row>
 
-        <ion-row center>
-            <ion-col offset-25 style="margin-left:31%;"><div style="white-space: initial;width: 50%;margin-left: -2rem;">STREET TACOS</div></ion-col>
-            <ion-col offset-25 style="margin-left: -14%;">
-      <div style="margin-left: -1rem;">
-        2 X $50 <br> <button ion-button class="btnColorRemove" style="margin-left:-4%;">REMOVE</button>
-      </div>
-    </ion-col>
-        </ion-row>
       
         <ion-row>
             <ion-col class="checkout-item-time">
@@ -144,7 +136,7 @@
     <ion-col offset-25><div>Sub Total</div></ion-col>
     <ion-col offset-25>
       <div>
-        $50
+        ${{totalAmt}}
       </div>
     </ion-col>
   </ion-row>
@@ -179,7 +171,7 @@
 
         <ion-row>
             <ion-col class="checkout-item-time">
-                Total <span style="color:#ff9433;font-weight: bold;">$41</span>
+                Total <span style="color:#ff9433;font-weight: bold;">${{totalAmt}}</span>
             </ion-col>
         </ion-row>
         <ion-row>

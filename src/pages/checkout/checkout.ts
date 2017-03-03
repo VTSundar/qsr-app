@@ -13,12 +13,18 @@ export class CheckoutPage{
     public platFormType : any;
     checkOut : any;
     store_name : any;
+    public restName : any;
+    public totalAmt : any;
+    public indAmt : number = 0;
     constructor(public navCtrl: NavController, public api: Providers, public platform: Platform,public params:NavParams){
             this.checkOut = params.get("checkOutPayment");
-            var checkOutPay = this.checkOut;
-            this.store_name = checkOutPay.name;
-            console.log("tewtwe",JSON.stringify(this.checkOut));
-            console.log("tewtwe",JSON.stringify(this.store_name));
+            this.restName = params.get("storeName");
+            var countLength = this.checkOut.length;
+             for(let data of this.checkOut) {
+                 data.price = +data.price;
+                      this.indAmt += data.quantity * parseInt(data.price);
+                      this.totalAmt = this.indAmt;
+             }
     }
     daySwitch(){
         if(this.daySwitchVal){
