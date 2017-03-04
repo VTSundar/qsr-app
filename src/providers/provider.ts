@@ -19,13 +19,15 @@ export class Providers{
     {
       'name' : '26702 PORTOLA PARKWAY',
       'header' : 'FOOTHILL RANCH, CA',
-      'long' : '1.25',
+      'long' : '1.2',
       'miles' : 'Miles',
       'status' : 'open',
       'timingsWeekDays' : '9.30am - 11.00pm',
       'timingSat' : '9.30am - 11.30pm',
       'timingSun' : '9.30am - 12.00pm',
       'mobileNo' : '(949) 588-0716',
+       lat: 33.678811,
+		   lng: -117.663948,
       features : [
         {
           'id': 1,
@@ -54,6 +56,8 @@ export class Providers{
       'timingSat' : '9.30am - 11.30pm',
       'timingSun' : '9.30am - 12.30pm',
       'mobileNo' : '(929) 568-0654',
+       lat: 34.096068,
+		   lng: -84.277098,
       features : [
         {
           'id': 1,
@@ -77,6 +81,8 @@ export class Providers{
       'timingSat' : '8.30am - 11.30pm',
       'timingSun' : '8.00am - 12.00pm',
       'mobileNo' : '(965) 234-6544',
+       lat: 34.080518,
+		   lng: -81.149110,
       features : [
         {
           'id': 1,
@@ -95,6 +101,8 @@ export class Providers{
       'timingSat' : '9.30am - 10.30pm',
       'timingSun' : '9.30am - 11.30pm',
       'mobileNo' : '(890) 543-4236',
+       lat: 33.8302961,
+		   lng: -116.54529209999998,
       features : [
         {
           'id': 1,
@@ -113,6 +121,8 @@ export class Providers{
       'timingSat' : '9.00am - 11.30pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(954) 764-8768',
+       lat: 33.4483771,
+		   lng: -112.07403729999999,
       features : [
         {
           'id': 1,
@@ -136,6 +146,8 @@ export class Providers{
       'timingSat' : '9.30am - 12.00pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(954) 534-6463',
+       lat: 31.7618778,
+		   lng: -106.4850217,
        features : [
         {
           'id': 1,
@@ -164,6 +176,8 @@ export class Providers{
       'timingSat' : '8.30am - 12.00pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(965) 432-6546',
+       lat: 31.7618788,
+		   lng: -106.4850217,
        features : [
         {
           'id': 1,
@@ -187,6 +201,8 @@ export class Providers{
       'timingSat' : '9.30am - 11.30pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(965) 876-8768',
+       lat: 31.7618798,
+		   lng: -106.4850217,
        features : [
         {
           'id': 1,
@@ -215,6 +231,8 @@ export class Providers{
       'timingSat' : '8.30am - 11.30pm',
       'timingSun' : '8.30am - 12.00pm',
       'mobileNo' : '(949) 545-4564',
+       lat: 31.7618678,
+		   lng: -106.4850217,
        features : [
         {
           'id': 1,
@@ -233,6 +251,8 @@ export class Providers{
       'timingSat' : '9.00am - 11.30pm',
       'timingSun' : '9.00am - 12.00pm',
       'mobileNo' : '(867) 876-5435',
+       lat: 31.7618878,
+		   lng: -106.4850217,
        features : [
         {
           'id': 1,

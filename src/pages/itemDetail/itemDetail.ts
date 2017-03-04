@@ -21,6 +21,7 @@ export class ItemDetailPage {
   itemName :any;
   itemDetailsCart : any;
   sampleTest : any;
+  public payLength : any = 0;
   constructor(public navCtrl: NavController, public params:NavParams, public platform: Platform, public loadingCtrl: LoadingController,public toastCtrl: ToastController,public api : Providers) {
     this.ionScroll = true;
     this.qtySize = 'Medium';
@@ -30,6 +31,11 @@ export class ItemDetailPage {
       this.totRate = this.rate * this.defQty;
       this.restName = params.get("storeName");
       this.itemName = params.get("matName");
+      this.payLength = params.get("checkCount");
+      if(this.payLength){
+      }else{
+        this.payLength = 'false';
+      }
       
   }
 
@@ -118,6 +124,8 @@ export class ItemDetailPage {
     
     this.api.itemDet.push(this.itemCartDetails);
     this.sampleTest = this.api.itemDet;
+    this.payLength = this.sampleTest.length;
+    // this.api.cartLength.push(this.payLength);
   }
 
   goToCheckOut(){
@@ -127,7 +135,7 @@ export class ItemDetailPage {
       // dismissOnPageChange: true
     }).present();
     this.navCtrl.push(CheckoutPage,{
-      'checkOutPayment' : this.sampleTest,
+      'checkCount' : this.payLength,
       'storeName' : this.restName
     });
   }

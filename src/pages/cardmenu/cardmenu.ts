@@ -6,6 +6,8 @@ import { NavController , NavParams, LoadingController, Platform } from 'ionic-an
  import { ListFavPage } from '../listfav/listfav';
  import { Providers} from '../../providers/provider';
  import { ItemDetailPage} from '../itemDetail/itemDetail';
+ import { LoginPage } from '../login/login';
+ import { RegistrationPage } from '../registration/registration';
 
 @Component({
   selector: 'card-menu',
@@ -19,7 +21,7 @@ export class CardMenuPage {
   constructor(public navCtrl: NavController ,public params:NavParams , public loadingCtrl: LoadingController, public api : Providers,public platform: Platform) {
     this.overlay = false;
     this.restName = params.get("restName");
-    console.log(this.restName);
+    // console.log(this.restName);
      if (this.platform.is('android')) {
         this.platFormType = 'Mobile';
       }
@@ -66,7 +68,7 @@ export class CardMenuPage {
       this.overlay = false;
     }
     showDetails(data){
-      console.log(this.restName);
+      // console.log(this.restName);
       this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 1000,
@@ -85,5 +87,14 @@ export class CardMenuPage {
           menu.expand = true;
         }
       }
+    }
+    changeStore(){
+      this.navCtrl.push(RestraFind);
+    }
+    clickToLogin(){
+      this.navCtrl.push(LoginPage);
+    }
+    clickToSignUp(){
+      this.navCtrl.push(RegistrationPage);
     }
 }

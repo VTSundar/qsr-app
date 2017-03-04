@@ -86,9 +86,13 @@ ion-card img {
   // padding-right: 4%;
   font-size: 45px;
   color: #fff;
+  position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 0;
 }
 .overlay-heading{
-  font-size: 18px;
+  font-size: 16px;
   color: #ff871c;
 }
 .overlay-btn{
@@ -135,10 +139,10 @@ ion-card img {
     color: #ff871c;
   }
 }
-.overlay-content .scroll-content{
-  overflow: auto;
-  margin-top: 70px;
-  margin-bottom: 72px;
+.overlay-content .scroll-content {
+    overflow: auto;
+    margin-top: 90px;
+    margin-bottom: 72px;
 }
 .menu-arrow{
   background: url("../../assets/icon/down-arrow.png");
@@ -235,4 +239,16 @@ input::-webkit-input-placeholder {
 }
 .search-bar-col1 ion-input{
   color: #fff;
+}
+
+.card-background-page .menu-overlay ion-header {
+    height: 90px;
+}
+
+.card-background-page .button-md:hover:not(.disable-hover) {
+    background-color: transparent !important;
+}
+
+.card-background-page .button-ios:hover:not(.disable-hover) {
+    background-color: transparent !important;
 }

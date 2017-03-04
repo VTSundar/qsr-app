@@ -5,6 +5,7 @@ import { SelectMenuPage } from '../selectmenu/selectmenu';
 import { RestraFind } from '../restrafind/restrafind';
 import { Providers} from '../../providers/provider';
 import { CardMenuPage } from '../cardmenu/cardmenu';
+// import { AgmCoreModule } from 'angular2-google-maps/core';
 
 
 @Component({
@@ -25,8 +26,8 @@ export class LocationMapPage {
   public resName : any;
   // console.log(JSON.stringify(locName));
   zoom: number = 5;
-  lat: number = 33.4483771;
-  lng: number = -112.07403729999999;
+  public lat: number;
+  public lng: number;
 
   clickedMarker(label: string, index: number,data) {
     console.log(`clicked the marker: ${label || index}`)
@@ -49,6 +50,8 @@ export class LocationMapPage {
       console.log("Loca1",JSON.stringify(paramAdd.name));
       this.resName = paramAdd.name;
       this.locName = paramAdd.Name;
+      this.lat = this.firstParam.lat;
+      this.lng = this.firstParam.lng;
       if (this.platform.is('android')) {
      this.platFormType = 'Mobile';
    }
@@ -58,6 +61,14 @@ export class LocationMapPage {
    else{
         this.platFormType = 'Windows';
    }
+  }
+
+  mapClicked($event: MouseEvent) {
+    
+  }
+
+  markerDragEnd(m: any, $event: MouseEvent) {
+    console.log('dragEnd', m, $event);
   }
 
 

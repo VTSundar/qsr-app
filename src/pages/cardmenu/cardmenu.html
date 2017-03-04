@@ -34,12 +34,12 @@
       <ion-toolbar class="toolbar-height overlayHeader">
         <ion-grid class="overlay-grid">
             <ion-row>
-                <ion-col width-50 class="overlay-col1">
+                <ion-col width-75 class="overlay-col1">
                   <div class="overlay-heading">{{restName}}</div>
-                  <button ion-button outline class="overlay-btn">Change Store</button>
+                  <button ion-button outline class="overlay-btn" (click)="changeStore();">Change Store</button>
                 </ion-col>
-                <ion-col width-50 class="overlay-col2">
-                  <div class="overlay-close-container"><ion-icon name="close-circle" end class="overlay-close" (click)="closeMenu()"></ion-icon></div>
+                <ion-col width-25 class="overlay-col2">
+                  <ion-icon name="close-circle" end class="overlay-close" (click)="closeMenu()"></ion-icon>
                 </ion-col>
             </ion-row>
         </ion-grid>
@@ -94,11 +94,11 @@
       <ion-toolbar>
         <ion-grid class="overlay-grid">
             <ion-row>
-                <ion-col width-50 class="overlay-col1">
-                  <button ion-button outline class="overlay-btn">Login</button>
-                  <button ion-button outline class="overlay-btn">Signup</button>
+                <ion-col width-67 class="overlay-col1">
+                  <button ion-button outline class="overlay-btn" (click)="clickToLogin();">Login</button>
+                  <button ion-button outline class="overlay-btn" (click)="clickToSignUp();">Signup</button>
                 </ion-col>
-                <ion-col width-50 class="overlay-col2">
+                <ion-col width-33 class="overlay-col2">
                   <div class="overlay-terms-cond"><span>Terms and Condition</span><br/></div>
                 </ion-col>
             </ion-row>
