@@ -3,7 +3,7 @@
         <ion-grid>
             <ion-row>
                 <ion-col width-10>
-                    <ion-icon name="close-circle" class="checkout-close"></ion-icon>
+                    <ion-icon name="close-circle" (click)="closeCheckOut()" class="checkout-close"></ion-icon>
                 </ion-col>
                 <ion-col width-80 class="checkout-header-col2">
                     CHECK OUT
@@ -36,7 +36,7 @@
                     <span class="store-name">{{restName}}</span>
                 </div>
                 <div>
-                    <button ion-button class="btnColor">Change</button>
+                    <button ion-button (click)="storePageList()" class="btnColor">Change</button>
                 </div>
             </ion-col>
         </ion-row>
@@ -49,13 +49,13 @@
             <ion-col class="checkout-item-want-ddl">
                 <div class="checkout-day-container">
                     <div class="checkout-day-ddl">
-                        TODAY
+                        {{daySelected}}
                         <ion-icon name="arrow-down" class="day-ddl-icon" (click)="daySwitch()"></ion-icon>
                     </div>
                     <div class="day-list" [hidden]="!daySwitchVal">
                         <ul>
-                            <li>TODAY</li>
-                            <li>TOMORROW</li>
+                            <li (click)="daySelect('TODAY')">TODAY</li>
+                            <li (click)="daySelect('TOMORROW')">TOMORROW</li>
                         </ul>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
         </ion-row>
         <ion-row>
             <ion-col class="checkout-item-time">
-                at what time you want it?{{brightness}}
+                at what time you want it? {{brightness}}:00
             </ion-col>
         </ion-row>
         <ion-row>
@@ -176,7 +176,7 @@
         </ion-row>
         <ion-row>
                 <ion-col class="add-to-cart-btn">
-                      <button ion-button style="width: 25rem;background:#ff871c;">MAKE PAYMENT</button>
+                      <button ion-button (click)="makePaymentScreen()" style="width: 25rem;background:#ff871c;">MAKE PAYMENT</button>
                 </ion-col>
         </ion-row>
     </ion-grid>
