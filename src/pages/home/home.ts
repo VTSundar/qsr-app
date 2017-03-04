@@ -37,7 +37,7 @@ export class HomePage {
       // console.log("home page", this.heroes);
     });
     var val = this.AppService.getStoreList();
-    // console.log("home page val", val);
+    console.log("home page val", val);
   }
   ngOnInit(): void {
     this.getHeroes();

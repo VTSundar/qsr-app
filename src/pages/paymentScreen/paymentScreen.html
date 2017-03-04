@@ -1,4 +1,4 @@
-<ion-header class="headerStore">MAKE PAYMENT
+<ion-header class="headerStore button_font">MAKE PAYMENT
   <ion-fab top left edge class="leftFab">
     <button ion-fab mini class="paymentBack" (click)="backToStartPage()"><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
   </ion-fab>
@@ -11,7 +11,7 @@
           <div class="listItemDiv-payment">
             <ion-item class="itemInnerPadding">
               <ion-label floating>Name</ion-label>
-              <ion-input class="borderList" type="text"></ion-input>
+              <ion-input class="borderList button_font" type="text"></ion-input>
             </ion-item>
             <ion-row>
               <ion-col width-100 class="expDateCol">
@@ -21,7 +21,7 @@
                       <ion-col width-100 class="colCardNumber">
                         <ion-item class="itemInnerPadding">
                           <ion-label floating>Card Number</ion-label>
-                          <ion-input class="cardNumberInput" type="text"></ion-input>
+                          <ion-input class="cardNumberInput button_font" type="text"></ion-input>
                            
                         </ion-item>
                         <img class="imgCard" src="../../assets/imgs/visa_card.png" />
@@ -39,13 +39,13 @@
                       <ion-col style="width: 70%;">
                         <ion-item class="itemInnerPadding">
                           <ion-label floating>Exp.Date</ion-label>
-                          <ion-datetime displayFormat="MM/YY" pickerFormat="MM YY"></ion-datetime>
+                          <ion-datetime class="button_font" displayFormat="MM/YY" pickerFormat="MM YY"></ion-datetime>
                         </ion-item>
                       </ion-col>
                       <ion-col style="width: 30%;">
                         <ion-item class="cvvItem itemInnerPadding">
                           <ion-label floating>CVV/CVC</ion-label>
-                          <ion-input type="password" class="cvvPassword"></ion-input>
+                          <ion-input class="button_font" type="password" class="cvvPassword"></ion-input>
                         </ion-item>
                       </ion-col>
                     </ion-row>
@@ -64,10 +64,10 @@
       </ion-card>
       <div class="paymentFooter">
         <p class="totalPay">Total Payment</p>
-        <p class="totalAmount">${{total}}</p>
+        <p class="totalAmount slide_font">${{total}}</p>
         <div class="footerBtnPay">
           <button ion-button full color="payNow">Pay Now</button>
-          <div class="hoverButton"><button ion-button full outline color="payNow" class="cancelOrder">Cancel Order</button></div>
+          <div class="hoverButton"><button ion-button full outline color="payNow" class="cancelOrder button_font">Cancel Order</button></div>
         </div>
       </div>
     </div>

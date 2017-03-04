@@ -5,7 +5,7 @@
                 <ion-col width-10>
                     <ion-icon name="close-circle" (click)="closeCheckOut()" class="checkout-close"></ion-icon>
                 </ion-col>
-                <ion-col width-80 class="checkout-header-col2">
+                <ion-col width-80 class="checkout-header-col2 button_font">
                     CHECK OUT
                 </ion-col>
                 <ion-col width-10>
@@ -33,10 +33,10 @@
         <ion-row>
             <ion-col class="checkout-store-selected">
                 <div>
-                    <span class="store-name">{{restName}}</span>
+                    <span class="store-name button_font">{{restName}}</span>
                 </div>
                 <div>
-                    <button ion-button (click)="storePageList()" class="btnColor">Change</button>
+                    <button ion-button (click)="storePageList()" class="btnColor button_font">Change</button>
                 </div>
             </ion-col>
         </ion-row>
@@ -83,10 +83,10 @@
         </ion-row>
 
         <ion-row style="margin-left: -1rem;">
-    <ion-col offset-15 style="margin-left: 7%;"><div style="max-width: 54%;float: right;"><ion-input type="text"></ion-input></div></ion-col>
+    <ion-col offset-15 style="margin-left: 7%;"><div style="max-width: 54%;float: right;"><ion-input type="text" class="button_font"></ion-input></div></ion-col>
     <ion-col offset-5>
       <div>
-        <button ion-button class="btnColor">VERIFY</button>
+        <button ion-button class="btnColor button_font">VERIFY</button>
       </div>
     </ion-col>
   </ion-row>
@@ -114,13 +114,13 @@
         <ion-row>
             <ion-col class="checkout-item-time">
                             <ion-segment [(ngModel)]="travelMode" style="width: 85%;margin-left: 8%;">
-                    <ion-segment-button value="DELIVERY">
+                    <ion-segment-button value="DELIVERY" class="button_font">
                     DELIVERY
                     </ion-segment-button>
-                    <ion-segment-button value="DRIVE THRU">
+                    <ion-segment-button value="DRIVE THRU" class="button_font">
                     DRIVE THRU
                     </ion-segment-button>
-                    <ion-segment-button value="PICK UP" style="max-width: 30%;">
+                    <ion-segment-button value="PICK UP" style="max-width: 30%;" class="button_font">
                     PICK UP
                     </ion-segment-button>
                 </ion-segment>
@@ -171,12 +171,12 @@
 
         <ion-row>
             <ion-col class="checkout-item-time">
-                Total <span style="color:#ff9433;font-weight: bold;">${{totalAmt}}</span>
+                Total <span class="slide_font" style="color:#ff9433;font-weight: bold;">${{totalAmt}}</span>
             </ion-col>
         </ion-row>
         <ion-row>
                 <ion-col class="add-to-cart-btn">
-                      <button ion-button (click)="makePaymentScreen()" style="width: 25rem;background:#ff871c;">MAKE PAYMENT</button>
+                      <button ion-button (click)="makePaymentScreen()" style="width: 25rem;background:#ff871c;" class="button_font">MAKE PAYMENT</button>
                 </ion-col>
         </ion-row>
     </ion-grid>

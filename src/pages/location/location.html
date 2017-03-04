@@ -1,4 +1,4 @@
-<ion-header class="headerStore" *ngIf="platFormType == 'Windows' ">{{firstParam.header}}
+<ion-header class="headerStore button_font" *ngIf="platFormType == 'Windows' ">{{firstParam.header}}
   <ion-fab top left edge class="leftFab">
     <button ion-fab mini (click)="backToRestraunt()"><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
   </ion-fab>
@@ -6,7 +6,7 @@
     <button ion-fab mini><ion-icon name="add"></ion-icon></button>
   </ion-fab>
 </ion-header>
-<ion-header class="headerStoreMob" *ngIf="platFormType !== 'Windows' ">{{firstParam.header}}
+<ion-header class="headerStoreMob button_font" *ngIf="platFormType !== 'Windows' ">{{firstParam.header}}
   <ion-fab top left edge class="leftFab">
     <button ion-fab mini (click)="backToRestraunt()"><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
   </ion-fab>
@@ -48,7 +48,7 @@
       <ion-col width-20>
         <div style="float: right">
           <span style="color: white;font-size: 15px;">Distance</span>
-          <div style="padding-top: 14px;color: #ff871c;font-weight: bold;font-size: 18px;text-align: center;">{{firstParam.long}}<span style="color:white;font-size: 15px;"> MI </span></div>
+          <div style="padding-top: 14px;color: #ff871c;font-weight: bold;font-size: 18px;text-align: center;">{{firstParam.long}}<span class="button_font" style="color:white;font-size: 15px;"> MI </span></div>
         </div>
       </ion-col>
     </ion-row>
@@ -82,24 +82,24 @@
       <div class="locDet">Sat : {{firstParam.timingSat}} </div>
       <div class="locDet">Sun : {{firstParam.timingSun}} </div>
       <div class="setPickUpBtn"><button ion-button style="text-align: center;width: 100% !important;" (click)="clickToMenuItems(firstParam.header)"
-          class="defaultBtn" color="defaultBtn">SET PICKUP RESTAURANT</button> <br>
+          class="defaultBtn button_font" color="defaultBtn">SET PICKUP RESTAURANT</button> <br>
       </div>
     </div>
   </div>
   <div class="setPickup" *ngIf="platFormType !== 'Windows' " style="background:white;width: auto;height: auto;">
     <div style="padding-left: 30px;padding-right: 30px;">
-      <div class="locAdd" style="padding-top: 1rem;">Address</div>
+      <div class="locAdd button_font" style="padding-top: 1rem;">Address</div>
       <div class="locDet">{{firstParam.name}} </div>
       <div class="locDet">{{firstParam.header}} </div>
       <div class="locDet">{{firstParam.mobileNo}}</div>
       <!--<p *ngIf = "platFormType !== 'Windows' "> 
       <a ion-button href="tel:+(949) 588-0716" class="callPhone" color="callPhone" ><ion-icon ios="ios-call-outline"></ion-icon>&nbsp;CALL</a> 
       </p> -->
-      <div class="locAdd">Timings</div>
+      <div class="locAdd button_font">Timings</div>
       <div class="locDet">M-F : {{firstParam.timingsWeekDays}} </div>
       <div class="locDet">Sat : {{firstParam.timingSat}} </div>
       <div class="locDet">Sun : {{firstParam.timingSun}} </div>
-      <div class="setPickUpBtn"><button ion-button (click)="clickToMenuItems(firstParam.header)" class="defaultBtn" color="defaultBtn">SET PICKUP RESTAURANT</button>        <br>
+      <div class="setPickUpBtn"><button ion-button (click)="clickToMenuItems(firstParam.header)" class="defaultBtn button_font" color="defaultBtn">SET PICKUP RESTAURANT</button>        <br>
       </div>
     </div>
   </div>

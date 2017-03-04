@@ -15,7 +15,7 @@
                         </ion-row>
                     </ion-grid>
                 </div>
-                <div class="item-detail-heading">
+                <div class="item-detail-heading button_font">
                     <p style="color: white;font-size: 17px;margin-left: 0.5rem;font-weight: bold;white-space: initial;">{{itemName}} <span style="float: right;">${{rate}} <br> <span style="color: #ff871c;font-size: 15px;"> {{cal}} </span>                        </span>
                     </p>
                 </div>
@@ -37,16 +37,16 @@
                             <ion-grid class="item-size-det-grid">
                                 <ion-row class="item-size-det-grid-row1">
                                     <ion-col width-40 (click)="qtyBind('Small');">
-                                        <div class="qtysize">Small</div>
-                                        <div>$4.74</div>
+                                        <div class="qtysize button_font">Small</div>
+                                        <div class="button_font">$4.74</div>
                                     </ion-col>
                                     <ion-col width-40 class="item-size-det-col2" (click)="qtyBind('Medium');">
-                                        <div class="qtysize">Medium</div>
-                                        <div>$5.74</div>
+                                        <div class="qtysize button_font">Medium</div>
+                                        <div class="button_font">$5.74</div>
                                     </ion-col>
                                     <ion-col width-40 (click)="qtyBind('Large');">
-                                        <div class="qtysize">Large</div>
-                                        <div>$6.84</div>
+                                        <div class="qtysize button_font">Large</div>
+                                        <div class="button_font">$6.84</div>
                                     </ion-col>
                                 </ion-row>
                                 <ion-row>
@@ -65,18 +65,18 @@
                                                     <ion-icon name="remove"></ion-icon>
                                                 </p>
                                             </div>
-                                            <div>{{defQty}}</div>
+                                            <div class="button_font">{{defQty}}</div>
                                             <div (click)="addQty('add')">
                                                 <ion-icon name="add"></ion-icon>
                                             </div>
                                             <div>=</div>
-                                            <div>{{totRate | currency:'USD':true:'1.2-2'}}</div>
+                                            <div class="button_font">{{totRate | currency:'USD':true:'1.2-2'}}</div>
                                         </div>
                                     </ion-col>
                                 </ion-row>
                                 <ion-row>
                                     <ion-col class="add-to-cart-btn">
-                                        <button (click)="addToCart();" ion-button style="width: 25rem;background:#ff871c;">ADD TO CART</button>
+                                        <button (click)="addToCart();" ion-button style="width: 25rem;background:#ff871c;" class="button_font">ADD TO CART</button>
                                     </ion-col>
                                 </ion-row>
                             </ion-grid>

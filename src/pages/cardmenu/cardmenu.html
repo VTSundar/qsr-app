@@ -35,8 +35,8 @@
         <ion-grid class="overlay-grid">
             <ion-row>
                 <ion-col width-75 class="overlay-col1">
-                  <div class="overlay-heading">{{restName}}</div>
-                  <button ion-button outline class="overlay-btn" (click)="changeStore();">Change Store</button>
+                  <div class="overlay-heading button_font">{{restName}}</div>
+                  <button ion-button outline class="overlay-btn button_font" (click)="changeStore();">Change Store</button>
                 </ion-col>
                 <ion-col width-25 class="overlay-col2">
                   <ion-icon name="close-circle" end class="overlay-close" (click)="closeMenu()"></ion-icon>
@@ -72,14 +72,14 @@
           <ul class="menu-lists-ul">
             <li>
               <ion-row>
-                <ion-col width-100>
+                <ion-col width-100 class="button_font"> 
                   WHAT'S NEW
                 </ion-col>
               </ion-row>
               </li>
             <li *ngFor="let menu of api.mainMenu">
               <ion-row (click)="showSubMenu(menu)">
-                <ion-col width-90>{{menu.name.toUpperCase()}}</ion-col>
+                <ion-col width-90 class="button_font">{{menu.name.toUpperCase()}}</ion-col>
                 <ion-col width-10><div *ngIf="menu.subMenu" class="menu-arrow" [class.menu-arrow-up]="menu.expand==true"></div></ion-col>
               </ion-row>
               <ul *ngIf="menu.subMenu" [hidden]="!menu.expand">
@@ -95,11 +95,11 @@
         <ion-grid class="overlay-grid">
             <ion-row>
                 <ion-col width-67 class="overlay-col1">
-                  <button ion-button outline class="overlay-btn" (click)="clickToLogin();">Login</button>
-                  <button ion-button outline class="overlay-btn" (click)="clickToSignUp();">Signup</button>
+                  <button ion-button outline class="overlay-btn button_font" (click)="clickToLogin();">Login</button>
+                  <button ion-button outline class="overlay-btn button_font" (click)="clickToSignUp();">Signup</button>
                 </ion-col>
                 <ion-col width-33 class="overlay-col2">
-                  <div class="overlay-terms-cond"><span>Terms and Condition</span><br/></div>
+                  <div class="overlay-terms-cond"><span class="button_font">Terms and Condition</span><br/></div>
                 </ion-col>
             </ion-row>
         </ion-grid>
