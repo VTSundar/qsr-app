@@ -31,8 +31,8 @@ export class LocationMapPage {
   public restaurantName : any;
 
   clickedMarker(label: string, index: number,data) {
-    console.log(`clicked the marker: ${label || index}`)
-    console.log("call map",data);
+    // console.log(`clicked the marker: ${label || index}`)
+    // console.log("call map",data);
     this.firstParam.name = data.name;
     this.firstParam.header = data.header;
     this.firstParam.mobileNo = data.mobileNo;
@@ -46,9 +46,9 @@ export class LocationMapPage {
       this.firstParam = params.get("mapData");
       var paramAdd = this.firstParam;
       this.parFeatures = paramAdd.features;
-      console.log("Features",JSON.stringify(this.parFeatures));
-      console.log("Loca",JSON.stringify(this.firstParam));
-      console.log("Loca1",JSON.stringify(paramAdd.name));
+      // console.log("Features",JSON.stringify(this.parFeatures));
+      // console.log("Loca",JSON.stringify(this.firstParam));
+      // console.log("Loca1",JSON.stringify(paramAdd.name));
       this.resName = paramAdd.name;
       this.locName = paramAdd.Name;
       this.lat = this.firstParam.lat;
@@ -69,7 +69,7 @@ export class LocationMapPage {
   }
 
   markerDragEnd(m: any, $event: MouseEvent) {
-    console.log('dragEnd', m, $event);
+    // console.log('dragEnd', m, $event);
   }
 
 

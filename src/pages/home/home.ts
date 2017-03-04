@@ -34,10 +34,10 @@ export class HomePage {
   getHeroes(): void {
     this.heroService.getHeroes().then(heroes => {
       this.heroes = heroes;
-      console.log("home page", this.heroes);
+      // console.log("home page", this.heroes);
     });
     var val = this.AppService.getStoreList();
-    console.log("home page val", val);
+    // console.log("home page val", val);
   }
   ngOnInit(): void {
     this.getHeroes();
