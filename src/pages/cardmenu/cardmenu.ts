@@ -19,12 +19,16 @@ export class CardMenuPage {
   restName : any;
   public matName: any;
   public restNameLength : any;
+  public payCountLength : any;
+  public payLength : any = 0;
 // private nav:NavController = null;
   constructor(public navCtrl: NavController ,public params:NavParams , public loadingCtrl: LoadingController, public api : Providers,public platform: Platform) {
     this.overlay = false;
     // this.restName = params.get("restName");
     this.restNameLength = this.api.restName.length;
     this.restName = this.api.restName[this.restNameLength - 1]['restName'];
+    this.payCountLength = this.api.cartLength.length;
+      this.payLength = this.api.cartLength;
     // console.log(this.restName);
      if (this.platform.is('android')) {
         this.platFormType = 'Mobile';
