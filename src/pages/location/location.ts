@@ -28,6 +28,7 @@ export class LocationMapPage {
   zoom: number = 5;
   public lat: number;
   public lng: number;
+  public restaurantName : any;
 
   clickedMarker(label: string, index: number,data) {
     // console.log(`clicked the marker: ${label || index}`)
@@ -96,9 +97,11 @@ export class LocationMapPage {
       duration: 1000,
       //  dismissOnPageChange: true
     }).present();
-    this.navCtrl.push(CardMenuPage,{
-      'restName' : this.resName
-    });
+    this.restaurantName = {
+      'restName' : data
+    }
+    this.mapList.restName.push(this.restaurantName);
+    this.navCtrl.push(CardMenuPage);
   }
 
 }
