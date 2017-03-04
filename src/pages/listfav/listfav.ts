@@ -22,7 +22,7 @@ export class ListFavPage {
  public headerName :any;
   constructor(public navCtrl: NavController ,public params:NavParams, public listFav : Providers, public loadingCtrl: LoadingController,public platform: Platform,public alertCtrl: AlertController) { 
     this.headerName = params.get("headerName") ;
-    console.log(JSON.stringify(this.headerName));
+    // console.log(JSON.stringify(this.headerName));
      platform.ready().then(() => {
       StatusBar.styleDefault();
       Splashscreen.hide();
@@ -32,7 +32,7 @@ export class ListFavPage {
 
   initPushNotification(){
     if (!this.platform.is('cordova')) {
-      console.warn("Push notifications not initialized. Cordova is not available - Run in physical device");
+      // console.warn("Push notifications not initialized. Cordova is not available - Run in physical device");
       return;
     }
     let push = Push.init({
@@ -48,11 +48,11 @@ export class ListFavPage {
     });
 
     push.on('registration', (data) => {
-      console.log("device token ->", data.registrationId);
+      // console.log("device token ->", data.registrationId);
       //TODO - send device token to server
     });
     push.on('notification', (data) => {
-      console.log('message', data.message);
+      // console.log('message', data.message);
       let self = this;
       //if user using app and push notification comes
       if (data.additionalData.foreground) {
@@ -76,11 +76,11 @@ export class ListFavPage {
         //if user NOT using app and push notification comes
         //TODO: Your logic on click of push notification directly
         self.nav.push(SelectMenuPage, {message: data.message});
-        console.log("Push notification clicked");
+        // console.log("Push notification clicked");
       }
     });
     push.on('error', (e) => {
-      console.log(e.message);
+      // console.log(e.message);
     });
   }
 

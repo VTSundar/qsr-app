@@ -31,7 +31,7 @@ export class RestraFind {
    }
   }
   getItems(ev: any) {
-    console.log("called");
+    // console.log("called");
     // Reset items back to all of the items
     // this.restraList.restraListItems();
 

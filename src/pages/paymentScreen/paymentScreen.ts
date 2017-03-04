@@ -24,7 +24,7 @@ export class PaymentPage {
    else{
         this.platFormType = 'Windows';
    }
-   console.log(this.platFormType);
+  //  console.log(this.platFormType);
   }
   backToStartPage(){
     this.navCtrl.push(CheckoutPage,{
