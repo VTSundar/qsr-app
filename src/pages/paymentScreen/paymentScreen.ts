@@ -10,9 +10,11 @@ export class PaymentPage {
     public platFormType : any;
     public checkOutPay : any;
     public storeName : any;
+    public total : any;
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController,public platform: Platform, public params:NavParams) {
     this.checkOutPay = params.get("checkOutPayment");
     this.storeName = params.get("storeName");
+    this.total = params.get("total");
   if (this.platform.is('android')) {
      this.platFormType = 'Mobile';
    }
@@ -27,7 +29,8 @@ export class PaymentPage {
   backToStartPage(){
     this.navCtrl.push(CheckoutPage,{
       "checkOutPayment" : this.checkOutPay,
-      "storeName" : this.storeName
+      "storeName" : this.storeName,
+      "total" : this.total
     });
   }
 }

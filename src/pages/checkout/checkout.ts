@@ -16,7 +16,7 @@ export class CheckoutPage{
     checkOut : any;
     store_name : any;
     public restName : any;
-    public totalAmt : any;
+    public totalAmt : any = 0;
     public indAmt : number = 0;
     public daySelected : string = "TODAY";
     public cartDet : any;
@@ -25,6 +25,7 @@ export class CheckoutPage{
     constructor(public navCtrl: NavController, public api: Providers, public platform: Platform,public params:NavParams){
              this.payLength = params.get("checkCount");
             // this.restName = params.get("storeName");
+            this.totalAmt = params.get("total");
             this.checkOut = this.api.itemDet;
             this.restNameLength = this.api.restName.length;
             this.restName = this.api.restName[this.restNameLength - 1]['restName'];
@@ -53,7 +54,9 @@ export class CheckoutPage{
     }
     makePaymentScreen(){
         this.navCtrl.push(PaymentPage,{
-            "checkOutPayment" : this.checkOut
+            "checkOutPayment" : this.checkOut,
+            "storeName" : this.restName,
+            "total" : this.totalAmt
         });
     }
     storePageList(){
