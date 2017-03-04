@@ -1,18 +1,20 @@
-<ion-header class="headerStore button_font" *ngIf="platFormType == 'Windows' ">{{firstParam.header}}
+<ion-header class="headerStore button_font" *ngIf="platFormType == 'Windows' ">
+   <div style="text-align: center">{{firstParam.header}}
+  </div>
   <ion-fab top left edge class="leftFab">
     <button ion-fab mini (click)="backToRestraunt()"><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
   </ion-fab>
-  <ion-fab top right edge>
-    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
-  </ion-fab>
+          <span class="navigationImg_Store">
+      <img src="../../assets/imgs/store_map_navigations.png" />
+    </span>
 </ion-header>
 <ion-header class="headerStoreMob button_font" *ngIf="platFormType !== 'Windows' ">{{firstParam.header}}
   <ion-fab top left edge class="leftFab">
     <button ion-fab mini (click)="backToRestraunt()"><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
   </ion-fab>
-  <ion-fab top right edge>
-    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
-  </ion-fab>
+          <span class="navigationImg_Store">
+      <img src="../../assets/imgs/store_map_navigations.png" />
+    </span>
 </ion-header>
 
 <ion-content padding class="bgRes">
@@ -48,7 +50,7 @@
       <ion-col width-20>
         <div style="float: right">
           <span style="color: white;font-size: 15px;">Distance</span>
-          <div style="padding-top: 14px;color: #ff871c;font-weight: bold;font-size: 18px;text-align: center;">{{firstParam.long}}<span class="button_font" style="color:white;font-size: 15px;"> MI </span></div>
+          <div class="slide_font" style="padding-top: 14px;color: #ff871c;font-weight: bold;font-size: 18px;text-align: center;">{{firstParam.long}}<span class="button_font" style="color:white;font-size: 15px;"> MI </span></div>
         </div>
       </ion-col>
     </ion-row>

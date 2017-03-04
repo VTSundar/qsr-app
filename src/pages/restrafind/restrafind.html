@@ -1,10 +1,13 @@
-<ion-header class="headerStore button_font">NEAR BY STORES
+<ion-header class="headerStore button_font">
+  <div style="text-align: center">NEAR BY STORES
+  </div>
+          <span class="navigationImg">
+      <img src="../../assets/imgs/navigator_icon.png" />
+    </span>
     <ion-fab top left edge class="leftFab">
     <button ion-fab mini (click)="backToStartPage()"><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
   </ion-fab>
-    <ion-fab top right edge>
-    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
-  </ion-fab></ion-header><br><br><br><br>
+  </ion-header><br><br><br><br>
   <ion-searchbar (click)="getItems($event)" placeholder="Store, City or Zipcode" showCancelButton="true"></ion-searchbar>
 <ion-content padding class="page-home1">
   <ion-scroll scrollY="true">
@@ -19,7 +22,7 @@
       <img src="../../assets/imgs/iphone.png" /> 
       </span>
       </ion-avatar>
-      <h2 style="width:100%;white-space: initial;padding-left: 10px;">{{item.name}}</h2>
+      <h2 style="width:100%;white-space: initial;padding-left: 10px;" class="slide_font">{{item.name}}</h2>
       <span class="defaultTxtColor" item-right>{{item.long}}<p style="font-size: 1.3rem;font-weight: 500;">{{item.miles}}</p></span>
       <ion-note item-right><img src="../../assets/imgs/right-arrow (1).png" /> </ion-note>
       
