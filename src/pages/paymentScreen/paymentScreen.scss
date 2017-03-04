@@ -299,6 +299,11 @@
 .saveCard{
     border-bottom: 0px solid #dedede !important;
 }
+.saveCard{
+    .item-inner{
+        border: none !important;
+    }
+}
 .cvvItem .item-ios.item-block .item-inner {
     padding-left: 10px;
 }
