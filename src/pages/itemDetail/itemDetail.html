@@ -9,13 +9,15 @@
                                 <ion-icon name="arrow-back" (click)="backToCardMenu()" class="item-detail-header-icon"></ion-icon>
                             </ion-col>
                             <ion-col width-50 class="item-detail-header-col1">
-                                <ion-icon name="cart" (click)="goToCheckOut()" class="item-detail-header-icon cartIcon"></ion-icon> <ion-badge item-right style="color: #fff;position: absolute;-webkit-transform: translate(-42%, 46%);transform: translate(-42%, 46%);right: 0;">{{payLength}}</ion-badge>
+                                <ion-icon name="cart" (click)="goToCheckOut()" class="item-detail-header-icon cartIcon"></ion-icon>
+                                <ion-badge item-right style="color: #fff;position: absolute;-webkit-transform: translate(-42%, 46%);transform: translate(-42%, 46%);right: 0;">{{payLength}}</ion-badge>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
                 </div>
                 <div class="item-detail-heading">
-                    <p style="color: white;font-size: 17px;margin-left: 0.5rem;font-weight: bold;white-space: initial;">{{itemName}} <span style="float: right;">${{rate}} <br> <span style="color: #ff871c;font-size: 15px;"> {{cal}} </span> </span></p>
+                    <p style="color: white;font-size: 17px;margin-left: 0.5rem;font-weight: bold;white-space: initial;">{{itemName}} <span style="float: right;">${{rate}} <br> <span style="color: #ff871c;font-size: 15px;"> {{cal}} </span>                        </span>
+                    </p>
                 </div>
             </ion-col>
         </ion-row>
@@ -25,7 +27,8 @@
                     <ion-row>
                         <ion-col>
                             <div class="items-description">
-                                A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique taco siblings sharing a bedroom, and they each choose their bunk based on personality.
+                                A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique taco
+                                siblings sharing a bedroom, and they each choose their bunk based on personality.
                             </div>
                         </ion-col>
                     </ion-row>
@@ -55,13 +58,17 @@
                                     <ion-col>
                                         <div class="item-detail-quantity">
                                             <div (click)="addQty('remove')">
-                                              <p *ngIf = "defQty < 1 " disabled> <ion-icon name="remove" isActive="false"></ion-icon> </p>
-                                              <p *ngIf = "defQty > 0 "> <ion-icon name="remove"></ion-icon> </p>
-                                                </div>
+                                                <p *ngIf="defQty < 1 " disabled>
+                                                    <ion-icon name="remove" isActive="false"></ion-icon>
+                                                </p>
+                                                <p *ngIf="defQty > 0 ">
+                                                    <ion-icon name="remove"></ion-icon>
+                                                </p>
+                                            </div>
                                             <div>{{defQty}}</div>
                                             <div (click)="addQty('add')">
                                                 <ion-icon name="add"></ion-icon>
-                                                </div>
+                                            </div>
                                             <div>=</div>
                                             <div>{{totRate | currency:'USD':true:'1.2-2'}}</div>
                                         </div>

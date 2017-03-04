@@ -1,9 +1,9 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 
-import { NavController,NavParams , LoadingController , Platform } from 'ionic-angular';
+import { NavController, NavParams, LoadingController, Platform } from 'ionic-angular';
 import { SelectMenuPage } from '../selectmenu/selectmenu';
 import { RestraFind } from '../restrafind/restrafind';
-import { Providers} from '../../providers/provider';
+import { Providers } from '../../providers/provider';
 import { CardMenuPage } from '../cardmenu/cardmenu';
 // import { AgmCoreModule } from 'angular2-google-maps/core';
 
@@ -18,18 +18,19 @@ import { CardMenuPage } from '../cardmenu/cardmenu';
   templateUrl: 'location.html'
 })
 export class LocationMapPage {
-  
-  public firstParam:any;
-  public platFormType : any;
-  public parFeatures : any;
-  locName : string = this.locName;
-  public resName : any;
+
+  public firstParam: any;
+  public platFormType: any;
+  public parFeatures: any;
+  locName: string = this.locName;
+  public resName: any;
   // console.log(JSON.stringify(locName));
   zoom: number = 5;
   public lat: number;
   public lng: number;
-  public restaurantName : any;
+  public restaurantName: any;
 
+ 
   clickedMarker(label: string, index: number,data) {
     // console.log(`clicked the marker: ${label || index}`)
     // console.log("call map",data);
@@ -42,30 +43,30 @@ export class LocationMapPage {
   }
 
 
-  constructor(public navCtrl: NavController , public params:NavParams , public loadingCtrl: LoadingController,public platform: Platform, public mapList : Providers) {
-      this.firstParam = params.get("mapData");
-      var paramAdd = this.firstParam;
-      this.parFeatures = paramAdd.features;
-      // console.log("Features",JSON.stringify(this.parFeatures));
-      // console.log("Loca",JSON.stringify(this.firstParam));
-      // console.log("Loca1",JSON.stringify(paramAdd.name));
-      this.resName = paramAdd.name;
-      this.locName = paramAdd.Name;
-      this.lat = this.firstParam.lat;
-      this.lng = this.firstParam.lng;
-      if (this.platform.is('android')) {
-     this.platFormType = 'Mobile';
-   }
-   else if(this.platform.is('ios')){
-     this.platFormType = 'Ios';
-   }
-   else{
-        this.platFormType = 'Windows';
-   }
+  constructor(public navCtrl: NavController, public params: NavParams, public loadingCtrl: LoadingController, public platform: Platform, public mapList: Providers) {
+    this.firstParam = params.get("mapData");
+    var paramAdd = this.firstParam;
+    this.parFeatures = paramAdd.features;
+    console.log("Features", JSON.stringify(this.parFeatures));
+    console.log("Loca", JSON.stringify(this.firstParam));
+    console.log("Loca1", JSON.stringify(paramAdd.name));
+    this.resName = paramAdd.name;
+    this.locName = paramAdd.Name;
+    this.lat = this.firstParam.lat;
+    this.lng = this.firstParam.lng;
+    if (this.platform.is('android')) {
+      this.platFormType = 'Mobile';
+    }
+    else if (this.platform.is('ios')) {
+      this.platFormType = 'Ios';
+    }
+    else {
+      this.platFormType = 'Windows';
+    }
   }
 
   mapClicked($event: MouseEvent) {
-    
+
   }
 
   markerDragEnd(m: any, $event: MouseEvent) {
@@ -73,7 +74,7 @@ export class LocationMapPage {
   }
 
 
-  public selectFav(){
+  public selectFav() {
     this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 1000,
@@ -82,7 +83,7 @@ export class LocationMapPage {
     this.navCtrl.push(SelectMenuPage);
   }
 
-  public backToRestraunt(){
+  public backToRestraunt() {
     this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 1000,
@@ -91,14 +92,14 @@ export class LocationMapPage {
     this.navCtrl.push(RestraFind);
   }
 
-  clickToMenuItems(data){
+  clickToMenuItems(data) {
     this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 1000,
       //  dismissOnPageChange: true
     }).present();
     this.restaurantName = {
-      'restName' : data
+      'restName': data
     }
     this.mapList.restName.push(this.restaurantName);
     this.navCtrl.push(CardMenuPage);
