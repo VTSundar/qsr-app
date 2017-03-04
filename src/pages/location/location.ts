@@ -30,9 +30,10 @@ export class LocationMapPage {
   public lng: number;
   public restaurantName: any;
 
-  clickedMarker(label: string, index: number, data) {
-    console.log(`clicked the marker: ${label || index}`)
-    console.log("call map", data);
+ 
+  clickedMarker(label: string, index: number,data) {
+    // console.log(`clicked the marker: ${label || index}`)
+    // console.log("call map",data);
     this.firstParam.name = data.name;
     this.firstParam.header = data.header;
     this.firstParam.mobileNo = data.mobileNo;
@@ -69,7 +70,7 @@ export class LocationMapPage {
   }
 
   markerDragEnd(m: any, $event: MouseEvent) {
-    console.log('dragEnd', m, $event);
+    // console.log('dragEnd', m, $event);
   }
 
 
