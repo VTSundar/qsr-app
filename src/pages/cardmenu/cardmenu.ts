@@ -26,7 +26,7 @@ export class CardMenuPage {
     this.overlay = false;
     // this.restName = params.get("restName");
     this.restNameLength = this.api.restName.length;
-    this.restName = this.api.restName[this.restNameLength - 1]['restName'];
+    this.restName = this.api.restName[this.restNameLength - 1]['restName']; 
     this.payCountLength = this.api.cartLength.length;
     this.payLength = this.api.cartLength;
     // console.log(this.restName);

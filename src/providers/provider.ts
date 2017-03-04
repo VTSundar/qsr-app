@@ -9,268 +9,525 @@ export class Providers {
   constructor(public http: Http) {
     // this.itemDetails = params.get("itemDetails");
   }
-  // items: any;
+  items: any;
+  storeDetails: any;
 
   itemDet = []; //Cart Details array
   matName = []; // Storing Material matName
   restName = [];
   cartLength = []; // cart store count
 
+  //New JSON for Restaurant List Page
+  storeList() {
+    this.storeDetails = [
+      {
+        'store_id': 1,
+        'store_name': '26702 PORTOLA PARKWAY',
+        'store_header': 'FOOTHILL RANCH, CA',
+        'lat': 33.678811,
+        'lng': -117.663948,
+        'mobileNo': '(949) 588-0716',
+        'features': [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          },
+          {
+            'id': 2,
+            'name': "Drive thru",
+            'img': "../../assets/imgs/drivethru.png"
+          },
+          {
+            'id': 3,
+            'name': "Open",
+            'img': "../../assets/imgs/open_features.png"
+          }
+        ],
+        'distance' : '1.2',
+        'miles' : 'Miles',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '9.30am - 11.30pm',
+        'timingSun': '9.30am - 12.00pm'
+      },
+      {
+        'store_id': 2,
+        'store_name': '12996 ALPHARETTA HWY 9 MILTON',
+        'store_header': 'HWY 9 MILTON, GA',
+        'lat': 34.096068,
+        'lng': -84.277098,
+        'mobileNo': '(929) 568-0654',
+        'features': [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          },
+          {
+            'id': 2,
+            'name': "Drive thru",
+            'img': "../../assets/imgs/drivethru.png"
+          }
+        ],
+        'distance' : '1.5',
+        'miles' : 'Miles',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '9.30am - 11.30pm',
+        'timingSun': '9.30am - 12.30pm'
+      },
+      {
+        'store_id': 3,
+        'store_name': '12452 ALPHARETTA HWY 7 MILTON',
+        'store_header': 'ALPHARETTA HWY, GA 30253',
+        'lat': 34.080518,
+        'lng': -81.149110,
+        'mobileNo': '(965) 234-6544',
+        'features': [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          }
+        ],
+        'distance' : '1.8',
+        'miles' : 'Miles',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '8.30am - 11.30pm',
+        'timingSun': '8.00am - 12.00pm'
+      },
+      {
+        'store_id': 4,
+        'store_name': '145 HARBISON BLVD COLUMBIA',
+        'store_header': 'HARBISON BLVD, SC',
+        'lat': 33.8302961,
+        'lng': -116.54529209999998,
+        'mobileNo': '(890) 543-4236',
+        'features': [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          }
+        ],
+        'distance' : '2.1',
+        'miles' : 'Miles',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '9.30am - 10.30pm',
+        'timingSun': '9.30am - 11.30pm'
+      },
+      {
+        'store_id': 5,
+        'store_name': '862 S. WHITE SANDS BLVD.ALAMOGORDO',
+        'store_header': 'WHITE SANDS BLVD.ALAMOGORDO, NM',
+        'lat': 33.4483771,
+        'lng': -112.07403729999999,
+        'mobileNo': '(954) 764-8768',
+        'features': [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          },
+          {
+            'id': 2,
+            'name': "Drive thru",
+            'img': "../../assets/imgs/drivethru.png"
+          }
+        ],
+        'distance' : '2.4',
+        'miles' : 'Miles',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '9.00am - 11.30pm',
+        'timingSun': '8.30am - 12.00pm'
+      },
+      {
+        'store_id': 6,
+        'store_name': '145 HARBISON BLVD COLUMBIA',
+        'store_header': 'BLVD COLUMBIA, SC',
+        'lat': 31.7618778,
+        'lng': -106.4850217,
+        'mobileNo': '(954) 534-6463',
+        'features': [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          },
+          {
+            'id': 2,
+            'name': "Drive thru",
+            'img': "../../assets/imgs/drivethru.png"
+          },
+          {
+            'id': 3,
+            'name': "Open",
+            'img': "../../assets/imgs/open_features.png"
+          }
+        ],
+        'distance' : '2.6',
+        'miles' : 'Miles',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '9.30am - 12.00pm',
+        'timingSun': '8.30am - 12.00pm'
+      },
+      {
+        'store_id': 7,
+        'store_name': '26702 PORTOLA PARKWAY FOOTHILL',
+        'store_header': 'PORTOLA RANCH, CA',
+        'lat': 31.7618788,
+        'lng': -106.4850217,
+        'mobileNo': '(965) 432-6546',
+        'features': [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          },
+          {
+            'id': 2,
+            'name': "Drive thru",
+            'img': "../../assets/imgs/drivethru.png"
+          }
+        ],
+        'distance' : '2.8',
+        'miles' : 'Miles',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '8.30am - 12.00pm',
+        'timingSun': '8.30am - 12.00pm'
+      },
+      {
+        'store_id': 8,
+        'store_name': '26702 PORTOLA FOOTHILL RANCH',
+        'store_header': 'FOOTHILL PARKWAY, CA',
+        'lat': 31.7618798,
+        'lng': -106.4850217,
+        'mobileNo': '(965) 876-8768',
+        'features': [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          },
+          {
+            'id': 2,
+            'name': "Drive thru",
+            'img': "../../assets/imgs/drivethru.png"
+          },
+          {
+            'id': 3,
+            'name': "Open",
+            'img': "../../assets/imgs/open_features.png"
+          }
+        ],
+        'distance' : '3.1',
+        'miles' : 'Miles',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '9.30am - 11.30pm',
+        'timingSun': '8.30am - 12.00pm'
+      },
+      {
+        'store_id': 9,
+        'store_name': '26702 PORTOLA PARKWAY RANCH',
+        'store_header': 'PARKWAY FOOTHILL, CA',
+        'lat': 31.7618678,
+        'lng': -106.4850217,
+        'mobileNo': '(949) 545-4564',
+        'features': [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          }
+        ],
+        'distance' : '3.3',
+        'miles' : 'Miles',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '8.30am - 11.30pm',
+        'timingSun': '8.30am - 12.00pm'
+      },
+      {
+        'store_id': 10,
+        'store_name': '26702 PARKWAY FOOTHILL RANCH',
+        'store_header': 'PORTOLA PARKWAY, CA',
+        'lat': 31.7618878,
+        'lng': -106.4850217,
+        'mobileNo': '(867) 876-5435',
+        'features': [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          },
+          {
+            'id': 3,
+            'name': "Open",
+            'img': "../../assets/imgs/open_features.png"
+          }
+        ],
+        'distance' : '3.6',
+        'miles' : 'Miles',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '9.00am - 11.30pm',
+        'timingSun': '9.00am - 12.00pm'
+      }
+    ]
+  }
+
   // Restaurant List
-  // restraListItems(){
-  items = [
-    {
-      'name': '26702 PORTOLA PARKWAY',
-      'header': 'FOOTHILL RANCH, CA',
-      'long': '1.2',
-      'miles': 'Miles',
-      'status': 'open',
-      'timingsWeekDays': '9.30am - 11.00pm',
-      'timingSat': '9.30am - 11.30pm',
-      'timingSun': '9.30am - 12.00pm',
-      'mobileNo': '(949) 588-0716',
-      lat: 33.678811,
-      lng: -117.663948,
-      features: [
-        {
-          'id': 1,
-          'name': "Breakfast",
-          'img': "../../assets/imgs/breakfast.png"
-        },
-        {
-          'id': 2,
-          'name': "Drive thru",
-          'img': "../../assets/imgs/drivethru.png"
-        },
-        {
-          'id': 3,
-          'name': "Open",
-          'img': "../../assets/imgs/open_features.png"
-        }
-      ]
-    },
-    {
-      'name': '12996 ALPHARETTA HWY 9 MILTON',
-      'header': 'HWY 9 MILTON, GA',
-      'long': '1.5',
-      'miles': 'Miles',
-      'status': 'closed',
-      'timingsWeekDays': '9.30am - 11.00pm',
-      'timingSat': '9.30am - 11.30pm',
-      'timingSun': '9.30am - 12.30pm',
-      'mobileNo': '(929) 568-0654',
-      lat: 34.096068,
-      lng: -84.277098,
-      features: [
-        {
-          'id': 1,
-          'name': "Breakfast",
-          'img': "../../assets/imgs/breakfast.png"
-        },
-        {
-          'id': 2,
-          'name': "Drive thru",
-          'img': "../../assets/imgs/drivethru.png"
-        }
-      ]
-    },
-    {
-      'name': '12452 ALPHARETTA HWY 7 MILTON',
-      'header': 'ALPHARETTA HWY, GA 30253',
-      'long': '1.8',
-      'miles': 'Miles',
-      'status': 'closed',
-      'timingsWeekDays': '9.30am - 11.00pm',
-      'timingSat': '8.30am - 11.30pm',
-      'timingSun': '8.00am - 12.00pm',
-      'mobileNo': '(965) 234-6544',
-      lat: 34.080518,
-      lng: -81.149110,
-      features: [
-        {
-          'id': 1,
-          'name': "Breakfast",
-          'img': "../../assets/imgs/breakfast.png"
-        }
-      ]
-    },
-    {
-      'name': '145 HARBISON BLVD COLUMBIA',
-      'header': 'HARBISON BLVD, SC',
-      'long': '2.1',
-      'miles': 'Miles',
-      'status': 'open',
-      'timingsWeekDays': '9.30am - 11.00pm',
-      'timingSat': '9.30am - 10.30pm',
-      'timingSun': '9.30am - 11.30pm',
-      'mobileNo': '(890) 543-4236',
-      lat: 33.8302961,
-      lng: -116.54529209999998,
-      features: [
-        {
-          'id': 1,
-          'name': "Breakfast",
-          'img': "../../assets/imgs/breakfast.png"
-        }
-      ]
-    },
-    {
-      'name': '862 S. WHITE SANDS BLVD.ALAMOGORDO',
-      'header': 'WHITE SANDS BLVD.ALAMOGORDO, NM',
-      'long': '2.4',
-      'miles': 'Miles',
-      'status': 'closed',
-      'timingsWeekDays': '9.30am - 11.00pm',
-      'timingSat': '9.00am - 11.30pm',
-      'timingSun': '8.30am - 12.00pm',
-      'mobileNo': '(954) 764-8768',
-      lat: 33.4483771,
-      lng: -112.07403729999999,
-      features: [
-        {
-          'id': 1,
-          'name': "Breakfast",
-          'img': "../../assets/imgs/breakfast.png"
-        },
-        {
-          'id': 2,
-          'name': "Drive thru",
-          'img': "../../assets/imgs/drivethru.png"
-        }
-      ]
-    },
-    {
-      'name': '145 HARBISON BLVD COLUMBIA',
-      'header': 'BLVD COLUMBIA, SC',
-      'long': '2.6',
-      'miles': 'Miles',
-      'status': 'open',
-      'timingsWeekDays': '9.30am - 11.00pm',
-      'timingSat': '9.30am - 12.00pm',
-      'timingSun': '8.30am - 12.00pm',
-      'mobileNo': '(954) 534-6463',
-      lat: 31.7618778,
-      lng: -106.4850217,
-      features: [
-        {
-          'id': 1,
-          'name': "Breakfast",
-          'img': "../../assets/imgs/breakfast.png"
-        },
-        {
-          'id': 2,
-          'name': "Drive thru",
-          'img': "../../assets/imgs/drivethru.png"
-        },
-        {
-          'id': 3,
-          'name': "Open",
-          'img': "../../assets/imgs/open_features.png"
-        }
-      ]
-    },
-    {
-      'name': '26702 PORTOLA PARKWAY FOOTHILL',
-      'header': 'PORTOLA RANCH, CA',
-      'long': '2.8',
-      'miles': 'Miles',
-      'status': 'open',
-      'timingsWeekDays': '9.30am - 11.00pm',
-      'timingSat': '8.30am - 12.00pm',
-      'timingSun': '8.30am - 12.00pm',
-      'mobileNo': '(965) 432-6546',
-      lat: 31.7618788,
-      lng: -106.4850217,
-      features: [
-        {
-          'id': 1,
-          'name': "Breakfast",
-          'img': "../../assets/imgs/breakfast.png"
-        },
-        {
-          'id': 2,
-          'name': "Drive thru",
-          'img': "../../assets/imgs/drivethru.png"
-        }
-      ]
-    },
-    {
-      'name': '26702 PORTOLA FOOTHILL RANCH',
-      'header': 'FOOTHILL PARKWAY, CA',
-      'long': '3.1',
-      'miles': 'Miles',
-      'status': 'open',
-      'timingsWeekDays': '9.30am - 11.00pm',
-      'timingSat': '9.30am - 11.30pm',
-      'timingSun': '8.30am - 12.00pm',
-      'mobileNo': '(965) 876-8768',
-      lat: 31.7618798,
-      lng: -106.4850217,
-      features: [
-        {
-          'id': 1,
-          'name': "Breakfast",
-          'img': "../../assets/imgs/breakfast.png"
-        },
-        {
-          'id': 2,
-          'name': "Drive thru",
-          'img': "../../assets/imgs/drivethru.png"
-        },
-        {
-          'id': 3,
-          'name': "Open",
-          'img': "../../assets/imgs/open_features.png"
-        }
-      ]
-    },
-    {
-      'name': '26702 PORTOLA PARKWAY RANCH',
-      'header': 'PARKWAY FOOTHILL, CA',
-      'long': '3.3',
-      'miles': 'Miles',
-      'status': 'closed',
-      'timingsWeekDays': '9.30am - 11.00pm',
-      'timingSat': '8.30am - 11.30pm',
-      'timingSun': '8.30am - 12.00pm',
-      'mobileNo': '(949) 545-4564',
-      lat: 31.7618678,
-      lng: -106.4850217,
-      features: [
-        {
-          'id': 1,
-          'name': "Breakfast",
-          'img': "../../assets/imgs/breakfast.png"
-        }
-      ]
-    },
-    {
-      'name': '26702 PARKWAY FOOTHILL RANCH',
-      'header': 'PORTOLA PARKWAY, CA',
-      'long': '3.6',
-      'miles': 'Miles',
-      'status': 'closed',
-      'timingsWeekDays': '9.30am - 11.00pm',
-      'timingSat': '9.00am - 11.30pm',
-      'timingSun': '9.00am - 12.00pm',
-      'mobileNo': '(867) 876-5435',
-      lat: 31.7618878,
-      lng: -106.4850217,
-      features: [
-        {
-          'id': 1,
-          'name': "Breakfast",
-          'img': "../../assets/imgs/breakfast.png"
-        },
-        {
-          'id': 3,
-          'name': "Open",
-          'img': "../../assets/imgs/open_features.png"
-        }
-      ]
-    }
-  ];
-  // }
+  restraListItems() {
+    this.items = [
+      {
+        'name': '26702 PORTOLA PARKWAY',
+        'header': 'FOOTHILL RANCH, CA',
+        'long': '1.2',
+        'miles': 'Miles',
+        'status': 'open',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '9.30am - 11.30pm',
+        'timingSun': '9.30am - 12.00pm',
+        'mobileNo': '(949) 588-0716',
+        lat: 33.678811,
+        lng: -117.663948,
+        features: [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          },
+          {
+            'id': 2,
+            'name': "Drive thru",
+            'img': "../../assets/imgs/drivethru.png"
+          },
+          {
+            'id': 3,
+            'name': "Open",
+            'img': "../../assets/imgs/open_features.png"
+          }
+        ]
+      },
+      {
+        'name': '12996 ALPHARETTA HWY 9 MILTON',
+        'header': 'HWY 9 MILTON, GA',
+        'long': '1.5',
+        'miles': 'Miles',
+        'status': 'closed',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '9.30am - 11.30pm',
+        'timingSun': '9.30am - 12.30pm',
+        'mobileNo': '(929) 568-0654',
+        lat: 34.096068,
+        lng: -84.277098,
+        features: [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          },
+          {
+            'id': 2,
+            'name': "Drive thru",
+            'img': "../../assets/imgs/drivethru.png"
+          }
+        ]
+      },
+      {
+        'name': '12452 ALPHARETTA HWY 7 MILTON',
+        'header': 'ALPHARETTA HWY, GA 30253',
+        'long': '1.8',
+        'miles': 'Miles',
+        'status': 'closed',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '8.30am - 11.30pm',
+        'timingSun': '8.00am - 12.00pm',
+        'mobileNo': '(965) 234-6544',
+        lat: 34.080518,
+        lng: -81.149110,
+        features: [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          }
+        ]
+      },
+      {
+        'name': '145 HARBISON BLVD COLUMBIA',
+        'header': 'HARBISON BLVD, SC',
+        'long': '2.1',
+        'miles': 'Miles',
+        'status': 'open',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '9.30am - 10.30pm',
+        'timingSun': '9.30am - 11.30pm',
+        'mobileNo': '(890) 543-4236',
+        lat: 33.8302961,
+        lng: -116.54529209999998,
+        features: [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          }
+        ]
+      },
+      {
+        'name': '862 S. WHITE SANDS BLVD.ALAMOGORDO',
+        'header': 'WHITE SANDS BLVD.ALAMOGORDO, NM',
+        'long': '2.4',
+        'miles': 'Miles',
+        'status': 'closed',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '9.00am - 11.30pm',
+        'timingSun': '8.30am - 12.00pm',
+        'mobileNo': '(954) 764-8768',
+        lat: 33.4483771,
+        lng: -112.07403729999999,
+        features: [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          },
+          {
+            'id': 2,
+            'name': "Drive thru",
+            'img': "../../assets/imgs/drivethru.png"
+          }
+        ]
+      },
+      {
+        'name': '145 HARBISON BLVD COLUMBIA',
+        'header': 'BLVD COLUMBIA, SC',
+        'long': '2.6',
+        'miles': 'Miles',
+        'status': 'open',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '9.30am - 12.00pm',
+        'timingSun': '8.30am - 12.00pm',
+        'mobileNo': '(954) 534-6463',
+        lat: 31.7618778,
+        lng: -106.4850217,
+        features: [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          },
+          {
+            'id': 2,
+            'name': "Drive thru",
+            'img': "../../assets/imgs/drivethru.png"
+          },
+          {
+            'id': 3,
+            'name': "Open",
+            'img': "../../assets/imgs/open_features.png"
+          }
+        ]
+      },
+      {
+        'name': '26702 PORTOLA PARKWAY FOOTHILL',
+        'header': 'PORTOLA RANCH, CA',
+        'long': '2.8',
+        'miles': 'Miles',
+        'status': 'open',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '8.30am - 12.00pm',
+        'timingSun': '8.30am - 12.00pm',
+        'mobileNo': '(965) 432-6546',
+        lat: 31.7618788,
+        lng: -106.4850217,
+        features: [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          },
+          {
+            'id': 2,
+            'name': "Drive thru",
+            'img': "../../assets/imgs/drivethru.png"
+          }
+        ]
+      },
+      {
+        'name': '26702 PORTOLA FOOTHILL RANCH',
+        'header': 'FOOTHILL PARKWAY, CA',
+        'long': '3.1',
+        'miles': 'Miles',
+        'status': 'open',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '9.30am - 11.30pm',
+        'timingSun': '8.30am - 12.00pm',
+        'mobileNo': '(965) 876-8768',
+        lat: 31.7618798,
+        lng: -106.4850217,
+        features: [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          },
+          {
+            'id': 2,
+            'name': "Drive thru",
+            'img': "../../assets/imgs/drivethru.png"
+          },
+          {
+            'id': 3,
+            'name': "Open",
+            'img': "../../assets/imgs/open_features.png"
+          }
+        ]
+      },
+      {
+        'name': '26702 PORTOLA PARKWAY RANCH',
+        'header': 'PARKWAY FOOTHILL, CA',
+        'long': '3.3',
+        'miles': 'Miles',
+        'status': 'closed',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '8.30am - 11.30pm',
+        'timingSun': '8.30am - 12.00pm',
+        'mobileNo': '(949) 545-4564',
+        lat: 31.7618678,
+        lng: -106.4850217,
+        features: [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          }
+        ]
+      },
+      {
+        'name': '26702 PARKWAY FOOTHILL RANCH',
+        'header': 'PORTOLA PARKWAY, CA',
+        'long': '3.6',
+        'miles': 'Miles',
+        'status': 'closed',
+        'timingsWeekDays': '9.30am - 11.00pm',
+        'timingSat': '9.00am - 11.30pm',
+        'timingSun': '9.00am - 12.00pm',
+        'mobileNo': '(867) 876-5435',
+        lat: 31.7618878,
+        lng: -106.4850217,
+        features: [
+          {
+            'id': 1,
+            'name': "Breakfast",
+            'img': "../../assets/imgs/breakfast.png"
+          },
+          {
+            'id': 3,
+            'name': "Open",
+            'img': "../../assets/imgs/open_features.png"
+          }
+        ]
+      }
+    ];
+  }
 
   //Map Latitude and Longitude 
   markers = [
