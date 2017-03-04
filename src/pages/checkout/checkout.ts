@@ -21,11 +21,14 @@ export class CheckoutPage{
     public daySelected : string = "TODAY";
     public cartDet : any;
     public payLength : any;
+    public restNameLength : any;
     constructor(public navCtrl: NavController, public api: Providers, public platform: Platform,public params:NavParams){
              this.payLength = params.get("checkCount");
-            this.restName = params.get("storeName");
+            // this.restName = params.get("storeName");
             this.totalAmt = params.get("total");
             this.checkOut = this.api.itemDet;
+            this.restNameLength = this.api.restName.length;
+            this.restName = this.api.restName[this.restNameLength - 1]['restName'];
             // console.log("dfdsff",JSON.stringify(this.checkOut));
              for(let data of this.checkOut) {
                  data.price = +data.price;

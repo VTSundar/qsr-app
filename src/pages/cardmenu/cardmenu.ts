@@ -17,10 +17,14 @@ export class CardMenuPage {
   public platFormType : any;
   public overlay : any;
   restName : any;
+  public matName: any;
+  public restNameLength : any;
 // private nav:NavController = null;
   constructor(public navCtrl: NavController ,public params:NavParams , public loadingCtrl: LoadingController, public api : Providers,public platform: Platform) {
     this.overlay = false;
-    this.restName = params.get("restName");
+    // this.restName = params.get("restName");
+    this.restNameLength = this.api.restName.length;
+    this.restName = this.api.restName[this.restNameLength - 1]['restName'];
     // console.log(this.restName);
      if (this.platform.is('android')) {
         this.platFormType = 'Mobile';
@@ -74,6 +78,10 @@ export class CardMenuPage {
       duration: 1000,
       // dismissOnPageChange: true
     }).present();
+    this.matName = {
+      "matName" : data
+    }
+    this.api.matName.push(this.matName);
       this.navCtrl.push(ItemDetailPage,{
         "storeName" : this.restName,
         "matName" : data
