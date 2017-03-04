@@ -1,14 +1,18 @@
 import { Component } from '@angular/core';
 
-import { NavController, LoadingController, Platform } from 'ionic-angular';
-
+import { NavController, LoadingController, Platform , NavParams} from 'ionic-angular';
+import { CheckoutPage } from '../checkout/checkout';
 @Component({
   selector: 'payment-screen',
   templateUrl: 'paymentScreen.html'
 })
 export class PaymentPage {
     public platFormType : any;
-  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController,public platform: Platform) {
+    public checkOutPay : any;
+    public storeName : any;
+  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController,public platform: Platform, public params:NavParams) {
+    this.checkOutPay = params.get("checkOutPayment");
+    this.storeName = params.get("storeName");
   if (this.platform.is('android')) {
      this.platFormType = 'Mobile';
    }
@@ -19,5 +23,11 @@ export class PaymentPage {
         this.platFormType = 'Windows';
    }
    console.log(this.platFormType);
+  }
+  backToStartPage(){
+    this.navCtrl.push(CheckoutPage,{
+      "checkOutPayment" : this.checkOutPay,
+      "storeName" : this.storeName
+    });
   }
 }

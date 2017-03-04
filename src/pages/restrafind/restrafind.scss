@@ -47,6 +47,7 @@ overflow-y: hidden !important;
 
 .bgItem:hover {
     color: white;
+    border-bottom: 0px solid #dedede;
     background-color: black !important;
 }
 
@@ -220,6 +221,7 @@ ion-scroll {
 
 .page-home1 .scroll-content {
     overflow-y: hidden;
+    padding: 16px !important;
 }
 
 .item-md h2 {
@@ -227,12 +229,14 @@ ion-scroll {
     font-size: 1.3rem;
     font-weight: normal;
 }
-
+.recCount .item-md {
+    padding-left: 0px !important;
+} 
 .recCount .item-md.item-block .item-inner {
     padding-right: 8px;
     border-bottom: 1px solid #dedede;
     margin-left: -5rem !important;
-    margin-right: 2rem !important;
+    margin-right: 1rem !important;
 }
 
 .item-ios {
@@ -289,4 +293,22 @@ ion-scroll {
     color: #8e9093;
 }
 
+.bgItem  .item-inner:hover {
+    border-bottom: 1px solid black !important;
+}
 
+.bgItem .item-ios {
+    position: relative;
+    padding-left: 16px;
+    border-radius: 0;
+    font-size: 1.7rem;
+    color: #747474;
+    background-color: #fff;
+    padding-right: 0px;
+    border-bottom: none !important;
+    margin-left: 0rem !important;
+    transition: background-color 200ms linear;
+}
+.bgItem  ion-avatar[item-left]{
+     margin-left :  10px !important;
+}

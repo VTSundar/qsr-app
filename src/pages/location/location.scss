@@ -3,19 +3,19 @@
 }
 
 .locDet{
+    padding-top: 7px;
     color: #4a4a4a;
     font-size: 13px;
     width: 60%;
     white-space: initial;
-    margin-left: 2%;
 }
 
 .locAdd{
+    padding-top: 7px;
     color: #4a4a4a;
     font-size: larger;
     width: 60%;
     white-space: initial;
-    margin-left: 2%;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -33,6 +33,10 @@
 
 .bgRes{
     background-color: #312f2f;
+    padding: 0px !important;
+    .scroll-content{
+        padding: 0 !important;
+    }
   }
 
   .callPhone{
@@ -40,9 +44,18 @@
   }
 
   .imgFeatures{
-    max-width: 60%;
+    width: 40px;
     height: 40px;
-    padding-left: 2px;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+  .imgFeaturesDiv{
+    display: inline-block; 
+  }
+  .gridFeatures{
+      ion-col{
+         padding: 5px 5px 5px 0px;
+      }
   }
 
   .sebm-google-map-container-inner[_ngcontent-qdx-40] {
@@ -57,9 +70,9 @@ sebm-google-map-container-inner{
 }
 
 .setPickup .button-ios {
+    width: 100%;
     background-color: #ff9433;
     overflow: hidden;
-    margin: 0.4rem 2.2rem;
     padding: 0 1.1em;
     height: 3.6rem;
     border-radius: 2px;
@@ -71,9 +84,10 @@ sebm-google-map-container-inner{
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .setPickup .button-md {
+    width: 100%;
     background-color: #ff9433;
     overflow: hidden;
-    margin: 0.4rem 2.2rem;
+    // margin: 0.4rem 4rem 0.4rem 2.2rem;
     padding: 0 1.1em;
     height: 3.6rem;
     border-radius: 2px;
@@ -87,6 +101,11 @@ sebm-google-map-container-inner{
 .bgRes .scroll-zoom-wrapper{
      margin-left: -1.56rem;
 }
-.bgRes ion-app.md [padding], ion-app.md [padding] .scroll-content {
-    padding-top: 0px;
+.setPickUpBtn{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.bgRes ion-grid{
+    padding-left: 30px;
+    padding-right: 30px;
 }

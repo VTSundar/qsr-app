@@ -9,7 +9,7 @@
 <ion-content padding class="page-home1">
   <ion-scroll scrollY="true">
   <ion-searchbar placeholder="Store, City or Zipcode" showCancelButton="true"></ion-searchbar>
-  <p class="recCount"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Totally <strong> 10 </strong> Stores Found <br><br>
+  <div class="recCount"><div style="padding-left: 20px;padding-bottom: 10px;">Totally <strong>10</strong> Stores Found.</div>
   <ion-item *ngFor="let item of restraList.items" class="bgItem" (click)="slideNav(item)">
       <ion-avatar item-left>
         <span *ngIf = "item.status == 'open' " style="width:60%;white-space: initial;vertical-align: middle;">
@@ -19,12 +19,12 @@
       <img src="../../assets/imgs/iphone.png" /> 
       </span>
       </ion-avatar>
-      <h2 style="width:100%;white-space: initial;">{{item.name}}</h2>
+      <h2 style="width:100%;white-space: initial;padding-left: 10px;">{{item.name}}</h2>
       <span class="defaultTxtColor" item-right>{{item.long}}<p style="font-size: 1.3rem;font-weight: 500;">{{item.miles}}</p></span>
       <ion-note item-right><img src="../../assets/imgs/right-arrow (1).png" /> </ion-note>
       
     </ion-item>
-  </p>
+  </div>
 </ion-scroll>
 </ion-content>
 

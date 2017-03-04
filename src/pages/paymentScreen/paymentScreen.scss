@@ -336,11 +336,14 @@
 }
 .paymentParentDiv-2{
     width: 100%;
-    padding: 0 30%;
+    padding: 0 10%;
 }
 .itemInnerPadding ion-datetime{
     border-bottom: none !important;
 }
 .paymentParentDiv ion-card{
     margin: 0;
+}
+.paymentParentDiv-2 .card-ios {
+    margin: 12px 12px 12px 0px;
 }
