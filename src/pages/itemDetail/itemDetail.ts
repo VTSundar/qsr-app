@@ -24,6 +24,8 @@ export class ItemDetailPage {
   public itemLength : any;
   public payLength : any = 0;
   public restNameLength : any;
+  public cartLength : any;
+  public payCountLength : any;
   constructor(public navCtrl: NavController, public params:NavParams, public platform: Platform, public loadingCtrl: LoadingController,public toastCtrl: ToastController,public api : Providers) {
     this.ionScroll = true;
     this.qtySize = 'Medium';
@@ -35,11 +37,12 @@ export class ItemDetailPage {
       this.restName = this.api.restName[this.restNameLength - 1]['restName'];
       this.itemLength = this.api.matName.length;
       this.itemName = this.api.matName[this.itemLength - 1]['matName'];
-      this.payLength = params.get("checkCount");
-      if(this.payLength){
-      }else{
-        this.payLength = 'false';
-      }
+      this.payCountLength = this.api.cartLength.length;
+      this.payLength = this.api.cartLength;
+      // if(this.payCountLength){
+      // }else{
+      //   this.payLength = 'false';
+      // }
       
   }
 
@@ -129,19 +132,26 @@ export class ItemDetailPage {
     this.api.itemDet.push(this.itemCartDetails);
     this.sampleTest = this.api.itemDet;
     this.payLength = this.sampleTest.length;
-    // this.api.cartLength.push(this.payLength);
+     this.api.cartLength.push(this.payLength);
   }
 
   goToCheckOut(){
-    this.loadingCtrl.create({
-      content: 'Please wait...',
+    this.payCountLength = this.api.cartLength.length;
+    if(this.payCountLength == 0){
+      let toast = this.toastCtrl.create({
+      message: 'There is no item(s) in the cart.Pls add item',
       duration: 3000,
-      // dismissOnPageChange: true
-    }).present();
-    this.navCtrl.push(CheckoutPage,{
+      position: 'bottom'
+    });
+    toast.present(toast);
+  }
+  else{
+      this.navCtrl.push(CheckoutPage,{
       'checkCount' : this.payLength,
       'storeName' : this.restName
     });
+  }
+    
   }
 
 }
