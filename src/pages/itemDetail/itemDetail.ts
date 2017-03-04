@@ -17,11 +17,13 @@ export class ItemDetailPage {
   defQty : any;
   totRate : any;
   itemCartDetails : any;
-  restName : any;
+  public restName : any;
   itemName :any;
   itemDetailsCart : any;
   sampleTest : any;
+  public itemLength : any;
   public payLength : any = 0;
+  public restNameLength : any;
   constructor(public navCtrl: NavController, public params:NavParams, public platform: Platform, public loadingCtrl: LoadingController,public toastCtrl: ToastController,public api : Providers) {
     this.ionScroll = true;
     this.qtySize = 'Medium';
@@ -29,8 +31,10 @@ export class ItemDetailPage {
       this.cal = '540 CAL';
       this.defQty = 1;
       this.totRate = this.rate * this.defQty;
-      this.restName = params.get("storeName");
-      this.itemName = params.get("matName");
+      this.restNameLength = this.api.restName.length;
+      this.restName = this.api.restName[this.restNameLength - 1]['restName'];
+      this.itemLength = this.api.matName.length;
+      this.itemName = this.api.matName[this.itemLength - 1]['matName'];
       this.payLength = params.get("checkCount");
       if(this.payLength){
       }else{

@@ -12,6 +12,8 @@ export class Providers{
     // items: any;
     
     itemDet = []; //Cart Details array
+    matName = []; // Storing Material matName
+    restName = [];
 
     // Restaurant List
     // restraListItems(){
