@@ -127,7 +127,7 @@ export class ItemDetailPage {
       }
 
     this.cartDetails = this.api.itemDet.filter(
-      book => book.size === this.qtySize);
+      book => book.size === this.qtySize && book.name === this.itemName);
     console.log(JSON.stringify(this.cartDetails));
     this.cartDetailsLength = this.cartDetails.length;
     if (this.cartDetailsLength > 0) {

@@ -14,10 +14,7 @@
   <div class="recCount"><div style="padding-left: 20px;padding-bottom: 10px;">Totally <strong>{{resultRestraLength}}</strong> Stores Found.</div>
   <ion-item *ngFor="let item of restraList.items" class="bgItem" (click)="slideNav(item)">
       <ion-avatar item-left>
-        <span *ngIf = "item.status == 'open' " style="width:60%;white-space: initial;vertical-align: middle;">
-      <img src="../../assets/imgs/iphone.png" /> 
-      </span>
-      <span *ngIf = "item.status == 'closed' " style="width:60%;white-space: initial;vertical-align: middle;">
+        <span style="width:60%;white-space: initial;vertical-align: middle;">
       <img src="../../assets/imgs/iphone.png" /> 
       </span>
       </ion-avatar>
