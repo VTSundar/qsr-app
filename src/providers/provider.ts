@@ -11,6 +11,7 @@ export class Providers {
   }
   items: any;
   storeDetails: any;
+  // menuListDet: any;
 
   itemDet = []; //Cart Details array
   matName = []; // Storing Material matName
@@ -32,6 +33,8 @@ export class Providers {
         'mobileNo': '(949) 588-0716',
         'lat': 33.678811,
         'lng': -117.663948,
+        'label': '1',
+        'draggable': false,
         'features': [
           {
             'id': 1,
@@ -62,6 +65,8 @@ export class Providers {
         'mobileNo': '(929) 568-0654',
         'lat': 34.096068,
         'lng': -84.277098,
+        'label': '2',
+        'draggable': false,
         'features': [
           {
             'id': 1,
@@ -87,6 +92,8 @@ export class Providers {
         'mobileNo': '(965) 234-6544',
         'lat': 34.080518,
         'lng': -81.149110,
+        'label': '3',
+        'draggable': false,
         'features': [
           {
             'id': 1,
@@ -105,8 +112,10 @@ export class Providers {
         'timingSat': '9.30am - 10.30pm',
         'timingSun': '9.30am - 11.30pm',
         'mobileNo': '(890) 543-4236',
-        'lat': 33.8302961,
-        'lng': -116.54529209999998,
+        'lat': 30.267153,
+        'lng': -97.743061,
+        'label': '4',
+        'draggable': false,
         'features': [
           {
             'id': 1,
@@ -127,6 +136,8 @@ export class Providers {
         'mobileNo': '(954) 764-8768',
         'lat': 33.4483771,
         'lng': -112.07403729999999,
+        'label': '5',
+        'draggable': false,
         'features': [
           {
             'id': 1,
@@ -152,6 +163,8 @@ export class Providers {
         'mobileNo': '(954) 534-6463',
         'lat': 31.7618778,
         'lng': -106.4850217,
+        'label': '6',
+        'draggable': false,
         'features': [
           {
             'id': 1,
@@ -180,8 +193,10 @@ export class Providers {
         'timingSat': '8.30am - 12.00pm',
         'timingSun': '8.30am - 12.00pm',
         'mobileNo': '(965) 432-6546',
-        'lat': 31.7618788,
-        'lng': -106.4850217,
+        'lat': 31.968599,
+        'lng': -99.901813,
+        'label': '7',
+        'draggable': false,
         'features': [
           {
             'id': 1,
@@ -205,8 +220,10 @@ export class Providers {
         'timingSat': '9.30am - 11.30pm',
         'timingSun': '8.30am - 12.00pm',
         'mobileNo': '(965) 876-8768',
-        'lat': 31.7618798,
-        'lng': -106.4850217,
+        'lat': 36.169941,
+        'lng': -115.139830,
+        'label': '8',
+        'draggable': false,
         'features': [
           {
             'id': 1,
@@ -235,8 +252,10 @@ export class Providers {
         'timingSat': '8.30am - 11.30pm',
         'timingSun': '8.30am - 12.00pm',
         'mobileNo': '(949) 545-4564',
-        'lat': 31.7618678,
-        'lng': -106.4850217,
+        'lat': 32.776664,
+        'lng': -96.796988,
+        'label': '9',
+        'draggable': false,
         'features': [
           {
             'id': 1,
@@ -255,8 +274,10 @@ export class Providers {
         'timingSat': '9.00am - 11.30pm',
         'timingSun': '9.00am - 12.00pm',
         'mobileNo': '(867) 876-5435',
-        'lat': 31.7618878,
-        'lng': -106.4850217,
+        'lat': 32.165622,
+        'lng': -82.900075,
+        'label': '10',
+        'draggable': false,
         'features': [
           {
             'id': 1,
@@ -273,167 +294,7 @@ export class Providers {
     ];
   }
 
-  //Map Latitude and Longitude 
-  markers = [
-    {
-      lat: 33.678811,
-      lng: -117.663948,
-      label: '1',
-      draggable: true,
-      name: '26702 PORTOLA PARKWAY',
-      header: 'FOOTHILL RANCH, CA',
-      long: '1.2',
-      miles: 'Miles',
-      status: 'open',
-      timingsWeekDays: '9.30am - 11.00pm',
-      timingSat: '9.30am - 11.30pm',
-      timingSun: '9.30am - 12.00pm',
-      mobileNo: '(949) 588-0716',
-      features: [
-        {
-          id: 1,
-          name: "Breakfast",
-          img: "../../assets/imgs/breakfast.png"
-        },
-        {
-          id: 2,
-          name: "Drive thru",
-          img: "../../assets/imgs/drivethru.png"
-        },
-        {
-          id: 3,
-          name: "Open",
-          img: "../../assets/imgs/open_features.png"
-        }
-      ]
-    },
-    {
-      lat: 34.096068,
-      lng: -84.277098,
-      label: '2',
-      draggable: false,
-      name: '12996 ALPHARETTA HWY 9 MILTON',
-      header: 'HWY 9 MILTON, GA',
-      long: '1.5',
-      miles: 'Miles',
-      status: 'closed',
-      timingsWeekDays: '9.30am - 11.00pm',
-      timingSat: '9.30am - 11.30pm',
-      timingSun: '9.30am - 12.30pm',
-      mobileNo: '(929) 568-0654',
-      features: [
-        {
-          id: 1,
-          name: "Breakfast",
-          img: "../../assets/imgs/breakfast.png"
-        },
-        {
-          id: 2,
-          name: "Drive thru",
-          img: "../../assets/imgs/drivethru.png"
-        }
-      ]
-    },
-    {
-      lat: 34.080518,
-      lng: -81.149110,
-      label: '3',
-      draggable: true,
-      name: '12452 ALPHARETTA HWY 7 MILTON',
-      header: 'ALPHARETTA HWY, GA 30253',
-      long: '1.8',
-      miles: 'Miles',
-      status: 'closed',
-      timingsWeekDays: '9.30am - 11.00pm',
-      timingSat: '8.30am - 11.30pm',
-      timingSun: '8.00am - 12.00pm',
-      mobileNo: '(965) 234-6544',
-      features: [
-        {
-          id: 1,
-          name: "Breakfast",
-          img: "../../assets/imgs/breakfast.png"
-        },
-        {
-          id: 3,
-          name: "Open",
-          img: "../../assets/imgs/open_features.png"
-        }
-      ]
-    },
-    {
-      lat: 33.8302961,
-      lng: -116.54529209999998,
-      label: '4',
-      draggable: true,
-      name: '145 HARBISON BLVD COLUMBIA',
-      header: 'HARBISON BLVD, SC',
-      long: '2.1',
-      miles: 'Miles',
-      status: 'open',
-      timingsWeekDays: '9.30am - 11.00pm',
-      timingSat: '9.30am - 10.30pm',
-      timingSun: '9.30am - 11.30pm',
-      mobileNo: '(890) 543-4236',
-      features: [
-        {
-          id: 3,
-          name: "Open",
-          img: "../../assets/imgs/open_features.png"
-        }
-      ]
-    },
-    {
-      lat: 33.4483771,
-      lng: -112.07403729999999,
-      label: '5',
-      draggable: true,
-      name: '26702 PORTOLA PARKWAY FOOTHILL',
-      header: 'PORTOLA RANCH, CA',
-      long: '2.8',
-      miles: 'Miles',
-      status: 'open',
-      timingsWeekDays: '9.30am - 11.00pm',
-      timingSat: '8.30am - 12.00pm',
-      timingSun: '8.30am - 12.00pm',
-      mobileNo: '(965) 432-6546',
-      features: [
-        {
-          id: 1,
-          name: "Breakfast",
-          img: "../../assets/imgs/breakfast.png"
-        },
-        {
-          id: 3,
-          name: "Open",
-          img: "../../assets/imgs/open_features.png"
-        }
-      ]
-    },
-    {
-      lat: 31.7618778,
-      lng: -106.4850217,
-      label: '6',
-      draggable: true,
-      name: '145 HARBISON BLVD COLUMBIA',
-      header: 'BLVD COLUMBIA, SC',
-      long: '2.6',
-      miles: 'Miles',
-      status: 'open',
-      timingsWeekDays: '9.30am - 11.00pm',
-      timingSat: '9.30am - 12.00pm',
-      timingSun: '8.30am - 12.00pm',
-      mobileNo: '(954) 534-6463',
-      features: [
-        {
-          id: 1,
-          name: "Breakfast",
-          img: "../../assets/imgs/breakfast.png"
-        }
-      ]
-    }
-  ]
-
+  
   //Select Menu List
   menuListItem = [
     {
@@ -486,6 +347,2305 @@ export class Providers {
       'price': "$8"
     }
   ]
+
+    menuListDet = [
+      {
+      'store_id': 1,
+      'menu_id': 1,
+      'menu_name': "PIZZA",
+      'menu_image': "../../assets/imgs/menu_1_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 4,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 1,
+      'menu_id': 2,
+      'menu_name': "TACOS",
+      'menu_image': "../../assets/imgs/menu_2_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 1,
+      'menu_id': 3,
+      'menu_name': "COMBOS",
+      'menu_image': "../../assets/imgs/menu_3_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 4,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 2,
+      'menu_id': 1,
+      'menu_name': "PIZZA",
+      'menu_image': "../../assets/imgs/menu_1_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 2,
+      'menu_id': 2,
+      'menu_name': "TACOS",
+      'menu_image': "../../assets/imgs/menu_2_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 3,
+      'menu_id': 1,
+      'menu_name': "PIZZA",
+      'menu_image': "../../assets/imgs/menu_1_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 4,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 3,
+      'menu_id': 2,
+      'menu_name': "TACOS",
+      'menu_image': "../../assets/imgs/menu_2_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 3,
+      'menu_id': 3,
+      'menu_name': "COMBOS",
+      'menu_image': "../../assets/imgs/menu_3_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 4,
+      'menu_id': 1,
+      'menu_name': "PIZZA",
+      'menu_image': "../../assets/imgs/menu_1_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 4,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 4,
+      'menu_id': 2,
+      'menu_name': "TACOS",
+      'menu_image': "../../assets/imgs/menu_2_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 4,
+      'menu_id': 3,
+      'menu_name': "COMBOS",
+      'menu_image': "../../assets/imgs/menu_3_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 4,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 5,
+      'menu_id': 1,
+      'menu_name': "PIZZA",
+      'menu_image': "../../assets/imgs/menu_1_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id':5,
+      'menu_id': 2,
+      'menu_name': "TACOS",
+      'menu_image': "../../assets/imgs/menu_2_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 5,
+      'menu_id': 3,
+      'menu_name': "COMBOS",
+      'menu_image': "../../assets/imgs/menu_3_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 6,
+      'menu_id': 1,
+      'menu_name': "PIZZA",
+      'menu_image': "../../assets/imgs/menu_1_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 4,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 6,
+      'menu_id': 2,
+      'menu_name': "TACOS",
+      'menu_image': "../../assets/imgs/menu_2_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 6,
+      'menu_id': 3,
+      'menu_name': "COMBOS",
+      'menu_image': "../../assets/imgs/menu_3_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 7,
+      'menu_id': 1,
+      'menu_name': "PIZZA",
+      'menu_image': "../../assets/imgs/menu_1_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 4,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 7,
+      'menu_id': 2,
+      'menu_name': "TACOS",
+      'menu_image': "../../assets/imgs/menu_2_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 7,
+      'menu_id': 3,
+      'menu_name': "COMBOS",
+      'menu_image': "../../assets/imgs/menu_3_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 4,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 8,
+      'menu_id': 1,
+      'menu_name': "PIZZA",
+      'menu_image': "../../assets/imgs/menu_1_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 4,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 8,
+      'menu_id': 2,
+      'menu_name': "TACOS",
+      'menu_image': "../../assets/imgs/menu_2_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 8,
+      'menu_id': 3,
+      'menu_name': "COMBOS",
+      'menu_image': "../../assets/imgs/menu_3_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 4,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 9,
+      'menu_id': 1,
+      'menu_name': "PIZZA",
+      'menu_image': "../../assets/imgs/menu_1_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 4,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 9,
+      'menu_id': 2,
+      'menu_name': "TACOS",
+      'menu_image': "../../assets/imgs/menu_2_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id':9,
+      'menu_id': 3,
+      'menu_name': "COMBOS",
+      'menu_image': "../../assets/imgs/menu_3_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 4,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 10,
+      'menu_id': 1,
+      'menu_name': "PIZZA",
+      'menu_image': "../../assets/imgs/menu_1_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "FUNKY CHICKEN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 4,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'store_id': 10,
+      'menu_id': 2,
+      'menu_name': "TACOS",
+      'menu_image': "../../assets/imgs/menu_2_thumb.jpg",
+      'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ],
+          'sub_menus' : []
+    },
+    {
+      'store_id': 10,
+      'menu_id': 3,
+      'menu_name': "COMBOS",
+      'menu_image': "../../assets/imgs/menu_3_thumb.jpg",
+      'sub_menus': [
+        {
+          '_id': 1,
+          'name': "CHICKEN FAJITA",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 2,
+          'name': "CREAMY PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        },
+        {
+          '_id': 3,
+          'name': "GARLIC PRAWN",
+          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
+          'size': [
+            {
+              'size': "SMALL",
+              'price': "4.74",
+              'cal': "360Cal"
+            },
+            {
+              'size': "MEDIUM",
+              'price': "5.55",
+              'cal': "495Cal"
+            },
+            {
+              'size': "LARGE",
+              'price': "6.30",
+              'cal': "670Cal"
+            }
+          ]
+        }
+      ]
+    }
+    ]
 
   //Card Menu List 
   cardMenuList = [
