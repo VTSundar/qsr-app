@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController, NavParams, LoadingController, Platform } from 'ionic-angular';
+import { NavController, NavParams, LoadingController, Platform, ToastController } from 'ionic-angular';
 // import { LoadingController } from 'ionic-angular';
 import { RestraFind } from '../restrafind/restrafind';
 import { ListFavPage } from '../listfav/listfav';
@@ -21,12 +21,18 @@ export class CardMenuPage {
   public restNameLength: any;
   public payCountLength: any;
   public payLength: any = 0;
+  public storeId: any;
+  public cardMenuDetails: any;
   // private nav:NavController = null;
-  constructor(public navCtrl: NavController, public params: NavParams, public loadingCtrl: LoadingController, public api: Providers, public platform: Platform) {
+  constructor(public navCtrl: NavController, public params: NavParams, public loadingCtrl: LoadingController, public api: Providers, public platform: Platform, public toastCtrl: ToastController) {
     this.overlay = false;
     // this.restName = params.get("restName");
     this.restNameLength = this.api.restName.length;
-    this.restName = this.api.restName[this.restNameLength - 1]['restName']; 
+    this.restName = this.api.restName[this.restNameLength - 1]['restName'];
+    this.storeId = this.api.restName[this.restNameLength - 1]['storeId'];
+    this.cardMenuDetails = this.api.menuListDet.filter(
+      book => book.store_id === this.storeId);
+    console.log("CArdMEnu", JSON.stringify(this.cardMenuDetails));
     this.payCountLength = this.api.cartLength.length;
     this.payLength = this.api.cartLength;
     // console.log(this.restName);
@@ -75,24 +81,50 @@ export class CardMenuPage {
   closeMenu() {
     this.overlay = false;
   }
-  showDetails(data) {
-    // console.log(this.restName);
-    this.loadingCtrl.create({
-      content: 'Please wait...',
-      duration: 1000,
-      // dismissOnPageChange: true
-    }).present();
-    this.matName = {
-      "matName": data
+  showCardDetails(data, subMenu){
+      if (subMenu.length == 0) {
+      console.log("rewrds", JSON.stringify(data));
+      this.matName = {
+        "matDetails": data,
+        "sub_menus": subMenu.length,
+        "storeID": this.storeId
+      }
+      this.api.matName.push(this.matName);
+      this.navCtrl.push(ItemDetailPage, {
+        "storeName": this.restName,
+        "matName": data
+      });
     }
-    this.api.matName.push(this.matName);
-    this.navCtrl.push(ItemDetailPage, {
-      "storeName": this.restName,
-      "matName": data
-    });
+    else{
+      let toast = this.toastCtrl.create({
+        message: 'Please select sub-menus for this Item',
+        duration: 3000,
+        position: 'bottom'
+      });
+      toast.present(toast);
+    }
+  }
+  showDetails(data, subMenu) {
+      // console.log(this.restName);
+      this.loadingCtrl.create({
+        content: 'Please wait...',
+        duration: 1000,
+        // dismissOnPageChange: true
+      }).present();
+      this.matName = {
+        "matDetails": data,
+        "sub_menus": subMenu,
+        "storeID": this.storeId
+      }
+      this.api.matName.push(this.matName);
+      this.navCtrl.push(ItemDetailPage, {
+        "storeName": this.restName,
+        "matName": data
+      });
+
   }
   showSubMenu(menu) {
-    if (menu.subMenu) {
+    if (menu.sub_menus) {
       if (menu.expand) {
         menu.expand = false;
       } else {
