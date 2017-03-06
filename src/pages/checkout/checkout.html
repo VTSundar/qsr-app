@@ -100,7 +100,7 @@
             <ion-col offset-25 style="margin-left:31%;"><div style="white-space: initial;width: 50%;margin-left: -2rem;">{{item.name}} &nbsp;({{item.size}})</div></ion-col>
             <ion-col offset-25 style="margin-left: -14%;">
       <div style="margin-left: -1rem;">
-        {{item.quantity}} X ${{item.price}} <br> <button ion-button class="btnColorRemove" style="margin-left:-4%;">REMOVE</button>
+        {{item.quantity}} X ${{item.price}} <br> <button ion-button class="btnColorRemove" style="margin-left:-4%;" (click)="removeItems()">REMOVE</button>
       </div>
     </ion-col>
         </ion-row>
