@@ -94,7 +94,6 @@ export class LocationMapPage {
   }
 
   clickToMenuItems(data,storeId) {
-    console.log(JSON.stringify(storeId.store_id));
     this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 1000,

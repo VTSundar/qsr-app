@@ -16,10 +16,10 @@
                     </ion-grid>
                 </div>
                 <div class="item-detail-heading" *ngIf="subMenuCopy !== 0 ">
-                    <p style="color: white;font-size: 17px;margin-left: 0.5rem;font-weight: bold;white-space: initial;">{{subMenuDetails.name}} <span style="float: right;">${{rate}} <br> <span style="color: #ff871c;font-size: 15px;"> {{cal}} </span></span>
+                    <p style="color: white;font-size: 17px;margin-left: 0.5rem;font-weight: bold;white-space: initial;">{{itemDetails.name}} <span style="float: right;">${{rate}} <br> <span style="color: #ff871c;font-size: 15px;"> {{cal}} </span></span>
                     </p>
                 </div>
-                <div class="item-detail-heading" *ngIf="subMenuCopy == 0 ">
+                <div class="item-detail-heading" *ngIf="subMenuCopy == 0 || subMenuCopy !== undefined ">
                     <p style="color: white;font-size: 17px;margin-left: 0.5rem;font-weight: bold;white-space: initial;">{{subMenuDetails.menu_name}} <span style="float: right;">${{rate}} <br> <span style="color: #ff871c;font-size: 15px;"> {{cal}} </span></span>
                     </p>
                 </div>
@@ -31,7 +31,7 @@
                     <ion-row>
                         <ion-col>
                             <div class="items-description">
-                                {{subMenuDetails.desc}}
+                                {{itemDetails.desc}}
                             </div>
                         </ion-col>
                     </ion-row>
@@ -39,7 +39,7 @@
                         <ion-col>
                             <ion-grid class="item-size-det-grid">
                                 <ion-row class="item-size-det-grid-row1">
-                                    <ion-col width-40 *ngFor="let size of subMenuDetails.size" (click)="qtyBind(size);" >
+                                    <ion-col width-40 *ngFor="let size of itemDetails.size" (click)="qtyBind(size);" >
                                         <div class="qtysize">{{size.size}}</div>
                                         <div>${{size.price}}</div>
                                     </ion-col>
