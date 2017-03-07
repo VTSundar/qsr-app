@@ -358,7 +358,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -381,7 +381,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -404,7 +404,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -427,7 +427,7 @@ export class Providers {
         {
           '_id': 4,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -458,7 +458,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -481,7 +481,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -512,7 +512,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -535,7 +535,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -558,7 +558,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -581,7 +581,7 @@ export class Providers {
         {
           '_id': 4,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -612,7 +612,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -635,7 +635,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -658,7 +658,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -689,7 +689,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -712,7 +712,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -735,7 +735,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -766,7 +766,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -789,7 +789,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -812,7 +812,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -835,7 +835,7 @@ export class Providers {
         {
           '_id': 4,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -866,7 +866,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -889,7 +889,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -920,7 +920,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -943,7 +943,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -966,7 +966,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -997,7 +997,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1020,7 +1020,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1043,7 +1043,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1066,7 +1066,7 @@ export class Providers {
         {
           '_id': 4,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1097,7 +1097,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1120,7 +1120,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1151,7 +1151,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1174,7 +1174,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1197,7 +1197,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1220,7 +1220,7 @@ export class Providers {
         {
           '_id': 4,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1251,7 +1251,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1274,7 +1274,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1297,7 +1297,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1328,7 +1328,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1351,7 +1351,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1382,7 +1382,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1405,7 +1405,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1428,7 +1428,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1459,7 +1459,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1482,7 +1482,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1505,7 +1505,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1528,7 +1528,7 @@ export class Providers {
         {
           '_id': 4,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1559,7 +1559,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1582,7 +1582,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1613,7 +1613,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1636,7 +1636,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1659,7 +1659,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1690,7 +1690,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1713,7 +1713,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1736,7 +1736,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1759,7 +1759,7 @@ export class Providers {
         {
           '_id': 4,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1790,7 +1790,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1813,7 +1813,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1844,7 +1844,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1867,7 +1867,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1890,7 +1890,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1913,7 +1913,7 @@ export class Providers {
         {
           '_id': 4,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1944,7 +1944,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1967,7 +1967,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -1990,7 +1990,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2013,7 +2013,7 @@ export class Providers {
         {
           '_id': 4,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2044,7 +2044,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2067,7 +2067,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2098,7 +2098,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2121,7 +2121,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2144,7 +2144,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2167,7 +2167,7 @@ export class Providers {
         {
           '_id': 4,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2198,7 +2198,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2221,7 +2221,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2244,7 +2244,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2267,7 +2267,7 @@ export class Providers {
         {
           '_id': 4,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2298,7 +2298,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2321,7 +2321,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2352,7 +2352,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2375,7 +2375,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2398,7 +2398,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2421,7 +2421,7 @@ export class Providers {
         {
           '_id': 4,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2452,7 +2452,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2475,7 +2475,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2498,7 +2498,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "FUNKY CHICKEN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/funky chicken.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2521,7 +2521,7 @@ export class Providers {
         {
           '_id': 4,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2577,7 +2577,7 @@ export class Providers {
         {
           '_id': 1,
           'name': "CHICKEN FAJITA",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/chicken fajita.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2600,7 +2600,7 @@ export class Providers {
         {
           '_id': 2,
           'name': "CREAMY PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/creamy prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
@@ -2623,7 +2623,7 @@ export class Providers {
         {
           '_id': 3,
           'name': "GARLIC PRAWN",
-          'image': "../../assets/imgs/menu_1_thumb.jpg",
+          'image': "../../assets/imgs/garlic prawn.jpg",
           'desc' : "A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique tacosiblings sharing a bedroom, and they each choose their bunk based on personality.",
           'size': [
             {
