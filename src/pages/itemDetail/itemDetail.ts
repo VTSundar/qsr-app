@@ -51,8 +51,19 @@ export class ItemDetailPage {
         this.totRate = this.rate * this.defQty;
       }
     }
-    else {
-      var subMenuSize = this.subMenuDetails.size[0];
+    else if(this.subMenuDetails == undefined) {
+      var subMenuSize = this.itemDetails.size[0];
+      if (subMenuSize) {
+        this.qtySize = subMenuSize.size;
+        this.rate = subMenuSize.price;
+        this.cal = subMenuSize.cal;
+        this.defQty = 1;
+        this.totRate = this.rate * this.defQty;
+      }
+    }
+    else{
+      this.itemDetails = this.subMenuDetails;
+      var subMenuSize = this.itemDetails.size[0];
       if (subMenuSize) {
         this.qtySize = subMenuSize.size;
         this.rate = subMenuSize.price;
@@ -119,21 +130,21 @@ export class ItemDetailPage {
 
   addToCart() {
 
-    if(this.subMenuDetails.name == undefined){
-      this.subMenuDetails.name = this.subMenuDetails.menu_name
+    if(this.itemDetails.name == undefined){
+      this.itemDetails.name = this.subMenuDetails.menu_name
     }
 
     this.itemCartDetails =
       {
         "_id": "",
-        "name": this.subMenuDetails.name,
+        "name": this.itemDetails.name,
         "size": this.qtySize,
         "quantity": this.defQty,
         "price": this.rate
       }
 
     this.cartDetails = this.api.itemDet.filter(
-      book => book.size === this.qtySize && book.name === this.subMenuDetails.name);
+      book => book.size === this.qtySize && book.name === this.itemDetails.name);
     console.log(JSON.stringify(this.cartDetails));
     this.cartDetailsLength = this.cartDetails.length;
     if (this.cartDetailsLength > 0) {

@@ -23,9 +23,13 @@ export class CardMenuPage {
   public payLength: any = 0;
   public storeId: any;
   public cardMenuDetails: any;
+  public showSubMenuDet: any;
+  public subMenuDetShow: any;
+  public cardDetailsMenu: any;
   // private nav:NavController = null;
   constructor(public navCtrl: NavController, public params: NavParams, public loadingCtrl: LoadingController, public api: Providers, public platform: Platform, public toastCtrl: ToastController) {
     this.overlay = false;
+    this.subMenuDetShow = false;
     // this.restName = params.get("restName");
     this.restNameLength = this.api.restName.length;
     this.restName = this.api.restName[this.restNameLength - 1]['restName'];
@@ -81,9 +85,9 @@ export class CardMenuPage {
   closeMenu() {
     this.overlay = false;
   }
-  showCardDetails(data, subMenu){
-      if (subMenu.length == 0) {
-      console.log("rewrds", JSON.stringify(data));
+  showCardDetails(data, subMenu) {
+    this.overlay = false;
+    if (subMenu.length == 0) {
       this.matName = {
         "matDetails": data,
         "sub_menus": subMenu.length,
@@ -95,32 +99,31 @@ export class CardMenuPage {
         "matName": data
       });
     }
-    else{
-      let toast = this.toastCtrl.create({
-        message: 'Please select sub-menus for this Item',
-        duration: 3000,
-        position: 'bottom'
-      });
-      toast.present(toast);
+    else {
+      this.showSubMenuDet = this.api.menuListDet.filter(
+        book => book.store_id === data.store_id && book.menu_id === data.menu_id);
+      this.cardMenuDetails = this.showSubMenuDet[0].sub_menus;
+      this.cardDetailsMenu - this.showSubMenuDet[0];
+      this.subMenuDetShow = true;
     }
   }
   showDetails(data, subMenu) {
-      // console.log(this.restName);
-      this.loadingCtrl.create({
-        content: 'Please wait...',
-        duration: 1000,
-        // dismissOnPageChange: true
-      }).present();
-      this.matName = {
-        "matDetails": data,
-        "sub_menus": subMenu,
-        "storeID": this.storeId
-      }
-      this.api.matName.push(this.matName);
-      this.navCtrl.push(ItemDetailPage, {
-        "storeName": this.restName,
-        "matName": data
-      });
+    // console.log(this.restName);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 1000,
+      // dismissOnPageChange: true
+    }).present();
+    this.matName = {
+      "matDetails": data,
+      "sub_menus": subMenu,
+      "storeID": this.storeId
+    }
+    this.api.matName.push(this.matName);
+    this.navCtrl.push(ItemDetailPage, {
+      "storeName": this.restName,
+      "matName": data
+    });
 
   }
   showSubMenu(menu) {

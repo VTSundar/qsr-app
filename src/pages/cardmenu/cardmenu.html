@@ -23,11 +23,20 @@
       <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
     </button>
   </ion-fab>
-  <ion-card *ngFor="let item of cardMenuDetails" (click)="showCardDetails(item,item.sub_menus)">
+  <ion-card *ngFor="let item of cardMenuDetails">
+   <div *ngIf="!subMenuDetShow" (click)="showCardDetails(item,item.sub_menus)">
     <img [src]=item.menu_image/>
     <div class="card-title">{{item.menu_name}}</div>
     <div class="card-subtitle" *ngIf="item.sub_menus"> <span *ngFor="let sub of item.sub_menus">{{sub.name}} &nbsp; </span></div>
+   </div>
+
+   <div *ngIf="subMenuDetShow" (click)="showDetails(item,item.sub_menus)">
+    <img [src]=item.image/>
+    <div class="card-title">{{item.name}}</div>
+    <div class="card-subtitle" *ngIf="item.sub_menus"> <span *ngFor="let sub of item.sub_menus">{{sub.name}} &nbsp; </span></div>
+   </div>
   </ion-card>
+
   <div class="menu-overlay" *ngIf="overlay">
     <ion-header>
       <ion-toolbar class="toolbar-height overlayHeader">
@@ -78,7 +87,7 @@
               </li>
             <li *ngFor="let menu of cardMenuDetails">
               <ion-row (click)="showSubMenu(menu)">
-                <ion-col width-90>{{menu.menu_name.toUpperCase()}}</ion-col>
+                <ion-col width-90 (click)="showCardDetails(menu,menu.sub_menus)">{{menu.menu_name}}</ion-col>
                 <ion-col width-10><div *ngIf="menu.sub_menus" class="menu-arrow" [class.menu-arrow-up]="menu.expand==true"></div></ion-col>
               </ion-row>
               <ul *ngIf="menu.sub_menus" [hidden]="!menu.expand">
