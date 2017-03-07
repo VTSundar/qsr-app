@@ -15,8 +15,12 @@
                         </ion-row>
                     </ion-grid>
                 </div>
-                <div class="item-detail-heading button_font">
-                    <p style="color: white;font-size: 17px;margin-left: 0.5rem;font-weight: bold;white-space: initial;">{{itemName}} <span style="float: right;">${{rate}} <br> <span style="color: #ff871c;font-size: 15px;"> {{cal}} </span>                        </span>
+                <div class="item-detail-heading" *ngIf="subMenuCopy !== 0 ">
+                    <p style="color: white;font-size: 17px;margin-left: 0.5rem;font-weight: bold;white-space: initial;">{{subMenuDetails.name}} <span style="float: right;">${{rate}} <br> <span style="color: #ff871c;font-size: 15px;"> {{cal}} </span></span>
+                    </p>
+                </div>
+                <div class="item-detail-heading" *ngIf="subMenuCopy == 0 ">
+                    <p style="color: white;font-size: 17px;margin-left: 0.5rem;font-weight: bold;white-space: initial;">{{subMenuDetails.menu_name}} <span style="float: right;">${{rate}} <br> <span style="color: #ff871c;font-size: 15px;"> {{cal}} </span></span>
                     </p>
                 </div>
             </ion-col>
@@ -27,8 +31,7 @@
                     <ion-row>
                         <ion-col>
                             <div class="items-description">
-                                A Crunchy Taco sits on a bed of warm refried beans, while the Flour Tortilla sits underneath. I like to imagine unique taco
-                                siblings sharing a bedroom, and they each choose their bunk based on personality.
+                                {{subMenuDetails.desc}}
                             </div>
                         </ion-col>
                     </ion-row>
@@ -36,17 +39,9 @@
                         <ion-col>
                             <ion-grid class="item-size-det-grid">
                                 <ion-row class="item-size-det-grid-row1">
-                                    <ion-col width-40 (click)="qtyBind('Small');">
-                                        <div class="qtysize button_font">Small</div>
-                                        <div class="button_font">$4.74</div>
-                                    </ion-col>
-                                    <ion-col width-40 class="item-size-det-col2" (click)="qtyBind('Medium');">
-                                        <div class="qtysize button_font">Medium</div>
-                                        <div class="button_font">$5.74</div>
-                                    </ion-col>
-                                    <ion-col width-40 (click)="qtyBind('Large');">
-                                        <div class="qtysize button_font">Large</div>
-                                        <div class="button_font">$6.84</div>
+                                    <ion-col width-40 *ngFor="let size of subMenuDetails.size" (click)="qtyBind(size);" >
+                                        <div class="qtysize">{{size.size}}</div>
+                                        <div>${{size.price}}</div>
                                     </ion-col>
                                 </ion-row>
                                 <ion-row>

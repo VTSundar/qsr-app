@@ -26,24 +26,45 @@ export class ItemDetailPage {
   public restNameLength: any;
   public cartLength: any;
   public payCountLength: any;
+  public cartDetails: any;
+  public cartDetailsLength: any;
+  public totalQuantity: any = 0;
+  public itemDetails: any;
+  public subMenuDetails: any;
+  public subMenuCopy : any;
   constructor(public navCtrl: NavController, public params: NavParams, public platform: Platform, public loadingCtrl: LoadingController, public toastCtrl: ToastController, public api: Providers) {
     this.ionScroll = true;
-    this.qtySize = 'Medium';
-    this.rate = '5.74';
-    this.cal = '540 CAL';
-    this.defQty = 1;
-    this.totRate = this.rate * this.defQty;
     this.restNameLength = this.api.restName.length;
     this.restName = this.api.restName[this.restNameLength - 1]['restName'];
     this.itemLength = this.api.matName.length;
-    this.itemName = this.api.matName[this.itemLength - 1]['matName'];
-    this.payCountLength = this.api.cartLength.length;
-    this.payLength = this.api.cartLength;
-    // if(this.payCountLength){
-    // }else{
-    //   this.payLength = 'false';
-    // }
+    this.itemDetails = this.api.matName[this.itemLength - 1]['matDetails'];
+    this.subMenuDetails = this.api.matName[this.itemLength - 1]['sub_menus'];
+    this.subMenuCopy = this.subMenuDetails;
+    if (this.subMenuDetails == 0) {
+      this.subMenuDetails = this.itemDetails;
+      var subMenuSize = this.itemDetails.size[0];
+      if (subMenuSize) {
+        this.qtySize = subMenuSize.size;
+        this.rate = subMenuSize.price;
+        this.cal = subMenuSize.cal;
+        this.defQty = 1;
+        this.totRate = this.rate * this.defQty;
+      }
+    }
+    else {
+      var subMenuSize = this.subMenuDetails.size[0];
+      if (subMenuSize) {
+        this.qtySize = subMenuSize.size;
+        this.rate = subMenuSize.price;
+        this.cal = subMenuSize.cal;
+        this.defQty = 1;
+        this.totRate = this.rate * this.defQty;
+      }
+    }
 
+
+    this.payCountLength = this.api.itemDet.length;
+    this.payLength = this.api.cartLength[this.payCountLength - 1];
   }
 
   backToCardMenu() {
@@ -58,27 +79,11 @@ export class ItemDetailPage {
   }
 
   qtyBind(data) {
-    if (data == 'Small') {
-      this.qtySize = 'Small';
-      this.rate = '4.74';
-      this.cal = '320 CAL';
-      this.defQty = 1;
-      this.totRate = this.rate * this.defQty;
-    }
-    else if (data == 'Medium') {
-      this.qtySize = 'Medium';
-      this.rate = '5.74';
-      this.cal = '540 CAL';
-      this.defQty = 1;
-      this.totRate = this.rate * this.defQty;
-    }
-    else {
-      this.qtySize = 'Large';
-      this.rate = '6.84';
-      this.cal = '700 CAL';
-      this.defQty = 1;
-      this.totRate = this.rate * this.defQty;
-    }
+    this.qtySize = data.size;
+    this.rate = data.price;
+    this.cal = data.cal;
+    this.defQty = 1;
+    this.totRate = this.rate * this.defQty;
   }
 
   addQty(data) {
@@ -113,30 +118,55 @@ export class ItemDetailPage {
   }
 
   addToCart() {
-    let toast = this.toastCtrl.create({
-      message: 'Successfully added to Cart',
-      duration: 3000,
-      position: 'bottom'
-    });
-    toast.present(toast);
+
+    if(this.subMenuDetails.name == undefined){
+      this.subMenuDetails.name = this.subMenuDetails.menu_name
+    }
 
     this.itemCartDetails =
       {
         "_id": "",
-        "name": this.itemName,
+        "name": this.subMenuDetails.name,
         "size": this.qtySize,
         "quantity": this.defQty,
         "price": this.rate
       }
 
-    this.api.itemDet.push(this.itemCartDetails);
-    this.sampleTest = this.api.itemDet;
-    this.payLength = this.sampleTest.length;
-    this.api.cartLength.push(this.payLength);
+    this.cartDetails = this.api.itemDet.filter(
+      book => book.size === this.qtySize && book.name === this.subMenuDetails.name);
+    console.log(JSON.stringify(this.cartDetails));
+    this.cartDetailsLength = this.cartDetails.length;
+    if (this.cartDetailsLength > 0) {
+      this.cartDetails = this.cartDetails.filter(
+        book => book.name === this.itemName);
+      for (let data of this.cartDetails) {
+        this.totalQuantity = data.quantity + this.defQty;
+        data.quantity = this.totalQuantity;
+      }
+      let toast = this.toastCtrl.create({
+        message: 'Quantity Successfully updated to Cart',
+        duration: 3000,
+        position: 'bottom'
+      });
+      toast.present(toast);
+    }
+    else {
+      this.api.itemDet.push(this.itemCartDetails);
+      this.sampleTest = this.api.itemDet;
+      this.payLength = this.sampleTest.length;
+      this.api.cartLength.push(this.payLength);
+      let toast = this.toastCtrl.create({
+        message: 'Successfully added to Cart',
+        duration: 3000,
+        position: 'bottom'
+      });
+      toast.present(toast);
+    }
+
   }
 
   goToCheckOut() {
-    this.payCountLength = this.api.cartLength.length;
+    this.payCountLength = this.api.itemDet.length;
     if (this.payCountLength == 0) {
       let toast = this.toastCtrl.create({
         message: 'There is no item(s) in the cart.Pls add item',

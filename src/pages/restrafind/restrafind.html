@@ -7,18 +7,18 @@
     <ion-fab top left edge class="leftFab">
     <button ion-fab mini (click)="backToStartPage()"><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
   </ion-fab>
-  </ion-header><br><br><br><br>
-  <ion-searchbar (click)="getItems($event)" placeholder="Store, City or Zipcode" showCancelButton="true"></ion-searchbar>
+    <ion-fab top right edge>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+  </ion-fab></ion-header><br><br><br><br>
+  <!--<ion-searchbar (input)="searchItems()" placeholder="Store, City or Zipcode" showCancelButton="true"></ion-searchbar>-->
 <ion-content padding class="page-home1">
+  <!--<ion-searchbar (ionInput)="getItems($event)" autocorrect="off"><div (click)="getItems($event)"></div></ion-searchbar>-->
   <ion-scroll scrollY="true">
-  <ion-searchbar placeholder="Store, City or Zipcode" showCancelButton="true"></ion-searchbar>
-  <div class="recCount"><div style="padding-left: 20px;padding-bottom: 10px;">Totally <strong>10</strong> Stores Found.</div>
+  <ion-searchbar (ionInput)="getItems($event)"  placeholder="Store, City or Zipcode" showCancelButton="true"></ion-searchbar>
+  <div class="recCount"><div style="padding-left: 20px;padding-bottom: 10px;">Totally <strong>{{resultRestraLength}}</strong> Stores Found.</div>
   <ion-item *ngFor="let item of restraList.items" class="bgItem" (click)="slideNav(item)">
       <ion-avatar item-left>
-        <span *ngIf = "item.status == 'open' " style="width:60%;white-space: initial;vertical-align: middle;">
-      <img src="../../assets/imgs/iphone.png" /> 
-      </span>
-      <span *ngIf = "item.status == 'closed' " style="width:60%;white-space: initial;vertical-align: middle;">
+        <span style="width:60%;white-space: initial;vertical-align: middle;">
       <img src="../../assets/imgs/iphone.png" /> 
       </span>
       </ion-avatar>

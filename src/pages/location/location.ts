@@ -29,6 +29,7 @@ export class LocationMapPage {
   public lat: number;
   public lng: number;
   public restaurantName: any;
+  public mapDetList : any;
 
  
   clickedMarker(label: string, index: number,data) {
@@ -47,13 +48,13 @@ export class LocationMapPage {
     this.firstParam = params.get("mapData");
     var paramAdd = this.firstParam;
     this.parFeatures = paramAdd.features;
-    console.log("Features", JSON.stringify(this.parFeatures));
     console.log("Loca", JSON.stringify(this.firstParam));
     console.log("Loca1", JSON.stringify(paramAdd.name));
     this.resName = paramAdd.name;
     this.locName = paramAdd.Name;
     this.lat = this.firstParam.lat;
     this.lng = this.firstParam.lng;
+    this.mapDetList = this.mapList.items;
     if (this.platform.is('android')) {
       this.platFormType = 'Mobile';
     }
@@ -92,14 +93,16 @@ export class LocationMapPage {
     this.navCtrl.push(RestraFind);
   }
 
-  clickToMenuItems(data) {
+  clickToMenuItems(data,storeId) {
+    console.log(JSON.stringify(storeId.store_id));
     this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 1000,
       //  dismissOnPageChange: true
     }).present();
     this.restaurantName = {
-      'restName': data
+      'restName': data,
+      'storeId' : storeId.store_id
     }
     this.mapList.restName.push(this.restaurantName);
     this.navCtrl.push(CardMenuPage);
