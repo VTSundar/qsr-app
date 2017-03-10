@@ -26,6 +26,7 @@ export class CardMenuPage {
   public showSubMenuDet: any;
   public subMenuDetShow: any;
   public cardDetailsMenu: any;
+  public cardDetails : any;
   // private nav:NavController = null;
   constructor(public navCtrl: NavController, public params: NavParams, public loadingCtrl: LoadingController, public api: Providers, public platform: Platform, public toastCtrl: ToastController) {
     this.overlay = false;
@@ -37,6 +38,7 @@ export class CardMenuPage {
     this.cardMenuDetails = this.api.menuListDet.filter(
       book => book.store_id === this.storeId);
     console.log("CArdMEnu", JSON.stringify(this.cardMenuDetails));
+    this.cardDetails = this.cardMenuDetails;
     this.payCountLength = this.api.cartLength.length;
     this.payLength = this.api.cartLength;
     // console.log(this.restName);
@@ -80,6 +82,7 @@ export class CardMenuPage {
     });
   }
   showMenu() {
+    // this.cardMenuDetails = this.cardDetails;
     this.overlay = true;
   }
   closeMenu() {

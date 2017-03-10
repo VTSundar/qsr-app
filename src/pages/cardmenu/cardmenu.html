@@ -17,7 +17,7 @@
   </ion-scroll>
 </ion-content>-->
 
-<ion-content class="card-background-page" [class.no-scroll]="overlay">
+<ion-content class="card-background-pageMenu" [class.no-scroll]="overlay">
   <ion-fab edge top right class="fab-icon" (click)="showMenu()" *ngIf="!overlay">
     <button ion-fab mini>
       <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
@@ -87,7 +87,7 @@
               </li>
             <li *ngFor="let menu of cardMenuDetails">
               <ion-row (click)="showSubMenu(menu)">
-                <ion-col width-90 (click)="showCardDetails(menu,menu.sub_menus)">{{menu.menu_name}}</ion-col>
+                <ion-col width-90>{{menu.menu_name}}</ion-col>
                 <ion-col width-10><div *ngIf="menu.sub_menus" class="menu-arrow" [class.menu-arrow-up]="menu.expand==true"></div></ion-col>
               </ion-row>
               <ul *ngIf="menu.sub_menus" [hidden]="!menu.expand">

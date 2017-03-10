@@ -10,7 +10,7 @@ import { RestraFind } from '../restrafind/restrafind';
 })
 export class CheckoutPage {
     public daySwitchVal: boolean = false;
-    brightness: number = 2;
+    brightness: number = 12;
     travelMode: string = "DELIVERY";
     public platFormType: any;
     checkOut: any;
