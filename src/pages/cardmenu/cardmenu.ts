@@ -86,7 +86,7 @@ export class CardMenuPage {
     this.overlay = false;
   }
   showCardDetails(data, subMenu) {
-    this.overlay = false;
+    // this.overlay = false;
     if (subMenu.length == 0) {
       this.matName = {
         "matDetails": data,
