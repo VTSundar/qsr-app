@@ -10,7 +10,7 @@
 <ion-content padding class="page-home1">
   <!--<ion-searchbar (ionInput)="getItems($event)" autocorrect="off"><div (click)="getItems($event)"></div></ion-searchbar>-->
   <ion-scroll scrollY="true">
-  <ion-searchbar (ionInput)="getItems($event)"  placeholder="Store, City or Zipcode" showCancelButton="true"></ion-searchbar>
+  <ion-searchbar (ionInput)="getItems($event)"  placeholder="Store, City or Zipcode" showCancelButton="false"></ion-searchbar>
   <div class="recCount"><div style="padding-left: 20px;padding-bottom: 10px;">Totally <strong>{{resultRestraLength}}</strong> Stores Found.</div>
   <ion-item *ngFor="let item of restraList.items" class="bgItem" (click)="slideNav(item)">
       <ion-avatar item-left>
