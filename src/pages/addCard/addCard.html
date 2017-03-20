@@ -1,0 +1,30 @@
+<ion-header class="addCardHeader">
+  <ion-grid class="header-grid">
+    <ion-row>
+      <ion-col width-10 class="header-grid-col1" (click)="startupPage()"><img class="login-back-icon" src="../../assets/imgs/template2/left_back_icon.png" /></ion-col>
+      <ion-col width-80 class="header-grid-col2">ADD EXISTING</ion-col>
+      <ion-col width-10 class="header-grid-col3"><img class="login-back-icon" src="../../assets/imgs/template2/settings.png" /></ion-col>
+    </ion-row>
+  </ion-grid>
+  </ion-header>
+<ion-content class="LoginContent">
+  <div [ngClass]="platFormType === 'Windows' ? 'addCardParentDiv2' : 'addCardParentDiv'">
+    <div>
+        <div style="height: 100%;width: 100%;border-width:2px;border-style:dashed; border-radius: 10px; border-color: white;">
+            <ion-label style="margin-left: 45% !important;line-height: 150px;font-size: 2rem !important;color: #868686;">Loading...</ion-label>
+        </div>
+    </div>
+    <div style="margin-top: 15px">
+        <label style="color: #868686;">Name</label>
+        <label style="float: right; color: white;">None</label>
+    </div>
+    <div style="margin-top: 15px">
+        <label style="color: #868686;">Balance</label>
+        <label style="float: right; color: white;">None</label>
+    </div>
+    <div style="color: #868686; height: 1px; width: 100%; margin-top: 10px;"></div>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-footer><button ion-button full class="CustomApplyBtn footerBtn">APPLY</button></ion-footer>
+</ion-footer>

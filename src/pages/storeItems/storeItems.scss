@@ -237,7 +237,7 @@ ion-card {
     margin-top: 1.4%;
 }
 
-.card-background-page .label-md {
+.label-md {
     // margin: 13px 8px 13px 0;
     flex-wrap: wrap !important;
     display: flex !important;
@@ -506,18 +506,4 @@ ion-card {
     border-radius: 30px;
     margin-top: -18px;
     color: white !important;
-}
-
-.storeItemsheader .searchbar-ios .searchbar-input {
-    border-radius: 2px;
-    font-weight: 400;
-    line-height: 3rem;
-}
-
-.storeItemsheader .searchbar-ios {
-    padding: 0 8px;
-    min-height: 50px;
-    border-top: transparent !important;
-    border-bottom: transparent !important;
-    background: transparent !important;
 }

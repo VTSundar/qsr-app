@@ -26,9 +26,6 @@ export class StoreItemsPage {
   items = [];
   public mainMenus: any;
   public menuOverlay: boolean = true;
-  public searchField : any = false;
-  public productListLength : any;
-  public newCourse : any;
 
   constructor(public navCtrl: NavController, public api: Providers, public params: NavParams, public appService: AppService, public toastCtrl: ToastController) {
     this.notLength = this.api.addCartItems.length;
@@ -40,10 +37,10 @@ export class StoreItemsPage {
     appService.getProduct()
       .then(data => {
         this.productList = data;
-        this.newCourse = Object.assign([], this.productList);
         for (let prod of this.productList) {
           prod['price'] = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
         }
+        console.log("productList", this.productList);
         // this.getRandomNumber(1,10);
       });
 
@@ -106,36 +103,5 @@ export class StoreItemsPage {
   addToPayment(){
     this.api.navPaymentPage = 'StoreItems';
     this.navCtrl.push(PaymentCartPage);
-  }
-
-  searchCall(){
-      this.searchField = true;
-  }
-
-  public getItems(ev: any) {
-    console.log("called");
-    // Reset items back to all of the items
-    this.productList = this.newCourse;
-    
-
-    // set val to the value of the ev target
-    var val = ev.target.value;
-    console.log(val);
-    if (val == "" || val == undefined) {
-      this.productList = this.newCourse;
-      this.productListLength = this.productList.length;
-      this.searchField = false;
-    }
-    else {
-      this.items = this.productList.filter((item) => {
-        if(item.name){
-            return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
-        } 
-      })
-      this.productListLength = this.items.length;
-      this.productList = this.items;
-      console.log("dsad",JSON.stringify(this.productList));
-    }
-
   }
 }
