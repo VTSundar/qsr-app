@@ -1,0 +1,42 @@
+<ion-header class="header-color">
+  <ion-grid class="header-grid">
+    <ion-row>
+      <ion-col width-10 class="header-grid-col1">
+        <ion-icon name="arrow-back" (click)="back()"></ion-icon>
+      </ion-col>
+      <ion-col width-80 class="header-grid-col2">{{appService.selectedFamily.name}}</ion-col>
+      <ion-col width-10 class="header-grid-col3">
+        <ion-icon name="search"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+<ion-content class="card-background-page">
+    <div class="sub-menu-container">
+      <ul [hidden]="subCategory">
+        <li class="sub-category-li" *ngFor="let prodCategory of productCategories" (click)="selectCategory(prodCategory)">
+            <div class="sub-menu-row1" [ngStyle]="{'background-image': 'url(' + prodCategory.imageUrl + ')'}"></div>
+            <div class="sub-menu-row2">
+                {{prodCategory.name}}
+            </div>
+        </li>
+      </ul>
+      <ul [hidden]="!subCategory">
+          <li class="category-product" *ngFor="let product of productItems">
+            <div class="product-img" [ngStyle]="{'background-image': 'url(' + product.imageUrl + ')'}" (click)="showProductDetails(product)"></div>
+            <div class="product-desc" (click)="showProductDetails(product)">
+              <div class="heading">{{product.name}}</div>
+              <div class="desc">
+                {{product.ingredients}}
+              </div>
+            </div>
+            <div class="product-price">
+              <ion-row>
+                <ion-col class="product-price-col1" width-50 (click)="addTocart(product)">Add Cart</ion-col>
+                <ion-col class="product-price-col2" width-50>${{product.price}}</ion-col>
+              </ion-row>
+            </div>
+          </li>
+      </ul>
+    </div>
+</ion-content>

@@ -1,0 +1,134 @@
+.loyalty-content-bg{
+    .scroll-content{
+        background: #333331;
+    }
+    .myLoyalty-container{
+        .loyalty-img{
+            height: 300px;
+            background: url('../../assets/imgs/myLoyalty.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            text-align: center;
+            position: relative;
+            .loyalty-img-overlay{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background: rgba(0,0,0,0.6);
+            }
+            .points-circle{
+                width: 200px;
+                height: 200px;
+                // line-height: 200px;
+                border-radius: 200px;
+                border: 3px solid #fff;
+                display: inline-block;
+                margin-top: 20px;
+                position: relative;
+                .points-val{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    .val{
+                        font-family: CabinSketchRegular;
+                        font-size: 50px;
+                        color: #fff;
+                    }
+                    .label{
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .loyalty-content{
+            height: 50px;
+            background: #333331;
+            .redeem-info{
+                position: absolute;
+                margin-top: -50px;
+                font-size: 14PX;
+                color: #fff;
+                width: 100%;
+                text-align: center;
+            }
+            .redeem-btn-container{
+                margin: 0 auto;
+                width: 200px;
+                button{
+                    position: absolute;
+                    margin-top: -25px;
+                    &:hover{
+                        background: #ff3a2f;    
+                    }
+                    height: 50px;
+                    width: 200px;
+                    background: #ff3a2f;
+                }
+            }
+        }
+        .next-redeem-offer{
+            border-bottom: 1px solid #373737;
+            padding: 0 10px 5px 10px;
+            font-size: 14px;
+            color: #9b9b9b;
+        }
+        .redeemPointsList{
+            padding: 15px;
+            text-align: center;
+            overflow-x: auto;
+            // overflow: hidden;
+            .redeemPointsList-container{
+                display: inline-flex;
+            }
+            .doller-points{
+                width: 100px;
+                // border: 1px solid #fff;
+                display: inline-block;
+                .dollar{
+                    width: 50px;
+                    height: 50px;
+                    background: #fff;
+                    border-radius: 60px;
+                    margin: 0 auto;
+                    color: #9b9b9b;
+                    font-weight: bold;
+                    line-height: 50px;
+                }
+                .points{
+                    color: #fff;
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
+            }
+        }
+        .next-reward-info{
+            border-top: 1px solid #373737;
+            padding: 15px 10px;
+            .info{
+                font-size: 14px;
+                color: #fff;
+            }
+            .lastVisit{
+                color: #9b9b9b;
+                font-size: 12px;
+            }
+            .vist-date{
+                margin-left: 10px;
+                color: #ff3a2f;
+                font-size: 12px;
+            }
+        }
+        .disclaimer{
+            padding: 15px 10px;
+            background: #fff;
+            text-align: center;
+            font-size: 12px;
+            .heading{
+                font-weight: bold;
+                margin-right: 10px;
+            }
+        }
+    }
+}

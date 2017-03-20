@@ -1,0 +1,57 @@
+<ion-header class="startScreenHeader">
+  <ion-grid class="header-grid">
+    <ion-row>
+      <ion-col width-10 class="header-grid-col1">
+        <ion-icon name="arrow-back" ios="md-arrow-back" md="md-arrow-back" (click)="goBack()"></ion-icon>
+      </ion-col>
+      <ion-col width-80 class="header-grid-col2">MY LOYALTY</ion-col>
+      <ion-col width-10 class="header-grid-col3">
+        <!--<ion-icon name="search"></ion-icon>-->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+<ion-content class="loyalty-content-bg">
+    <div class="myLoyalty-container">
+        <div class="loyalty-img">
+            <div class="loyalty-img-overlay"></div>
+            <div class="points-circle">
+                <div class="points-val">
+                    <span class="val">50</span><br/>
+                    <span class="label">Points</span>
+                </div>
+            </div>
+        </div>
+        <div class="loyalty-content">
+            <div class="redeem-info">
+                YOU'VE EARNED A $5 OFF COUPON
+            </div>
+            <div class="redeem-btn-container">
+                <button ion-button>REDEEM NOW</button>
+            </div>
+        </div>
+        <div class="next-redeem-offer">
+            Next redeem offer
+        </div>
+        <div class="redeemPointsList">
+            <div class="redeemPointsList-container">
+                <div class="doller-points" *ngFor="let offer of nextRedeemOffers; let i = index">
+                    <div class="dollar" [style.color]="i == 0 ? '#ff3a2f' : ''" [style.border]="i == 0 ? '1px solid #ff3a2f' : ''" [style.background]="i !== 0 ? '#4a4a4a' : ''">{{offer.doller}}</div>
+                    <div class="points">{{offer.points}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="next-reward-info">
+            <div class="info">
+                You need fifty more points for the next offer.
+            </div>
+            <div class="last-visit-date">
+                <span class="lastVisit">Last Visit</span>
+                <span class="vist-date">MAR 01,2017</span>
+            </div>
+        </div>
+        <div class="disclaimer">
+            <span class="heading">Disclaimer:</span><span>Points will be lost after six months of purchase inactive</span>
+        </div>
+    </div>
+</ion-content>

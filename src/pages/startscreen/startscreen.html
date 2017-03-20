@@ -1,62 +1,57 @@
-<ion-content class="start-screen-content">
-    <ion-grid class="start-screen-grid">
-        <ion-row class="start-screen-row1">
-            <ion-col width-100>
-                <ion-slides [autoplay]="4000" pager class="ion-slider-container">
-                    <ion-slide>
-                            <!--<img src="../../assets/imgs/jamba6.jpg" />-->
-                        <div class="start-slider-style">
-                            <div class="slider-content-part1">FRESH FOOD SERVED FAST</div>
-                            <div class="slider-content-part2">Get free food & other insider-only treat straigh to your inbox!</div>
-                        </div>
-                    </ion-slide>
-                    <ion-slide>
-                            <!--<img src="../../assets/imgs/jamba6.jpg" />-->
-                        <div class="start-slider-style">
-                            <div class="slider-content-part1">QUICK SERVE RESTAURANT</div>
-                            <div class="slider-content-part2">Get free food & other insider-only treat straigh to your inbox!</div>
-                        </div>
-                    </ion-slide>
-                    <ion-slide>
-                            <!--<img src="../../assets/imgs/jamba6.jpg" />-->
-                        <div class="start-slider-style">
-                            <div class="slider-content-part1">FRESH AND TASTY FOOD ON TIME</div>
-                            <div class="slider-content-part2">Get free food & other insider-only treat straigh to your inbox!</div>
-                        </div>
-                    </ion-slide>
-                    <!--<ion-slide>
-                            <img src="../../assets/imgs/jamba2.jpg" />
-                    </ion-slide>
-                    
-                    <ion-slide>
-                            <img src="../../assets/imgs/jamba3.jpg" />
-                    </ion-slide>
-                    
-                    <ion-slide>
-                            <img src="../../assets/imgs/jamba4.jpg" />
-                    </ion-slide>
-
-                    <ion-slide>
-                            <img src="../../assets/imgs/jamba5.jpg" />
-                    </ion-slide>-->
-                </ion-slides>
-            </ion-col>
-        </ion-row>
-        <ion-row class="start-screen-row2">
-            <ion-col width-100>
-                <div class="start-btn-container">
-                    <ion-grid class="start-btn-grid">
-                        <ion-row class="start-btn-row">
-                            <ion-col width-50 class="start-btn-col1" (click)="gotoLogin()">SIGN IN</ion-col>
-                            <ion-col width-50 class="start-btn-col2" (click)="createAccount()">ORDER NOW</ion-col>
-                        </ion-row>
-                    </ion-grid>
-                </div>
-                <div class="start-signup">
-                    <div>Don't have an account?<span class="signup-color" (click)="gotoSignupPg()"> SIGN UP</span></div>
-                    <div>Terms and Conditions</div>
-                </div>
-            </ion-col>
-        </ion-row>
-    </ion-grid>
+<ion-header class="startScreenHeader">
+        <ion-grid class="header-grid">
+            <ion-row>
+                <ion-col width-10 class="header-grid-col1">
+                   <!--<ion-icon name="options" role="img" class="icon icon-md ion-md-options startScreenMenuOption" aria-label="options" ng-reflect-name="options"></ion-icon>-->
+                </ion-col>
+                <ion-col width-80 class="header-grid-col2 startScreenHeading">Quick Serve</ion-col>
+                <ion-col width-10 class="header-grid-col3"><img (click)="gotoMapScreen()" class="startScreenimgMap" src="../../assets/imgs/template2/white _map.png"/></ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-header>
+<ion-content padding class="start-screen-content">
+    <div class="startScreenHeaing">
+        <div class="main-heading-font mainText">
+            <div>SKIP OUR LINE</div>
+            <div>CUSTOMIZE IT</div>
+            <div>ORDER IT FASTER</div>
+        </div>
+        <ion-grid class="start-screen-grid">
+            <ion-row class="start-screen-row2">
+                <ion-col width-100>
+                    <div class="start-btn-container">
+                        <ion-grid class="start-btn-grid">
+                            <ion-fab edge top left class="fab-icon">
+                                <button ion-fab mini>
+                                         <img style="width: 55px !important;max-width: none;" src="../../assets/imgs/template2/basket.png"/>
+                                 </button>
+                            </ion-fab>
+                            <ion-row class="start-btn-row">
+                                <ion-col width-100 class="start-btn-col1" (click)="gotoMenuItems()" style="height: 50px;line-height: 25px;">DELIVERY</ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </div>
+                    <div class="start-btn-container">
+                        <ion-grid class="start-btn-grid">
+                            <ion-fab edge top left class="fab-icon">
+                                <button ion-fab mini>
+                                         <ion-icon ios="md-arrow-round-forward" md="md-arrow-round-forward" style="color: #ff3a2f;"></ion-icon>
+                                </button>
+                            </ion-fab>
+                            <ion-row class="start-btn-row">
+                                <ion-col width-100 class="start-btn-col2" (click)="gotoMenuItems()" style="height: 50px;line-height: 25px;">CARRYOUT</ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </div>
+                    <!--<div class="start-signup">
+                        <div>Don't have an account?<span class="signup-color" (click)="gotoSignupPg()"> SIGN UP</span></div>
+                        <div>Terms Of Use</div>
+                    </div>-->
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
 </ion-content>
+<ion-footer class="startFooter">
+    <div class="startScreenFooter"><span (click)="gotoLogin()">LOGIN</span> / <span (click)="gotoSignupPg()">CREATE AN ACCOUNT</span></div>
+</ion-footer>

@@ -1,74 +1,52 @@
-<ion-header class="headerStore">MAKE PAYMENT
-  <ion-fab top left edge class="leftFab">
-    <button ion-fab mini class="paymentBack" (click)="backToStartPage()"><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
-  </ion-fab>
+<ion-header class="paymentScreenheader">
+    <ion-grid class="header-grid">
+        <ion-row>
+            <ion-col width-10 class="header-grid-col1">
+                <ion-icon ios="md-arrow-back" md="md-arrow-back" (click)="backtoCart()"></ion-icon>
+            </ion-col>
+            <ion-col width-90 class="header-grid-col2">Make Payment</ion-col>
+            <!--<ion-col width-10 class="header-grid-col3">
+                <ion-icon ios="md-add" md="md-add"></ion-icon>
+            </ion-col>-->
+        </ion-row>
+    </ion-grid>
 </ion-header>
-<ion-content class="cards-bg contentPay">
-    <div [ngClass]="Platform === Windows ? 'paymentParentDiv-2' : 'paymentParentDiv'">
-      <p class="paymentCardHeader"> Fill Your Card Details </p>
-      <ion-card class="cardPay">
-        <ion-list>
-          <div class="listItemDiv-payment">
-            <ion-item class="itemInnerPadding">
-              <ion-label floating>Name</ion-label>
-              <ion-input class="borderList" type="text"></ion-input>
-            </ion-item>
-            <ion-row>
-              <ion-col width-100 class="expDateCol">
-                <div>
-                  <ion-grid>
-                    <ion-row>
-                      <ion-col width-100 class="colCardNumber">
-                        <ion-item class="itemInnerPadding">
-                          <ion-label floating>Card Number</ion-label>
-                          <ion-input class="cardNumberInput" type="text"></ion-input>
-                           
-                        </ion-item>
-                        <img class="imgCard" src="../../assets/imgs/visa_card.png" />
-                      </ion-col>
-                    </ion-row>
-                  </ion-grid>
+<ion-content class="paymentScreenContent">
+    <!--<div *ngIf="platFormType == 'Windows'" class="paymentScreenParentDiv2">-->
+        <div [ngClass]="platFormType === 'Windows' ? 'paymentScreenParentDiv2' : 'paymentScreenParentDiv'">
+        <!--[ngClass]="Platform === Windows ? 'paymentScreenParentDiv2' : 'paymentScreenParentDiv'"-->
+        <div class="paymentScreenCards">
+            Choose Your Card
+            <div class="availableCards">
+                <ul>
+                    <li>
+                        <div class="availCardsDiv" *ngFor="let items of paymentCardLists">
+                            <div style="height: 100%;width: 100%;border-width:2px;border-style:dashed; border-radius: 10px" *ngIf="!items.id">
+                                <ion-icon style="margin-left: 90px;line-height: 150px;font-size: 4.2rem;" ios="md-add" md="md-add"></ion-icon>
+                            </div>
+                            <img style="height: 100%;width: 100%;" [src]="items.image" *ngIf="items.id" />
+                        </div>
+                    </li>
+                </ul>
+                <div style="text-align: center;width: 100%; margin-top: 10px;">
+                    <div style="width: 10px;height: 10px;background: #ff3a2f;border-radius: 10px;display: inline-block;"></div>
+                    <div style="width: 10px;height: 10px;background: black;border-radius: 10px;display: inline-block;"></div>
+                    <div style="width: 10px;height: 10px;background: black;border-radius: 10px;display: inline-block;"></div>
                 </div>
-              </ion-col>
-            </ion-row>
-            <ion-row style="margin-top: 5px;">
-              <ion-col style="width: 100%;" class="expDateCol">
-                <div>
-                  <ion-grid>
-                    <ion-row style="width: 100%;">
-                      <ion-col style="width: 70%;">
-                        <ion-item class="itemInnerPadding">
-                          <ion-label floating>Exp.Date</ion-label>
-                          <ion-datetime displayFormat="MM/YY" pickerFormat="MM YY"></ion-datetime>
-                        </ion-item>
-                      </ion-col>
-                      <ion-col style="width: 30%;">
-                        <ion-item class="cvvItem itemInnerPadding">
-                          <ion-label floating>CVV/CVC</ion-label>
-                          <ion-input type="password" class="cvvPassword"></ion-input>
-                        </ion-item>
-                      </ion-col>
-                    </ion-row>
-                  </ion-grid>
-                </div>
-              </ion-col>
-            </ion-row>
-            <ion-item class="saveCard">
-              <ion-label>
-                Save this Card
-              </ion-label>
-              <ion-toggle color="secondary" checked="false"></ion-toggle>
-            </ion-item>
-          </div>
-        </ion-list>
-      </ion-card>
-      <div class="paymentFooter">
-        <p class="totalPay">Total Payment</p>
-        <p class="totalAmount">${{total}}</p>
-        <div class="footerBtnPay">
-          <button ion-button full color="payNow">Pay Now</button>
-          <div class="hoverButton"><button ion-button full outline color="payNow" class="cancelOrder">Cancel Order</button></div>
+            </div>
         </div>
-      </div>
+        <div style="margin-top: 25px;">
+            <ion-card style="background: #4a4a4a;">
+                <ion-card-header style="color: #6c6c6c; padding: 30px">
+                    Total Payment
+                </ion-card-header>
+                <ion-card-content style="color: white;padding: 30px">
+                    $20.59
+                </ion-card-content>
+            </ion-card>
+        </div>
     </div>
 </ion-content>
+<ion-footer>
+    <button ion-button full class="paymentScreenBtn" (click)="payDone()">Pay Now</button>
+</ion-footer>

@@ -1,0 +1,52 @@
+<ion-header class="storeItemsheaderDet">
+        <ion-grid class="header-grid">
+            <ion-row>
+                <ion-col width-10 class="header-grid-col1">
+                    <ion-icon ios="md-close" md="md-close" style="color: white;font-weight: bold;"></ion-icon>
+                </ion-col>
+                <ion-col width-80 class="header-grid-col2">Customize</ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-header>
+<ion-content class="card-background-pageHeader">
+  <ion-grid style="font-size: 15px;">
+        <!--<ion-row>
+            <ion-col width-10>
+                <div class="item-detail-quantity" style="text-align: center;">
+                    <div (click)="addQty('sub')">
+                        <ion-icon ios="ios-remove" md="md-remove"></ion-icon>
+                    </div>
+                    <div style="font-size: 50px;color: white;width: 10%;">{{defQty}}</div>
+                    <div (click)="addQty('add')">
+                        <ion-icon ios="ios-add" md="md-add"></ion-icon>
+                    </div>
+                </div>
+            </ion-col>
+        </ion-row>-->
+        <ion-row>
+                <ion-col width-10 class="header-grid-col1" style="text-align: end;">
+                    <ion-icon ios="ios-remove" md="md-remove" style="color: black;font-weight: bold;"></ion-icon>
+                </ion-col>
+                <ion-col width-80 class="header-grid-col2" style="text-align: center;line-height: 50px;font-size: 20px;color: white;">Paneer</ion-col>
+                <ion-col width-10 class="header-grid-col3">
+                    <ion-icon ios="ios-add" md="md-add" style="color: black;font-weight: bold;"></ion-icon>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+            <ion-col>
+                <div class="qtySize">
+                    Small(+ $0.05)
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+
+<ion-footer class="storeDetFooter">
+    <ion-grid class="start-btn-grid">
+        <ion-row class="start-btn-row">
+            <ion-col width-50 class="start-btn-col1">Customization</ion-col>
+            <ion-col width-50 class="start-btn-col2" (click)="addCart()">Add Cart</ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-footer>

@@ -1,0 +1,48 @@
+<ion-header class="storeLocationHeader">
+        <ion-grid class="header-grid">
+            <ion-row>
+                <ion-col width-10 class="header-grid-col1"><img class="storeLocimgClose" (click)="gotoStartScreen()" src="../../assets/imgs/template2/white_close.png"/></ion-col>
+                <ion-col width-80 class="header-grid-col2 storeLocationHeading">LOCATIONS</ion-col>
+                <ion-col width-10 class="header-grid-col3"><img class="storeLocimgMap" (click)="gotoMapScreen()" src="../../assets/imgs/template2/white _map.png"/></ion-col>
+            </ion-row>
+        </ion-grid>
+</ion-header>
+<ion-content class="storelocationContent">
+    <div [ngClass]="platFormType === 'Windows' ? 'storeLocationParentDiv2' : 'storeLocationParentDiv'">
+        <div class="storeLocationBtn" (click)="gotoListStoreScreen()">
+            <ion-grid>
+                <ion-row>
+                    <ion-col width-10><img class="locationImgStore" src="../../assets/imgs/template2/white_location.png"/></ion-col>
+                    <ion-col width-80><div class="btnTextStore ion-app">FIND A STORE NEARBY</div></ion-col>
+                    <ion-col width-10></ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <div style="width: 100%;text-align: center;color:white;font-size: 2.0rem;margin-top: 30px;"><h3 class="dividerOR" style="font-size: 1.8rem;">&nbsp;OR&nbsp;</h3></div>
+        <div class="storeLocInput">
+            <ion-item>
+                <ion-input type="tel" placeholder="Enter Zipcode" [(ngModel)]="zipCode"></ion-input>
+            </ion-item>
+        </div>
+        <div style="width: 100%;text-align: center;color:white;font-size: 2.0rem;margin-top: 30px;"><h3 class="dividerOR" style="font-size: 1.8rem;">&nbsp;OR&nbsp;</h3></div>
+        <div class="txtStoreLoc">Don't Know Your Zipcode?</div>
+        <div class="storeLocZipCode">
+            <ion-grid>
+                <ion-row>
+                    <ion-col width-50>
+                        <ion-item class="storeLocZipCode1">
+                            <ion-input type="text" placeholder="STATE" [(ngModel)]="state"></ion-input>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col width-50>
+                        <ion-item  class="storeLocZipCode2">
+                            <ion-input type="text" placeholder="CITY" [(ngModel)]="city"></ion-input>
+                            <ion-icon style="color: white" ios="ios-arrow-forward" md="ios-arrow-forward"></ion-icon>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <div class="storelocBtnDiv" (click)="searchZipCode(zipCode)"><button ion-button full class="storeLocSearchBtn">SEARCH</button></div>
+    </div>
+</ion-content>

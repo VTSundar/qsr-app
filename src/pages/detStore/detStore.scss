@@ -1,0 +1,122 @@
+.detScreenFooterBar{
+       background: transparent;
+}   
+.setAs{
+    background: #ff3a2f;
+}
+.pickupBtn{
+    text-align: center;
+    border-right: 2px solid #ff3a2f;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.deliveryBtn{
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.setAs:hover {
+    background: #ff3a2f !important;
+}
+.setAs:focus {
+    background: #ff3a2f !important;
+}
+.nearbyStoresFooter{
+    height: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.nearbyStoresFooter .btnRowStoreDet{
+     border: 2px solid #ff3a2f;
+}
+.nearbyStoresFooter ion-icon {
+    font-size: 2.3rem;
+    width: 100%;
+    padding: 5px;
+    margin-left: 2px;
+}
+.detStoreContent .segment-md .segment-button:hover {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.detStoreContent .segment-ios .segment-button:hover {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.detStoreContent .segment-md .segment-button:focus {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.detStoreContent .segment-ios .segment-button:focus {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.detStoreContent .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+    border-color: #ff3a2f;
+    opacity: 1;
+    background: #ff3a2f !important;
+    color: white !important;
+}
+
+.detStoreContent .segment-ios .segment-button.activated, .segment-ios .segment-button.segment-activated {
+    border-color: #ff3a2f;
+    opacity: 1;
+    background: #ff3a2f !important;
+    color: white !important;
+}
+
+.detStoreContent .segment-md .segment-button {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    height: 3.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff3a2f;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    background-color: transparent;
+}
+
+.detStoreContent .segment-ios .segment-button {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    height: 3.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff3a2f;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    background-color: transparent;
+}
+
+.detStoreContent .segment-button {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.detStoreContent{
+    background: black;
+}
+
+.detStoreContent .storeItemsheader {
+    background: #ff3a2f;
+    color: #fff !important;
+    opacity: 0.7;
+}

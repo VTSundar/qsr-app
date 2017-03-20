@@ -1,0 +1,352 @@
+.rewardsOfferContent .card-md:nth-child(odd) {
+    margin: 20px 10px -20px 120px;
+    width: calc(85% - 20px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #4a4a4a !important;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.rewardsOfferContent .card-md:nth-child(even) {
+    margin: 20px 10px -20px 120px;
+    width: calc(85% - 20px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #444444 !important;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.rewardsOfferContentMobile .card-md:nth-child(odd) {
+    margin: 20px 10px -20px 10px;
+    width: calc(100% - 20px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #4a4a4a !important;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.rewardsOfferContentMobile .card-md:nth-child(even) {
+    margin: 20px 10px -20px 10px;
+    width: calc(100% - 20px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #444444 !important;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+
+.rewardsOfferContentMobile .card-ios:nth-child(odd) {
+    margin: 20px 10px -20px 10px;
+    width: calc(100% - 20px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #4a4a4a;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.rewardsOfferContentMobile .card-ios:nth-child(even) {
+    margin: 20px 10px -20px 10px;
+    width: calc(100% - 20px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #444444;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.rewardsOfferContent{
+    background: #363636 !important;
+}
+
+.rewardsOfferContentMobile{
+    background: #363636 !important;
+}
+
+
+.rewardsOfferContent .card-header-md {
+    padding: 16px;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.rewardsOfferContentMobile .card-header-md {
+    padding: 16px;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.rewardsOfferContent .card-header-ios {
+    padding: 16px;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.rewardsOfferContentMobile .card-header-ios {
+    padding: 16px;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.rewardsOfferContent .segment-md .segment-button:hover {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.rewardsOfferContentMobile .segment-md .segment-button:hover {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.rewardsOfferContent .segment-ios .segment-button:hover {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.rewardsOfferContentMobile .segment-ios .segment-button:hover {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.rewardsOfferContent .segment-md .segment-button:focus {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.rewardsOfferContentMobile .segment-md .segment-button:focus {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.rewardsOfferContent .segment-ios .segment-button:focus {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.rewardsOfferContentMobile .segment-ios .segment-button:focus {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.rewardsOfferContent .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+    border-color: #ff3a2f;
+    opacity: 1;
+    background: #ff3a2f !important;
+    color: white !important;
+}
+
+.rewardsOfferContentMobile .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+    border-color: #ff3a2f;
+    opacity: 1;
+    background: #ff3a2f !important;
+    color: white !important;
+}
+
+.rewardsOfferContent .segment-ios .segment-button.activated, .segment-ios .segment-button.segment-activated {
+    border-color: #ff3a2f;
+    opacity: 1;
+    background: #ff3a2f !important;
+    color: white !important;
+}
+
+.rewardsOfferContentMobile .segment-ios .segment-button.activated, .segment-ios .segment-button.segment-activated {
+    border-color: #ff3a2f;
+    opacity: 1;
+    background: #ff3a2f !important;
+    color: white !important;
+}
+
+.rewardsOfferContent .segment-md .segment-button {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    height: 3.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff3a2f;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    background-color: transparent;
+}
+
+.rewardsOfferContentMobile .segment-md .segment-button {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    height: 3.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff3a2f;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    background-color: transparent;
+}
+
+.rewardsOfferContent .segment-ios .segment-button {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    height: 3.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff3a2f;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    background-color: transparent;
+}
+
+.rewardsOfferContentMobile .segment-ios .segment-button {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    height: 3.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff3a2f;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    background-color: transparent;
+}
+
+.rewardsOfferContent .segment-button {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.rewardsOfferContentMobile .segment-button {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.hideDet{
+    height: 69px;
+    overflow: hidden;
+}
+
+.showDet{
+    // height: 65px;
+    overflow: hidden;
+}
+
+.paymentScreenCard .card-md .windowsCard{
+    margin: 20px 10px 10px 78px;
+    width: calc(90% - 20px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #4a4a4a;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.paymentScreenCard .card-md .mobileCard{
+    margin: 20px 10px 10px 10px;
+    width: calc(100% - 20px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #4a4a4a;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.rewardsOfferContent .orderSummary{
+    position: absolute;
+    font-size: 15px;
+    transform: translate(5%, -12%);
+}
+
+.rewardsOfferContentMobile .orderSummary{
+    position: absolute;
+    font-size: 15px;
+    transform: translate(0%, -12%);
+}
+
+.rewardsOfferContent .subOrder{
+    color:#918e8e;
+    font-size: 13px;
+    max-width: 9.5%;
+    text-align: end;
+}
+
+.rewardsOfferContentMobile .subOrder{
+    color:#918e8e;
+    font-size: 13px;
+    max-width: 31.5%;
+    text-align: end;
+}
+
+.headerTitle{
+    font-size: 28px !important;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.redeemBtn{
+    float: left;
+    height: 23px;
+    line-height: 0px;
+    font-size: 14px !important;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+
+.offerStyle{
+    color:white;
+    font-size: 18px;
+    text-align: left;
+}
+
+.rewardTitle{
+    color:white;
+    font-size: 14px;
+    text-align: left;
+    white-space: initial;
+}
+
+.rewardSubTitle{
+    color:#7a7777;
+    font-size: 14px;
+    text-align: left;
+    white-space: initial;
+    margin-top: -8px;
+}
+
+.rewardSubTitleTime{
+    color:#7a7777;
+    font-size: 14px;
+    text-align: right;
+    white-space: initial;
+    line-height: 9px;
+    
+}
+
+.hideBtn{
+    visibility: hidden;
+}
+
+.showBtn{
+    visibility: visible;
+}

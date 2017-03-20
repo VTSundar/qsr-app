@@ -1,194 +1,181 @@
-.loginheader{
+.LoginHeader{
     background: transparent;
+    color: white;
 }
-.loginContent{
-    background: url("../../assets/imgs/old_startscreen.jpg");
+.LoginContent{
+    background: url("../../assets/imgs/template2/bg_black.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    overflow-y: scroll;
-    overflow: auto;
 }
-.leftBtn{
-    background-color: #d1711b;
+.LoginContent .content-md {
+    // background-color: black;
+    background: url("../../assets/imgs/template2/bg_black.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
-.leftFab-login{
-    padding: 10px;
-    top: -25px !important;
-    left: -50px !important;
+.login-back-icon{
+    height: 25px;
+    width: 25px;
+    margin-top: 20px;
 }
-.loginTitle .toolbar-title-md {
+.LoginContent .content-ios{
+    // background-color: black;
+    background: url("../../assets/imgs/template2/bg_black.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.LoginParentDiv2{
+    width: 100%;
+    padding: 5% 30%;
+}
+.LoginParentDiv{
+    width: 100%;
+    padding: 15% 5%;
+}
+.login-img{
     text-align: center;
-    vertical-align: middle;
-    font-size: 20px !important;
-    color: white;
-    padding-top: 10px;
-    line-height: 50px;
+    img{
+        height: 100px;
+    }
 }
-.loginImgDiv{
-    padding-top: 30px;
-    text-align: center;
-}
-.item-md {
-    position: relative;
-    padding-right: 0;
-    padding-left: 51px;
-    font-size: 1.6rem;
-    font-weight: normal;
-    text-transform: none;
-    color: white;
-    background-color: transparent;
-    box-shadow: none;
-    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.loginInputDiv{
-    padding-right: 15%;
-    padding-left: 15%;
-    padding-top:5px;
-    margin-left: 250px;
-    margin-right: 250px;
-}
-.btnContinue{
-    background-color: #ff9433;
-    border-radius: 2px;
-    margin-top: 35px;
-}
-.button-md:hover:not(.disable-hover) {
-    background-color: #ff9433;
-}
-.item-inner{
-    padding-top:12px !important;
-    padding-right: 0px !important; 
-    border-bottom: 1px solid #dedede; 
-    margin-left: 0px !important; 
-    margin-right: 0px !important; 
-}
-.inputItem-login{
-    padding-left:0 !important;
-}
-.column{
-    color:white;
+.login-inputs{
+    // width: 100%;
+    // padding: 0 10%;
 
 }
-.start-screen-row-login{
-    height: 20%;
-    // border: 1px solid;
+.email-img-fab{
+    left: auto !important;
+    top: auto !important;
+    .fab[mini] {
+        margin: 0px;
+        width: 56px;
+        height: 56px;
+        line-height: 56px;
+    }
+    .fab-md {
+        color: #fff;
+        background-color: white;  
+    }
+    .fab-ios {
+        color: #fff;
+        background-color: white;
+    }
 }
-.start-btn-container-login{
-    /* width: 300px; */
-    margin: 0 auto;
-    border: none !important;
+.LoginInput{
+    .item-inner{
+        border-bottom: none !important;
+    }
+    ion-item{
+        padding: 0px;
+        border: 1px solid white !important;
+        border-bottom: none;
+        color: white  !important;
+        border-radius: 3px;
+    }
+    .text-input-ios{
+        margin: 11px 8px 11px 10px;
+    }
+    .item-ios.item-block .item-inner {
+        padding-right: 8px;
+        border-bottom: none; 
+    }
+    .item-md.item-input.input-has-focus .item-inner {
+        border-bottom-color: transparent;
+        box-shadow: none;
+    }
+    ion-input{
+        margin-left: 100px;
+    }
 }
-.start-btn-col-login1{
+.rememberme-chk-box{
     text-align: center;
-    border-right: 1px solid #ff9433 !important;
-    padding: 10px 0px 10px 10px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 12px;
-    max-width: 100% !important;
-    height: auto !important;
+    
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
 }
-.start-btn-col-login2{
-    text-align: center;
-    padding: 10px 10px 10px 0px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 12px;
-    max-width: 100% !important;
-    height: auto !important;
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
 }
-.loginfooter{
-    text-align: center;
-    vertical-align: middle;
-    font-size: 15px !important;
-    color: #9E9E9E;
-    padding-top: 50px;
-    line-height: 50px;
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 1.25em; height: 1.25em;
+  border: 1px solid #ccc;
+  background: transparent;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
 }
-.login-row{
-    line-height: 1px;
-    padding-top: 10px;
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: url("../../assets/imgs/template2/small_tick.png");
+//   content: '✔';
+  position: absolute;
+  top: 0em;
+  left: .3em;
+  font-size: 17px;
+  line-height: 0.8;
+  color: #09ad7e !important;
+  transition: all .2s;
 }
-@media (min-width:270px) and (max-width:370px){
-    .start-btn-col-login2{
-    text-align: center;
-    padding: 10px 10px 10px 0px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 8px;
-    max-width: 100% !important;
-    height: auto !important;
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
 }
-.start-btn-col-login1{
-    text-align: center;
-    border-right: 1px solid #ff9433 !important;
-    padding: 10px 0px 10px 10px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 8px;
-    max-width: 100% !important;
-    height: auto !important;
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
 }
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
 }
-@media (min-width:270px) and (max-width:880px){
-    .start-btn-col-login2{
-    text-align: center;
-    padding: 10px 10px 10px 0px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 10px;
-    max-width: 100% !important;
-    height: auto !important;
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
 }
-.start-btn-col-login1{
-    text-align: center;
-    border-right: 1px solid #ff9433 !important;
-    padding: 10px 0px 10px 10px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 10px;
-    max-width: 100% !important;
-    height: auto !important;
+[type="checkbox"]:disabled + label {
+  color: #aaa;
 }
-.loginInputDiv{
-    padding-right: 15%;
-    padding-left: 15%;
-    padding-top:5px;
-    margin-left: 0px;
-    margin-right: 0px;
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px solid #aaa;
 }
 }
-.item-label-stacked .text-input-md, .item-label-floating .text-input-md {
-    /* margin-top: 8px; */
-    margin-bottom: 8px;
-    margin-left: 0;
-    width: calc(100% - 8px);
+.remember-me-col{
+    border-right: 1px solid #aaa;
 }
-.item-ios {
-    position: relative;
-    padding-left: 16px;
-    border-radius: 0;
-    font-size: 1.6rem !important;
-    color: #999;
-    background-color: transparent !important;
-    transition: background-color 200ms linear;
-    border-top: none !important;
+.LoginInput{
+    .item-inner{
+        padding-right: 0px !important;
+    }
 }
-.toolbar-title-ios {
-    font-size: 1.7rem;
-    font-weight: 600;
-    text-align: center;
+.forgetPasswordDiv{
     color: white;
-    padding-top: 24px;
-    pointer-events: auto;
 }
-.item-ios {
-    position: relative;
-    padding-left: 0 !important;
-    border-radius: 0;
-    font-size: 1.6rem !important;
-    color: #999;
-    background-color: transparent !important;
-    transition: background-color 200ms linear;
-    border-top: none !important;
+.LoginContent{
+    ion-grid{
+        padding: 10px 0;
+    }
+}
+.startScreenFooter{
+    span{
+        cursor: pointer;
+    }
+}
+.forgetPasswordDiv{
+    cursor: pointer;
 }

@@ -1,0 +1,283 @@
+<ion-header class="storeItemsheader" *ngIf="overlayAddress">
+    <ion-grid class="header-grid">
+        <ion-row>
+            <ion-col width-10 class="header-grid-col1">
+                <ion-icon ios="md-close" md="md-close" (click)="backToStoreDet()"></ion-icon>
+            </ion-col>
+            <ion-col width-80 class="header-grid-col2">My Order</ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-header>
+
+<ion-content [ngClass]="platFormType == 'Windows' ? 'paymentScreenCardWindows' : 'paymentScreenCardMobile' " *ngIf="overlayAddress">
+    <ion-card>
+        <ion-card-header>
+            <ion-grid>
+                <ion-row style="font-weight: bold;border-bottom: 1px solid #626262;">
+                    <ion-col width-75 style="color: #78797a;font-size: 14px;text-align: left">Total Item in Bag</ion-col>
+                    <ion-col width-25 style="text-align: end;color: #f16649;"> {{notLength}}
+                    </ion-col>
+                </ion-row>
+                <!--<hr style="background:#626262">-->
+                <span [ngClass]="showDetails ? 'showDet' : 'hideDet'"> <div *ngFor="let item of addCartDet;let i=index">
+            <ion-row>
+                <ion-col col-6 width-65 style="color:#c9c9c9;font-size: 14px;text-align: left;font-weight: bold;">{{item.name}}</ion-col>
+                <ion-col width-35 style="color:white;font-size: 14px;text-align: end;white-space: initial;">{{item.qty}} X ${{item.price}}</ion-col>
+            </ion-row>
+            <ion-row style="border-bottom: 1px solid #626262;">
+                <ion-col width-75 style="color:#7a7777;font-size: 14px;text-align: left;white-space: initial;">{{item.ingredients}}</ion-col> 
+                 <div style="width: 100%;margin-bottom: 10px;" (click)="removeItems(item,i)"><ion-col class="start-btn-col1" style="max-width: 60px;float: right;height: 21px;line-height: 0px;font-size: 12px;">Remove</ion-col></div>
+            </ion-row>
+            
+            <div *ngIf="item.customize">
+            <ion-row style="border-bottom: 1px solid #626262;" *ngFor="let custItem of item.customize">
+               <ion-col col-6 width-65 style="color:#c9c9c9;font-size: 14px;text-align: left;font-weight: bold;">{{custItem.name}}</ion-col>
+                <ion-col width-35 style="color:white;font-size: 14px;text-align: end;white-space: initial;"> ${{custItem.price}}</ion-col>
+            </ion-row> </div>
+            </div> </span>
+
+
+                <ion-row style="height: 35px;">
+                    <ion-col width-100>
+                        <ion-icon ios="ios-more" md="ios-more" style="font-size: 3.2em;" (click)="showDet(showDetails)"></ion-icon>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card-header>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-grid>
+                <ion-row style="font-weight: bold;border-bottom: 1px solid #626262;">
+                    <ion-col width-75 style="color: #78797a;font-size: 14px;text-align: left">What is it going to be?</ion-col>
+                </ion-row>
+                <ion-row style="margin-top: 2%;">
+                    <ion-segment [(ngModel)]="travelMode" style="width: 80%;margin-left: 0%;">
+                        <ion-segment-button value="DELIVERY" style="border-top-left-radius: 5px;border-bottom-left-radius: 5px;color: #ff3a2f">
+                            DELIVERY
+                        </ion-segment-button>
+                        <ion-segment-button value="PICKUP" style="color: #ff3a2f">
+                            PICKUP
+                        </ion-segment-button>
+                        <ion-segment-button value="DRIVE THRU" style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;color: #ff3a2f">
+                            DRIVE THRU
+                        </ion-segment-button>
+                    </ion-segment>
+                </ion-row>
+            </ion-grid>
+        </ion-card-header>
+    </ion-card>
+
+    <div *ngIf="travelMode == 'PICKUP' ">
+        <ion-card>
+            <ion-card-header>
+                <ion-grid>
+                    <ion-row style="font-weight: bold;">
+                        <ion-col width-65 style="color: #78797a;font-size: 14px;text-align: left;">What time is good?</ion-col>
+                        <ion-col width-35 style="text-align: end;color: #f16649;">
+                            <ion-datetime displayFormat="HH:mm" pickerFormat="HH mm" [(ngModel)]="timeStarts"></ion-datetime>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-header>
+        </ion-card>
+    </div>
+    <div *ngIf="travelMode == 'DELIVERY' ">
+        <ion-card>
+            <ion-card-header>
+                <ion-grid (click)="selectAddress()">
+                    <ion-row style="font-weight: bold;">
+                        <ion-col width-90 style="color: #78797a;font-size: 14px;text-align: left;">Select/Provide your address</ion-col>
+                        <ion-col width-10 style="text-align: end;color: #f16649;">
+                            <ion-icon ios="ios-arrow-forward" md="ios-arrow-forward"></ion-icon>
+                        </ion-col>
+                    </ion-row>
+                    <div *ngIf="newAddDet.length > 0">
+                        <div *ngFor="let item of newAddDet">
+                            <ion-row style="font-weight: bold;">
+                                <ion-col width-90 style="color: white;font-size: 14px;text-align: left;">Delivery Address</ion-col>
+                            </ion-row>
+                            <ion-row  style="font-weight: bold;">
+                                <ion-col width-90 style="color: #78797a;font-size: 14px;text-align: left;">{{item.address}}</ion-col>
+                            </ion-row>
+                            <ion-row  style="font-weight: bold;">
+                                <ion-col width-90 style="color: #78797a;font-size: 14px;text-align: left;">{{item.city}} , {{item.state}}</ion-col>
+                            </ion-row>
+                            <ion-row  style="font-weight: bold;">
+                                <ion-col width-90 style="color: #78797a;font-size: 14px;text-align: left;">{{item.phoneNumber}}</ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </ion-grid>
+            </ion-card-header>
+        </ion-card>
+    </div>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-grid style="cursor: pointer;">
+                <ion-row [ngClass]="redeemDetLength > 0 ? 'addBottom' : 'delBottom'">
+                    <ion-col width-90 style="color: #78797a;font-size: 14px;text-align: left;white-space: initial;" (click)="applyReward()">Apply a reward or offer to your order</ion-col>
+                    <ion-col width-10 style="text-align: end;color: #f16649;">
+                        <ion-icon ios="ios-arrow-forward" md="ios-arrow-forward"></ion-icon>
+                    </ion-col>
+                </ion-row>
+                <span *ngIf="redeemDetLength > 0"><div *ngFor = "let item of redeemDet">
+                 <ion-row>
+                <ion-col width-90 style="color: white;font-size: 14px;text-align: left;white-space: initial;" (click)="applyReward()">Applied Rewards</ion-col>
+            </ion-row>
+                <ion-row style="font-weight: bold;">
+                <ion-col width-90 style="color: #78797a;font-size: 14px;text-align: left;white-space: initial;" (click)="applyReward()">{{item.rewardItem}}</ion-col>
+                <ion-col width-10 style="color: #78797a;font-size: 14px;text-align: right;white-space: initial;" (click)="applyReward()">${{item.rewardPrice}}</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col width-75 style="color:#7a7777;font-size: 14px;text-align: left;white-space: initial;visibility: hidden;"></ion-col> 
+                 <div style="width: 100%;margin-bottom: 10px;" (click)="removeOffer(item)"><ion-col class="start-btn-col1" style="max-width: 60px;float: right;height: 21px;line-height: 0px;font-size: 12px;">Remove</ion-col></div>
+            </ion-row> </div>
+             </span>
+                <span *ngIf="offerDetLength > 0"><div *ngFor = "let item of offerDet">
+                 <ion-row>
+                <ion-col width-90 style="color: white;font-size: 14px;text-align: left;white-space: initial;" (click)="applyReward()">Applied Offers</ion-col>
+            </ion-row>
+                <ion-row style="font-weight: bold;">
+                <ion-col width-90 style="color: #78797a;font-size: 14px;text-align: left;white-space: initial;" (click)="applyReward()">{{item.offerItem}}</ion-col>
+                <ion-col width-10 style="color: #78797a;font-size: 14px;text-align: right;white-space: initial;" (click)="applyReward()">${{item.offerPrice}}</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col width-75 style="color:#7a7777;font-size: 14px;text-align: left;white-space: initial;visibility: hidden;"></ion-col> 
+                 <div style="width: 100%;margin-bottom: 10px;" (click)="offerRedeemRemove(item)"><ion-col class="start-btn-col1" style="max-width: 60px;float: right;height: 21px;line-height: 0px;font-size: 12px;">Remove</ion-col></div>
+            </ion-row> </div>
+             </span>
+            </ion-grid>
+        </ion-card-header>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-grid>
+                <ion-row style="font-weight: bold;">
+                    <ion-col width-10 style="text-align: start;">
+                        <img style="width: 25px;" src="../../assets/imgs/tick.png" />
+                    </ion-col>
+                    <ion-col style="text-align: start;color: #f16649;"><input type="text" name="usrname" placeholder="CODE" style="width: 30%;font-weight: 300;text-align: center;background: #4a4a4a;border: 1px solid #363636;"
+                            disabled><input type="text" [(ngModel)]="codeText" name="usrname" style="width: 60%;background: #4a4a4a;border: 1px solid #363636;"></ion-col>
+                    <div (click)="verifyCheck == 'CHECK' ? checkVerify(codeText) : removveVerifyCode(codeText) ">
+                        <ion-col class="start-btn-col1" style="max-width: 75px;height: 25px;line-height: 7px;font-size: 12px;margin-top: 8%;margin-left: -13%;">{{verifyCheck}}</ion-col>
+                    </div>
+
+                </ion-row>
+            </ion-grid>
+        </ion-card-header>
+    </ion-card>
+    <br>
+
+    <ion-grid offset-10 class="orderSummary">
+        <ion-row>
+            <ion-col col-12 width-75 style="color: #918e8e;font-size: 17px;">Order Summary</ion-col>
+        </ion-row>
+        <hr style="background:#444340">
+        <ion-row>
+            <ion-col col-6 width-80 style="color:#918e8e;font-size: 13px;">SUB TOTAL</ion-col>
+            <ion-col col-6 width-20 class="subOrder">{{summaryTotal | currency:'USD':true}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6 width-80 style="color:#918e8e;font-size: 13px;">SALES TAX</ion-col>
+            <ion-col col-6 width-20 class="subOrder">{{salesTax | currency:'USD':true}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6 width-80 style="color:#918e8e;font-size: 13px;">TIP</ion-col>
+            <ion-col col-6 width-20 class="subOrder">{{tip | currency:'USD':true}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6 width-80 style="color:#918e8e;font-size: 13px;">PROMO CODE DISCOUNT</ion-col>
+            <ion-col col-6 width-20 class="subOrder">{{promoDiscount | currency:'USD':true}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6 width-80 style="color:#918e8e;font-size: 13px;">VERIFICATION CODE DISCOUNT</ion-col>
+            <ion-col col-6 width-20 class="subOrder" *ngIf="verifyCode == 0">{{verifyCode | currency:'USD':true}}</ion-col>
+            <ion-col col-6 width-20 class="subOrder" *ngIf="verifyCode > 0">-{{verifyCode | currency:'USD':true}}</ion-col>
+        </ion-row>
+        <hr style="background:#444340">
+        <ion-row>
+            <ion-col col-6 width-80 style="color:white;font-size: 13px;">Grand Total</ion-col>
+            <ion-col col-6 width-20 class="subOrder">{{grandTotal | currency:'USD':true}}</ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+
+
+
+<ion-footer class="storeDetFooter" *ngIf="overlayAddress">
+    <ion-grid class="start-btn-grid">
+        <ion-row class="start-btn-row" style="height: 45px;line-height: 27px;">
+            <ion-col width-100 class="start-btn-col1" (click)="toPaymentScreen()">Checkout</ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-footer>
+
+<div class="overlayStyle" [hidden]="overlayAddress" style="width: 100%;height: 100%;">
+    <ion-header class="storeItemsheader">
+        <ion-grid class="header-grid">
+            <ion-row>
+                <ion-col width-10 class="header-grid-col1">
+                    <ion-icon ios="md-close" md="md-close" (click)="backToPayment()"></ion-icon>
+                </ion-col>
+                <ion-col width-80 class="header-grid-col2">New Address</ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-header>
+    <ion-content [ngClass]="platFormType == 'Windows' ? 'paymentScreenCardWindows' : 'paymentScreenCardMobile' " style="margin-top: 70px;">
+        <div [ngClass]="platFormType == 'Windows' ? 'storeLocationParentDiv2' : 'storeLocationParentDiv'">
+            <div class="storeLocInput">
+                <ion-fab edge top left class="fab-icon">
+                    <button ion-fab mini>
+                                         <img style="width: 55px !important;max-width: none;" src="../../assets/imgs/navigation.png"/>
+                                 </button>
+                </ion-fab>
+                <ion-item>
+                    <ion-input type="text" placeholder="Street Address/ Building" [(ngModel)]="address"></ion-input>
+                </ion-item>
+            </div>
+            <div class="storeLocZipCode">
+                <ion-fab edge top left class="fab-icon">
+                    <button ion-fab mini>
+                                         <img style="width: 55px !important;max-width: none;" src="../../assets/imgs/navigation.png"/>
+                                 </button>
+                </ion-fab>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col width-50 style="padding: 0px;padding-right: 8px">
+                            <ion-item class="storeLocZipCode1">
+                                <ion-input type="text" placeholder="STATE" [(ngModel)]="state"></ion-input>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col width-50 style="padding: 0px;">
+                            <ion-item class="storeLocZipCode2">
+                                <ion-input type="text" placeholder="CITY" [(ngModel)]="city"></ion-input>
+                                <ion-icon style="color: white" ios="ios-arrow-forward" md="ios-arrow-forward"></ion-icon>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </div>
+            <div class="storeLocInput-Phone">
+                <ion-fab edge top left class="fab-icon">
+                    <button ion-fab mini>
+                                         <img style="width: 55px !important;max-width: none;" src="../../assets/imgs/Call.png"/>
+                                 </button>
+                </ion-fab>
+                <ion-item>
+                    <ion-input type="text" placeholder="Phone number" [(ngModel)]="phoneNumber"></ion-input>
+                </ion-item>
+            </div>
+        </div>
+    </ion-content>
+    <ion-footer class="storeDetFooter">
+        <ion-grid class="start-btn-grid">
+            <ion-row class="start-btn-row" style="height: 45px;line-height: 27px;">
+                <ion-col width-100 class="start-btn-col1" (click)="deliveryAddress()">SET AS DELIVERY ADDRESS</ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-footer>
+</div>

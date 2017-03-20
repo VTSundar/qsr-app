@@ -1,23 +1,30 @@
 import { Component } from '@angular/core';
 
-import { NavController, LoadingController } from 'ionic-angular';
+import { NavController, Platform } from 'ionic-angular';
+import { Providers } from '../../providers/provider';
+import { StartScreenPage } from '../startscreen/startscreen';
 
-import { RegistrationPage } from '../registration/registration';
-
-import { StartscreenPage } from '../startscreen/startscreen';
 @Component({
-  selector: 'page-login',
+  selector: 'login-page',
   templateUrl: 'login.html'
 })
 export class LoginPage {
+  public startScreenInfo : any;
+  public platFormType : any;
+  constructor(public navCtrl: NavController, public api: Providers, public platform: Platform) {
+    if (this.platform.is('android')) {
+      this.platFormType = 'Mobile';
+    }
+    else if (this.platform.is('ios')) {
+      this.platFormType = 'Ios';
+    }
+    else {
+      this.platFormType = 'Windows';
+    }
+  }
 
-  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController) {
+  startupPage(){
+    this.navCtrl.push(StartScreenPage,{},{ animate: true, direction: 'back' });
+  }
 
-  }
-  public regPage(){
-    this.navCtrl.push(RegistrationPage);
-  }
-  public startupPage(){
-    this.navCtrl.push(StartscreenPage);
-  }
 }

@@ -1,35 +1,37 @@
 import { Component } from '@angular/core';
 
-import { NavController,LoadingController } from 'ionic-angular';
-
-import { RestraFind } from '../restrafind/restrafind';
-
+import { NavController } from 'ionic-angular';
+import { Providers } from '../../providers/provider';
 import { LoginPage } from '../login/login';
-
-import { RegistrationPage } from '../registration/registration';
-
+import { SignupPage } from '../signup/signup';
+import { StoreItemsPage } from '../storeItems/storeItems';
+import { LocationMapPage } from '../location/location';
+import { AppService } from '../../providers/app-service';
+import { StoreLocation } from '../storeLocation/storeLocation'
 @Component({
-  selector: 'page-start-screen',
+  selector: 'start-screen',
   templateUrl: 'startscreen.html'
 })
-export class StartscreenPage {
-
-  constructor(public navCtrl: NavController,public loadingCtrl: LoadingController) {
-
+export class StartScreenPage {
+  public startScreenInfo : any;
+  constructor(public navCtrl: NavController, public api: Providers, public appService: AppService) {
+    this.startScreenInfo = this.api.startScreenInfo;
+    this.appService.getStoreList();
   }
 
-  public createAccount(){
-    this.loadingCtrl.create({
-      content: 'Please wait...',
-      duration: 1000,
-      // dismissOnPageChange: true
-    }).present();
-        this.navCtrl.push(RestraFind);
-    }
-    public gotoLogin(){
-        this.navCtrl.push(LoginPage);
-    }
-    public gotoSignupPg(){
-        this.navCtrl.push(RegistrationPage);
-    }
+  gotoLogin(){
+    this.navCtrl.push(LoginPage);
+  }
+
+  gotoSignupPg(){
+    this.navCtrl.push(SignupPage);
+  }
+
+  gotoMenuItems(){
+    this.navCtrl.push(StoreLocation);
+  }
+  gotoMapScreen(){
+    this.appService.navPageDetail = "NearByStores";
+    this.navCtrl.push(LocationMapPage);
+  }
 }
