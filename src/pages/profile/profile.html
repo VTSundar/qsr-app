@@ -3,13 +3,13 @@
     <ion-row>
       <ion-col width-10 class="header-grid-col1" (click)="startupPage()"><img class="login-back-icon" src="../../assets/imgs/template2/left_back_icon.png" /></ion-col>
       <ion-col width-80 class="header-grid-col2">PROFILE</ion-col>
-      <ion-col width-10 class="header-grid-col3 profileEdit">EDIT</ion-col>
+      <ion-col width-10 class="header-grid-col3 profileEdit" (click)="editProfile()">EDIT</ion-col>
     </ion-row>
   </ion-grid>
 </ion-header>
 <ion-content class="LoginContent">
-  <div [ngClass]="platFormType === 'Windows' ? 'LoginParentDiv2' : 'LoginParentDiv'">
-     <div class="ProfileDiv">Personal Information</div>
+  <div [ngClass]="platFormType === 'Windows' ? 'ProfileParentDiv2' : 'ProfileParentDiv'">
+    <div class="ProfileDiv">Personal Information</div>
     <div class="login-inputs">
       <ion-grid>
         <ion-row>
@@ -17,22 +17,24 @@
             <div>
               <ion-grid>
                 <ion-row>
-                <ion-fab edge top left class="fab-icon email-img-fab">
-                  <button ion-fab mini>
+                  <ion-fab edge top left class="fab-icon email-img-fab">
+                    <button ion-fab mini>
                       <img style="width: 25px !important;max-width: none;" src="../../assets/imgs/template2/avatar.png"/>
                   </button>
-                </ion-fab>
+                  </ion-fab>
                   <ion-col width-50 style="height: 50px;line-height: 25px;margin-left: 30px;">
                     <div class="LoginInput">
                       <ion-item>
-                        <ion-input style="margin-left: 15px;" type="text" placeholder="First Name">John</ion-input>
+                        <ion-input *ngIf="!editable" style="margin-left: 20px;" type="text" value="John" placeholder="First Name" disabled></ion-input>
+                        <ion-input *ngIf="editable" style="margin-left: 20px;" type="text" value="John" placeholder="First Name"></ion-input>
                       </ion-item>
                     </div>
                   </ion-col>
                   <ion-col width-40 style="height: 50px;line-height: 25px;">
                     <div class="LoginInput">
                       <ion-item>
-                        <ion-input style="margin-left: 0px;" type="text" placeholder="last Name">Peter</ion-input>
+                        <ion-input *ngIf="!editable"  style="margin-left: 0px;" type="text" value="Peter" placeholder="last Name" disabled></ion-input>
+                        <ion-input *ngIf="editable"  style="margin-left: 0px;" type="text" value="Peter" placeholder="last Name"></ion-input>
                       </ion-item>
                     </div>
                   </ion-col>
@@ -42,15 +44,16 @@
             <div>
               <ion-grid>
                 <ion-row>
-                <ion-fab edge top left class="fab-icon email-img-fab">
-                  <button ion-fab mini>
+                  <ion-fab edge top left class="fab-icon email-img-fab">
+                    <button ion-fab mini>
                       <img style="width: 50px !important;max-width: none;" src="../../assets/imgs/template2/email.png"/>
                   </button>
-                </ion-fab>
+                  </ion-fab>
                   <ion-col width-100 style="height: 50px;line-height: 25px;margin-left: 30px;">
                     <div class="LoginInput">
                       <ion-item>
-                        <ion-input style="margin-left: 15px;" type="text" placeholder="Email Address">john_peter@gmail.com</ion-input>
+                        <ion-input *ngIf="!editable" style="margin-left: 20px;" type="text" value="john_peter@gmail.com" placeholder="Email Address" disabled></ion-input>
+                        <ion-input *ngIf="editable" style="margin-left: 20px;" type="text" value="john_peter@gmail.com" placeholder="Email Address"></ion-input>
                       </ion-item>
                     </div>
                   </ion-col>
@@ -64,11 +67,12 @@
                     <button ion-fab mini>
                         <img style="width: 55px !important;max-width: none;" src="../../assets/imgs/template2/dob.png"/>
                     </button>
-                 </ion-fab>
+                  </ion-fab>
                   <ion-col width-100 style="height: 50px;line-height: 25px; margin-left: 30px;">
                     <div class="LoginInput">
                       <ion-item>
-                        <ion-input style="margin-left: 15px;"  type="text" placeholder="Birth Date">Nov 23, 1989</ion-input>
+                        <ion-input *ngIf="!editable" style="margin-left: 20px;" type="text" value="Nov 23, 1989" placeholder="Birth Date" disabled></ion-input>
+                        <ion-input *ngIf="editable" style="margin-left: 20px;" type="text" value="Nov 23, 1989" placeholder="Birth Date"></ion-input>
                       </ion-item>
                     </div>
                   </ion-col>
@@ -78,15 +82,16 @@
             <div>
               <ion-grid>
                 <ion-row>
-                <ion-fab edge top left class="fab-icon email-img-fab">
-                  <button ion-fab mini>
+                  <ion-fab edge top left class="fab-icon email-img-fab">
+                    <button ion-fab mini>
                       <img style="width: 50px !important;max-width: none;" src="../../assets/imgs/template2/white_call.png"/>
                   </button>
-                </ion-fab>
+                  </ion-fab>
                   <ion-col width-100 style="height: 50px;line-height: 25px;margin-left: 30px;">
                     <div class="LoginInput">
                       <ion-item>
-                        <ion-input style="margin-left: 15px;" type="text" placeholder="Phone Number">[559]-876-3026</ion-input>
+                        <ion-input *ngIf="!editable"  style="margin-left: 20px;" type="text" value="[559]-876-3026" placeholder="Phone Number" disabled></ion-input>
+                        <ion-input *ngIf="editable"  style="margin-left: 20px;" type="text" value="[559]-876-3026" placeholder="Phone Number"></ion-input>
                       </ion-item>
                     </div>
                   </ion-col>
@@ -96,15 +101,62 @@
             <div>
               <ion-grid>
                 <ion-row>
-                <ion-fab edge top left class="fab-icon email-img-fab">
-                  <button ion-fab mini>
+                  <ion-fab edge top left class="fab-icon email-img-fab">
+                    <button ion-fab mini>
                       <img style="width: 50px !important;max-width: none;" src="../../assets/imgs/template2/white_map_icon.png"/>
                   </button>
-                </ion-fab>
+                  </ion-fab>
+                  <ion-col width-100 [ngClass]="platFormType === 'Windows' ? 'changeAddr2' : 'changeAddr'">
+                    <div *ngIf="!editable" class="LoginInput" disabled>
+                      <ion-item>
+                        <ion-label><p [ngClass]="platFormType === 'Windows' ? 'addrLabel2' : 'addrLabel'">152-154 Hills Rd, Cambridge CB2 8PB, United Kingdom</p><img src="../../assets/imgs/template2/turn-right.png"/></ion-label>
+                      </ion-item>
+                    </div>
+                    <div *ngIf="editable" class="LoginInput addrDiv">
+                      <ion-item>
+                        <ion-label><p [ngClass]="platFormType === 'Windows' ? 'addrLabel2' : 'addrLabel'">152-154 Hills Rd, Cambridge CB2 8PB, United Kingdom</p><img src="../../assets/imgs/template2/turn-right.png"/></ion-label>
+                      </ion-item>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+            <div>
+              <ion-grid>
+                <ion-row>
+                  <ion-fab edge top left class="fab-icon email-img-fab">
+                    <button ion-fab mini>
+                      <img style="width: 50px !important;max-width: none;" src="../../assets/imgs/template2/lock.png"/>
+                  </button>
+                  </ion-fab>
+                  <ion-col width-100 style="height: 50px;line-height: 25px;margin-left: 30px;">
+                    <div *ngIf="!editable" class="LoginInput">
+                      <ion-item>
+                      <ion-label><p  [ngClass]="platFormType === 'Windows' ? 'changePassword2' : 'changePassword'">Change Password</p><ion-icon style="color: #868686 !important;" ios="ios-arrow-forward" md="ios-arrow-forward"></ion-icon></ion-label>
+                      </ion-item>
+                    </div>
+                    <div *ngIf="editable" class="LoginInput addrDiv">
+                      <ion-item>
+                      <ion-label><p  [ngClass]="platFormType === 'Windows' ? 'changePassword2' : 'changePassword'">Change Password</p><ion-icon style="color: #868686 !important;" ios="ios-arrow-forward" md="ios-arrow-forward"></ion-icon></ion-label>
+                      </ion-item>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+            <div class="ProfileDiv">Notifications</div>
+            <div>
+              <ion-grid>
+                <ion-row>
+                  <ion-fab edge top left class="fab-icon email-img-fab">
+                    <button ion-fab mini>
+                      <img style="width: 50px !important;max-width: none;" src="../../assets/imgs/template2/email.png"/>
+                  </button>
+                  </ion-fab>
                   <ion-col width-100 style="height: 50px;line-height: 25px;margin-left: 30px;">
                     <div class="LoginInput">
                       <ion-item>
-                        <ion-input style="margin-left: 15px;" type="text" placeholder="Address"></ion-input>
+                        <ion-label style="margin-left: 25px !important; overflow: hidden !important;" fixed>Email Notifications</ion-label><ion-toggle color="danger" checked="true"></ion-toggle>
                       </ion-item>
                     </div>
                   </ion-col>

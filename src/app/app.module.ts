@@ -24,9 +24,7 @@ import { ListStores } from '../pages/listStores/listStores';
 import { MyCouponPage } from '../pages/myCoupon/myCoupon';
 import { Profile } from '../pages/profile/profile';
 import { myLoyaltyPage } from '../pages/myLoyalty/myLoyalty';
-import { GiftCardPage } from '../pages/giftCard/giftCard';
-import { CardDesignPage } from '../pages/cardDesign/cardDesign';
-import { CardAmountPage } from '../pages/cardAmount/cardAmount';
+import { AddCard } from '../pages/addCard/addCard';
 
 @NgModule({
   declarations: [
@@ -50,11 +48,9 @@ import { CardAmountPage } from '../pages/cardAmount/cardAmount';
     StoreLocation,
     ListStores,
     MyCouponPage,
+    AddCard,
     Profile,
-    myLoyaltyPage,
-    GiftCardPage,
-    CardDesignPage,
-    CardAmountPage
+    myLoyaltyPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -83,11 +79,9 @@ import { CardAmountPage } from '../pages/cardAmount/cardAmount';
     StoreLocation,
     ListStores,
     MyCouponPage,
+    AddCard,
     Profile,
-    myLoyaltyPage,
-    GiftCardPage,
-    CardDesignPage,
-    CardAmountPage
+    myLoyaltyPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},Providers, AppService]
 })

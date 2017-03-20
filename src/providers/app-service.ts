@@ -22,12 +22,9 @@ export class AppService {
   public selectedFamily: any;
   public selectedCategory: any;
   public customizeItems: any;
-  public giftCardPayments : any;
-  public cardDesign : any;
   customizeSubItems = [];
   mapDetailList: any;
   navPageDetail: any;
-  cardAmountDet : any;
   public headerObj: any = {
     'X-Parse-Application-Id': AppSettings.APPLICATION_ID,
     'X-Parse-Client-Key': AppSettings.CLIENT_KEY,
@@ -288,61 +285,6 @@ export class AppService {
         }
       ];
       resolve(redeemOffer);
-    });
-  }
-
-  getSearchByNameItem(){
-    this.getProduct();
-  }
-
-  giftCard(){
-    return new Promise((resolve, reject) =>{
-      this.giftCardPayments = [
-        {
-          "name": "Thanks Giving Day",
-          "price": "10.00",
-          "image" : "../assets/imgs/Rectangle.png"
-        },
-        {
-          "name": "Mothers Day",
-          "price": "5.00",
-          "image" : "../assets/imgs/Rectangle 10 Copy 2.png"
-        },
-        {
-          "name": "Squeeze the Day",
-          "price": "0.99",
-          "image" : "../assets/imgs/doubledeckertacos.jpg"
-        }
-      ]
-      resolve(this.giftCardPayments);
-    });
-  }
-
-  cardDesignList(){
-    return new Promise((resolve, reject) =>{
-      this.cardDesign = [
-        {
-          "name": "Thanks Giving Day",
-          "price": "10.00",
-          "image" : "../assets/imgs/Rectangle.png"
-        },
-        {
-          "name": "Happy Fathers Day",
-          "price": "5.00",
-          "image" : "../assets/imgs/Rectangle 10 Copy 2.png"
-        },
-        {
-          "name": "Happy Mothers Day",
-          "price": "3.00",
-          "image" : "../assets/imgs/doubledeckertacos.jpg"
-        },
-        {
-          "name": "Squeeze the Day",
-          "price": "8.00",
-          "image" : "../assets/imgs/startscreen1.jpg"
-        }
-      ]
-      resolve(this.cardDesign);
     });
   }
 }

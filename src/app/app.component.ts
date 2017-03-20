@@ -12,19 +12,18 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 // import { paymentScreen } from '../pages/paymentScreen/paymentScreen';
 // import { StartScreenPage } from '../pages/startscreen/startscreen';
 // import { RewardsOfferPage } from '../pages/rewardOffer/rewardOffer';
-import { StartScreenPage } from '../pages/startscreen/startscreen';
+// import { StartScreenPage } from '../pages/startscreen/startscreen';
+import { AddCard } from '../pages/addCard/addCard';
 // import { DashboardPage } from '../pages/dashboard/dashboard';
 // import { StoreMainMenuPage } from '../pages/storeMainMenu/storeMainMenu';
 // import { MyCouponPage } from '../pages/myCoupon/myCoupon';
 // import { Profile } from '../pages/profile/profile';
 // import { myLoyaltyPage } from '../pages/myLoyalty/myLoyalty';
-import { GiftCardPage } from '../pages/giftCard/giftCard';
-import { CardDesignPage } from '../pages/cardDesign/cardDesign';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = CardDesignPage;
+  rootPage = AddCard;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
