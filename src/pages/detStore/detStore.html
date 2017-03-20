@@ -1,0 +1,105 @@
+<ion-content class="detStoreContent">
+    <!--<ion-header class="nearbyStoreHeader">
+        <ion-grid>
+            <ion-row>
+                <ion-col width-25>
+                    <div class="nearbyStoreCancel" (click)="toNearbyStorepage()"><img style="height: 20px" src="../../assets/imgs/left-arrow.png" /></div>
+                </ion-col>
+                <ion-col width-50>
+                    <ion-title class="nearbyStoreTitle button_font">Store Detail</ion-title>
+                </ion-col>
+                <ion-col width-25>
+                    <div class="nearbyStoreSearch"><img style="height: 20px" src="../../assets/imgs/search.png" /></div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-header>-->
+    <ion-header class="storeItemsheader">
+  <ion-grid class="header-grid">
+    <ion-row>
+      <ion-col width-10 class="header-grid-col1">
+        <ion-icon ios="md-arrow-back" md="md-arrow-back" style="color: white;font-weight: bold;" (click)="toNearbyStorepage()"></ion-icon>
+      </ion-col>
+      <ion-col width-80 class="header-grid-col2">Store Detail</ion-col>
+      <ion-col width-10 class="header-grid-col3">
+        <ion-icon name="search"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+    <img style="width: 100%; height:100%" src="../../assets/imgs/stores/jambajuice.jpg" />
+    <ion-footer class="detScreenFooterBar">
+        <div class="nearbyStoresFooter">
+            <ion-grid>
+                <ion-row>
+                    <ion-col width-75>
+                        <div>
+                            <div>{{selStore.qsr_name}}</div>
+                            <div>{{selStore.qsr_streetaddress}}</div>
+                            <div>{{selStore.qsr_city}}</div>
+                        </div>
+                    </ion-col>
+                    <ion-col width-25>
+                        <div style="margin-top: 5px; float: right;margin-right: 15px;">
+                            <div>{{selStore.qsr_distance}}&nbsp;Mi</div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            <ion-grid>
+                <ion-row>
+                    <ion-col width-75>
+                        <div>
+                            <div>HOURS</div>
+                            <div>{{selStore.qsr_hours}}</div>
+                            <div>{{selStore.qsr_telephone}}</div>
+                        </div>
+                    </ion-col>
+                    <ion-col width-25>
+                        <div style="margin-top: 5px; float: right;margin-right: 15px;">
+                            <div style="height: 3.3rem;width: 3.3rem;background: #417505;border-radius: 15px;"><ion-icon name="call"></ion-icon></div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            <ion-segment [(ngModel)]="travelMode" style="width: 80%;margin-left: 11%;">
+                <ion-segment-button value="PICK UP" style="border-top-left-radius: 5px;border-bottom-left-radius: 5px;color: #ff3a2f">
+                    PICK UP
+                </ion-segment-button>
+                <ion-segment-button value="DELIVERY" style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;color: #ff3a2f">
+                    DELIVERY
+                </ion-segment-button>
+            </ion-segment>
+            <ion-grid>
+                <ion-row>
+                    <ion-col width-100>
+                        <div>
+                            <div>Pickup Hours</div>
+                            <div>{{selStore.qsr_pickup_hours}}</div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            <ion-grid>
+                <ion-row>
+                    <ion-col width-100>
+                        <div>
+                            <div>Accepted Cards</div>
+                            <div>{{selStore.qsr_accept_card}}</div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+    </ion-footer>
+</ion-content>
+
+<ion-footer class="storeDetFooter" style="background: black;">
+    <!--<button class="setAs" ion-button full (click)="goToStoreItems()">Save As Favorite</button>-->
+    <ion-grid class="start-btn-grid">
+        <ion-row class="start-btn-row footerBtn">
+            <ion-col width-100 class="start-btn-col1" (click)="goToStoreItems()">Save as Favourite</ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-footer>

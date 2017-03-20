@@ -1,0 +1,321 @@
+.imgHeightStore{
+    width: 100% !important;
+    height: 327px !important;
+  }
+
+  .card-background-pageHeader{
+      background: #363636;
+  }
+
+  .storeItemsheaderDet {
+    background: rgba(0,0,0,0.4);
+    color: #fff !important;
+    // opacity: 0.7;
+}
+
+.card-background-pageHeader ion-icon {
+    display: inline-block;
+    font-size: 3.2em;
+    color: #282726;
+}
+
+.card-background-pageHeader .countQty{
+  font-size: 50px;
+  color: white;
+}
+
+.item-detail-quantity ion-icon {
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 50px;
+    color: black;
+    // font-weight: bold;
+}
+.item-detail-quantity div {
+    display: inline-block;
+    width: 46px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.cartDet {
+    position: absolute;
+    font-size: 27px !important;
+    width: 50px;
+    height: 50px;
+    background: #ff3a2f;
+    line-height: 50px;
+    border-radius: 30px;
+    margin-top: -18px;
+    color: white !important;
+}
+
+.card-background-pageHeader .badge-md {
+    border-radius: 30px;
+    color: #fff;
+    background-color: white;
+    width: 25px;
+}
+
+.card-background-pageHeader .badge-ios {
+    border-radius: 30px;
+    color: #fff;
+    background-color: white;
+    width: 21px;
+}
+
+.card-background-pageHeader .list-md {
+         margin: 36px 0 -8px 0;
+}
+
+.card-background-pageHeader .list-ios {
+         margin: 36px 0 -8px 0;
+}
+
+.fntQty{
+    color: white !important;
+    font-size: 15px;
+}
+
+.qtySize{
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.card-background-pageHeader .checkout-item-time{
+    text-align: center;
+    padding: 25px 0;
+    font-size: 20px;
+    color: #323232;
+    border-bottom: black !important;
+}
+
+
+.card-background-pageHeader .segment-md .segment-button:hover {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.card-background-pageHeader .segment-ios .segment-button:hover {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.card-background-pageHeader .segment-md .segment-button:focus {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.card-background-pageHeader .segment-ios .segment-button:focus {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.card-background-pageHeader .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+    border-color: #ff3a2f;
+    opacity: 1;
+    background: #ff3a2f !important;
+    color: white !important;
+}
+
+.card-background-pageHeader .segment-ios .segment-button.activated, .segment-ios .segment-button.segment-activated {
+    border-color: #ff3a2f;
+    opacity: 1;
+    background: #ff3a2f !important;
+    color: white !important;
+}
+
+.card-background-pageHeader .segment-md .segment-button {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    height: 3.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff3a2f;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    background-color: transparent;
+    color: #ff3a2f;
+}
+
+.card-background-pageHeader .segment-ios .segment-button {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    height: 3.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff3a2f;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    background-color: transparent;
+    color: #ff3a2f;
+}
+
+.card-background-pageHeader .segment-button {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.card-background-pageHeader .header-grid ion-row .header-grid-col2{
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    font-size: 30px
+}
+
+.toast-ios .toast-message {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    color: white;
+    background: green;
+}
+
+.toast-md .toast-message {
+    padding: 19px 16px 17px;
+    font-size: 1.5rem;
+    color: white;
+    background: green;
+}
+
+.storeDetFooter .start-btn-col1 {
+    text-align: center;
+    background: #9ca548;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    border-right: 1px solid white;
+}
+
+.storeDetFooter .start-btn-col2 {
+    text-align: center;
+    background: #9ca548;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card-background-pageHeader  .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+     border-bottom: black !important
+}
+.card-background-pageHeader .list-ios > .item-block:first-child {
+     border-top: black !important;
+}
+.customizeOverlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // background: rgba(0,0,0,0.6);
+    background: #373737;
+    z-index: 999;
+}
+.customizeheaderDet{
+    background: #ff3a2f;
+    color: #fff !important;
+}
+.CustomApplyBtn{
+    background: #9CA548;
+    color: #fff !important;
+        margin-bottom: 0px;
+}
+.CustomApplyBtn:hover {
+    background: #9CA548 !important;
+}
+.CustomApplyBtn:focus {
+    background: #9CA548 !important;
+}
+.customHeaderList .item-inner{
+    border-bottom: none !important;
+}
+.customList ion-list{
+    margin: 0px;
+}
+.customList item-inner{
+    padding: 0px;
+}
+.customList button.item-ios:not([detail-none]) .item-inner{
+    background-image: none;
+    padding-right: 0px;
+    background-repeat: no-repeat;
+    background-position: none;
+    background-size: 0px;
+}
+.customList ion-label{
+    color: white;
+    font-size: 14px !important;
+}
+.customizeOverlay ion-content{
+    background-color: transparent;
+}
+.customDiv{
+    margin: 15px;
+    color: #868686;
+    font-size: 12px !important;
+}
+.subItemName{
+    color: #868686;
+}
+.customHeaderList{
+    // margin-left: 15px;
+    // margin-right: 15px;
+}
+.customContent{
+        margin-top: 70px;
+        height: 85%;
+}
+.customizeScreenParentDiv2{
+    width: 100%;
+    padding: 0 20%;
+}
+.customizeScreenParentDiv{
+    width: 100%;
+    padding: 0;
+}
+.subItemDiv{
+    width: 100%;
+    border-bottom: 1px solid #5A5A5A;
+}
+.subItemDiv ion-label{
+    font-size: 12px !important;
+}
+.customizeScreenParentDiv{
+    .label-ios {
+        color: white !important;
+    }
+    .label-md {
+        color: white !important;
+    }  
+}
+.customizeScreenParentDiv2{
+    .label-ios {
+        color: white !important;
+    }
+    .label-md {
+        color: white !important;
+    }
+}
+
+.footerBtn{
+    height: 50px;
+    line-height: 29px;
+}

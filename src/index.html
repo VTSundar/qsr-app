@@ -17,37 +17,51 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="QSR APP">
   <link rel="apple-touch-icon" href="assets/imgs/jambalogo.png">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <!-- cordova.js required for cordova apps -->
   <script src="cordova.js"></script>
 
    <!--un-comment this code to enable service worker-->
    <!--test-->
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('service worker installed'))
-        .catch(err => console.log('Error', err));
-    }
+    // if ('serviceWorker' in navigator) {
+    //   navigator.serviceWorker.register('service-worker.js')
+    //     .then(() => console.log('service worker installed'))
+    //     .catch(err => console.log('Error', err));
+    // }
   </script>
 
   <link href="build/main.css" rel="stylesheet">
   <style>
     @font-face {
-      font-family: deltaco;
+      font-family: CabinSketchBold;
       font-weight: normal;
       font-style: normal; 
-      src: url('./assets/fonts/9265b1180f5d4f52a02483aa4a3cfd45.ttf');
-      src: url('./assets/fonts/fa56053edc024b2cb6245bb090a68bbb.woff');
-      src: url('./assets/fonts/9fee5714b6ee4cc9acc78c90b4b9620d.otf');
+      src: url('./assets/fonts/template2/CabinSketch-Bold.ttf');
+    }
+    @font-face {
+      font-family: CabinSketchRegular;
+      font-weight: normal;
+      font-style: normal; 
+      src: url('./assets/fonts/template2/CabinSketch-Regular.ttf');
+    }
+    @font-face {
+      font-family: ufonts;
+      font-weight: normal;
+      font-style: normal; 
+      src: url('./assets/fonts/template2/ufonts.com_futura-book.ttf');
     }
     body{
-      font-family: deltaco !important;
+      font-family: ufonts;
     }
-    /*ion-app{
-      font-family: deltaco !important;
-    }*/
+    ion-app{
+      font-family: ufonts !important;
+    }
+    .button_font{
+      font-family: CabinSketchRegular;
+    }
   </style>
+
 </head>
 <body>
 

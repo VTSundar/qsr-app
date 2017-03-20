@@ -1,0 +1,29 @@
+<ion-header class="storeLocationHeader">
+    <ion-grid class="header-grid">
+        <ion-row>
+            <ion-col width-10 class="header-grid-col1"><img class="LocHeaderImg" (click)="toStartScreenPage()" src="../../assets/imgs/template2/left_back_icon.png" /></ion-col>
+            <ion-col width-80 class="header-grid-col2 storeLocationHeading">QUICK SERVE</ion-col>
+            <ion-col width-10 class="header-grid-col3"><img class="storeLocimgMap" src="../../assets/imgs/template2/search.png" /></ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-header>
+<ion-content class="listStoresContent">
+    <div class="listStoresParentDiv">
+        <ion-item *ngFor="let item of listStores">
+            <ion-grid>
+                <ion-row>
+                    <ion-col width-80 class="listStoreDet"  (click)="toMapScreen(item)">
+                        <div><h2>{{item.qsr_name}}</h2></div>
+                        <div><h2 class="addrHdr" style="font-size: 13px !important;">{{item.qsr_streetaddress}},{{item.qsr_city}}</h2></div>
+                    </ion-col>
+                    <!--<ion-col width-10>
+                        <div class="listStoreColDiv"><div>{{item.distance}}</div><div>MI</div></div>
+                    </ion-col>-->
+                    <ion-col width-20 class="listStoreDis">
+                        <div class="listStoreColDiv"><div>{{item.distance}}</div><div>MI</div></div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+    </div>
+</ion-content>

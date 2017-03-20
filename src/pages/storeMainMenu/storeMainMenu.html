@@ -1,0 +1,22 @@
+<ion-header class="startScreenHeader">
+    <ion-grid class="header-grid">
+      <ion-row>
+        <ion-col width-10 class="header-grid-col1">
+          <ion-icon name="arrow-back" ios="md-arrow-back" md="md-arrow-back" (click)="goBack()"></ion-icon>
+        </ion-col>
+        <ion-col width-80 class="header-grid-col2">Our Menu</ion-col>
+        <ion-col width-10 class="header-grid-col3">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-header>
+  <ion-content class="main-menu-content">
+    <div class="menu-container">
+      <ul>
+        <li *ngFor="let menu of mainMenus" [ngStyle]="{'background-image': 'url(' + menu.imageUrl + ')'}" (click)="selectFamily(menu)">
+            <div class="overlay-menu-list"></div>
+            <div class="overlay-menu-name">{{menu.name}}</div>
+        </li>
+      </ul>
+    </div>
+  </ion-content>

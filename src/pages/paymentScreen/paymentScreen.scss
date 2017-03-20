@@ -1,357 +1,87 @@
-.cardPay{
-    width: 100%;
+.paymentScreenheader{
+    background: #ff3a2f;
+    color: #fff !important;
 }
-.titlePay{
-    background: #323232;
-    color: white;
+.paymentScreenContent{
+    background: #393938;
 }
-// .scroll-content {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     z-index: 1;
-//     display: block;
-//     overflow-x: hidden;
-//     overflow-y: scroll;
-//     -webkit-overflow-scrolling: touch;
-//     will-change: scroll-position;
-//     contain: size style layout;
-//     background-color: #f8f8f8 !important;
-// }
-// .fixed-content {
-//     background-color: #f8f8f8 !important;
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     display: block;
-// }
-.paymentBack{
-    color: black !important;
-    background: #d6d6d6  !important;
-}
-.paymentCardHeader{
-    color:#78797a;
-    // background: #f8f8f8;
-    text-align: center;
-}
-.contentPay{
-    background: #f8f8f8;
-}
-.listItemDiv-payment{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.datetime-md {
-    color:black;
-}
-.expDateCol{
-    padding: 0px !important;
-}
-.expDateCol .item-md {
-    position: relative;
-    padding-right: 0;
-    padding-left: 0px !important;
-    font-size: 1.6rem;
-    font-weight: normal;
-    text-transform: none;
-    color: white;
-    background-color: transparent;
-    box-shadow: none;
-    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.expDateCol .ion-col {
-    display: block;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 0px !important;
-    width: 100%;
-}
-.cvvItem form, input, optgroup, select {
-    margin: 0;
-    font: inherit;
-    color: black !important;
-}
-.imgCard{
-    height: 20px;
-    width: 40px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding-bottom: 4px;
-}
-.colCardNumber{
-    height: 50px !important;
-    position: relative;
-}
-.colCardNumberImg{
-    height: 50px !important;
-}
-.borderInput{
-    border-bottom: 2px solid white;
-}
-.paymentFooter{
-    width: 100;
-}
-.totalPay{
-    text-align: center;
-    margin-bottom: 0px !important;
-    margin-top: 10x !important;
-    padding-top: 15px;
-    border-top: 1px solid #ccc;
-}
-.totalAmount{
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-    font-size: 30px;
-    color: orange;
-    font-weight: bolder;
-}
-.cancelOrder{
-    border-color:#ff9433;
-    color: #ff9433;
-    margin-top: 15px;
-}
-.paymentFooter .button-outline-md {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ff9433;
-    color: #ff9433;
-    margin-top: 10px;
-    background-color: transparent;
-    box-shadow: none;
-}
-.hoverButton .button-md:hover:not(.disable-hover) {
-    background-color: transparent; 
-}
-.listItemDiv-payment .item-md {
-    position: relative;
-    padding-right: 0;
-    padding-left: 0px;
-    font-size: 12px;
-    font-weight: normal;
-    text-transform: none;
-    color: #999;
-    background-color: transparent;
-    box-shadow: none;
-    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.expDateCol .ion-grid {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 0px;
-    width: 100%;
-}
-// .borderList{
-//     border-bottom: 1px solid #dedede !important;
-// }
-// .colCardNumber .list-md .item-input:last-child {
-//     border-bottom: none !important;
-// }
-// .expDateCol .list-md .item-input:last-child {
-//     border-bottom: none !important;
-// }
-// .list-md .item-input:last-child { // i used class but no changes so i done this
-//     border-bottom: none !important;
-// }
-.expDateCol ion-col {
-    display: block;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 0px !important;
-    width: 100%;
-}
-.expDateCol ion-grid {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 0px;
-    width: 100%;
-}
-.cardPay .list-md[inset] {
-    margin: 10px !important;
-    border-radius: 2px;
-}
-
-.listItemDiv-payment .input-cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-bottom: 1px solid #CCC;
-}
-.itemInnerPadding .item-inner {
-    padding-top: 8px !important;
-    padding-right: 8px;
-    border-bottom: 1px solid #dedede;
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
-.footerBtnPay{
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-.colCardNumberImg .item-ios {
-    margin-top: 6px;
-    position: relative;
-    padding-left: 16px;
-    border-radius: 0;
-    font-size: 1.7rem;
-    color: #747474;
-    background-color: #fff;
-    padding-right: 0px;
-    border-bottom: 1px solid #dedede;
-    margin-left: 0rem !important;
-    transition: background-color 200ms linear;
-}
-.itemInnerPadding ion-input {
-    margin-top: 0px;
-    margin-left: 20px;
-}
-.footerBtnPay .button-ios {
-    width: 100%  !important;
-    margin-left: 1px !important;
-    background-color: #ff9433;
-    overflow: hidden;
-    margin: 0.4rem 0.2rem;
-    padding: 0 1.1em;
-    height: 3.6rem;
-    border-radius: 2px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #fff;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hoverButton .button-ios {
-    width: 100%  !important;
-    margin-left: 1px !important;
-    overflow: hidden;
-    margin: 0.4rem 0.2rem;
-    padding: 0 1.1em;
-    height: 3.6rem;
-    border-radius: 2px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #ff9433;
-    border: 1px solid #ff9433;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.colCardNumberImg .item-md{
-    border-bottom: 1px solid #dedede;
-    margin-top: 6px !important;
-}
-// .colCardNumberImg .item-md:hover{
-//     border-bottom: 2px solid blue;
-// }
-.itemInnerPadding .datetime-md {
-    color: black;
-    border-bottom: 1px solid #dedede;
-}
-.cvvPassword .text-input-ios {
-    margin: 0px;
-    padding: 0;
-    width: calc(100% - 8px);
-}
-.cvvPassword .item-label-floating .text-input-md {
-    margin-bottom: 4px !important;
-}
-
-.cvvPassword .item-ios.item-label-stacked .text-input, .item-ios.item-label-floating .text-input {
-    margin-top: 3px;
-    margin-bottom: 8px;
-    margin-left: 0;
-    width: calc(100% - 8px);
-}
-.cardPay .list-md .item-input:last-child {
-     border-bottom: 0px solid #dedede;
-}
-.itemInnerPadding .datetime-md {
-    padding: 2px 8px 13px 0px;
-    border-right: 1px solid #ccc;
-}
-.list-md .item-block .item-inner {
-    border-bottom: 1px solid #dedede;
-}
-.itemInnerPadding .datetime-ios {
-    padding: 0px 8px 11px 0px;
-    border-right: 1px solid #ccc;
-}
-.saveCard{
-    border-bottom: 0px solid #dedede !important;
-}
-.saveCard{
-    .item-inner{
-        border: none !important;
+.availableCards{
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        color: white;
+        overflow-x: auto;
+        display: flex;
     }
-    ion-label{
-        margin: 0px 8px 2px 2px !important;
-    } 
+
+    li {
+        float: left;
+        background: transparent;
+        margin-left: 10px;
+        display: flex;
+        margin-top: 10px;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111111;
+    }
+    ion-grid{
+        width: 100%;
+        cursor: pointer;
+    }
+    li:first-child{
+        margin-left: 0px !important;
+    }
+
 }
-.cvvItem .item-ios.item-block .item-inner {
-    padding-left: 10px;
+.availableCards .swiper-pagination-bullets{
+    bottom: 0px !important;
 }
-.cvvPassword .item-label-stacked .text-input-md, .item-label-floating .text-input-md {
-    margin-bottom: 4px !important;
+.availableCards .slide-zoom{
+    height: 200px;
 }
-.listItemDiv-payment .item-ios {
-    font-size: 12px !important;
-}
-.itemInnerPadding ion-label {
-    display: block !important;
-    overflow: auto !important;
-    -webkit-flex: 1 !important;
-    -ms-flex: 1 !important;
-    flex: 1 !important;
-    margin: 0 !important;
-    font-size: 12px !important;
-    padding-bottom: 5px;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-}
-.itemInnerPadding .item-input .label-md, .item-select .label-md, .item-datetime .label-md {
-    color: #999;
-    padding-bottom: 2px;
-}
-.itemInnerPadding .item-inner{
-    border-bottom: 1px solid #dedede !important;
-}
-.cvvItem ion-label{
-    margin-left: 10px !important;
-}
-.paymentParentDiv{
+.paymentScreenParentDiv{
     width: 100%;
     padding: 0 5%;
 }
-.paymentParentDiv-2{
+.paymentScreenCards{
+    color: #9b9b9b;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.availableCards .swiper-pagination-bullet-active{
+    background: #ff3a2f;
+}
+.paymentScreenBtn{
+    background: #9CA548;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.paymentScreenBtn:hover {
+    background: #9CA548 !important;
+}
+.paymentScreenBtn:focus {
+    background: #9CA548 !important;
+}
+.availCardsDiv{
+    height: 150px;
+    width: 200px;
+    margin-left: 10px;
+}
+.availableCards div:first-child{
+    margin-left: 0px !important;
+}
+.paymentScreenParentDiv2{
     width: 100%;
-    padding: 0 10%;
-}
-.itemInnerPadding ion-datetime{
-    border-bottom: none !important;
-}
-.paymentParentDiv ion-card{
-    margin: 0;
-}
-.paymentParentDiv-2 .card-ios {
-    margin: 12px 12px 12px 0px;
+    padding: 0 20%;
 }

@@ -1,0 +1,174 @@
+<ion-content class="card-background-pageHeader">
+    <ion-header class="storeItemsheaderDet">
+        <!--<ion-fab top left edge class="leftFab" style="top: 8%;">
+            <button ion-fab mini (click)="backToStartPage()"><ion-icon ios="md-arrow-back" md="md-arrow-back"></ion-icon></button>
+        </ion-fab>
+        <ion-title class="storeItemsTitle" style="line-height: 68px;">{{storeDet.name}}</ion-title>
+        <img src="../../assets/imgs/list.png" style="float: right;margin-right: 1rem;margin-top: -4rem;" />-->
+        <ion-grid class="header-grid">
+            <ion-row>
+                <ion-col width-10 class="header-grid-col1">
+                    <ion-icon ios="md-arrow-back" md="md-arrow-back" style="color: white;font-weight: bold;" (click)="backToItemPage()"></ion-icon>
+                </ion-col>
+                <ion-col width-80 class="header-grid-col2">{{storeDet.name}}</ion-col>
+                <ion-col width-10 class="header-grid-col3">
+                    <ion-icon ios="ios-heart-outline" md="md-heart-outline" style="color: white;font-weight: bold;"></ion-icon>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-header>
+    <div style="height: 320px;">
+        <img class="imgHeightStore" [src]=storeDet.imageUrl />
+        <ion-grid style="position: absolute;transform: translate(0.1%, -132%);font-size: 15px;">
+            <ion-row style="font-weight: bold;">
+                <ion-col col-12 width-75 style="color: white;font-size: 17px;">{{storeDet.name}}</ion-col>
+                <ion-col col-6 width-25 style="text-align: end;color: white;">
+                    <span *ngIf="warmth == 0"> {{storeDet.price - 1 | currency:'USD':true:'1.2-2'}} </span>
+                    <span *ngIf="warmth == 1"> {{storeDet.price | currency:'USD':true:'1.2-2'}} </span>
+                    <span *ngIf="warmth == 2"> {{storeDet.price + 1 | currency:'USD':true:'1.2-2'}} </span>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-6 width-75 style="color:white;font-size: 13px;">{{storeDet.ingredients}}</ion-col>
+            </ion-row>
+        </ion-grid>
+        <!--<img class="imgHeightStore" />-->
+    </div>
+    <div style="text-align: center;position: relative;" *ngIf="notLength > 0" (click)="addToPayment();">
+        <ion-icon class="cartDet" ios="md-cart" md="md-cart" style="transform: translate(-50%, 1%);"></ion-icon>
+        <ion-badge item-right style="color: #ff3a2f;position: absolute;-webkit-transform: translate(15%, -70%);transform: translate(15%, -70%);">{{notLength}}</ion-badge>
+    </div>
+
+    <ion-list>
+        <ion-item>
+            <ion-range min="0" max="2" step="1" snaps="true" [(ngModel)]="warmth" color="danger">
+            </ion-range>
+        </ion-item>
+    </ion-list>
+    <ion-grid>
+        <ion-row>
+            <span style="width: 50%;"> <ion-col col-12 class="fntQty">Small</ion-col></span>
+            <span style="text-align: center;width: 50%;"> <ion-col col-12 class="fntQty">Medium</ion-col></span>
+            <span style="text-align: end;width: 50%;"> <ion-col col-12 class="fntQty">Large</ion-col></span>
+        </ion-row>
+    </ion-grid>
+
+    <hr style="background:#444340">
+
+    <ion-grid style="font-size: 15px;">
+        <ion-row>
+            <ion-col>
+                <div class="item-detail-quantity" style="text-align: center;">
+                    <div (click)="addQty('sub')">
+                        <ion-icon ios="ios-remove" md="md-remove"></ion-icon>
+                    </div>
+                    <div style="font-size: 50px;color: white;width: 15%;" class="button_font">{{defQty}}</div>
+                    <div (click)="addQty('add')">
+                        <img style="width: 35px;" src="../../assets/imgs/add.png"/>
+                    </div>
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <div class="qtySize">
+                    Quantity
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <hr style="background:#444340">
+
+    <ion-grid>
+        <ion-row style="margin-left: 2%;">
+            <ion-col class="checkout-item-time">
+                <ion-segment [(ngModel)]="ingredientsList" style="width: 80%;margin-left: 8%;">
+                    <ion-segment-button value="NUTRITIONAL" style="border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                        NUTRITIONAL
+                    </ion-segment-button>
+                    <ion-segment-button value="ALLERGENS" style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+                        ALLERGENS
+                    </ion-segment-button>
+                </ion-segment>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+
+    <ion-grid offset-10 style="position: absolute;font-size: 15px;transform: translate(9%, -12%);">
+        <ion-row>
+            <ion-col col-12 width-75 style="color: #918e8e;font-size: 17px;">Calories 300</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6 width-50 style="color:#918e8e;font-size: 13px;">Total Fat 1.5g</ion-col>
+            <ion-col col-6 width-50 style="color:#918e8e;font-size: 13px;max-width: 31.5%;text-align: end;">2%</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6 width-50 style="color:#918e8e;font-size: 13px;">Saturated Fat 0g</ion-col>
+            <ion-col col-6 width-50 style="color:#918e8e;font-size: 13px;max-width: 31.5%;text-align: end;">2%</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6 width-50 style="color:#918e8e;font-size: 13px;">Trans Fat 0g</ion-col>
+            <ion-col col-6 width-50 style="color:#918e8e;font-size: 13px;max-width: 31.5%;text-align: end;">0%</ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
+<div class="customizeOverlay" [hidden]="customOverlay">
+    <ion-header class="customizeheaderDet">
+        <ion-grid class="header-grid">
+            <ion-row>
+                <ion-col width-10 class="header-grid-col1">
+                    <ion-icon ios="md-close" md="md-close" (click)="backPage()"></ion-icon>
+                </ion-col>
+                <ion-col width-80 class="header-grid-col2">Customize</ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-header>
+    <ion-content class="customContent">
+        <div [ngClass]="platFormType === 'Windows' ? 'customizeScreenParentDiv2' : 'customizeScreenParentDiv'">
+            <div class="customDiv">I'd Like to Substitue</div>
+            <ion-list class="customHeaderList">
+                <div style="width: 100%;" class="customList" *ngFor="let item of customizeItem">
+                    <button style="padding: 0px; width: 100%;border-bottom: 1px solid white;" ion-item (click)="itemSelected(item)">
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col width-90>{{ item.name }}</ion-col>
+                                <ion-col width-10>
+                                    <!--<span *ngIf="!customSubMenu" style="width: 20%"><img style="height: 20px; width: 20px" [src]="item.add_btn" /></span>-->
+                                    <span style="width: 20%">
+                                        <ion-icon [hidden]="item.collapse" style="font-size: 20px; color: white" name="md-add"></ion-icon>
+                                        <ion-icon [hidden]="!item.collapse" style="font-size: 20px; color: white" name="md-remove"></ion-icon>
+                                    </span>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                <!--<ion-item *ngFor="let subitem of subItem">{{ subitem.name }}</ion-item>-->
+                    </button>
+                    <ion-list [hidden]="!item.collapse">
+                        <div class="subItemDiv" *ngFor="let subitem of item.subItems" (click)="subitemSelected(subitem)">
+                            <button style="padding: 0px;" ion-item>
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col width-90 class="subItemName"><div>{{ subitem.name }}</div><div>${{ subitem.price }}</div></ion-col>
+                                <ion-col width-10><img [hidden]="!subitem.tick" style="height: 15px; width: 15px" src="../../assets/imgs/template2/tick.png" /></ion-col>
+                            </ion-row>
+                        </ion-grid>  
+                    </button>
+                        </div>
+                    </ion-list>
+                </div>
+            </ion-list>
+        </div>
+    </ion-content>
+    <ion-footer><button ion-button full class="CustomApplyBtn" (click)="applyCustomization()">APPLY</button></ion-footer>
+</div>
+<ion-footer class="storeDetFooter">
+    <ion-grid class="start-btn-grid">
+        <ion-row class="start-btn-row footerBtn">
+            <ion-col width-50 class="start-btn-col1" (click)="showcustomizePage(subitem)">Customization</ion-col>
+            <ion-col width-50 class="start-btn-col2" (click)="addCart(this.storeDet)">Add Cart</ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-footer>

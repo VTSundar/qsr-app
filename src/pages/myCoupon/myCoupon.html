@@ -1,0 +1,37 @@
+<ion-header class="storeItemsheader">
+    <ion-grid class="header-grid">
+        <ion-row>
+            <ion-col width-10 class="header-grid-col1">
+                <ion-icon ios="md-arrow-back" md="md-arrow-back" (click)="backToRewardsPage()"></ion-icon>
+            </ion-col>
+            <ion-col width-80 class="header-grid-col2 headerTitle">MY COUPON</ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-header>
+
+<ion-content class="card-background-pageHeader">
+    <div style="height: 320px;">
+        <img class="imgHeightStore" src="../../assets/imgs/tacos.jpg" />
+    </div>
+
+    <ion-grid class="header-grid" style="margin-top: 20px;">
+        <ion-row style="height: 75px;">
+            <ion-col width-100 class="header-grid-col2 offerCoupon">${{qrCodeItems.rewardPrice}} OFF</ion-col>
+        </ion-row>
+        <ion-row class="offerTitle">
+            <ion-col width-100 class="offerCouponTitle">{{qrCodeItems.rewardItem}}</ion-col>
+        </ion-row>
+        <ion-row class="offerImg">
+            <div class="offerImgDiv">
+                <img class="offerImgQR" src="../../assets/imgs/qrcode.png" />
+            </div>
+        </ion-row>
+        <ion-row class="offerExpire">
+            <ion-col class="offerExpDate" width-100>Expires <span style="color: #ff3a2f"> {{qrCodeItems.rewardExpires}} </span></ion-col>
+        </ion-row>
+        <ion-row class="offerNote">
+            <ion-col class="offerCode" width-100>Must represent coupon at time of purchase to receive offer. May not be combined with any other offer. Only one coupon per person per visit.Valid only at participating retail store locations.While supplies last.Offer not valid on catalog or online purchases</ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>

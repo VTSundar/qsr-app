@@ -1,21 +1,26 @@
 import { Component } from '@angular/core';
 
-import { NavController, LoadingController, Platform , NavParams} from 'ionic-angular';
-import { CheckoutPage } from '../checkout/checkout';
+import { NavController, Platform } from 'ionic-angular';
+import { AppService } from '../../providers/app-service';
+import { PaymentCartPage } from '../paymentCart/paymentCart';
+
 @Component({
   selector: 'payment-screen',
   templateUrl: 'paymentScreen.html'
 })
-export class PaymentPage {
-    public platFormType : any;
-    public checkOutPay : any;
-    public storeName : any;
-    public total : any;
-  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController,public platform: Platform, public params:NavParams) {
-    this.checkOutPay = params.get("checkOutPayment");
-    this.storeName = params.get("storeName");
-    this.total = params.get("total");
-  if (this.platform.is('android')) {
+export class paymentScreen {
+  paymentCardLists: any;
+  public platFormType : any;
+  constructor(public navCtrl: NavController, public appService: AppService,public platform: Platform) {
+    this.appService.getPaymentCard()
+    .then(data => {
+      this.paymentCardLists = data;
+    })
+    .catch(err =>{
+      console.log("err", err);
+    });
+    console.log(this.platform);
+    if (this.platform.is('android')) {
      this.platFormType = 'Mobile';
    }
    else if(this.platform.is('ios')){
@@ -24,13 +29,16 @@ export class PaymentPage {
    else{
         this.platFormType = 'Windows';
    }
-  //  console.log(this.platFormType);
+    console.log(this.platFormType);
   }
-  backToStartPage(){
-    this.navCtrl.push(CheckoutPage,{
-      "checkOutPayment" : this.checkOutPay,
-      "storeName" : this.storeName,
-      "total" : this.total
-    });
+
+  // /**
+  //  * payment Done
+  //  */
+  payDone(){
+    
+  }
+  backtoCart(){
+    this.navCtrl.push(PaymentCartPage);
   }
 }

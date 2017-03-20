@@ -2,26 +2,29 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
-// import { TabsPage } from '../pages/tabs/tabs';
-// import { StartscreenPage } from '../pages/startscreen/startscreen';
-// import { CardMenuPage } from '../pages/cardmenu/cardmenu';
-import { StartscreenPage } from '../pages/startscreen/startscreen';
-// import { CardMenuPage } from '../pages/cardmenu/cardmenu';
-// import { LoginPage } from '../pages/login/login';
-// import { RegistrationPage } from '../pages/registration/registration';
-// import { ItemDetailPage } from '../pages/itemDetail/itemDetail';
-// import { CheckoutPage } from '../pages/checkout/checkout';
-// import { PaymentPage } from '../pages/paymentScreen/paymentScreen';
-// import { RestraFind } from '../pages/restrafind/restrafind';
-
+// import { TestPage } from '../pages/test/test';
+// import { StartScreenPage } from '../pages/startscreen/startscreen';
+// import { StoreDetailsPage } from '../pages/storeDetails/storeDetails';
+// import { LocationMapPage } from '../pages/location/location';
+// import { StoreItemsPage } from '../pages/storeItems/storeItems';
+// import { StoreSubmenuPage } from '../pages/storeSubmenu/storeSubmenu';
+// import { LocationMapPage } from '../pages/location/location';
+// import { paymentScreen } from '../pages/paymentScreen/paymentScreen';
+// import { StartScreenPage } from '../pages/startscreen/startscreen';
+// import { RewardsOfferPage } from '../pages/rewardOffer/rewardOffer';
+import { StartScreenPage } from '../pages/startscreen/startscreen';
+// import { DashboardPage } from '../pages/dashboard/dashboard';
+// import { StoreMainMenuPage } from '../pages/storeMainMenu/storeMainMenu';
+// import { MyCouponPage } from '../pages/myCoupon/myCoupon';
+// import { Profile } from '../pages/profile/profile';
+// import { myLoyaltyPage } from '../pages/myLoyalty/myLoyalty';
+import { GiftCardPage } from '../pages/giftCard/giftCard';
+import { CardDesignPage } from '../pages/cardDesign/cardDesign';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = StartscreenPage;
-  // rootPage = CardMenuPage;
-  // rootPage = StartscreenPage;
-  // rootPage = CheckoutPage;
+  rootPage = CardDesignPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {

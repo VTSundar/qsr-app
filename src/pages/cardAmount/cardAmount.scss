@@ -1,0 +1,165 @@
+.giftCardWindows{
+    margin-left: 10%;
+    width: 80%;
+}
+
+.giftCardMobile{
+    // margin-left: 10%;
+    width: 100%;
+}
+
+.cardAmountStyles{
+    background-image: url("../../assets/imgs/template2/bg_black.png") !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+}
+
+.sub-menu-container{
+    // border: 1px solid #fff;
+    width: 95%;
+    margin: 0 auto;
+    ul{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        .sub-category-li{
+            width: 150px;
+            height: 160px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 10px;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            overflow: hidden;
+            .sub-menu-row1{
+                height: 110px;
+            }
+            .sub-menu-row2{
+                height: 50px;
+                background: #fff;
+                line-height: 50px;
+                padding: 0 10px;
+                font-family: deltaco;
+                font-size: 16px;
+                color: #363636;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .card-product{
+            width: 200px;
+            height: 125px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 10px;
+            position: relative;
+            overflow: hidden;
+            background: #fff;
+            .product-img{
+                height: 105px;
+                background-image: none;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                cursor: pointer;
+            }
+            .product-desc{
+                height: 75px;
+                padding: 10px;
+                cursor: pointer;
+                .heading{
+                    text-align: left;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+                .desc{
+                    height: 50px;
+                    font-size: 11px;
+                    text-align: left;
+                    overflow: hidden;
+                }
+            }
+            .product-price{
+                height: 30px;
+                padding: 0 10px;
+                border-top: 1px solid #ccc;
+                ion-row{
+                    height: 100%;
+                }
+                ion-col{
+                    padding: 0;
+                    line-height: 24px;
+                    font-size: 12px;
+                }
+                .product-price-col1{
+                    text-align: left;
+                    cursor: pointer;
+                    font-size: 13px;
+                    color: #ff3a2f;
+                }
+                .product-price-col2{
+                    text-align: right;
+                    font-weight: bold;
+                    color: #4a4a4a;
+                    font-size: 13px;
+                }
+                .add-to-cart, .product-price{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+
+.card-product .hoverImg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+        }
+
+        .card-product:hover .hoverImg {
+            position: absolute;
+            left: 85px;
+            top: 45px;
+            display: block;
+        }
+
+        .card-product:hover .product-img{
+            opacity: 0.6;
+        }
+
+        .redeemPointsList{
+            padding: 15px;
+            text-align: center;
+            overflow-x: auto;
+            // overflow: hidden;
+            .redeemPointsList-container{
+                display: inline-flex;
+            }
+            .doller-points{
+                width: 100px;
+                // border: 1px solid #fff;
+                display: inline-block;
+                .dollar{
+                    width: 50px;
+                    height: 50px;
+                    background: #fff;
+                    border-radius: 60px;
+                    margin: 0 auto;
+                    color: #9b9b9b;
+                    font-weight: bold;
+                    line-height: 50px;
+                }
+                .points{
+                    color: #fff;
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
+            }
+        }

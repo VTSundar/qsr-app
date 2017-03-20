@@ -1,0 +1,485 @@
+.paymentScreenCardWindows .card-md {
+    margin: 20px 10px 10px 78px;
+    width: calc(90% - 20px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #4a4a4a !important;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.paymentScreenCardMobile .card-md {
+    margin: 20px 10px 10px 10px;
+    width: calc(100% - 20px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #4a4a4a !important;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+
+.paymentScreenCardMobile .card-ios {
+    margin: 20px 10px 10px 10px;
+    width: calc(100% - 20px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #4a4a4a;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.paymentScreenCardWindows{
+    background: #363636 !important;
+}
+
+.paymentScreenCardMobile{
+    background: #363636 !important;
+}
+
+
+.paymentScreenCardWindows .card-header-md {
+    padding: 16px;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.paymentScreenCardMobile .card-header-md {
+    padding: 16px;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.paymentScreenCardWindows .card-header-ios {
+    padding: 16px;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.paymentScreenCardMobile .card-header-ios {
+    padding: 16px;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.paymentScreenCardWindows .segment-md .segment-button:hover {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.paymentScreenCardMobile .segment-md .segment-button:hover {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.paymentScreenCardWindows .segment-ios .segment-button:hover {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.paymentScreenCardMobile .segment-ios .segment-button:hover {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.paymentScreenCardWindows .segment-md .segment-button:focus {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.paymentScreenCardMobile .segment-md .segment-button:focus {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.paymentScreenCardWindows .segment-ios .segment-button:focus {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.paymentScreenCardMobile .segment-ios .segment-button:focus {
+    color: white !important;
+    background-color: #ff3a2f !important;
+}
+
+.paymentScreenCardWindows .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+    border-color: #ff3a2f;
+    opacity: 1;
+    background: #ff3a2f !important;
+    color: white !important;
+}
+
+.paymentScreenCardMobile .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+    border-color: #ff3a2f;
+    opacity: 1;
+    background: #ff3a2f !important;
+    color: white !important;
+}
+
+.paymentScreenCardWindows .segment-ios .segment-button.activated, .segment-ios .segment-button.segment-activated {
+    border-color: #ff3a2f;
+    opacity: 1;
+    background: #ff3a2f !important;
+    color: white !important;
+}
+
+.paymentScreenCardMobile .segment-ios .segment-button.activated, .segment-ios .segment-button.segment-activated {
+    border-color: #ff3a2f;
+    opacity: 1;
+    background: #ff3a2f !important;
+    color: white !important;
+}
+
+.paymentScreenCardWindows .segment-md .segment-button {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    height: 3.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff3a2f;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    background-color: transparent;
+}
+
+.paymentScreenCardMobile .segment-md .segment-button {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    height: 3.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff3a2f;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    background-color: transparent;
+}
+
+.paymentScreenCardWindows .segment-ios .segment-button {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    height: 3.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff3a2f;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    background-color: transparent;
+}
+
+.paymentScreenCardMobile .segment-ios .segment-button {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    height: 3.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff3a2f;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    background-color: transparent;
+}
+
+.paymentScreenCardWindows .segment-button {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.paymentScreenCardMobile .segment-button {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.hideDet{
+    height: 69px;
+    overflow: hidden;
+}
+
+.showDet{
+    // height: 65px;
+    overflow: hidden;
+}
+
+.paymentScreenCard .card-md .windowsCard{
+    margin: 20px 10px 10px 78px;
+    width: calc(90% - 20px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #4a4a4a;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.paymentScreenCard .card-md .mobileCard{
+    margin: 20px 10px 10px 10px;
+    width: calc(100% - 20px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #4a4a4a;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.paymentScreenCardWindows .orderSummary{
+    position: absolute;
+    font-size: 15px;
+    transform: translate(5%, -12%);
+}
+
+.paymentScreenCardMobile .orderSummary{
+    position: absolute;
+    font-size: 15px;
+    transform: translate(0%, -12%);
+}
+
+.paymentScreenCardWindows .subOrder{
+    color:#918e8e;
+    font-size: 13px;
+    max-width: 9.5%;
+    text-align: end;
+}
+
+.paymentScreenCardMobile .subOrder{
+    color:#918e8e;
+    font-size: 13px;
+    max-width: 31.5%;
+    text-align: end;
+}
+
+.addBottom{
+    font-weight: bold;
+    border-bottom: 1px solid #626262;
+}
+
+.delBottom{
+    font-weight: bold;
+    // border-bottom: 1px solid #626262;
+}
+
+.paymentScreenCardWindows .datetime-md {
+     padding: 0px 0px 0px 0px !important;
+}
+
+.paymentScreenCardMobile .datetime-md{
+    padding: 0px 0px 0px 0px !important; 
+}
+
+.paymentScreenCardMobile .datetime-ios{
+    padding: 0px 0px 0px 0px !important;
+}
+
+.addressLocInput{
+    .item-inner{
+        border-bottom: none !important;
+    }
+    ion-item{
+        padding: 0px;
+        border: 1px solid white !important;
+        border-bottom: none;
+        color: white  !important;
+        border-radius: 3px;
+    }
+    .text-input-ios{
+        margin: 11px 8px 11px 10px;
+    }
+    .item-ios.item-block .item-inner {
+        padding-right: 8px;
+        border-bottom: none; 
+    }
+    .item-md.item-input.input-has-focus .item-inner {
+        border-bottom-color: transparent;
+        box-shadow: none;
+    }
+}
+
+.addressLocInput-City{
+    .item-inner{
+        border-bottom: none !important;
+    }
+    ion-item{
+        padding: 0px;
+        border: 1px solid white !important;
+        border-bottom: none;
+        color: white  !important;
+        border-radius: 3px;
+    }
+    .text-input-ios{
+        margin: 11px 8px 11px 10px;
+    }
+    .item-ios.item-block .item-inner {
+        padding-right: 8px;
+        border-bottom: none; 
+    }
+    .item-md.item-input.input-has-focus .item-inner {
+        border-bottom-color: transparent;
+        box-shadow: none;
+    }
+}
+
+
+.addressLocInput{
+    margin-top: 90px;
+    // max-width: 64.5%;
+    // margin-left: 18%;  
+}
+
+.addressLocInput-City{
+    margin-top: 25px;
+    // max-width: 66%;
+    // margin-left: 17%; 
+}
+
+.overlayStyle .fab-icon{
+    transform: translate(-60%, -18%);
+}
+
+.storeLocationParentDiv2 ion-fab[top][edge] {
+    top: 57px; 
+}
+
+.storeLocationParentDiv ion-fab[top][edge] {
+    top: 62px; 
+}
+
+.storeLocationParentDiv2 .storeLocZipCode ion-fab[top][edge] {
+    top: 122px; 
+}
+
+.storeLocationParentDiv .storeLocZipCode ion-fab[top][edge] {
+    top: 126.5px; 
+}
+
+.storeLocationParentDiv2 .storeLocInput-Phone ion-fab[top][edge] {
+    top: 190px; 
+}
+
+.storeLocationParentDiv .storeLocInput-Phone ion-fab[top][edge] {
+    top: 194.5px; 
+}
+
+
+.storeLocationParentDiv2 .fab[mini] {
+    margin: 8px;
+    width: 55px;
+    height: 55px;
+    line-height: 40px;
+}
+
+.storeLocationParentDiv .fab[mini] {
+    margin: 8px;
+    width: 55px;
+    height: 55px;
+    line-height: 40px;
+}
+
+.storeLocationParentDiv2 ion-fab[left] {
+     left: 20%; 
+}
+
+.storeLocZipCode .storeLocationParentDiv2 ion-fab[left] {
+     left: 20%; 
+}
+
+.storeLocationParentDiv ion-fab[left] {
+     left: 13%; 
+}
+
+.storeLocationParentDiv2 .text-input-md {
+    margin: 13px 8px 13px 25px;
+    padding: 0;
+    width: calc(100% - 8px - 8px);
+}
+
+.storeLocationParentDiv .text-input-md {
+    margin: 13px 8px 13px 40px;
+    padding: 0;
+    width: calc(100% - 8px - 8px);
+}
+
+.storeLocationParentDiv .text-input-ios {
+    margin: 13px 8px 13px 40px !important;
+    padding: 0;
+    width: calc(100% - 8px - 8px);
+}
+
+.addressLocInput-City ion-fab[top][edge] {
+    top: 175px; 
+}
+
+.addressLocInput-City .fab[mini] {
+    margin: 8px;
+    width: 55px;
+    height: 55px;
+    line-height: 40px;
+}
+
+.addressLocInput-City ion-fab[left] {
+     left: 18%; 
+}
+
+.paymentScreenCardWindows .addressLocInput-City .text-input-md {
+    margin: 13px 8px 13px 30px;
+    padding: 0;
+    width: calc(100% - 8px - 8px);
+}
+
+.paymentScreenCardMobile .addressLocInput-City .text-input-md {
+    margin: 13px 8px 13px 22px;
+    padding: 0;
+    width: calc(100% - 8px - 8px);
+}
+
+.paymentScreenCardMobile .addressLocInput-City .text-input-ios {
+    margin: 13px 8px 13px 22px;
+    padding: 0;
+    width: calc(100% - 8px - 8px);
+}
+
+.storeLocInput-Phone{
+    .item-inner{
+        border-bottom: none !important;
+    }
+    ion-item{
+        padding: 0px;
+        border: 1px solid white !important;
+        border-bottom: none;
+        color: white  !important;
+        border-radius: 3px;
+    }
+    .text-input-ios{
+        margin: 11px 8px 11px 38px;
+    }
+    .item-ios.item-block .item-inner {
+        padding-right: 8px;
+        border-bottom: none; 
+    }
+    .item-md.item-input.input-has-focus .item-inner {
+        border-bottom-color: transparent;
+        box-shadow: none;
+    }
+}
+
+.storeLocInput-Phone{
+    margin-top: 18px;
+}

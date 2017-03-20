@@ -1,0 +1,96 @@
+<ion-header class="storeItemsheader">
+    <ion-grid class="header-grid">
+        <ion-row>
+            <ion-col width-10 class="header-grid-col1">
+                <ion-icon ios="md-close" md="md-close" (click)="backToPaymentCart()"></ion-icon>
+            </ion-col>
+            <ion-col width-80 class="header-grid-col2 headerTitle">MY REWARD & OFFER</ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-header>
+
+<ion-content [ngClass]="platFormType == 'Windows' ? 'rewardsOfferContent' : 'rewardsOfferContentMobile' ">
+    <div style="width: 100%;margin-top: 40px;margin-left: 11%;">
+        <ion-segment [(ngModel)]="rewardsOffer" style="width: 80%;margin-left: 0%;">
+            <ion-segment-button (click)="rewardsList()" value="Rewards" style="border-top-left-radius: 5px;border-bottom-left-radius: 5px;color: #ff3a2f">
+                Rewards <span *ngIf="rewardCount > 0"> [{{rewardCount}}] </span>
+            </ion-segment-button>
+            <ion-segment-button (click)="offersList()" value="Offers" style="color: #ff3a2f;border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+                Offers <span *ngIf="offerCount > 0"> [{{offerCount}}] </span>
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+
+    <div *ngIf="hideOffer == false">
+       <div *ngIf="rewardPageNav == 'Payment' "> <ion-card *ngFor="let item of rewardList">
+            <ion-card-header>
+                <ion-grid>
+                    <span> <div>
+            <ion-row>
+                <ion-col class="offerStyle button_font" col-6 width-65>${{item.rewardPrice}} OFF</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col width-75 class="rewardTitle">{{item.rewardItem}}</ion-col> 
+            </ion-row>
+            <ion-row>
+                <ion-col width-75 class="rewardSubTitle">{{item.rewardSubTitle}}</ion-col> 
+            </ion-row>
+            <ion-row>
+              <ion-col width-25  class="start-btn-col1 redeemBtn" *ngIf = "item.redeemFlag == false " (click)="redeemOffer(item.rewardPrice,item)">Redeem</ion-col> 
+              <ion-col width-25  class="start-btn-col1 redeemBtn" *ngIf = "item.redeemFlag == true " (click)="removeOffer(item.rewardPrice,item)">Remove </ion-col>
+                <ion-col width-75 class="rewardSubTitleTime">Expires <span style="color:white;font-size: 13px;"> {{item.rewardExpires}} </span> </ion-col>
+                    </ion-row>
+    </div>
+    </span>
+    </ion-grid>
+    </ion-card-header>
+    </ion-card> </div>
+    <div *ngIf="rewardPageNav !== 'Payment' " style="cursor: pointer;"> <ion-card *ngFor="let item of rewardList" (click)="gotoQR(item)">
+            <ion-card-header>
+                <ion-grid>
+                    <span> <div>
+            <ion-row>
+                <ion-col class="offerStyle button_font" col-6 width-65>${{item.rewardPrice}} OFF</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col width-75 class="rewardTitle">{{item.rewardItem}}</ion-col> 
+            </ion-row>
+            <ion-row>
+                <ion-col width-75 class="rewardSubTitle">{{item.rewardSubTitle}}</ion-col> 
+            </ion-row>
+    </div>
+    </span>
+    </ion-grid>
+    </ion-card-header>
+    </ion-card> </div>
+    </div>
+
+    <div *ngIf="hideOffer == true">
+        <ion-card *ngFor="let item of offerList">
+            <ion-card-header>
+                <ion-grid>
+                    <span> <div>
+            <ion-row>
+                <ion-col class="offerStyle button_font" col-6 width-65>${{item.offerPrice}} OFF</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col width-75 class="rewardTitle">{{item.offerItem}}</ion-col> 
+            </ion-row>
+            <ion-row>
+                <ion-col width-75 class="rewardSubTitle">{{item.offerSubTitle}}</ion-col> 
+            </ion-row>
+            <ion-row>
+                <ion-col width-25 *ngIf="item.redeemFlag == true" class="start-btn-col1 redeemBtn showBtn " (click)="offerRedeem(item)">Redeem</ion-col>
+                <ion-col width-25 *ngIf="item.redeemFlag == false" class="start-btn-col1 redeemBtn hideBtn" (click)="offerRedeem(item)"></ion-col>
+                <ion-col width-25 *ngIf="item.redeemFlag == 'remove' " class="start-btn-col1 redeemBtn showBtn " (click)="offerRedeemRemove(item)">Remove</ion-col>
+                <ion-col width-75 class="rewardSubTitleTime">Expires <span style="color:white;font-size: 13px;"> {{item.offerExpires}} </span>                    </ion-col>
+                    </ion-row>
+    </div>
+    </span>
+    </ion-grid>
+    </ion-card-header>
+    </ion-card>
+    </div>
+
+
+</ion-content>

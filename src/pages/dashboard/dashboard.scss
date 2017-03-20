@@ -1,0 +1,97 @@
+.dashboard-content{
+    background: #373735;
+}
+.dashboard-container{
+    margin: 0 auto;
+    padding: 20px 10px 10px 10px;
+    // width: 400px;
+    // border: 1px solid #fff;
+    height: 100%;
+    text-align: center;
+    .heading-one{
+        color: #fff;
+        font-size: 14px;
+    }
+    .heading-name{
+        color: #ff3a2f;
+        font-size: 25px;
+    }
+    .shop-location{
+        color: #fff;
+        font-size: 12px;
+    }
+    .change-store{
+        padding: 5px 0;
+        button{
+            &:hover{
+                background: #ff3a2f;    
+            }
+            height: 20px;
+            background: #ff3a2f;
+            span{
+                font-size: 9px;
+            }
+        }
+    }
+    ion-card{
+        border-radius: 10px;
+        // background: #ccc;
+        background-image: url('../../assets/imgs/gradient.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        &:hover{
+            background: #fff;
+        }
+        ion-grid{
+            padding: 0;
+            ion-col{
+                img{
+                    width: 40px;
+                    margin: 0 auto;
+                }
+            }
+            .column1{
+                div{
+                    border-right: 1px solid #ccc;
+                }
+            }
+            .column2{
+                text-align: left;
+                position: relative;
+                .card-heading{
+                    font-weight: bold;
+                }
+                .card-desc{
+                    font-size: 12px;
+                }
+                .rewards-alert{
+                    width: 30px;
+                    height: 30px;
+                    background: red;
+                    border-radius: 30px;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translate(0%,-50%);
+                    text-align: center;
+                    line-height: 30px;
+                    color: #fff;
+                }
+            }
+            .column3{
+                line-height: 40px;
+                font-size: 16px;
+                color: #b3b3b3;
+            }
+        }
+    }
+    .privacy-policy{
+        color: #fff;
+        font-size: 12px;
+        border-top: 1px solid #ccc;
+        padding: 10px 0;
+    }
+}
+.dashboardNameDiv{
+    cursor: pointer;
+}

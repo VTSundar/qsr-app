@@ -1,48 +1,60 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
-import { storeHomePage } from '../pages/storeHomePage/storeHomePage';
-import { LoginPage } from '../pages/login/login';
-import { RegistrationPage } from '../pages/registration/registration';
-import { HeaderPage } from '../pages/header/header';
-import { StoreItemsPage } from '../pages/storeItemsPage/storeItemsPage';
-import { Providers } from '../providers/provider';
-import { RestraFind } from '../pages/restrafind/restrafind';
+import { TestPage } from '../pages/test/test';
 import { LocationMapPage } from '../pages/location/location';
-import { ListFavPage } from '../pages/listfav/listfav';
+import { detStore } from '../pages/detStore/detStore';
 import { AgmCoreModule } from 'angular2-google-maps/core';
-import { SelectMenuPage } from '../pages/selectmenu/selectmenu';
-import { CardMenuPage } from '../pages/cardmenu/cardmenu';
-import { StartscreenPage } from '../pages/startscreen/startscreen';
-import { ItemDetailPage } from '../pages/itemDetail/itemDetail';
-import { PaymentPage } from '../pages/paymentScreen/paymentScreen';
-import { CheckoutPage } from '../pages/checkout/checkout';
+import { Providers } from '../providers/provider';
+import { StartScreenPage } from '../pages/startscreen/startscreen';
+import {LoginPage} from '../pages/login/login';
+import {SignupPage} from '../pages/signup/signup';
+import {StoreItemsPage} from '../pages/storeItems/storeItems';
+import {StoreDetailsPage} from '../pages/storeDetails/storeDetails';
+import { AppService } from '../providers/app-service';
+import {StoreSubmenuPage} from '../pages/storeSubmenu/storeSubmenu';
+import {CustomizationPage} from '../pages/customizationList/customizationList';
+import {PaymentCartPage} from '../pages/paymentCart/paymentCart';
+import { paymentScreen } from '../pages/paymentScreen/paymentScreen';
+import { RewardsOfferPage } from '../pages/rewardOffer/rewardOffer';
+import { DashboardPage } from '../pages/dashboard/dashboard';
+import { StoreMainMenuPage } from '../pages/storeMainMenu/storeMainMenu';
+import { StoreLocation } from '../pages/storeLocation/storeLocation';
+import { ListStores } from '../pages/listStores/listStores';
+import { MyCouponPage } from '../pages/myCoupon/myCoupon';
+import { Profile } from '../pages/profile/profile';
+import { myLoyaltyPage } from '../pages/myLoyalty/myLoyalty';
+import { GiftCardPage } from '../pages/giftCard/giftCard';
+import { CardDesignPage } from '../pages/cardDesign/cardDesign';
+import { CardAmountPage } from '../pages/cardAmount/cardAmount';
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage,
-    storeHomePage,
-    LoginPage,
-    RegistrationPage,
-    HeaderPage,
-    StoreItemsPage,
-    RestraFind,
-    SelectMenuPage,
+    TestPage,
     LocationMapPage,
-    ListFavPage,
-    CardMenuPage,
-    StartscreenPage,
-    ItemDetailPage,
-    PaymentPage,
-    CheckoutPage
+    StartScreenPage,
+    LoginPage,
+    SignupPage,
+    StoreItemsPage,
+    StoreDetailsPage,
+    detStore,
+    CustomizationPage,
+    PaymentCartPage,
+    paymentScreen,
+    StoreSubmenuPage,
+    CustomizationPage,
+    RewardsOfferPage,
+    DashboardPage,
+    StoreMainMenuPage,
+    StoreLocation,
+    ListStores,
+    MyCouponPage,
+    Profile,
+    myLoyaltyPage,
+    GiftCardPage,
+    CardDesignPage,
+    CardAmountPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -53,25 +65,30 @@ import { CheckoutPage } from '../pages/checkout/checkout';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage,
-    storeHomePage,
-    LoginPage,
-    RegistrationPage,
-    HeaderPage,
-    StoreItemsPage,
-    RestraFind,
-    SelectMenuPage,
+    TestPage,
     LocationMapPage,
-    ListFavPage,
-    CardMenuPage,
-    StartscreenPage,
-    ItemDetailPage,
-    PaymentPage,
-    CheckoutPage
+    StartScreenPage,
+    LoginPage,
+    SignupPage,
+    StoreItemsPage,
+    StoreDetailsPage,
+    detStore,
+    CustomizationPage,
+    PaymentCartPage,
+    paymentScreen,
+    StoreSubmenuPage,
+    RewardsOfferPage,
+    DashboardPage,
+    StoreMainMenuPage,
+    StoreLocation,
+    ListStores,
+    MyCouponPage,
+    Profile,
+    myLoyaltyPage,
+    GiftCardPage,
+    CardDesignPage,
+    CardAmountPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},Providers]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},Providers, AppService]
 })
 export class AppModule {}

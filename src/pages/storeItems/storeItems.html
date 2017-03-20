@@ -1,0 +1,103 @@
+<ion-header class="storeItemsheader">
+  <ion-grid class="header-grid">
+    <ion-row>
+      <ion-col width-10 class="header-grid-col1">
+        <ion-icon name="options" (click)="showMenu()"></ion-icon>
+      </ion-col>
+      <ion-col width-80 class="header-grid-col2">Alimentum</ion-col>
+      <ion-col width-10 class="header-grid-col3">
+        <ion-icon name="search" (click)="searchCall()"></ion-icon>
+       <div *ngIf="searchField"> <ion-searchbar style="margin-top: -73px;right: 0px;position: fixed;height: 12%;" (ionInput)="getItems($event)" placeholder="Please enter Item name"></ion-searchbar></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<div class="menu-overlay" [hidden]="menuOverlay">
+  <ion-header class="storeItemsheader">
+    <ion-grid class="header-grid">
+      <ion-row>
+        <ion-col width-10 class="header-grid-col1">
+          <ion-icon name="close" (click)="hideMenu()"></ion-icon>
+        </ion-col>
+        <ion-col width-80 class="header-grid-col2">Our Menu</ion-col>
+        <ion-col width-10 class="header-grid-col3">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-header>
+  <ion-content class="background-transparent overlay-margin">
+    <div class="menu-container">
+      <ul>
+        <li *ngFor="let menu of mainMenus" [ngStyle]="{'background-image': 'url(' + menu.imageUrl + ')'}" (click)="selectFamily(menu)">
+            <div class="overlay-menu-list"></div>
+            <div class="overlay-menu-name">{{menu.name}}</div>
+        </li>
+      </ul>
+    </div>
+  </ion-content>
+</div>
+<ion-content class="card-background-page" [class.no-scroll]="!menuOverlay">
+  <ion-slides [autoplay]="4000" pager style="height:245px;width: 100%;">
+    <ion-slide>
+      <img class="imgHeight" src="../../assets/imgs/itemCard.png" />
+    </ion-slide>
+  </ion-slides>
+  <br>
+
+  <div style="width: 100%;text-align: center;color:white;font-size: 2.0rem;"><h3 style="font-size: 1.8rem;"><img style="width: 17%;vertical-align: middle;" src="../../assets/imgs/designleft.png"/> &nbsp;Featured Product &nbsp;<img style="width: 17%;vertical-align: middle;" src="../../assets/imgs/designright.png"/></h3></div>
+
+  <div class="sub-menu-container">
+      <ul>
+        <!--<li *ngFor="let item of productList" [ngClass]="item.imageUrl ? 'displayImg' : 'noImg'">
+            <div class="imgShow" (click)="storeDet(item)"><img  [src]=item.imageUrl />
+          <div class="favHeader">{{item.name}}</div>
+          <div class="subFav">{{item.ingredients}}</div>
+        </div>
+        <div class="textAlignImg" (click)="addCart(item)"> <span class="addCartBtn">Add Cart <span class="cartPrice" style="float: right;">{{item.price | currency:'USD':true:'1.2-2'}}</span></span></div>
+         </li>-->
+         <li class="category-product" *ngFor="let product of productList" [ngClass]="product.imageUrl ? 'displayImg' : 'noImg'">
+            <div class="product-img" style="width: 100%;height: 75%;" [ngStyle]="{'background-image': 'url(' + product.imageUrl + ')'}" (click)="storeDet(product)"></div>
+            <div (click)="storeDet(product)">
+              <div class="favHeader">{{product.name}}</div>
+              <!--<div class="subFav">
+                {{product.ingredients}}
+              </div>-->
+            </div>
+            <div class="product-price">
+              <ion-row>
+                <ion-col class="product-price-col1" width-50 (click)="addCart(product)">Add Cart</ion-col>
+                <ion-col class="product-price-col2" width-50>${{product.price}}</ion-col>
+              </ion-row>
+            </div>
+          </li>
+      </ul>
+    </div>
+
+  <!--<ion-list>
+    <ion-item class="overflowImg">
+        <div class="imgSlide" *ngFor="let item of productList">
+          <div class="imgShow" (click)="storeDet(item)"><img style="width: 88%;margin-left: 6%;margin-top: 5%;" [src]=item.imageUrl />
+          <div class="favHeader">{{item.name}}</div>
+          <div class="subFav">{{item.ingredients}}</div>
+        </div>
+        <div class="textAlignImg" (click)="addCart(item)"> <span class="addCartBtn">Add Cart <span class="cartPrice" style="float: right;">{{item.price | currency:'USD':true:'1.2-2'}}</span></span>
+        </div>
+      </div>
+    </ion-item>
+  </ion-list>-->
+  <div style="width: 100%;">
+  <div class="items-cart-page" *ngIf = "notLength > 0" (click)="addToPayment();">
+        <!--<ion-icon style="position: fixed;right: 25px;top: 535px;" class="cartDet" ios="md-cart" md="md-cart"></ion-icon>
+        <ion-badge item-right style="color: #ff3a2f;position: fixed;right: 25px;top: 518px;border-radius: 10px;">{{notLength}}</ion-badge>-->
+        <ion-icon class="items-cartDet" ios="md-cart" md="md-cart"></ion-icon>
+        <ion-badge class="cart-batch" item-right>{{notLength}}</ion-badge>
+    </div>
+  </div>
+  <!--<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>-->
+</ion-content>

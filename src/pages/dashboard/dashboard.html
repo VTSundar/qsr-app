@@ -1,0 +1,110 @@
+<ion-header class="startScreenHeader">
+  <ion-grid class="header-grid">
+    <ion-row>
+      <ion-col width-10 class="header-grid-col1">
+        <ion-icon name="arrow-back" ios="md-arrow-back" md="md-arrow-back" (click)="goBack()"></ion-icon>
+      </ion-col>
+      <ion-col width-80 class="header-grid-col2">Dashboard</ion-col>
+      <ion-col width-10 class="header-grid-col3">
+        <!--<ion-icon name="search"></ion-icon>-->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+<ion-content class="dashboard-content">
+    <div class="dashboard-container" [style.width]="platformName == 'windows' ? '400px' : '100%'">
+        <div class="dashboardNameDiv" (click)="gotoProfilePage()">
+            <div class="heading-one">
+                Welcome back
+            </div>
+            <div class="heading-name">
+                John Peter!
+            </div>
+            <div class="shop-location">
+                152-154 Hills Rd, Cambridge CB2 8PB, United Kingdom
+            </div>
+        </div>
+        <div class="change-store">
+            <button ion-button>Change</button>
+        </div>
+        <!--<div class="dashboard-menu">
+
+        </div>-->
+        <ion-card>
+            <ion-card-content>
+                <ion-grid>
+                    <ion-row (click)="myLoyalty()">
+                        <ion-col width-20 class="column1">
+                            <div class="divider"><img src="../../assets/imgs/loyaltyIcon.png" /></div>
+                        </ion-col>
+                        <ion-col width-70 class="column2">
+                            <div class="card-heading">My Loyalty</div>
+                            <div class="card-desc">Check Your Loyalty Points</div>
+                        </ion-col>
+                        <ion-col width-10 class="column3">
+                            <ion-icon name="arrow-forward" ios="ios-arrow-forward" md="ios-arrow-forward"></ion-icon>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+        <ion-card>
+            <ion-card-content>
+                <ion-grid>
+                    <ion-row (click)="rewardsOffer()">
+                        <ion-col width-20 class="column1">
+                            <div class="divider"><img src="../../assets/imgs/dollerIcon.png" /></div>
+                        </ion-col>
+                        <ion-col width-70 class="column2">
+                            <div class="rewards-alert">{{rewardsOfferCount}}</div>
+                            <div class="card-heading">Rewards & Offers</div>
+                            <div class="card-desc">Get More Offers</div>
+                        </ion-col>
+                        <ion-col width-10 class="column3">
+                            <ion-icon name="arrow-forward" ios="ios-arrow-forward" md="ios-arrow-forward"></ion-icon>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+        <ion-card>
+            <ion-card-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col width-20 class="column1">
+                            <div class="divider"><img src="../../assets/imgs/giftCardIcon.png" /></div>
+                        </ion-col>
+                        <ion-col width-70 class="column2">
+                            <div class="card-heading">Gift Card</div>
+                            <div class="card-desc">Check Your Gift Card Balance</div>
+                        </ion-col>
+                        <ion-col width-10 class="column3">
+                            <ion-icon name="arrow-forward" ios="ios-arrow-forward" md="ios-arrow-forward"></ion-icon>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+        <ion-card (click)="goToMainMenu()">
+            <ion-card-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col width-20 class="column1">
+                            <div class="divider"><img src="../../assets/imgs/foodIcon.png" /></div>
+                        </ion-col>
+                        <ion-col width-70 class="column2">
+                            <div class="card-heading">Our Menu</div>
+                            <div class="card-desc">Place catering Orders</div>
+                        </ion-col>
+                        <ion-col width-10 class="column3">
+                            <ion-icon name="arrow-forward" ios="ios-arrow-forward" md="ios-arrow-forward"></ion-icon>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+        <div class="privacy-policy">
+            Privacy Policy | Copyright/Legal Info
+        </div>
+    </div>
+</ion-content>
